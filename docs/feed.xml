@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel>
+    <title>AI Foundations — Daily Audio Course</title>
+    <link>https://bel9777.github.io/ai-foundations-daily-audio/</link>
+    <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jul 2026 11:35:49 GMT</lastBuildDate>
+    <generator>AI Foundations Library Builder</generator>
+    <itunes:author>AI Foundations</itunes:author>
+    <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
+    <itunes:type>serial</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png" />
+    <itunes:category text="Education">
+      <itunes:category text="Courses" />
+    </itunes:category>
+    <item>
+      <title>Day 35: Prompting as Interface Design</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-035</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fada8d1b86a68f</guid>
+      <pubDate>Wed, 29 Jul 2026 11:35:49 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 35: Prompting as Interface Design and Kindle chapter Day 35. Learn how to think about prompts as a user interface for an AI system, so you can get clearer, more useful, and more reliable outputs.</description>
+      <itunes:title>Prompting as Interface Design</itunes:title>
+      <itunes:episode>35</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:08</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 35: Prompting as Interface Design and Kindle chapter Day 35. Learn how to think about prompts as a user interface for an AI system, so you can get clearer, more useful, and more reliable outputs.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio/day-035-prompting-as-interface-design.mp3" length="2927808" type="audio/mpeg" />
+      <podcast:transcript url="https://bel9777.github.io/ai-foundations-daily-audio/transcripts/day-035.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 1: What AI Is (and What It Is Not)</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-001</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19ef47806e04aa33</guid>
+      <pubDate>Tue, 23 Jun 2026 12:32:47 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 1: What AI Is (and What It Is Not) and Kindle chapter Day 1. By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon.</description>
+      <itunes:title>What AI Is (and What It Is Not)</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>12:12</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 1: What AI Is (and What It Is Not) and Kindle chapter Day 1. By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio/day-001-what-ai-is-and-what-it-is-not.mp3" length="4392720" type="audio/mpeg" />
+      <podcast:transcript url="https://bel9777.github.io/ai-foundations-daily-audio/transcripts/day-001.txt" type="text/plain" rel="captions" />
+    </item>
+  </channel>
+</rss>

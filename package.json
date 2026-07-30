@@ -7,10 +7,11 @@
   },
   "scripts": {
     "sync:course": "node scripts/sync-course-media.mjs",
+    "build:pages": "node scripts/build-github-pages.mjs",
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "test": "npm run build:pages && npm run build && node --test tests/rendered-html.test.mjs tests/static-pages.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },

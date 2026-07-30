@@ -12,3 +12,6 @@ the daily email and Kindle library:
 
 Run `npm run sync:course` before building to copy available audio, generate
 transcripts, and refresh `data/episodes.json`.
+
+Run `npm run build:pages` to create the public GitHub Pages site and
+Apple-compatible static RSS feed in `docs/`.

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Foundations — Daily Audio Course</title>
+    <meta name="description" content="Every episode is the audio companion to the matching AI Foundations email and Kindle chapter.">
+    <meta property="og:title" content="AI Foundations — Daily Audio Course">
+    <meta property="og:description" content="Listen to the same daily lesson from the email course and Kindle library.">
+    <meta property="og:image" content="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png">
+    <link rel="icon" href="podcast-cover.png">
+    <link rel="alternate" type="application/rss+xml" title="AI Foundations Daily Audio" href="feed.xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <nav class="nav-shell" aria-label="Main navigation">
+          <a class="wordmark" href="./">AI <span>FOUNDATIONS</span></a>
+          <a class="feed-link" href="feed.xml">RSS feed</a>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Email ↔ Kindle ↔ Podcast</div>
+            <h1>Your daily AI course, ready when your ears are.</h1>
+            <p class="lede">Every episode is built from the same source lesson as that day’s course email and Kindle chapter. Listen here or add the unlisted feed to Apple Podcasts.</p>
+            <div class="feed-controls">
+              <a class="primary-button" href="#latest-title">Play the latest episode</a>
+              <button class="secondary-button" id="copy-feed" type="button">Copy Apple Podcasts feed</button>
+            </div>
+            <p class="privacy-note">Public by URL • no paid app required • not submitted to a podcast directory</p>
+          </div>
+
+          <div class="cover-wrap">
+            <div class="cover-glow" aria-hidden="true"></div>
+            <img class="cover" src="podcast-cover.png" alt="AI Foundations Daily Audio Course cover" width="1400" height="1400">
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="latest section-shell" aria-labelledby="latest-title">
+        <div class="section-label">Latest episode</div>
+        <article class="latest-card">
+          <div class="episode-number">
+            <span>Day</span>
+            35
+          </div>
+          <div class="latest-body">
+            <div class="episode-meta">
+              <span>July 29, 2026</span>
+              <span>08:08</span>
+            </div>
+            <h2 id="latest-title">Prompting as Interface Design</h2>
+            <p>Learn how to think about prompts as a user interface for an AI system, so you can get clearer, more useful, and more reliable outputs.</p>
+            <audio controls preload="metadata" src="audio/day-035-prompting-as-interface-design.mp3">
+              <a href="audio/day-035-prompting-as-interface-design.mp3">Download this episode</a>
+            </audio>
+            <div class="format-row" aria-label="Matching course formats">
+              <span>Same lesson</span>
+              <strong>Daily email</strong>
+              <span aria-hidden="true">→</span>
+              <strong>Kindle Day 35</strong>
+              <span aria-hidden="true">→</span>
+              <strong>Episode 35</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="archive section-shell" aria-labelledby="archive-title">
+        <div class="archive-heading">
+          <div>
+            <div class="section-label">Course archive</div>
+            <h2 id="archive-title">Listen in any order</h2>
+          </div>
+          <p>New lessons appear automatically. Earlier lessons are being backfilled into audio.</p>
+        </div>
+        <div class="episode-list">
+          <article class="episode-card" id="day-035">
+            <div class="card-day">DAY 35</div>
+            <div class="card-main">
+              <div class="episode-meta">
+                <span>July 29, 2026</span>
+                <span>08:08</span>
+              </div>
+              <h3>Prompting as Interface Design</h3>
+              <p>Matches the “AI Foundations Day 35: Prompting as Interface Design” email and Kindle chapter Day 35.</p>
+            </div>
+            <audio controls preload="none" src="audio/day-035-prompting-as-interface-design.mp3">
+              <a href="audio/day-035-prompting-as-interface-design.mp3">Download</a>
+            </audio>
+          </article>
+          <article class="episode-card" id="day-001">
+            <div class="card-day">DAY 01</div>
+            <div class="card-main">
+              <div class="episode-meta">
+                <span>June 23, 2026</span>
+                <span>12:12</span>
+              </div>
+              <h3>What AI Is (and What It Is Not)</h3>
+              <p>Matches the “AI Foundations Day 1: What AI Is (and What It Is Not)” email and Kindle chapter Day 1.</p>
+            </div>
+            <audio controls preload="none" src="audio/day-001-what-ai-is-and-what-it-is-not.mp3">
+              <a href="audio/day-001-what-ai-is-and-what-it-is-not.mp3">Download</a>
+            </audio>
+          </article></div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="section-shell">
+          <div class="section-label">One lesson, three formats</div>
+          <h2>Pick up the course wherever you left off.</h2>
+          <div class="format-grid">
+            <article><span>01</span><h3>Read the email</h3><p>The daily lesson lands first with the complete course material.</p></article>
+            <article><span>02</span><h3>Keep the chapter</h3><p>The same source is added to the expanding Kindle library.</p></article>
+            <article><span>03</span><h3>Listen anywhere</h3><p>The matching day and title become a chaptered audio episode.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="section-shell">
+        <p>AI Foundations • Personal daily course library</p>
+        <a href="feed.xml">RSS feed</a>
+      </footer>
+    </main>
+    <script>
+      const copyButton = document.getElementById("copy-feed");
+      copyButton.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(new URL("feed.xml", window.location.href).href);
+        copyButton.textContent = "Feed URL copied";
+        window.setTimeout(() => {
+          copyButton.textContent = "Copy Apple Podcasts feed";
+        }, 2200);
+      });
+    </script>
+  </body>
+</html>
