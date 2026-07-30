@@ -50,6 +50,24 @@ function mediaAbsolute(relativePath) {
   return new URL(relativePath.replace(/^\//, ""), mediaBaseUrl).href;
 }
 
+function publishedAudioName(episode) {
+  const sourceName = path.basename(episode.audioPath, ".mp3");
+  return `${sourceName}-${episode.audioBytes}.mp3`;
+}
+
+function publishedTranscriptName(episode) {
+  const sourceName = path.basename(episode.transcriptPath, ".txt");
+  return `${sourceName}-${episode.audioBytes}.txt`;
+}
+
+function publishedAudioPath(episode) {
+  return `audio/${publishedAudioName(episode)}`;
+}
+
+function publishedTranscriptPath(episode) {
+  return `transcripts/${publishedTranscriptName(episode)}`;
+}
+
 function displayDate(isoDate) {
   return new Intl.DateTimeFormat("en-US", {
     month: "long",
@@ -73,18 +91,20 @@ await copyFile(
 for (const episode of episodes) {
   const audioName = path.basename(episode.audioPath);
   const transcriptName = path.basename(episode.transcriptPath);
+  const publicAudioName = publishedAudioName(episode);
+  const publicTranscriptName = publishedTranscriptName(episode);
   await Promise.all([
     copyFile(
       path.join(siteRoot, "public", "audio", audioName),
-      path.join(docsRoot, "audio", audioName),
+      path.join(docsRoot, "audio", publicAudioName),
     ),
     copyFile(
       path.join(siteRoot, "public", "transcripts", transcriptName),
-      path.join(docsRoot, "transcripts", transcriptName),
+      path.join(docsRoot, "transcripts", publicTranscriptName),
     ),
   ]);
 
-  const copiedAudio = await stat(path.join(docsRoot, "audio", audioName));
+  const copiedAudio = await stat(path.join(docsRoot, "audio", publicAudioName));
   if (copiedAudio.size !== episode.audioBytes) {
     throw new Error(`Audio length changed while copying ${audioName}.`);
   }
@@ -104,8 +124,8 @@ const archiveCards = episodes
               <h3>${html(episode.title)}</h3>
               <p>Matches the “${html(episode.subject)}” email and Kindle chapter Day ${episode.day}.</p>
             </div>
-            <audio controls preload="none" src="${html(episode.audioPath.replace(/^\//, ""))}">
-              <a href="${html(episode.audioPath.replace(/^\//, ""))}">Download</a>
+            <audio controls preload="none" src="${html(publishedAudioPath(episode))}">
+              <a href="${html(publishedAudioPath(episode))}">Download</a>
             </audio>
           </article>`,
   )
@@ -127,8 +147,8 @@ const latestMarkup = newest
             </div>
             <h2 id="latest-title">${html(newest.title)}</h2>
             <p>${html(newest.summary)}</p>
-            <audio controls preload="metadata" src="${html(newest.audioPath.replace(/^\//, ""))}">
-              <a href="${html(newest.audioPath.replace(/^\//, ""))}">Download this episode</a>
+            <audio controls preload="metadata" src="${html(publishedAudioPath(newest))}">
+              <a href="${html(publishedAudioPath(newest))}">Download this episode</a>
             </audio>
             <div class="format-row" aria-label="Matching course formats">
               <span>Same lesson</span>
@@ -232,8 +252,8 @@ const page = `<!doctype html>
 const items = episodes
   .map((episode) => {
     const episodeUrl = `${baseUrl}#day-${String(episode.day).padStart(3, "0")}`;
-    const audioUrl = mediaAbsolute(episode.audioPath);
-    const transcriptUrl = mediaAbsolute(episode.transcriptPath);
+    const audioUrl = mediaAbsolute(publishedAudioPath(episode));
+    const transcriptUrl = mediaAbsolute(publishedTranscriptPath(episode));
     const description = `The audio companion to ${episode.subject} and Kindle chapter Day ${episode.day}. ${episode.summary}`;
 
     return `    <item>
