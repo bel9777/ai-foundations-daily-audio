@@ -148,6 +148,7 @@ const page = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
     <title>AI Foundations — Daily Audio Course</title>
     <meta name="description" content="Every episode is the audio companion to the matching AI Foundations email and Kindle chapter.">
     <meta property="og:title" content="AI Foundations — Daily Audio Course">
@@ -290,6 +291,11 @@ await Promise.all([
   writeFile(path.join(docsRoot, "styles.css"), css, "utf8"),
   writeFile(path.join(docsRoot, "feed.xml"), feed, "utf8"),
   writeFile(path.join(docsRoot, "feed.rss"), feed, "utf8"),
+  writeFile(
+    path.join(docsRoot, "robots.txt"),
+    "User-agent: *\nDisallow: /\n",
+    "utf8",
+  ),
   writeFile(path.join(docsRoot, ".nojekyll"), "", "utf8"),
 ]);
 

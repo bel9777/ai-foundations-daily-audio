@@ -1,7 +1,7 @@
 # AI Foundations Daily Audio
 
-The public-by-URL, unlisted listening site and RSS feed for Brian's AI
-Foundations course.
+The public-by-URL, unlisted listening site and RSS feed for the AI Foundations
+course.
 
 Each podcast episode is generated from the same canonical lesson record used by
 the daily email and Kindle library:

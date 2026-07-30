@@ -15,12 +15,16 @@ test("builds a mobile-ready static listening page for GitHub Pages", async () =>
   const css = await readFile(path.join(docs, "styles.css"), "utf8");
 
   assert.match(page, /<meta name="viewport"/);
+  assert.match(page, /<meta name="robots" content="noindex, nofollow, noarchive">/);
   assert.match(page, /Email ↔ Kindle ↔ Podcast/);
   assert.match(page, /Copy Apple Podcasts feed/);
   assert.match(page, /Prompting as Interface Design/);
   assert.match(page, /podcast-cover\.png/);
   assert.match(css, /@media \(max-width: 640px\)/);
   assert.doesNotMatch(css, /@import "tailwindcss"/);
+
+  const robots = await readFile(path.join(docs, "robots.txt"), "utf8");
+  assert.equal(robots, "User-agent: *\nDisallow: /\n");
 });
 
 test("builds an Apple-compatible public feed with matching local media", async () => {
