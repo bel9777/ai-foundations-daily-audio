@@ -1,0 +1,28 @@
+[
+  {
+    "day": 35,
+    "title": "Prompting as Interface Design",
+    "subject": "AI Foundations Day 35: Prompting as Interface Design",
+    "publishedAt": "2026-07-29T11:35:49.000Z",
+    "sourceMessageId": "19fada8d1b86a68f",
+    "audioPath": "/audio/day-035-prompting-as-interface-design.mp3",
+    "transcriptPath": "/transcripts/day-035.txt",
+    "audioBytes": 2927808,
+    "durationSeconds": 488,
+    "durationLabel": "08:08",
+    "summary": "Learn how to think about prompts as a user interface for an AI system, so you can get clearer, more useful, and more reliable outputs."
+  },
+  {
+    "day": 1,
+    "title": "What AI Is (and What It Is Not)",
+    "subject": "AI Foundations Day 1: What AI Is (and What It Is Not)",
+    "publishedAt": "2026-06-23T12:32:47.000Z",
+    "sourceMessageId": "19ef47806e04aa33",
+    "audioPath": "/audio/day-001-what-ai-is-and-what-it-is-not.mp3",
+    "transcriptPath": "/transcripts/day-001.txt",
+    "audioBytes": 4392720,
+    "durationSeconds": 732,
+    "durationLabel": "12:12",
+    "summary": "By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon."
+  }
+]
