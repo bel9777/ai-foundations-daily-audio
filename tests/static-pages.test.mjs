@@ -29,6 +29,9 @@ test("builds a mobile-ready static listening page for GitHub Pages", async () =>
 
 test("builds an Apple-compatible public feed with matching local media", async () => {
   const feed = await readFile(path.join(docs, "feed.rss"), "utf8");
+  const episodes = JSON.parse(
+    await readFile(path.join(root, "data", "episodes.json"), "utf8"),
+  );
   assert.match(
     feed,
     /https:\/\/bel9777\.github\.io\/ai-foundations-daily-audio\/feed\.rss/,
@@ -46,7 +49,7 @@ test("builds an Apple-compatible public feed with matching local media", async (
   const enclosurePattern =
     /<enclosure url="[^"]+\/audio\/([^"]+\.mp3)" length="(\d+)" type="audio\/mpeg" \/>/g;
   const enclosures = [...feed.matchAll(enclosurePattern)];
-  assert.equal(enclosures.length, 2);
+  assert.equal(enclosures.length, episodes.length);
 
   for (const enclosure of enclosures) {
     const media = await stat(path.join(docs, "audio", enclosure[1]));

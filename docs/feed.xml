@@ -29,11 +29,539 @@
       <itunes:episode>35</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>08:08</itunes:duration>
+      <itunes:duration>08:12</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 35: Prompting as Interface Design and Kindle chapter Day 35. Learn how to think about prompts as a user interface for an AI system, so you can get clearer, more useful, and more reliable outputs.</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-035-prompting-as-interface-design.mp3" length="2927808" type="audio/mpeg" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-035-prompting-as-interface-design.mp3" length="5906621" type="audio/mpeg" />
       <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-035.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 34: Hallucinations: Why Fluent Can Still Be False</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-034</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fa882747fc1435</guid>
+      <pubDate>Tue, 28 Jul 2026 11:35:49 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 34: Hallucinations: Why Fluent Can Still Be False and Kindle chapter Day 34. By the end of today, you will be able to explain why an AI can sound confident and still be wrong, recognize common causes of hallucinations, and use a simple checklist to reduce the chance of trusting a bad answer.</description>
+      <itunes:title>Hallucinations: Why Fluent Can Still Be False</itunes:title>
+      <itunes:episode>34</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:07</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 34: Hallucinations: Why Fluent Can Still Be False and Kindle chapter Day 34. By the end of today, you will be able to explain why an AI can sound confident and still be wrong, recognize common causes of hallucinations, and use a simple checklist to reduce the chance of trusting a bad answer.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-034-hallucinations-why-fluent-can-still-be-false.mp3" length="5849230" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-034.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 33: Sampling, Temperature, and Output Diversity</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-033</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fa35c0f23f5af1</guid>
+      <pubDate>Mon, 27 Jul 2026 11:35:47 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 33: Sampling, Temperature, and Output Diversity and Kindle chapter Day 33. By the end of today’s lesson, you’ll understand why the same AI model can give different answers, how sampling works, what temperature changes, and how to choose the right level of output diversity for a task.</description>
+      <itunes:title>Sampling, Temperature, and Output Diversity</itunes:title>
+      <itunes:episode>33</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:57</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 33: Sampling, Temperature, and Output Diversity and Kindle chapter Day 33. By the end of today’s lesson, you’ll understand why the same AI model can give different answers, how sampling works, what temperature changes, and how to choose the right level of output diversity for a task.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-033-sampling-temperature-and-output-diversity.mp3" length="5727164" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-033.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 32: Generative AI across Text, Images, and Audio</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-032</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f9e35c67ec04ee</guid>
+      <pubDate>Sun, 26 Jul 2026 11:35:52 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 32: Generative AI across Text, Images, and Audio and Kindle chapter Day 32. By the end of today’s lesson, you should understand how generative AI can create text, images, and audio, what these systems have in common, how they differ, and how to use them thoughtfully.</description>
+      <itunes:title>Generative AI across Text, Images, and Audio</itunes:title>
+      <itunes:episode>32</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:36</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 32: Generative AI across Text, Images, and Audio and Kindle chapter Day 32. By the end of today’s lesson, you should understand how generative AI can create text, images, and audio, what these systems have in common, how they differ, and how to use them thoughtfully.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-032-generative-ai-across-text-images-and-audio.mp3" length="6200665" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-032.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 31: Human Feedback and Preference Optimization</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-031</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f93e8fce549042</guid>
+      <pubDate>Fri, 24 Jul 2026 11:35:47 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 31: Human Feedback and Preference Optimization and Kindle chapter Day 31. Understand how human feedback helps AI systems become more useful, safer, and better aligned with what people want, and learn the basic idea behind preference optimization.</description>
+      <itunes:title>Human Feedback and Preference Optimization</itunes:title>
+      <itunes:episode>31</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:35</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 31: Human Feedback and Preference Optimization and Kindle chapter Day 31. Understand how human feedback helps AI systems become more useful, safer, and better aligned with what people want, and learn the basic idea behind preference optimization.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-031-human-feedback-and-preference-optimization.mp3" length="6189051" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-031.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 30: Fine-Tuning and Instruction Following</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-030</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f8ec299d249a17</guid>
+      <pubDate>Thu, 23 Jul 2026 11:35:45 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 30: Fine-Tuning and Instruction Following and Kindle chapter Day 30. By the end of today’s lesson, you will understand what fine-tuning is, why instruction following matters, how examples change model behavior, and when to use a general model versus a specialized one.</description>
+      <itunes:title>Fine-Tuning and Instruction Following</itunes:title>
+      <itunes:episode>30</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:36</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 30: Fine-Tuning and Instruction Following and Kindle chapter Day 30. By the end of today’s lesson, you will understand what fine-tuning is, why instruction following matters, how examples change model behavior, and when to use a general model versus a specialized one.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-030-fine-tuning-and-instruction-following.mp3" length="6195945" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-030.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 29: Next-Token Prediction and Emergent Capabilities</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-029</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f899c40ec179ca</guid>
+      <pubDate>Wed, 22 Jul 2026 11:35:46 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 29: Next-Token Prediction and Emergent Capabilities and Kindle chapter Day 29. Understand what a language model is actually trained to do, why predicting the next token can produce surprisingly broad abilities, and where those abilities come from.</description>
+      <itunes:title>Next-Token Prediction and Emergent Capabilities</itunes:title>
+      <itunes:episode>29</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:31</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 29: Next-Token Prediction and Emergent Capabilities and Kindle chapter Day 29. Understand what a language model is actually trained to do, why predicting the next token can produce surprisingly broad abilities, and where those abilities come from.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-029-next-token-prediction-and-emergent-capabilities.mp3" length="5425314" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-029.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 28: Pretraining: Learning from Massive Corpora</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-028</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f8475e652d0df5</guid>
+      <pubDate>Tue, 21 Jul 2026 11:35:47 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 28: Pretraining: Learning from Massive Corpora and Kindle chapter Day 28. Understand how modern language models learn broad language ability from huge text collections before any task-specific fine-tuning.</description>
+      <itunes:title>Pretraining: Learning from Massive Corpora</itunes:title>
+      <itunes:episode>28</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:00</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 28: Pretraining: Learning from Massive Corpora and Kindle chapter Day 28. Understand how modern language models learn broad language ability from huge text collections before any task-specific fine-tuning.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-028-pretraining-learning-from-massive-corpora.mp3" length="5773916" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-028.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 27: Tokens and Context Windows</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-027</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f7f4f80ee29929</guid>
+      <pubDate>Mon, 20 Jul 2026 11:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 27: Tokens and Context Windows and Kindle chapter Day 27. By the end of today, you will understand what a token is, what a context window is, why both matter for transformers, and how they shape what an AI model can and cannot do in one response.</description>
+      <itunes:title>Tokens and Context Windows</itunes:title>
+      <itunes:episode>27</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:58</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 27: Tokens and Context Windows and Kindle chapter Day 27. By the end of today, you will understand what a token is, what a context window is, why both matter for transformers, and how they shape what an AI model can and cannot do in one response.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-027-tokens-and-context-windows.mp3" length="5748468" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-027.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 26: Transformers: The Core Architecture</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-026</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f7a2921e039818</guid>
+      <pubDate>Sun, 19 Jul 2026 11:35:43 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 26: Transformers: The Core Architecture and Kindle chapter Day 26. Understand how a Transformer processes a sequence, why it replaced many older sequence models, and how its main parts work together: embeddings, positional information, attention, residual connections, and feed-forward layers.</description>
+      <itunes:title>Transformers: The Core Architecture</itunes:title>
+      <itunes:episode>26</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:03</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 26: Transformers: The Core Architecture and Kindle chapter Day 26. Understand how a Transformer processes a sequence, why it replaced many older sequence models, and how its main parts work together: embeddings, positional information, attention, residual connections, and feed-forward layers.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-026-transformers-the-core-architecture.mp3" length="6526041" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-026.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 25: Attention: Choosing What Matters</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-025</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f7502c6ccef603</guid>
+      <pubDate>Sat, 18 Jul 2026 11:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 25: Attention: Choosing What Matters and Kindle chapter Day 25. Learn how attention helps a model focus on the most relevant parts of a sequence, why that matters for language and other ordered data, and how this idea prepares us for transformers tomorrow.</description>
+      <itunes:title>Attention: Choosing What Matters</itunes:title>
+      <itunes:episode>25</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:47</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 25: Attention: Choosing What Matters and Kindle chapter Day 25. Learn how attention helps a model focus on the most relevant parts of a sequence, why that matters for language and other ordered data, and how this idea prepares us for transformers tomorrow.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-025-attention-choosing-what-matters.mp3" length="6336196" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-025.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 24: Sequence Models before Transformers</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-024</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f6fdc66655f7fe</guid>
+      <pubDate>Fri, 17 Jul 2026 11:35:43 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 24: Sequence Models before Transformers and Kindle chapter Day 24. Learn how machines handle data that comes in order—like words in a sentence, notes in a melody, or events in a log—using sequence models that came before transformers.</description>
+      <itunes:title>Sequence Models before Transformers</itunes:title>
+      <itunes:episode>24</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:08</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 24: Sequence Models before Transformers and Kindle chapter Day 24. Learn how machines handle data that comes in order—like words in a sentence, notes in a melody, or events in a log—using sequence models that came before transformers.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-024-sequence-models-before-transformers.mp3" length="5867410" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-024.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 23: Embeddings: Meaning as Geometry</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-023</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f6ab62a2c5b148</guid>
+      <pubDate>Thu, 16 Jul 2026 11:35:51 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 23: Embeddings: Meaning as Geometry and Kindle chapter Day 23. By the end of today, you will understand what an embedding is, why it helps machines work with language and other messy data, and how “meaning” can be represented as positions in a geometric space.</description>
+      <itunes:title>Embeddings: Meaning as Geometry</itunes:title>
+      <itunes:episode>23</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:35</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 23: Embeddings: Meaning as Geometry and Kindle chapter Day 23. By the end of today, you will understand what an embedding is, why it helps machines work with language and other messy data, and how “meaning” can be represented as positions in a geometric space.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-023-embeddings-meaning-as-geometry.mp3" length="6903513" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-023.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 22: Training Deep Networks Reliably</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-022</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f658fb6c882df1</guid>
+      <pubDate>Wed, 15 Jul 2026 11:35:45 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 22: Training Deep Networks Reliably and Kindle chapter Day 22. Learn the practical habits that make deep neural networks actually improve during training, instead of diverging, getting stuck, or learning very slowly.</description>
+      <itunes:title>Training Deep Networks Reliably</itunes:title>
+      <itunes:episode>22</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:36</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 22: Training Deep Networks Reliably and Kindle chapter Day 22. Learn the practical habits that make deep neural networks actually improve during training, instead of diverging, getting stuck, or learning very slowly.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-022-training-deep-networks-reliably.mp3" length="6196874" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-022.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 21: Backpropagation: Assigning Credit for Error</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-021</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f60695968fff07</guid>
+      <pubDate>Tue, 14 Jul 2026 11:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 21: Backpropagation: Assigning Credit for Error and Kindle chapter Day 21. By the end of today, you will understand how a neural network learns from mistakes by tracing error backward through its layers and adjusting each weight a little bit in the right direction.</description>
+      <itunes:title>Backpropagation: Assigning Credit for Error</itunes:title>
+      <itunes:episode>21</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:52</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 21: Backpropagation: Assigning Credit for Error and Kindle chapter Day 21. By the end of today, you will understand how a neural network learns from mistakes by tracing error backward through its layers and adjusting each weight a little bit in the right direction.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-021-backpropagation-assigning-credit-for-error.mp3" length="7114399" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-021.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 20: Layers, Activations, and Representations</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-020</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f5b42f204f923c</guid>
+      <pubDate>Mon, 13 Jul 2026 11:35:41 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 20: Layers, Activations, and Representations and Kindle chapter Day 20. understand what layers do inside a neural network, why activation functions matter, and how networks build representations step by step.</description>
+      <itunes:title>Layers, Activations, and Representations</itunes:title>
+      <itunes:episode>20</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:35</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 20: Layers, Activations, and Representations and Kindle chapter Day 20. understand what layers do inside a neural network, why activation functions matter, and how networks build representations step by step.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-020-layers-activations-and-representations.mp3" length="6194068" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-020.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 19: Neural Networks from First Principles</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-019</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f561c476312764</guid>
+      <pubDate>Sun, 12 Jul 2026 11:35:21 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 19: Neural Networks from First Principles and Kindle chapter Day 19. By the end of this lesson, you should be able to explain how a neural network combines simple calculations into a flexible prediction system, what neurons, weights, layers, and activation functions do, and how training changes the network.</description>
+      <itunes:title>Neural Networks from First Principles</itunes:title>
+      <itunes:episode>19</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>12:22</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 19: Neural Networks from First Principles and Kindle chapter Day 19. By the end of this lesson, you should be able to explain how a neural network combines simple calculations into a flexible prediction system, what neurons, weights, layers, and activation functions do, and how training changes the network.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-019-neural-networks-from-first-principles.mp3" length="8913304" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-019.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 18: Probability, Calibration, and Confidence</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-018</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f50f65209845c5</guid>
+      <pubDate>Sat, 11 Jul 2026 11:35:47 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 18: Probability, Calibration, and Confidence and Kindle chapter Day 18. Learn how to turn model outputs into useful probabilities, understand when “confidence” is trustworthy, and avoid common mistakes when interpreting prediction scores.</description>
+      <itunes:title>Probability, Calibration, and Confidence</itunes:title>
+      <itunes:episode>18</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>10:24</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 18: Probability, Calibration, and Confidence and Kindle chapter Day 18. Learn how to turn model outputs into useful probabilities, understand when “confidence” is trustworthy, and avoid common mistakes when interpreting prediction scores.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-018-probability-calibration-and-confidence.mp3" length="7497835" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-018.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 17: Decision Trees and Ensembles</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-017</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f4bcff1a803e7d</guid>
+      <pubDate>Fri, 10 Jul 2026 11:35:46 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 17: Decision Trees and Ensembles and Kindle chapter Day 17. By the end of today, you should understand how decision trees make predictions, why they are easy to interpret, and how ensembles combine many simple models into a stronger one.</description>
+      <itunes:title>Decision Trees and Ensembles</itunes:title>
+      <itunes:episode>17</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:15</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 17: Decision Trees and Ensembles and Kindle chapter Day 17. By the end of today, you should understand how decision trees make predictions, why they are easy to interpret, and how ensembles combine many simple models into a stronger one.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-017-decision-trees-and-ensembles.mp3" length="6664718" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-017.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 16: Linear Models and Their Limits</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-016</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f46a995d3cab0c</guid>
+      <pubDate>Thu, 09 Jul 2026 11:35:46 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 16: Linear Models and Their Limits and Kindle chapter Day 16. By the end of today, you will understand what a linear model is, when it works well, why it is so useful, and where it starts to fail.</description>
+      <itunes:title>Linear Models and Their Limits</itunes:title>
+      <itunes:episode>16</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:10</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 16: Linear Models and Their Limits and Kindle chapter Day 16. By the end of today, you will understand what a linear model is, when it works well, why it is so useful, and where it starts to fail.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-016-linear-models-and-their-limits.mp3" length="6609496" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-016.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 15: Baselines: The Simplest Useful Benchmark</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-015</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f4183267807c5d</guid>
+      <pubDate>Wed, 08 Jul 2026 11:35:41 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 15: Baselines: The Simplest Useful Benchmark and Kindle chapter Day 15. Learn how to build and use a baseline, compare your model against it, and avoid being fooled by numbers that look good but mean little.</description>
+      <itunes:title>Baselines: The Simplest Useful Benchmark</itunes:title>
+      <itunes:episode>15</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:01</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 15: Baselines: The Simplest Useful Benchmark and Kindle chapter Day 15. Learn how to build and use a baseline, compare your model against it, and avoid being fooled by numbers that look good but mean little.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-015-baselines-the-simplest-useful-benchmark.mp3" length="5779874" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-015.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 14: Cross-Validation and Reliable Comparisons</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-014</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f3c5cf88c15e70</guid>
+      <pubDate>Tue, 07 Jul 2026 11:35:53 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 14: Cross-Validation and Reliable Comparisons and Kindle chapter Day 14. Learn how to estimate model performance more reliably, compare models fairly, and reduce the chance that one lucky split of data misleads you.</description>
+      <itunes:title>Cross-Validation and Reliable Comparisons</itunes:title>
+      <itunes:episode>14</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>09:25</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 14: Cross-Validation and Reliable Comparisons and Kindle chapter Day 14. Learn how to estimate model performance more reliably, compare models fairly, and reduce the chance that one lucky split of data misleads you.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-014-cross-validation-and-reliable-comparisons.mp3" length="6786492" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-014.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 13: Confusion Matrices and Classification Tradeoffs</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-013</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f37366e8223a91</guid>
+      <pubDate>Mon, 06 Jul 2026 11:35:42 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 13: Confusion Matrices and Classification Tradeoffs and Kindle chapter Day 13. Learn how a model’s classification mistakes break down in a confusion matrix , how to interpret the different kinds of errors, and how to choose a decision threshold that fits the real-world goal.</description>
+      <itunes:title>Confusion Matrices and Classification Tradeoffs</itunes:title>
+      <itunes:episode>13</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:22</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 13: Confusion Matrices and Classification Tradeoffs and Kindle chapter Day 13. Learn how a model’s classification mistakes break down in a confusion matrix , how to interpret the different kinds of errors, and how to choose a decision threshold that fits the real-world goal.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-013-confusion-matrices-and-classification-tradeoffs.mp3" length="5312352" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-013.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 12: Evaluation Metrics That Match the Goal</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-012</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f3210052c74fad</guid>
+      <pubDate>Sun, 05 Jul 2026 11:35:38 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 12: Evaluation Metrics That Match the Goal and Kindle chapter Day 12. Learn how to judge a model using metrics that actually reflect what you care about in the real world, so you can compare models fairly and avoid being fooled by a single number.</description>
+      <itunes:title>Evaluation Metrics That Match the Goal</itunes:title>
+      <itunes:episode>12</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:43</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 12: Evaluation Metrics That Match the Goal and Kindle chapter Day 12. Learn how to judge a model using metrics that actually reflect what you care about in the real world, so you can compare models fairly and avoid being fooled by a single number.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-012-evaluation-metrics-that-match-the-goal.mp3" length="5568066" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-012.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 11: Optimization and Gradient Descent</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-011</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f2ce9b2749d9ab</guid>
+      <pubDate>Sat, 04 Jul 2026 11:35:40 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 11: Optimization and Gradient Descent and Kindle chapter Day 11. By the end of today, you should understand how an AI model actually improves its predictions by repeatedly making small changes that reduce error.</description>
+      <itunes:title>Optimization and Gradient Descent</itunes:title>
+      <itunes:episode>11</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:25</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 11: Optimization and Gradient Descent and Kindle chapter Day 11. By the end of today, you should understand how an AI model actually improves its predictions by repeatedly making small changes that reduce error.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-011-optimization-and-gradient-descent.mp3" length="5346840" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-011.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 10: Loss Functions: Defining What Wrong Means</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-010</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f27c352f99e2de</guid>
+      <pubDate>Fri, 03 Jul 2026 11:35:39 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 10: Loss Functions: Defining What Wrong Means and Kindle chapter Day 10. By the end of today, you’ll understand what a loss function is, why AI needs one, and how it turns “the model was wrong” into a number a machine can work with.</description>
+      <itunes:title>Loss Functions: Defining What Wrong Means</itunes:title>
+      <itunes:episode>10</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:41</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 10: Loss Functions: Defining What Wrong Means and Kindle chapter Day 10. By the end of today, you’ll understand what a loss function is, why AI needs one, and how it turns “the model was wrong” into a number a machine can work with.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-010-loss-functions-defining-what-wrong-means.mp3" length="5543911" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-010.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 9: Features: Turning Reality into Inputs</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-009</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f229e1cfc3a494</guid>
+      <pubDate>Thu, 02 Jul 2026 11:36:55 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 9: Features: Turning Reality into Inputs and Kindle chapter Day 9. By the end of today, you’ll understand what features are, how raw reality gets turned into machine-learning inputs, and how good feature choices can make a model much more useful.</description>
+      <itunes:title>Features: Turning Reality into Inputs</itunes:title>
+      <itunes:episode>9</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:10</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 9: Features: Turning Reality into Inputs and Kindle chapter Day 9. By the end of today, you’ll understand what features are, how raw reality gets turned into machine-learning inputs, and how good feature choices can make a model much more useful.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-009-features-turning-reality-into-inputs.mp3" length="5894082" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-009.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 8: Learning without Labels</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-008</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f1d76ab54209b7</guid>
+      <pubDate>Wed, 01 Jul 2026 11:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 8: Learning without Labels and Kindle chapter Day 8. Understand how machines can learn useful structure from data when we do not tell them the correct answer for each example.</description>
+      <itunes:title>Learning without Labels</itunes:title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>08:51</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 8: Learning without Labels and Kindle chapter Day 8. Understand how machines can learn useful structure from data when we do not tell them the correct answer for each example.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-008-learning-without-labels.mp3" length="6376652" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-008.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 7: Classification, Regression, and Decision Boundaries</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-007</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f18504dc1de01d</guid>
+      <pubDate>Tue, 30 Jun 2026 11:35:43 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 7: Classification, Regression, and Decision Boundaries and Kindle chapter Day 7. By the end of today, you should be able to tell the difference between classification and regression , explain what a decision boundary is in plain language, and recognize when an AI system is making one kind of prediction versus the other.</description>
+      <itunes:title>Classification, Regression, and Decision Boundaries</itunes:title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>07:16</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 7: Classification, Regression, and Decision Boundaries and Kindle chapter Day 7. By the end of today, you should be able to tell the difference between classification and regression , explain what a decision boundary is in plain language, and recognize when an AI system is making one kind of prediction versus the other.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-007-classification-regression-and-decision-boundaries.mp3" length="5237363" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-007.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 6: Learning from Labeled Examples</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-006</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f1380bde65f981</guid>
+      <pubDate>Mon, 29 Jun 2026 13:10:31 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 6: Learning from Labeled Examples and Kindle chapter Day 6. Understand supervised learning: how a model uses examples with known answers to learn a mapping, how training reduces error, and why success on training data is not enough. Time: 8–12 minutes</description>
+      <itunes:title>Learning from Labeled Examples</itunes:title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>12:18</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 6: Learning from Labeled Examples and Kindle chapter Day 6. Understand supervised learning: how a model uses examples with known answers to learn a mapping, how training reduces error, and why success on training data is not enough. Time: 8–12 minutes</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-006-learning-from-labeled-examples.mp3" length="8864023" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-006.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 5: Data Is the Model&apos;s Experience</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-005</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f097189a553c91</guid>
+      <pubDate>Sat, 27 Jun 2026 14:17:43 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 5: Data Is the Model&apos;s Experience and Kindle chapter Day 5. By the end of this lesson, you will be able to explain why an AI system’s behavior depends on its data, identify features and targets in a dataset, and spot three common data risks: poor representation, bias, and leakage.</description>
+      <itunes:title>Data Is the Model&apos;s Experience</itunes:title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>13:17</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 5: Data Is the Model&apos;s Experience and Kindle chapter Day 5. By the end of this lesson, you will be able to explain why an AI system’s behavior depends on its data, identify features and targets in a dataset, and spot three common data risks: poor representation, bias, and leakage.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-005-data-is-the-model-s-experience.mp3" length="9579135" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-005.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 4: Day 4: How AI Learns to Generalize</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-004</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f03b4cab816941</guid>
+      <pubDate>Fri, 26 Jun 2026 11:33:28 GMT</pubDate>
+      <description>The audio companion to Day 4: How AI Learns to Generalize and Kindle chapter Day 4. By the end of today’s lesson, you should understand the difference between an AI system that merely memorizes examples and one that can generalize to new situations. You will also learn why evaluation is not optional: it is how we find out whether a model is actually useful outside its training e…</description>
+      <itunes:title>Day 4: How AI Learns to Generalize</itunes:title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>11:28</itunes:duration>
+      <itunes:summary>The audio companion to Day 4: How AI Learns to Generalize and Kindle chapter Day 4. By the end of today’s lesson, you should understand the difference between an AI system that merely memorizes examples and one that can generalize to new situations. You will also learn why evaluation is not optional: it is how we find out whether a model is actually useful outside its training e…</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-004-day-4-how-ai-learns-to-generalize.mp3" length="8268158" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-004.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 3: The Basic Machine Learning Workflow</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-003</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19f03b9fb3fd3bc2</guid>
+      <pubDate>Fri, 26 Jun 2026 11:39:07 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 3: The Basic Machine Learning Workflow and Kindle chapter Day 3. AI Foundations Day 3: The Basic Machine Learning Workflow Hi Brian, This is your catch-up lesson for Course Day 3 . Course day: 3 Course date: June 25, 2026 Estimated time: 8-12 minutes Objective By the end of this lesson, you should understand the basic workflow most machine learning projects fo…</description>
+      <itunes:title>The Basic Machine Learning Workflow</itunes:title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>12:40</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 3: The Basic Machine Learning Workflow and Kindle chapter Day 3. AI Foundations Day 3: The Basic Machine Learning Workflow Hi Brian, This is your catch-up lesson for Course Day 3 . Course day: 3 Course date: June 25, 2026 Estimated time: 8-12 minutes Objective By the end of this lesson, you should understand the basic workflow most machine learning projects fo…</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-003-the-basic-machine-learning-workflow.mp3" length="9133887" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-003.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 2: How Machines Learn From Examples</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-002</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19ef97258e4a747f</guid>
+      <pubDate>Wed, 24 Jun 2026 11:44:41 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 2: How Machines Learn From Examples and Kindle chapter Day 2. AI Foundations Day 2: How Machines Learn From Examples Hi Brian, Welcome to Course Day 2. Yesterday, the course began with the big picture: artificial intelligence is software that performs tasks we usually associate with human intelligence, such as recognizing patterns, making predictions, gener…</description>
+      <itunes:title>How Machines Learn From Examples</itunes:title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>10:34</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 2: How Machines Learn From Examples and Kindle chapter Day 2. AI Foundations Day 2: How Machines Learn From Examples Hi Brian, Welcome to Course Day 2. Yesterday, the course began with the big picture: artificial intelligence is software that performs tasks we usually associate with human intelligence, such as recognizing patterns, making predictions, gener…</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-002-how-machines-learn-from-examples.mp3" length="7614230" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-002.txt" type="text/plain" rel="captions" />
     </item>
     <item>
       <title>Day 1: What AI Is (and What It Is Not)</title>
@@ -45,10 +573,10 @@
       <itunes:episode>1</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>12:12</itunes:duration>
+      <itunes:duration>12:16</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 1: What AI Is (and What It Is Not) and Kindle chapter Day 1. By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon.</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-001-what-ai-is-and-what-it-is-not.mp3" length="4392720" type="audio/mpeg" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-001-what-ai-is-and-what-it-is-not.mp3" length="8839236" type="audio/mpeg" />
       <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-001.txt" type="text/plain" rel="captions" />
     </item>
   </channel>
