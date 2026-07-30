@@ -16,6 +16,10 @@ const baseUrl = (
   process.env.PUBLIC_BASE_URL ||
   "https://bel9777.github.io/ai-foundations-daily-audio/"
 ).replace(/\/?$/, "/");
+const mediaBaseUrl = (
+  process.env.PUBLIC_MEDIA_BASE_URL ||
+  "https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/"
+).replace(/\/?$/, "/");
 const episodes = JSON.parse(
   await readFile(path.join(siteRoot, "data", "episodes.json"), "utf8"),
 );
@@ -40,6 +44,10 @@ function xml(value) {
 
 function absolute(relativePath) {
   return new URL(relativePath.replace(/^\//, ""), baseUrl).href;
+}
+
+function mediaAbsolute(relativePath) {
+  return new URL(relativePath.replace(/^\//, ""), mediaBaseUrl).href;
 }
 
 function displayDate(isoDate) {
@@ -146,7 +154,7 @@ const page = `<!doctype html>
     <meta property="og:description" content="Listen to the same daily lesson from the email course and Kindle library.">
     <meta property="og:image" content="${html(absolute("podcast-cover.png"))}">
     <link rel="icon" href="podcast-cover.png">
-    <link rel="alternate" type="application/rss+xml" title="AI Foundations Daily Audio" href="feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="AI Foundations Daily Audio" href="feed.rss">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -154,7 +162,7 @@ const page = `<!doctype html>
       <section class="hero">
         <nav class="nav-shell" aria-label="Main navigation">
           <a class="wordmark" href="./">AI <span>FOUNDATIONS</span></a>
-          <a class="feed-link" href="feed.xml">RSS feed</a>
+          <a class="feed-link" href="feed.rss">RSS feed</a>
         </nav>
 
         <div class="hero-grid">
@@ -203,13 +211,13 @@ const page = `<!doctype html>
 
       <footer class="section-shell">
         <p>AI Foundations • Personal daily course library</p>
-        <a href="feed.xml">RSS feed</a>
+        <a href="feed.rss">RSS feed</a>
       </footer>
     </main>
     <script>
       const copyButton = document.getElementById("copy-feed");
       copyButton.addEventListener("click", async () => {
-        await navigator.clipboard.writeText(new URL("feed.xml", window.location.href).href);
+        await navigator.clipboard.writeText(new URL("feed.rss", window.location.href).href);
         copyButton.textContent = "Feed URL copied";
         window.setTimeout(() => {
           copyButton.textContent = "Copy Apple Podcasts feed";
@@ -223,8 +231,8 @@ const page = `<!doctype html>
 const items = episodes
   .map((episode) => {
     const episodeUrl = `${baseUrl}#day-${String(episode.day).padStart(3, "0")}`;
-    const audioUrl = absolute(episode.audioPath);
-    const transcriptUrl = absolute(episode.transcriptPath);
+    const audioUrl = mediaAbsolute(episode.audioPath);
+    const transcriptUrl = mediaAbsolute(episode.transcriptPath);
     const description = `The audio companion to ${episode.subject} and Kindle chapter Day ${episode.day}. ${episode.summary}`;
 
     return `    <item>
@@ -254,7 +262,7 @@ const feed = `<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>AI Foundations — Daily Audio Course</title>
     <link>${xml(baseUrl)}</link>
-    <atom:link href="${xml(absolute("feed.xml"))}" rel="self" type="application/rss+xml" />
+    <atom:link href="${xml(absolute("feed.rss"))}" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
     <lastBuildDate>${xml(new Date(newest?.publishedAt || Date.now()).toUTCString())}</lastBuildDate>
@@ -281,6 +289,7 @@ await Promise.all([
   writeFile(path.join(docsRoot, "404.html"), page, "utf8"),
   writeFile(path.join(docsRoot, "styles.css"), css, "utf8"),
   writeFile(path.join(docsRoot, "feed.xml"), feed, "utf8"),
+  writeFile(path.join(docsRoot, "feed.rss"), feed, "utf8"),
   writeFile(path.join(docsRoot, ".nojekyll"), "", "utf8"),
 ]);
 

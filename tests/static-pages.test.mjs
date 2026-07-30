@@ -24,15 +24,19 @@ test("builds a mobile-ready static listening page for GitHub Pages", async () =>
 });
 
 test("builds an Apple-compatible public feed with matching local media", async () => {
-  const feed = await readFile(path.join(docs, "feed.xml"), "utf8");
+  const feed = await readFile(path.join(docs, "feed.rss"), "utf8");
   assert.match(
     feed,
-    /https:\/\/bel9777\.github\.io\/ai-foundations-daily-audio\/feed\.xml/,
+    /https:\/\/bel9777\.github\.io\/ai-foundations-daily-audio\/feed\.rss/,
   );
   assert.match(feed, /<itunes:category text="Education">/);
   assert.match(feed, /<itunes:episode>35<\/itunes:episode>/);
   assert.match(feed, /Kindle chapter Day 35/);
   assert.match(feed, /urn:ai-foundations:gmail:19fada8d1b86a68f/);
+  assert.match(
+    feed,
+    /https:\/\/cdn\.jsdelivr\.net\/gh\/bel9777\/ai-foundations-daily-audio@main\/docs\/audio\//,
+  );
   assert.doesNotMatch(feed, /chatgpt\.site/);
 
   const enclosurePattern =
