@@ -9,7 +9,7 @@
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.rss" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 11:35:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 11:35:44 GMT</lastBuildDate>
     <generator>AI Foundations Library Builder</generator>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
@@ -19,6 +19,22 @@
     <itunes:category text="Education">
       <itunes:category text="Courses" />
     </itunes:category>
+    <item>
+      <title>Day 38: Prompt Injection and Untrusted Instructions</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-038</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fbd1bd1eda5eb8</guid>
+      <pubDate>Sat, 01 Aug 2026 11:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 38: Prompt Injection and Untrusted Instructions and Kindle chapter Day 38. Learn how prompt injection works, why it is a real safety and reliability problem, and how to design prompts and workflows that treat untrusted text as data instead of instructions.</description>
+      <itunes:title>Prompt Injection and Untrusted Instructions</itunes:title>
+      <itunes:episode>38</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:13</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 38: Prompt Injection and Untrusted Instructions and Kindle chapter Day 38. Learn how prompt injection works, why it is a real safety and reliability problem, and how to design prompts and workflows that treat untrusted text as data instead of instructions.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-038-prompt-injection-and-untrusted-instructions-4479382.mp3" length="4479382" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-038-4479382.txt" type="text/plain" rel="captions" />
+    </item>
     <item>
       <title>Day 37: Examples, Decomposition, and Structured Outputs</title>
       <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-037</link>
@@ -573,11 +589,11 @@
       <itunes:episode>3</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>12:40</itunes:duration>
+      <itunes:duration>06:29</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 3: The Basic Machine Learning Workflow and Kindle chapter Day 3. AI Foundations Day 3: The Basic Machine Learning Workflow Hi Brian, This is your catch-up lesson for Course Day 3 . Course day: 3 Course date: June 25, 2026 Estimated time: 8-12 minutes Objective By the end of this lesson, you should understand the basic workflow most machine learning projects fo…</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-003-the-basic-machine-learning-workflow-9133887.mp3" length="9133887" type="audio/mpeg" />
-      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-003-9133887.txt" type="text/plain" rel="captions" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-003-the-basic-machine-learning-workflow-4680191.mp3" length="4680191" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-003-4680191.txt" type="text/plain" rel="captions" />
     </item>
     <item>
       <title>Day 2: How Machines Learn From Examples</title>

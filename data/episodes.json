@@ -1,5 +1,18 @@
 [
   {
+    "day": 38,
+    "title": "Prompt Injection and Untrusted Instructions",
+    "subject": "AI Foundations Day 38: Prompt Injection and Untrusted Instructions",
+    "publishedAt": "2026-08-01T11:35:44.000Z",
+    "sourceMessageId": "19fbd1bd1eda5eb8",
+    "audioPath": "/audio/day-038-prompt-injection-and-untrusted-instructions.mp3",
+    "transcriptPath": "/transcripts/day-038.txt",
+    "audioBytes": 4479382,
+    "durationSeconds": 373,
+    "durationLabel": "06:13",
+    "summary": "Learn how prompt injection works, why it is a real safety and reliability problem, and how to design prompts and workflows that treat untrusted text as data instead of instructions."
+  },
+  {
     "day": 37,
     "title": "Examples, Decomposition, and Structured Outputs",
     "subject": "AI Foundations Day 37: Examples, Decomposition, and Structured Outputs",
@@ -449,9 +462,9 @@
     "sourceMessageId": "19f03b9fb3fd3bc2",
     "audioPath": "/audio/day-003-the-basic-machine-learning-workflow.mp3",
     "transcriptPath": "/transcripts/day-003.txt",
-    "audioBytes": 9133887,
-    "durationSeconds": 760,
-    "durationLabel": "12:40",
+    "audioBytes": 4680191,
+    "durationSeconds": 389,
+    "durationLabel": "06:29",
     "summary": "AI Foundations Day 3: The Basic Machine Learning Workflow Hi Brian, This is your catch-up lesson for Course Day 3 . Course day: 3 Course date: June 25, 2026 Estimated time: 8-12 minutes Objective By the end of this lesson, you should understand the basic workflow most machine learning projects fo…"
   },
   {
