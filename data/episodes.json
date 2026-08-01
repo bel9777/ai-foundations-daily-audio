@@ -1,5 +1,31 @@
 [
   {
+    "day": 37,
+    "title": "Examples, Decomposition, and Structured Outputs",
+    "subject": "AI Foundations Day 37: Examples, Decomposition, and Structured Outputs",
+    "publishedAt": "2026-07-31T11:35:48.000Z",
+    "sourceMessageId": "19fb7f582db72765",
+    "audioPath": "/audio/day-037-examples-decomposition-and-structured-outputs.mp3",
+    "transcriptPath": "/transcripts/day-037.txt",
+    "audioBytes": 4647573,
+    "durationSeconds": 387,
+    "durationLabel": "06:27",
+    "summary": "Day 37: Examples, Decomposition, and Structured Outputs Objective: By the end of today’s lesson, you will know how to make AI responses more reliable by giving examples, breaking big tasks into smaller parts, and asking for outputs in a fixed format. Yesterday we focused on making requests cleare…"
+  },
+  {
+    "day": 36,
+    "title": "Clear Instructions, Context, and Constraints",
+    "subject": "AI Foundations Day 36: Clear Instructions, Context, and Constraints",
+    "publishedAt": "2026-07-30T11:35:48.000Z",
+    "sourceMessageId": "19fb2cf2660c1842",
+    "audioPath": "/audio/day-036-clear-instructions-context-and-constraints.mp3",
+    "transcriptPath": "/transcripts/day-036.txt",
+    "audioBytes": 4490365,
+    "durationSeconds": 374,
+    "durationLabel": "06:14",
+    "summary": "By the end of today’s lesson, you will know how to write prompts that give an AI a better chance of producing useful, accurate, and consistent results by combining clear instructions , relevant context , and explicit constraints ."
+  },
+  {
     "day": 35,
     "title": "Prompting as Interface Design",
     "subject": "AI Foundations Day 35: Prompting as Interface Design",
@@ -436,9 +462,9 @@
     "sourceMessageId": "19ef97258e4a747f",
     "audioPath": "/audio/day-002-how-machines-learn-from-examples.mp3",
     "transcriptPath": "/transcripts/day-002.txt",
-    "audioBytes": 7614230,
-    "durationSeconds": 634,
-    "durationLabel": "10:34",
+    "audioBytes": 4398412,
+    "durationSeconds": 366,
+    "durationLabel": "06:06",
     "summary": "AI Foundations Day 2: How Machines Learn From Examples Hi Brian, Welcome to Course Day 2. Yesterday, the course began with the big picture: artificial intelligence is software that performs tasks we usually associate with human intelligence, such as recognizing patterns, making predictions, gener…"
   },
   {
@@ -449,9 +475,9 @@
     "sourceMessageId": "19ef47806e04aa33",
     "audioPath": "/audio/day-001-what-ai-is-and-what-it-is-not.mp3",
     "transcriptPath": "/transcripts/day-001.txt",
-    "audioBytes": 8839236,
-    "durationSeconds": 736,
-    "durationLabel": "12:16",
+    "audioBytes": 4507293,
+    "durationSeconds": 375,
+    "durationLabel": "06:15",
     "summary": "By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon."
   }
 ]

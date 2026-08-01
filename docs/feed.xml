@@ -9,7 +9,7 @@
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.rss" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 11:35:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 11:35:48 GMT</lastBuildDate>
     <generator>AI Foundations Library Builder</generator>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
@@ -19,6 +19,38 @@
     <itunes:category text="Education">
       <itunes:category text="Courses" />
     </itunes:category>
+    <item>
+      <title>Day 37: Examples, Decomposition, and Structured Outputs</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-037</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fb7f582db72765</guid>
+      <pubDate>Fri, 31 Jul 2026 11:35:48 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 37: Examples, Decomposition, and Structured Outputs and Kindle chapter Day 37. Day 37: Examples, Decomposition, and Structured Outputs Objective: By the end of today’s lesson, you will know how to make AI responses more reliable by giving examples, breaking big tasks into smaller parts, and asking for outputs in a fixed format. Yesterday we focused on making requests cleare…</description>
+      <itunes:title>Examples, Decomposition, and Structured Outputs</itunes:title>
+      <itunes:episode>37</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:27</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 37: Examples, Decomposition, and Structured Outputs and Kindle chapter Day 37. Day 37: Examples, Decomposition, and Structured Outputs Objective: By the end of today’s lesson, you will know how to make AI responses more reliable by giving examples, breaking big tasks into smaller parts, and asking for outputs in a fixed format. Yesterday we focused on making requests cleare…</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-037-examples-decomposition-and-structured-outputs-4647573.mp3" length="4647573" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-037-4647573.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 36: Clear Instructions, Context, and Constraints</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-036</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fb2cf2660c1842</guid>
+      <pubDate>Thu, 30 Jul 2026 11:35:48 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 36: Clear Instructions, Context, and Constraints and Kindle chapter Day 36. By the end of today’s lesson, you will know how to write prompts that give an AI a better chance of producing useful, accurate, and consistent results by combining clear instructions , relevant context , and explicit constraints .</description>
+      <itunes:title>Clear Instructions, Context, and Constraints</itunes:title>
+      <itunes:episode>36</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:14</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 36: Clear Instructions, Context, and Constraints and Kindle chapter Day 36. By the end of today’s lesson, you will know how to write prompts that give an AI a better chance of producing useful, accurate, and consistent results by combining clear instructions , relevant context , and explicit constraints .</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-036-clear-instructions-context-and-constraints-4490365.mp3" length="4490365" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-036-4490365.txt" type="text/plain" rel="captions" />
+    </item>
     <item>
       <title>Day 35: Prompting as Interface Design</title>
       <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-035</link>
@@ -557,11 +589,11 @@
       <itunes:episode>2</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>10:34</itunes:duration>
+      <itunes:duration>06:06</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 2: How Machines Learn From Examples and Kindle chapter Day 2. AI Foundations Day 2: How Machines Learn From Examples Hi Brian, Welcome to Course Day 2. Yesterday, the course began with the big picture: artificial intelligence is software that performs tasks we usually associate with human intelligence, such as recognizing patterns, making predictions, gener…</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-002-how-machines-learn-from-examples-7614230.mp3" length="7614230" type="audio/mpeg" />
-      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-002-7614230.txt" type="text/plain" rel="captions" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-002-how-machines-learn-from-examples-4398412.mp3" length="4398412" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-002-4398412.txt" type="text/plain" rel="captions" />
     </item>
     <item>
       <title>Day 1: What AI Is (and What It Is Not)</title>
@@ -573,11 +605,11 @@
       <itunes:episode>1</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>12:16</itunes:duration>
+      <itunes:duration>06:15</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 1: What AI Is (and What It Is Not) and Kindle chapter Day 1. By the end of today’s 8-12 minute lesson, you should be able to explain what AI is, what it is not, and how to think about AI systems without getting buried in technical jargon.</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-001-what-ai-is-and-what-it-is-not-8839236.mp3" length="8839236" type="audio/mpeg" />
-      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-001-8839236.txt" type="text/plain" rel="captions" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-001-what-ai-is-and-what-it-is-not-4507293.mp3" length="4507293" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-001-4507293.txt" type="text/plain" rel="captions" />
     </item>
   </channel>
 </rss>
