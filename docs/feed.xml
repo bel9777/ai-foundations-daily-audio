@@ -9,7 +9,7 @@
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.rss" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 11:35:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 15:35:44 GMT</lastBuildDate>
     <generator>AI Foundations Library Builder</generator>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
@@ -19,6 +19,38 @@
     <itunes:category text="Education">
       <itunes:category text="Courses" />
     </itunes:category>
+    <item>
+      <title>Day 40: Chunking, Search, and Reranking</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-040</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fc768861df9171</guid>
+      <pubDate>Mon, 03 Aug 2026 15:35:44 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 40: Chunking, Search, and Reranking and Kindle chapter Day 40. Day 40: Chunking, Search, and Reranking Objective: Learn how retrieval systems decide what information to look at, how to break it into pieces, and how to choose the best pieces before answering.</description>
+      <itunes:title>Chunking, Search, and Reranking</itunes:title>
+      <itunes:episode>40</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:37</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 40: Chunking, Search, and Reranking and Kindle chapter Day 40. Day 40: Chunking, Search, and Reranking Objective: Learn how retrieval systems decide what information to look at, how to break it into pieces, and how to choose the best pieces before answering.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-040-chunking-search-and-reranking-4768050.mp3" length="4768050" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-040-4768050.txt" type="text/plain" rel="captions" />
+    </item>
+    <item>
+      <title>Day 39: Retrieval-Augmented Generation</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-039</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fc2422977dcf1b</guid>
+      <pubDate>Sun, 02 Aug 2026 15:35:43 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 39: Retrieval-Augmented Generation and Kindle chapter Day 39. Day 39 — Retrieval-Augmented Generation Objective: learn what Retrieval-Augmented Generation (RAG) is, why it helps with accuracy, and how to think about its core pieces: retrieval, context, and grounded generation.</description>
+      <itunes:title>Retrieval-Augmented Generation</itunes:title>
+      <itunes:episode>39</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:39</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 39: Retrieval-Augmented Generation and Kindle chapter Day 39. Day 39 — Retrieval-Augmented Generation Objective: learn what Retrieval-Augmented Generation (RAG) is, why it helps with accuracy, and how to think about its core pieces: retrieval, context, and grounded generation.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-039-retrieval-augmented-generation-4795034.mp3" length="4795034" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-039-4795034.txt" type="text/plain" rel="captions" />
+    </item>
     <item>
       <title>Day 38: Prompt Injection and Untrusted Instructions</title>
       <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-038</link>
@@ -573,11 +605,11 @@
       <itunes:episode>4</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>11:28</itunes:duration>
+      <itunes:duration>06:29</itunes:duration>
       <itunes:summary>The audio companion to Day 4: How AI Learns to Generalize and Kindle chapter Day 4. By the end of today’s lesson, you should understand the difference between an AI system that merely memorizes examples and one that can generalize to new situations. You will also learn why evaluation is not optional: it is how we find out whether a model is actually useful outside its training e…</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-004-day-4-how-ai-learns-to-generalize-8268158.mp3" length="8268158" type="audio/mpeg" />
-      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-004-8268158.txt" type="text/plain" rel="captions" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-004-day-4-how-ai-learns-to-generalize-4672346.mp3" length="4672346" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-004-4672346.txt" type="text/plain" rel="captions" />
     </item>
     <item>
       <title>Day 3: The Basic Machine Learning Workflow</title>

@@ -1,5 +1,31 @@
 [
   {
+    "day": 40,
+    "title": "Chunking, Search, and Reranking",
+    "subject": "AI Foundations Day 40: Chunking, Search, and Reranking",
+    "publishedAt": "2026-08-03T15:35:44.000Z",
+    "sourceMessageId": "19fc768861df9171",
+    "audioPath": "/audio/day-040-chunking-search-and-reranking.mp3",
+    "transcriptPath": "/transcripts/day-040.txt",
+    "audioBytes": 4768050,
+    "durationSeconds": 397,
+    "durationLabel": "06:37",
+    "summary": "Day 40: Chunking, Search, and Reranking Objective: Learn how retrieval systems decide what information to look at, how to break it into pieces, and how to choose the best pieces before answering."
+  },
+  {
+    "day": 39,
+    "title": "Retrieval-Augmented Generation",
+    "subject": "AI Foundations Day 39: Retrieval-Augmented Generation",
+    "publishedAt": "2026-08-02T15:35:43.000Z",
+    "sourceMessageId": "19fc2422977dcf1b",
+    "audioPath": "/audio/day-039-retrieval-augmented-generation.mp3",
+    "transcriptPath": "/transcripts/day-039.txt",
+    "audioBytes": 4795034,
+    "durationSeconds": 399,
+    "durationLabel": "06:39",
+    "summary": "Day 39 — Retrieval-Augmented Generation Objective: learn what Retrieval-Augmented Generation (RAG) is, why it helps with accuracy, and how to think about its core pieces: retrieval, context, and grounded generation."
+  },
+  {
     "day": 38,
     "title": "Prompt Injection and Untrusted Instructions",
     "subject": "AI Foundations Day 38: Prompt Injection and Untrusted Instructions",
@@ -449,9 +475,9 @@
     "sourceMessageId": "19f03b4cab816941",
     "audioPath": "/audio/day-004-day-4-how-ai-learns-to-generalize.mp3",
     "transcriptPath": "/transcripts/day-004.txt",
-    "audioBytes": 8268158,
-    "durationSeconds": 688,
-    "durationLabel": "11:28",
+    "audioBytes": 4672346,
+    "durationSeconds": 389,
+    "durationLabel": "06:29",
     "summary": "By the end of today’s lesson, you should understand the difference between an AI system that merely memorizes examples and one that can generalize to new situations. You will also learn why evaluation is not optional: it is how we find out whether a model is actually useful outside its training e…"
   },
   {
