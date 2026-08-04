@@ -3,8 +3,15 @@
 (Named docs-state.md, not docs/current-state.md, because docs/ is the
 GitHub Pages webroot in this repo — nothing non-site goes in there.)
 
-**Updated 2026-08-04 (takeover session). Status: BACKFILL RUNNING,
-feed still legacy.**
+**Updated 2026-08-04 (takeover session). Status: BACKFILL 9/41 DONE,
+paused at free-tier quota (~10 TTS calls/day), feed still legacy.**
+
+Backfill run 1 (13:01): days 1-9 generated and pushed, quota-429 at
+day 10. At ~9-10/day the remaining 32 finish ~Aug 8-9, then cutover
+auto-flips and emails Brian his 2 steps (send_cutover_email). Enabling
+billing on the Gemini key (~$1-2 total) would finish it in one manual
+`py podcast.py --run`. Daily runs generate the NEWEST missing day first,
+so current-day episodes ship same-morning even mid-backfill.
 
 ## What happened today
 

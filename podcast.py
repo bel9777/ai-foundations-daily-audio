@@ -259,6 +259,40 @@ def build_index(eps):
     (REPO / "docs" / "index.html").write_text(html, encoding="utf-8")
 
 
+def send_cutover_email():
+    """One-time nudge when the feed flips - Brian has two manual steps."""
+    import urllib.parse
+    from email.message import EmailMessage
+    gmail_dir = HOME / ".gmail-mcp"
+    creds = json.loads((gmail_dir / "credentials.json").read_text())
+    keys = json.loads((gmail_dir / "gcp-oauth.keys.json").read_text())["installed"]
+    body = urllib.parse.urlencode({
+        "client_id": keys["client_id"], "client_secret": keys["client_secret"],
+        "refresh_token": creds["refresh_token"],
+        "grant_type": "refresh_token"}).encode()
+    req = urllib.request.Request(keys["token_uri"], data=body)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        tok = json.loads(r.read())["access_token"]
+    msg = EmailMessage()
+    msg["To"] = msg["From"] = "brian@parkviewfamilyfarm.com"
+    msg["Subject"] = "Podcast CUTOVER done - 2 steps for you"
+    msg.set_content(
+        "The two-host feed is now live (all course days rebuilt).\n\n"
+        "1. DISABLE the ChatGPT-side daily audio job - it will fight this "
+        "feed every morning until you do.\n"
+        "2. In your podcast app: remove the show and re-add it by URL to "
+        "clear stale cached episodes:\n"
+        f"   {SITE}/feed.xml\n")
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    req = urllib.request.Request(
+        "https://gmail.googleapis.com/gmail/v1/users/me/messages/send",
+        data=json.dumps({"raw": raw}).encode(),
+        headers={"Authorization": f"Bearer {tok}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.loads(r.read())["id"]
+
+
 def publish(msg):
     subprocess.run(["git", "-C", str(REPO), "pull", "--rebase", "--quiet"],
                    check=False)
@@ -294,8 +328,11 @@ def main():
     if not run:
         return
 
+    # newest missing day first (today's episode ships same-morning even
+    # mid-backfill), then oldest-first backfill
+    queue = [missing[-1]] + missing[:-1] if missing else []
     made, stopped = [], ""
-    for day in missing[:limit] if limit else missing:
+    for day in queue[:limit] if limit else queue:
         try:
             secs = build_episode(day, days[day], eps)
             save_state(eps)
@@ -320,6 +357,12 @@ def main():
     if complete_now:
         build_feed(eps)
         build_index(eps)
+        if not complete_before:
+            try:
+                send_cutover_email()
+                print("cutover email sent")
+            except Exception as e:
+                print(f"cutover email FAILED: {e!r} - tell Brian manually")
     pushed = False
     if made or (complete_now and not complete_before):
         label = f"day(s) {', '.join(map(str, made))}" if made else "feed refresh"
