@@ -1,0 +1,35 @@
+Alex: If you want an AI to catch fraud, diagnose plant diseases, or filter spam, you do not write rules by hand; you show it thousands of solved examples. This is AI Foundations, day 6.
+Jordan: Today we are talking about supervised learning. The word supervised makes it sound like a human manager is standing over the computer watching every step. But it really just means your training data comes with the right answers built in.
+Alex: So every example is a pair: an input and a target. Input supplies the evidence, and target supplies the desired answer.
+Jordan: Exactly. A photo of a leaf paired with healthy, customer history paired with whether they canceled, or house details paired with a sale price.
+Alex: I know we use target and label almost interchangeably, but there are two main types of tasks here, right?
+Jordan: Right. If you are predicting a category, like fraud or not fraud, that is classification. A classifier might output probabilities, like eighty percent healthy, fifteen percent nutrient deficiency, and five percent fungal disease. But if you are predicting a number, like a delivery time of forty-two minutes or tomorrow's temperature, that is regression.
+Alex: Got it. Categories versus numbers. But what happens if the humans marking those labels make mistakes?
+Jordan: That is called label noise, and it is a massive problem. If two workers look at a borderline leaf and label it differently, or someone just gets tired, the model receives conflicting feedback. A huge dataset with noisy labels will just teach bad lessons very efficiently.
+Alex: Because the model is trying to figure out a mapping from examples, not reading an explicit rulebook.
+Jordan: Exactly. A model is really a parameterized function. Think of it like a giant machine with thousands or millions of adjustable knobs called parameters. There is no rule inside saying if more than twenty percent of the leaf is yellow, flag it. Instead, the algorithm turns the knobs to match the inputs to the targets.
+Alex: Which means if every diseased leaf photo happens to sit on a blue tray in the background, the model might learn that blue tray means disease.
+Jordan: Precisely. It is like a student studying one thousand plant disease flashcards with photos on the front and diagnoses on the back. If all the fungal disease cards were photographed on a wooden table, the student might unconsciously memorize the table instead of the leaf. They score perfectly on familiar cards and fail on new backgrounds.
+Alex: That brings us to how the model actually learns from its mistakes during training. How does it know when a knob turn was good or bad?
+Jordan: Through a loss function. Loss turns the difference between a prediction and the target into a single number measuring how wrong the model was. Lower loss means a better fit.
+Alex: So if the correct label is diseased, and Model A predicts ninety percent diseased while Model C only predicts five percent, Model C gets the strongest correction and a high loss score.
+Jordan: Right. For regression, if the actual delivery time is forty minutes, a prediction of forty-two gets penalized way less than a prediction of ninety. And notice that loss is used during training to steer the model. It is not identical to a business metric, like dollars saved, false alarms, or time reduced.
+Alex: So how does the actual training loop work step by step?
+Jordan: It is four steps repeated over and over: predict, compare, adjust, repeat. First, run a batch of inputs through the model. Second, compare predictions to targets using the loss function. Third, the optimizer algorithm adjusts parameters in a direction expected to reduce loss. One full pass through the dataset is called an epoch.
+Alex: Early on, both training loss and validation loss drop. But if you keep training, training loss keeps falling while validation performance stalls or gets worse.
+Jordan: That is the classic overfitting pattern from Day 4. Training loss answers how well you fit examples you have seen. Validation results answer if you are learning patterns likely to work on unseen examples. You need both.
+Alex: Let us walk through the concrete example from today. A farm wants to classify apples as sellable or damaged from ten thousand photos labeled by staff.
+Jordan: Each pair is an apple image mapped to sellable or damaged. The model predicts a probability of damage. During training, loss is high when it confidently disagrees with the staff label, so the optimizer adjusts parameters across repeated epochs.
+Alex: But before deploying, the team tests on apples from different harvest days, cameras, lighting conditions, and varieties.
+Jordan: Because a random split of near-duplicate photos could make validation look excellent while hiding failure on a new harvest or camera. And the team also picks a decision threshold. If predicted damage probability exceeds seventy percent, reject the apple. Lowering that threshold catches more damaged apples, but it also rejects good ones.
+Alex: So you separate three distinct decisions: defining the task and labels, training to reduce error, and setting the operational tradeoff.
+Jordan: Spot on. Time for a quick knowledge check. First question: what makes a learning problem supervised?
+Alex: The training examples include known target answers that provide direct feedback to the model.
+Jordan: Question two: what is the difference between a loss function and a business metric?
+Alex: A loss function is the mathematical training signal used to adjust parameters. A business metric measures the real world outcome people actually care about, like dollars saved or missed diseases.
+Jordan: Clean answer. Last question: training loss keeps falling, but validation performance gets worse. What is happening?
+Alex: Overfitting. The model is fitting the training examples too closely instead of learning a pattern that generalizes.
+Jordan: Three for three. Now for today's hands-on exercise. Grab paper or a note app. You are building a simple rule to predict if a fictional plant needs water using six training examples with dry soil, drooping leaves, and hot day features. Start with this rule: predict yes only when leaves droop. Compare it to all six labels and count the mistakes. You will make two mistakes.
+Alex: Then adjust the rule.
+Jordan: Exactly. Change your rule to: predict yes when soil feels dry. Count mistakes again, and you get zero. Now test that better rule on an unseen example where soil is not dry, leaves droop, and it is a hot day. It predicts no. What you should notice is that six invented examples are way too few, and zero training error is evidence of fit, not proof of generalization.
+Alex: Low training loss is not proof it will work in the wild. Tomorrow we look inside a simple neural network: neurons, layers, activations, and weights. See you then!

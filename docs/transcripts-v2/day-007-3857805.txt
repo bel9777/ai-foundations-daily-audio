@@ -1,0 +1,38 @@
+Alex: Knowing whether you want your AI to pick a label or predict a number changes everything about how it builds its answers. This is AI Foundations, day 7.
+Jordan: Up to now, we have talked about how AI learns patterns from data, but today we are looking at the specific kind of answer a model is actually trying to produce.
+Alex: Right, because an AI is usually built to do one of two main prediction jobs.
+Jordan: Exactly. The first job is classification. That is where the model chooses a category, which we call a class or a label.
+Alex: Like deciding if an email is spam or not spam, or if a photo shows a dog or a cat.
+Jordan: Spot on. It is not producing a measurement or a price. It is picking a category label. Sometimes it also gives you a probability, which is a number between zero and one that shows how confident it is. It might say there is a ninety percent chance an email is spam.
+Alex: And since we talked about labeled examples yesterday, classification relies on showing the model inputs paired with the correct labels during training.
+Jordan: Exactly. If you show it thousands of emails already marked as spam or not spam, it learns the patterns that separate those two groups.
+Alex: Okay, so classification chooses a category. What is the second job?
+Jordan: The second job is regression. Instead of picking a category, regression predicts a continuous value, meaning a number along a range that can take many possible values.
+Alex: Give me some everyday examples of regression.
+Jordan: Predicting the exact market price of a house, estimating tomorrow’s high temperature, or forecasting how many minutes your morning commute will take.
+Alex: So instead of a label like approved or denied, it gives you an actual number like four hundred twelve thousand dollars or twenty-seven minutes.
+Jordan: Right. With regression, small differences matter. We judge the model based on how close its numerical prediction is to the actual true value.
+Alex: So classification gives a label, regression gives a number. But when a model classifies things, how does it actually divide those categories?
+Jordan: It uses something called a decision boundary. That is the dividing line, curve, or surface that separates one class from another.
+Alex: Is that the exact point where the model flips its answer from predicting one label to predicting a different one?
+Jordan: Yes. Imagine a chart where you plot apples and oranges based on two features: size and color. If apples cluster on one side and oranges on the other, the decision boundary is the invisible line drawn right between those two groups.
+Alex: Give me an everyday analogy for that decision boundary.
+Jordan: Picture the line in a retail store where one cashier lane ends and the next begins. If you stand on one side of the line, you go to lane A. If you step across the line, you go to lane B. The model sorts data points the exact same way.
+Alex: That makes sense. It uses features, like an item’s size or an email’s length, to figure out which side of the boundary a new data point lands on.
+Jordan: Exactly. Features are just measurable details. And remember from our lesson on generalization, we do not just care if that boundary fits our old training data. It has to work on brand new data the model has never seen before.
+Alex: Let us walk through a concrete real-world example to pull this together. What about a bank making loan decisions?
+Jordan: That is a solid example. If a bank wants an AI to predict whether a loan application should be approved or rejected, what kind of task is that?
+Alex: Approval versus rejection is choosing between categories, so that is classification. The decision boundary separates safe applicants from risky ones.
+Jordan: Right. Now, what if the bank wants the AI to predict the likely amount of an applicant's monthly payment?
+Alex: That is predicting a specific dollar amount along a range, so that is regression.
+Jordan: Exactly. This shows why task definition matters so much in the machine learning workflow we covered earlier. If you ask a model to solve the wrong kind of problem, even a powerful model will give you the wrong kind of answer.
+Jordan: Time for a quick knowledge check to lock this in. Question one: what is the main difference between classification and regression?
+Alex: Classification predicts a category or label, while regression predicts a continuous number on a range.
+Jordan: Correct. Question two: what is a decision boundary?
+Alex: It is the dividing line, curve, or surface that separates one class from another, marking where the model switches its prediction from one label to another.
+Jordan: Spot on. Question three: why does the task definition matter before you start training a model?
+Alex: Because classification and regression answer totally different questions, need the right target data to learn from, and are judged by different standards of success.
+Jordan: Exactly right.
+Jordan: For your hands-on exercise today, write down these five everyday tasks: detect whether a message is spam, predict tomorrow’s temperature, estimate the price of a used bicycle, decide whether a photo shows a cat, and predict how many steps you will walk today. Label each task as classification or regression. For the classification tasks, write what the decision boundary separates, and for the regression tasks, write what the output number represents.
+Alex: Got it. Five tasks, classify them, and identify the boundary or the output number.
+Jordan: Tomorrow on day eight, we will explore what happens when data arrives without labels and how AI can still discover structure on its own.

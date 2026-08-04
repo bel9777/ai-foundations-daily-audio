@@ -1,0 +1,101 @@
+[
+ {
+  "day": 9,
+  "title": "Features: Turning Reality into Inputs",
+  "format": "two-host",
+  "guid": "two-host-day-009",
+  "publishedAt": "2026-07-02T07:36:55",
+  "audioPath": "/audio-v2/day-009-features-turning-reality-into-inputs-4153005.mp3",
+  "transcriptPath": "/transcripts-v2/day-009-4153005.txt",
+  "audioBytes": 4153005,
+  "durationSeconds": 346
+ },
+ {
+  "day": 8,
+  "title": "Learning without Labels",
+  "format": "two-host",
+  "guid": "two-host-day-008",
+  "publishedAt": "2026-07-01T07:35:44",
+  "audioPath": "/audio-v2/day-008-learning-without-labels-4390029.mp3",
+  "transcriptPath": "/transcripts-v2/day-008-4390029.txt",
+  "audioBytes": 4390029,
+  "durationSeconds": 365
+ },
+ {
+  "day": 7,
+  "title": "Classification, Regression, and Decision Boundaries",
+  "format": "two-host",
+  "guid": "two-host-day-007",
+  "publishedAt": "2026-06-30T07:35:43",
+  "audioPath": "/audio-v2/day-007-classification-regression-and-decision-boundaries-3857805.mp3",
+  "transcriptPath": "/transcripts-v2/day-007-3857805.txt",
+  "audioBytes": 3857805,
+  "durationSeconds": 321
+ },
+ {
+  "day": 6,
+  "title": "Learning from Labeled Examples",
+  "format": "two-host",
+  "guid": "two-host-day-006",
+  "publishedAt": "2026-06-29T09:10:31",
+  "audioPath": "/audio-v2/day-006-learning-from-labeled-examples-4826925.mp3",
+  "transcriptPath": "/transcripts-v2/day-006-4826925.txt",
+  "audioBytes": 4826925,
+  "durationSeconds": 402
+ },
+ {
+  "day": 5,
+  "title": "Data Is the Model's Experience",
+  "format": "two-host",
+  "guid": "two-host-day-005",
+  "publishedAt": "2026-06-27T10:17:43",
+  "audioPath": "/audio-v2/day-005-data-is-the-model-s-experience-4711725.mp3",
+  "transcriptPath": "/transcripts-v2/day-005-4711725.txt",
+  "audioBytes": 4711725,
+  "durationSeconds": 392
+ },
+ {
+  "day": 4,
+  "title": "Day 4: How AI Learns to Generalize",
+  "format": "two-host",
+  "guid": "two-host-day-004",
+  "publishedAt": "2026-06-26T00:00:00",
+  "audioPath": "/audio-v2/day-004-day-4-how-ai-learns-to-generalize-4248045.mp3",
+  "transcriptPath": "/transcripts-v2/day-004-4248045.txt",
+  "audioBytes": 4248045,
+  "durationSeconds": 353
+ },
+ {
+  "day": 3,
+  "title": "The Basic Machine Learning Workflow",
+  "format": "two-host",
+  "guid": "two-host-day-003",
+  "publishedAt": "2026-06-26T07:39:07",
+  "audioPath": "/audio-v2/day-003-the-basic-machine-learning-workflow-4214349.mp3",
+  "transcriptPath": "/transcripts-v2/day-003-4214349.txt",
+  "audioBytes": 4214349,
+  "durationSeconds": 351
+ },
+ {
+  "day": 2,
+  "title": "How Machines Learn From Examples",
+  "format": "two-host",
+  "guid": "two-host-day-002",
+  "publishedAt": "2026-06-24T07:44:41",
+  "audioPath": "/audio-v2/day-002-how-machines-learn-from-examples-4170285.mp3",
+  "transcriptPath": "/transcripts-v2/day-002-4170285.txt",
+  "audioBytes": 4170285,
+  "durationSeconds": 347
+ },
+ {
+  "day": 1,
+  "title": "What AI Is (and What It Is Not)",
+  "format": "two-host",
+  "guid": "two-host-day-001",
+  "publishedAt": "2026-06-23T08:32:47",
+  "audioPath": "/audio-v2/day-001-what-ai-is-and-what-it-is-not-5268429.mp3",
+  "transcriptPath": "/transcripts-v2/day-001-5268429.txt",
+  "audioBytes": 5268429,
+  "durationSeconds": 438
+ }
+]

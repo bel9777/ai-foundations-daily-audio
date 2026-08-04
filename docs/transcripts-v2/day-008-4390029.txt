@@ -1,0 +1,33 @@
+Alex: Most of the data floating around out there doesn't come with neat answer keys attached, so if AI could only learn when we give it labeled answers, it wouldn't get very far. This is AI Foundations, day 8.
+Jordan: Up until today, everything we've covered was supervised learning. You give the machine inputs paired with the correct target outputs, like photos marked cat or dog. But unsupervised learning is what happens when you hand a model a pile of data with no labels at all.
+Alex: So the computer is totally on its own. It has to look at the raw input and ask: what belongs together, what looks unusual, or how can I simplify all this?
+Jordan: Right. It connects back to Day 2, where we said machine learning is all about finding regularities. The model is still hunting for patterns, it just doesn't have a teacher telling it if it's right or wrong.
+Alex: That actually sounds a lot closer to how people explore the world. If you walk into a room full of mixed-up puzzle pieces, nobody gives you a cheat sheet. You just naturally start sorting them by color, shape, or edge type before you even try to build anything.
+Jordan: That sorting process is the biggest idea in unsupervised learning: clustering. Clustering means taking unlabeled items and grouping them so that items in the same group are more similar to each other than to items in other groups. It's like sorting a messy pile of socks by color or texture without being told the correct piles ahead of time.
+Alex: Like grouping online shoppers based on what they buy. One cluster might be folks buying baby wipes and formula, another is buying sports equipment, and a third is mostly buying stuff during sales.
+Jordan: Exactly. But to do that, the model needs a strict way to decide what makes two items alike. We call that similarity—a numerical score for how close or alike two data points are to each other.
+Alex: Wait, how does this fit with what we talked about yesterday, like decision boundaries?
+Jordan: On Day 7, a decision boundary was a line separating labeled classes, like spam versus not spam. In unsupervised learning, there's no labeled boundary given at the start. Instead, the model discovers where the natural groups are first. Later on, a human might use those discovered clusters to build a decision boundary for a supervised task.
+Alex: Makes sense. Now, what about when the data has way too many details and gets super messy?
+Jordan: That brings us to our second big idea: dimensionality reduction. A dimension is just one measurable property or aspect of your data. Think of a house. Its dimensions could be square footage, number of bedrooms, age, and distance to work.
+Alex: The more properties you track, the more detailed it gets, but also the more complicated it is for a computer to process.
+Jordan: Exactly. Day 5 taught us that data is the model's experience. If that experience is crammed with dozens of dimensions, it gets noisy and hard to inspect. Dimensionality reduction compresses all those measurements down into fewer properties without throwing away the main structure. It's like taking a long paragraph and writing a short summary that keeps the central meaning.
+Alex: Okay, so we've got grouping things together with clustering, and simplifying data with dimensionality reduction. What's the third major use case?
+Jordan: Anomaly detection. That means identifying data points that look unusual compared with the rest of the data.
+Alex: Give me a real-world example of that.
+Jordan: Think about credit cards. If most of your purchases are small and local, but suddenly there's a huge transaction from halfway across the world, that transaction sticks out. It's an anomaly.
+Alex: And an anomaly isn't automatically bad or wrong, but it flags that something unusual happened, like fraud, equipment failure, or a data entry error.
+Jordan: Right. And because we rarely have enough labeled examples of rare, weird events, unsupervised learning is perfect for catching them.
+Alex: Let's put all of this together with a practical scenario. Imagine a news site with thousands of fresh articles every day, but zero tags on them. Nobody labeled them by topic.
+Jordan: An unsupervised system could read through the word patterns across all those articles. It notices that certain words keep appearing together.
+Alex: So it creates a cluster for sports stories, another for politics, and another for tech. It doesn't actually comprehend the news like a human does, but it uncovers the hidden structure anyway. That helps people browse content, or helps us prepare labeled data for a supervised model later.
+Jordan: Exactly. And that ties right back into our bigger workflow. From Day 3, your task here is discovery rather than prediction. And from Day 4, generalization still matters. You want clusters that represent real, repeatable patterns, not just a random glitch in one dataset. From Day 6, we see what happens when labels are missing: the model still searches for structure, just with a different goal.
+Alex: That makes total sense. All right, hit me with the quiz.
+Jordan: Question one: What is unsupervised learning?
+Alex: It's learning from data without any labels or correct answers provided, where the model has to look for structure, natural groups, or unusual patterns on its own.
+Jordan: Spot on. Question two: What is clustering?
+Alex: Clustering is grouping similar items together so that items in the same group resemble each other more than items in other groups.
+Jordan: Exactly. Question three: What is anomaly detection?
+Alex: It's finding data points that look unusual compared with the rest of the data.
+Jordan: That's three for three. Now for today's hands-on exercise. Make a list of 15 everyday items from your life, like books you own, foods you eat, or apps on your phone. Pick two or three simple properties for each item, like sweet versus savory or snack versus meal. Group the items into clusters by similarity by hand, and write down why each item belongs in its group. Flag anything that doesn't fit well as a possible anomaly. As you do this, notice that without pre-existing labels, you had to invent the grouping rules and define what similarity meant yourself.
+Alex: Tomorrow on Day 9, we're talking about features, and how we turn raw reality into inputs a computer can actually process.
