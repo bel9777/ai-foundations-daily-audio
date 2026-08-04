@@ -4,16 +4,88 @@
     <title>AI Foundations - Format Preview</title>
     <link>https://bel9777.github.io/ai-foundations-daily-audio/</link>
     <language>en-us</language>
-    <description>Temporary preview feed for trying new episode formats before they ship to the main AI Foundations feed.</description>
+    <description>Follow-along feed for the two-host rebuild. New episodes appear here as the backfill progresses; the main feed flips over when all days are done.</description>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
-      <title>Day 41 - Two-Host Preview (Alex &amp; Jordan)</title>
-      <description>Grounding Answers in Sources, rebuilt as a two-host conversation. Preview of the proposed new format: Alex asks, Jordan explains, knowledge check runs as a quiz between them.</description>
-      <guid isPermaLink="false">preview-day41-two-host-20260804</guid>
-      <pubDate>Tue, 04 Aug 2026 15:45:00 GMT</pubDate>
-      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/preview/day41-two-host-preview.mp3" length="3700845" type="audio/mpeg"/>
-      <itunes:duration>308</itunes:duration>
+      <title>Day 41: Grounding Answers in Sources</title>
+      <description>Two-host rebuild of AI Foundations day 41.</description>
+      <guid isPermaLink="false">two-host-day-041</guid>
+      <pubDate>Tue, 04 Aug 2026 07:35:52 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-041-grounding-answers-in-sources-4271949.mp3" length="4271949" type="audio/mpeg"/>
+      <itunes:duration>5:55</itunes:duration>
+    </item>
+    <item>
+      <title>Day 9: Features: Turning Reality into Inputs</title>
+      <description>Two-host rebuild of AI Foundations day 9.</description>
+      <guid isPermaLink="false">two-host-day-009</guid>
+      <pubDate>Thu, 02 Jul 2026 07:36:55 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-009-features-turning-reality-into-inputs-4153005.mp3" length="4153005" type="audio/mpeg"/>
+      <itunes:duration>5:46</itunes:duration>
+    </item>
+    <item>
+      <title>Day 8: Learning without Labels</title>
+      <description>Two-host rebuild of AI Foundations day 8.</description>
+      <guid isPermaLink="false">two-host-day-008</guid>
+      <pubDate>Wed, 01 Jul 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-008-learning-without-labels-4390029.mp3" length="4390029" type="audio/mpeg"/>
+      <itunes:duration>6:05</itunes:duration>
+    </item>
+    <item>
+      <title>Day 7: Classification, Regression, and Decision Boundaries</title>
+      <description>Two-host rebuild of AI Foundations day 7.</description>
+      <guid isPermaLink="false">two-host-day-007</guid>
+      <pubDate>Tue, 30 Jun 2026 07:35:43 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-007-classification-regression-and-decision-boundaries-3857805.mp3" length="3857805" type="audio/mpeg"/>
+      <itunes:duration>5:21</itunes:duration>
+    </item>
+    <item>
+      <title>Day 6: Learning from Labeled Examples</title>
+      <description>Two-host rebuild of AI Foundations day 6.</description>
+      <guid isPermaLink="false">two-host-day-006</guid>
+      <pubDate>Mon, 29 Jun 2026 09:10:31 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-006-learning-from-labeled-examples-4826925.mp3" length="4826925" type="audio/mpeg"/>
+      <itunes:duration>6:42</itunes:duration>
+    </item>
+    <item>
+      <title>Day 5: Data Is the Model&#x27;s Experience</title>
+      <description>Two-host rebuild of AI Foundations day 5.</description>
+      <guid isPermaLink="false">two-host-day-005</guid>
+      <pubDate>Sat, 27 Jun 2026 10:17:43 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-005-data-is-the-model-s-experience-4711725.mp3" length="4711725" type="audio/mpeg"/>
+      <itunes:duration>6:32</itunes:duration>
+    </item>
+    <item>
+      <title>Day 4: Day 4: How AI Learns to Generalize</title>
+      <description>Two-host rebuild of AI Foundations day 4.</description>
+      <guid isPermaLink="false">two-host-day-004</guid>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-004-day-4-how-ai-learns-to-generalize-4248045.mp3" length="4248045" type="audio/mpeg"/>
+      <itunes:duration>5:53</itunes:duration>
+    </item>
+    <item>
+      <title>Day 3: The Basic Machine Learning Workflow</title>
+      <description>Two-host rebuild of AI Foundations day 3.</description>
+      <guid isPermaLink="false">two-host-day-003</guid>
+      <pubDate>Fri, 26 Jun 2026 07:39:07 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-003-the-basic-machine-learning-workflow-4214349.mp3" length="4214349" type="audio/mpeg"/>
+      <itunes:duration>5:51</itunes:duration>
+    </item>
+    <item>
+      <title>Day 2: How Machines Learn From Examples</title>
+      <description>Two-host rebuild of AI Foundations day 2.</description>
+      <guid isPermaLink="false">two-host-day-002</guid>
+      <pubDate>Wed, 24 Jun 2026 07:44:41 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-002-how-machines-learn-from-examples-4170285.mp3" length="4170285" type="audio/mpeg"/>
+      <itunes:duration>5:47</itunes:duration>
+    </item>
+    <item>
+      <title>Day 1: What AI Is (and What It Is Not)</title>
+      <description>Two-host rebuild of AI Foundations day 1.</description>
+      <guid isPermaLink="false">two-host-day-001</guid>
+      <pubDate>Tue, 23 Jun 2026 08:32:47 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-001-what-ai-is-and-what-it-is-not-5268429.mp3" length="5268429" type="audio/mpeg"/>
+      <itunes:duration>7:18</itunes:duration>
     </item>
   </channel>
 </rss>

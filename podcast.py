@@ -259,6 +259,39 @@ def build_index(eps):
     (REPO / "docs" / "index.html").write_text(html, encoding="utf-8")
 
 
+def build_preview_feed(eps):
+    """Pre-cutover follow-along: the preview show Brian already follows
+    carries every finished two-host episode while the main feed stays
+    legacy. Deleted at cutover."""
+    items = []
+    for e in sorted(eps.values(), key=lambda x: -x["day"]):
+        mins, secs = divmod(e["durationSeconds"], 60)
+        items.append(f"""    <item>
+      <title>Day {e['day']}: {escape(e['title'])}</title>
+      <description>Two-host rebuild of AI Foundations day {e['day']}.</description>
+      <guid isPermaLink="false">{escape(e['guid'])}</guid>
+      <pubDate>{rfc822(e['publishedAt'])}</pubDate>
+      <enclosure url="{SITE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
+      <itunes:duration>{mins}:{secs:02d}</itunes:duration>
+    </item>""")
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>AI Foundations - Format Preview</title>
+    <link>{SITE}/</link>
+    <language>en-us</language>
+    <description>Follow-along feed for the two-host rebuild. New episodes appear here as the backfill progresses; the main feed flips over when all days are done.</description>
+    <itunes:author>AI Foundations</itunes:author>
+    <itunes:image href="{SITE}/podcast-cover.png"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+    d = REPO / "docs" / "preview"
+    d.mkdir(exist_ok=True)
+    (d / "feed.xml").write_text(feed, encoding="utf-8")
+
+
 def send_cutover_email():
     """One-time nudge when the feed flips - Brian has two manual steps."""
     import urllib.parse
@@ -363,14 +396,12 @@ def main():
                 print("cutover email sent")
             except Exception as e:
                 print(f"cutover email FAILED: {e!r} - tell Brian manually")
-    pushed = False
-    if made or (complete_now and not complete_before):
-        label = f"day(s) {', '.join(map(str, made))}" if made else "feed refresh"
-        pushed = publish(
-            ("CUTOVER: two-host feed live - " if complete_now and not complete_before
-             else "Two-host episodes: ") + label)
-    elif complete_now:
-        pushed = publish("Two-host feed refresh")
+    else:
+        build_preview_feed(eps)
+    label = f"day(s) {', '.join(map(str, made))}" if made else "feed refresh"
+    pushed = publish(
+        ("CUTOVER: two-host feed live - " if complete_now and not complete_before
+         else "Two-host episodes: ") + label)
     line = (f"{now:%Y-%m-%d %H:%M} OK made:{len(made)} total:{len(eps)} "
             f"missing:{len([d for d in days if d not in eps])} "
             f"feed:{'two-host' if complete_now else 'legacy'} "
