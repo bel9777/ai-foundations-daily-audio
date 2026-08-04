@@ -9,7 +9,7 @@
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.rss" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2026 15:35:44 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 11:35:52 GMT</lastBuildDate>
     <generator>AI Foundations Library Builder</generator>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
@@ -19,6 +19,22 @@
     <itunes:category text="Education">
       <itunes:category text="Courses" />
     </itunes:category>
+    <item>
+      <title>Day 41: Grounding Answers in Sources</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-041</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fcc8f055a5a41c</guid>
+      <pubDate>Tue, 04 Aug 2026 11:35:52 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 41: Grounding Answers in Sources and Kindle chapter Day 41. By the end of todayÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s lesson, you will know how to make AI answers easier to trust by tying them to source material, checking claims against evidence, and separating ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the source saysÃƒÂ¢Ã¢â€šÂ¬Ã‚Â from ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the model thinks.ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â</description>
+      <itunes:title>Grounding Answers in Sources</itunes:title>
+      <itunes:episode>41</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:32</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 41: Grounding Answers in Sources and Kindle chapter Day 41. By the end of todayÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s lesson, you will know how to make AI answers easier to trust by tying them to source material, checking claims against evidence, and separating ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the source saysÃƒÂ¢Ã¢â€šÂ¬Ã‚Â from ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the model thinks.ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-041-grounding-answers-in-sources-4706859.mp3" length="4706859" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-041-4706859.txt" type="text/plain" rel="captions" />
+    </item>
     <item>
       <title>Day 40: Chunking, Search, and Reranking</title>
       <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-040</link>

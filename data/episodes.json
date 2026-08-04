@@ -1,5 +1,18 @@
 [
   {
+    "day": 41,
+    "title": "Grounding Answers in Sources",
+    "subject": "AI Foundations Day 41: Grounding Answers in Sources",
+    "publishedAt": "2026-08-04T11:35:52.000Z",
+    "sourceMessageId": "19fcc8f055a5a41c",
+    "audioPath": "/audio/day-041-grounding-answers-in-sources.mp3",
+    "transcriptPath": "/transcripts/day-041.txt",
+    "audioBytes": 4706859,
+    "durationSeconds": 392,
+    "durationLabel": "06:32",
+    "summary": "By the end of todayÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s lesson, you will know how to make AI answers easier to trust by tying them to source material, checking claims against evidence, and separating ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the source saysÃƒÂ¢Ã¢â€šÂ¬Ã‚Â from ÃƒÂ¢Ã¢â€šÂ¬Ã…“what the model thinks.ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â"
+  },
+  {
     "day": 40,
     "title": "Chunking, Search, and Reranking",
     "subject": "AI Foundations Day 40: Chunking, Search, and Reranking",
