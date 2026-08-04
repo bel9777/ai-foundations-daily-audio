@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>AI Foundations â€” Format Preview</title>
+    <link>https://bel9777.github.io/ai-foundations-daily-audio/</link>
+    <language>en-us</language>
+    <description>Temporary preview feed for trying new episode formats before they ship to the main AI Foundations feed.</description>
+    <itunes:author>AI Foundations</itunes:author>
+    <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
+    <item>
+      <title>Day 41 â€” Two-Host Preview (Alex &amp; Jordan)</title>
+      <description>Grounding Answers in Sources, rebuilt as a two-host conversation. Preview of the proposed new format: Alex asks, Jordan explains, knowledge check runs as a quiz between them.</description>
+      <guid isPermaLink="false">preview-day41-two-host-20260804</guid>
+      <pubDate>Tue, 04 Aug 2026 15:45:00 GMT</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/preview/day41-two-host-preview.mp3" length="3700845" type="audio/mpeg"/>
+      <itunes:duration>308</itunes:duration>
+    </item>
+  </channel>
+</rss>
