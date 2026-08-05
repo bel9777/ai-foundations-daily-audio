@@ -11,6 +11,17 @@
   "durationSeconds": 355
  },
  {
+  "day": 10,
+  "title": "Loss Functions: Defining What Wrong Means",
+  "format": "two-host",
+  "guid": "two-host-day-010",
+  "publishedAt": "2026-07-03T07:35:39",
+  "audioPath": "/audio-v2/day-010-loss-functions-defining-what-wrong-means-3826989.mp3",
+  "transcriptPath": "/transcripts-v2/day-010-3826989.txt",
+  "audioBytes": 3826989,
+  "durationSeconds": 318
+ },
+ {
   "day": 9,
   "title": "Features: Turning Reality into Inputs",
   "format": "two-host",
