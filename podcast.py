@@ -364,7 +364,7 @@ def main():
     # newest missing day first (today's episode ships same-morning even
     # mid-backfill), then oldest-first backfill
     queue = [missing[-1]] + missing[:-1] if missing else []
-    made, stopped = [], ""
+    made, fails, stopped = [], [], ""
     for day in queue[:limit] if limit else queue:
         try:
             secs = build_episode(day, days[day], eps)
@@ -382,6 +382,7 @@ def main():
             stopped = f"HTTP-{e.code} at day {day}"
             break
         except Exception as e:
+            fails.append(f"{day}:{type(e).__name__}")
             print(f"  day {day}: FAILED {e!r} - continuing")
 
     complete_now = not [d for d in days if d not in eps]
@@ -399,13 +400,17 @@ def main():
     else:
         build_preview_feed(eps)
     label = f"day(s) {', '.join(map(str, made))}" if made else "feed refresh"
-    pushed = publish(
-        ("CUTOVER: two-host feed live - " if complete_now and not complete_before
-         else "Two-host episodes: ") + label)
+    try:
+        pushed = "PUSHED" if publish(
+            ("CUTOVER: two-host feed live - " if complete_now and not complete_before
+             else "Two-host episodes: ") + label) else "no-push"
+    except Exception as e:  # push can fail right after laptop wake (no
+        pushed = f"PUSH-FAILED:{type(e).__name__}"  # network) - commit is
+        print(f"publish failed: {e!r}")             # local, next run retries
     line = (f"{now:%Y-%m-%d %H:%M} OK made:{len(made)} total:{len(eps)} "
             f"missing:{len([d for d in days if d not in eps])} "
-            f"feed:{'two-host' if complete_now else 'legacy'} "
-            f"{'PUSHED' if pushed else 'no-push'}"
+            f"feed:{'two-host' if complete_now else 'legacy'} {pushed}"
+            + (f" failed:{','.join(fails)}" if fails else "")
             + (f" stopped:{stopped}" if stopped else ""))
     with open(RUN_LOG, "a", encoding="utf-8") as f:
         f.write(line + "\n")
