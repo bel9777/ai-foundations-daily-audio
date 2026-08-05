@@ -1,5 +1,16 @@
 [
  {
+  "day": 42,
+  "title": "Tools and Function Calling",
+  "format": "two-host",
+  "guid": "two-host-day-042",
+  "publishedAt": "2026-08-05T07:35:48",
+  "audioPath": "/audio-v2/day-042-tools-and-function-calling-4394061.mp3",
+  "transcriptPath": "/transcripts-v2/day-042-4394061.txt",
+  "audioBytes": 4394061,
+  "durationSeconds": 366
+ },
+ {
   "day": 41,
   "title": "Grounding Answers in Sources",
   "format": "two-host",

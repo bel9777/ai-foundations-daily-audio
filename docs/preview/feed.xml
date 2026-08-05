@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 42: Tools and Function Calling</title>
+      <description>Two-host rebuild of AI Foundations day 42.</description>
+      <guid isPermaLink="false">two-host-day-042</guid>
+      <pubDate>Wed, 05 Aug 2026 07:35:48 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-042-tools-and-function-calling-4394061.mp3" length="4394061" type="audio/mpeg"/>
+      <itunes:duration>6:06</itunes:duration>
+    </item>
+    <item>
       <title>Day 41: Grounding Answers in Sources</title>
       <description>Two-host rebuild of AI Foundations day 41.</description>
       <guid isPermaLink="false">two-host-day-041</guid>
