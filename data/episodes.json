@@ -1,5 +1,18 @@
 [
   {
+    "day": 42,
+    "title": "Tools and Function Calling",
+    "subject": "AI Foundations Day 42: Tools and Function Calling",
+    "publishedAt": "2026-08-05T11:35:48-04:00",
+    "sourceMessageId": "19fd1b55188d3e87",
+    "audioPath": "/audio/day-042-tools-and-function-calling.mp3",
+    "transcriptPath": "/transcripts/day-042.txt",
+    "audioBytes": 4355107,
+    "durationSeconds": 362,
+    "durationLabel": "06:02",
+    "summary": "Learn how to let an AI model do more than talk by connecting it to tools it can call, such as calculators, search systems, databases, or internal functions."
+  },
+  {
     "day": 41,
     "title": "Grounding Answers in Sources",
     "subject": "AI Foundations Day 41: Grounding Answers in Sources",
@@ -475,9 +488,9 @@
     "sourceMessageId": "19f097189a553c91",
     "audioPath": "/audio/day-005-data-is-the-model-s-experience.mp3",
     "transcriptPath": "/transcripts/day-005.txt",
-    "audioBytes": 9579135,
-    "durationSeconds": 797,
-    "durationLabel": "13:17",
+    "audioBytes": 4550908,
+    "durationSeconds": 379,
+    "durationLabel": "06:19",
     "summary": "By the end of this lesson, you will be able to explain why an AI system’s behavior depends on its data, identify features and targets in a dataset, and spot three common data risks: poor representation, bias, and leakage."
   },
   {
