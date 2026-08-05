@@ -327,13 +327,21 @@ def send_cutover_email():
 
 
 def publish(msg):
-    subprocess.run(["git", "-C", str(REPO), "pull", "--rebase", "--quiet"],
-                   check=False)
+    # commit FIRST, then rebase onto whatever the (pre-cutover) ChatGPT-side
+    # job pushed this morning, then push - pulling before staging always
+    # refuses (this run's outputs are unstaged at that point)
     subprocess.run(["git", "-C", str(REPO), "add", "-A"], check=True)
     r = subprocess.run(["git", "-C", str(REPO), "diff", "--cached", "--quiet"])
-    if r.returncode == 0:
+    committed = r.returncode != 0
+    if committed:
+        subprocess.run(["git", "-C", str(REPO), "commit", "-m", msg, "--quiet"],
+                       check=True)
+    ahead = subprocess.run(
+        ["git", "-C", str(REPO), "rev-list", "--count", "@{u}..HEAD"],
+        capture_output=True, text=True)
+    if not committed and ahead.stdout.strip() == "0":
         return False
-    subprocess.run(["git", "-C", str(REPO), "commit", "-m", msg, "--quiet"],
+    subprocess.run(["git", "-C", str(REPO), "pull", "--rebase", "--quiet"],
                    check=True)
     subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True)
     return True
