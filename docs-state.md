@@ -58,7 +58,21 @@ every episode in both feeds and compares served length vs declared length
 consecutive runs to FAIL. Plus a run deadline so a slow probe can never
 suppress the daily email (silence is the dead-man's switch).
 
-**STILL OPEN — Brian's call before cutover:** the main feed's audio is
+**Resolved same session:** Day 43 and Day 6 force-regenerated via the new
+`regen_episode.py` (regenerates into a scratch slot, swaps in ONLY on
+success, so a 429 or another silent render leaves the existing file
+alone). Both now 0% silence / ~2.85 wps with all four required beats
+including homework. All 21 preview enclosures verified 200 via the CDN.
+Audio delivery moved to jsDelivr, which also settles the cutover hosting
+question below in favour of the CDN.
+
+**Pending on GitHub, nothing to do:** Pages was in MAJOR OUTAGE at end of
+session, so the updated feed documents (which live on Pages) had not
+deployed. Audio is unaffected — it comes from the CDN. When Pages
+recovers, the preview feed's enclosures flip to CDN URLs automatically on
+the next deploy; no action needed.
+
+**STILL OPEN — Brian's call:** the main feed's audio is
 served from **jsDelivr** (`cdn.jsdelivr.net/gh/...@main/docs/audio/`),
 which is why today's Pages outage never touched his listening. But
 `build_feed()` emits `SITE` (GitHub Pages) for two-host enclosures, so
