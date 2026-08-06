@@ -40,6 +40,14 @@
       <itunes:duration>5:13</itunes:duration>
     </item>
     <item>
+      <title>Day 39: Retrieval-Augmented Generation</title>
+      <description>Two-host rebuild of AI Foundations day 39.</description>
+      <guid isPermaLink="false">two-host-day-039</guid>
+      <pubDate>Sun, 02 Aug 2026 07:35:43 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-039-retrieval-augmented-generation-4262157.mp3" length="4262157" type="audio/mpeg"/>
+      <itunes:duration>5:55</itunes:duration>
+    </item>
+    <item>
       <title>Day 21: Backpropagation: Assigning Credit for Error</title>
       <description>Two-host rebuild of AI Foundations day 21.</description>
       <guid isPermaLink="false">two-host-day-021</guid>
@@ -80,12 +88,28 @@
       <itunes:duration>6:03</itunes:duration>
     </item>
     <item>
+      <title>Day 15: Baselines: The Simplest Useful Benchmark</title>
+      <description>Two-host rebuild of AI Foundations day 15.</description>
+      <guid isPermaLink="false">two-host-day-015</guid>
+      <pubDate>Wed, 08 Jul 2026 07:35:41 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-015-baselines-the-simplest-useful-benchmark-4162509.mp3" length="4162509" type="audio/mpeg"/>
+      <itunes:duration>5:46</itunes:duration>
+    </item>
+    <item>
       <title>Day 14: Cross-Validation and Reliable Comparisons</title>
       <description>Two-host rebuild of AI Foundations day 14.</description>
       <guid isPermaLink="false">two-host-day-014</guid>
       <pubDate>Tue, 07 Jul 2026 07:35:53 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032621.mp3" length="4032621" type="audio/mpeg"/>
       <itunes:duration>5:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 13: Confusion Matrices and Classification Tradeoffs</title>
+      <description>Two-host rebuild of AI Foundations day 13.</description>
+      <guid isPermaLink="false">two-host-day-013</guid>
+      <pubDate>Mon, 06 Jul 2026 07:35:42 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-013-confusion-matrices-and-classification-tradeoffs-3532941.mp3" length="3532941" type="audio/mpeg"/>
+      <itunes:duration>4:54</itunes:duration>
     </item>
     <item>
       <title>Day 12: Evaluation Metrics That Match the Goal</title>

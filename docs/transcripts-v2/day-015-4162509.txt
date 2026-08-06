@@ -1,0 +1,43 @@
+Alex: Before you build a complex machine learning model, you need to know if it is actually doing anything smarter than a simple guess. This is AI Foundations, day 15.
+Jordan: Today we are talking about baselines. A baseline is the absolute simplest reasonable method you can use to solve a task. Think of it as your starting line.
+Alex: So if I build a fancy neural network, the baseline is what I compare it against to see if all that extra work was even worth it?
+Jordan: Exactly. If your complex model cannot beat a baseline, it is adding complexity without adding value.
+Alex: Give me a practical example of how someone gets fooled without one.
+Jordan: Imagine you train a model to spot spam emails, and it hits ninety-two percent accuracy. That sounds strong, right?
+Alex: Ninety-two percent sounds like an A minus. I would be pretty happy with that.
+Jordan: But what if ninety-one percent of all incoming emails are actually not spam? A completely brainless rule that marks every single email as not spam already gets ninety-one percent accuracy.
+Alex: Wow. So my ninety-two percent model is really only one percent better than doing nothing at all.
+Jordan: Precisely. That is why good evaluation is always relative. A metric by itself can mislead you. You need a baseline to establish the floor.
+Alex: Okay, so how do we actually build one of these baselines?
+Jordan: You have two main options. First are trivial baselines, which are zero-effort rules. If you are predicting categories, like spam or not spam, you use a majority-class baseline. That just means always predicting whichever category appears most often in your training data.
+Alex: What if you are predicting a number, like stock prices or temperature?
+Jordan: For numbers, you use a mean baseline, where you always predict the average value from your training data. Or, if your data happens over time, you can use a last-value baseline, which predicts that the next value will match the most recent one.
+Alex: And what about the second option?
+Jordan: That is a reasonable baseline. It is still simple, but slightly smarter. If you are predicting home prices, a reasonable baseline might be a tiny linear model that only looks at square footage and ignores everything else.
+Alex: Got it. So trivial is a pure guess based on overall stats, while reasonable uses one or two obvious features.
+Jordan: Exactly. Think of a baseline like a ruler before you carve a sculpture. The ruler does not create the art. It just tells you how much material you have removed and whether your work is actually improving. Without it, you might admire a shape that is no better than the original block of wood.
+Alex: I like that analogy. But how do we make sure we are measuring the baseline correctly? In Day 13 we talked about precision, recall, and confusion matrices.
+Jordan: You have to evaluate your baseline using the exact same metric you use for your model. If you only look at accuracy, you can hide massive failures.
+Alex: Right, like if we are predicting a rare disease that only affects one percent of people.
+Jordan: Exactly. An always-negative baseline gets ninety-nine percent accuracy, but its recall for positive cases is zero. It misses every single sick person. The metric must match your actual goal, or the comparison is useless.
+Alex: That makes total sense. And what about data randomness? Yesterday on Day 14 we talked about cross-validation. Does that apply to baselines too?
+Jordan: It is critical. If you evaluate on one lucky train-test split, a weak model might look strong. If you run both the baseline and your model across the same cross-validation splits, you get a reliable comparison under identical conditions.
+Alex: Let us walk through a concrete example. Say I am trying to predict house prices.
+Jordan: Perfect. You start with a mean baseline. Suppose the average house price in your training set is three hundred thousand dollars. Your baseline predicts three hundred thousand dollars for every single home.
+Alex: Then I calculate my loss function. Let us say we use mean absolute error, which measures the average size of our mistakes in dollars.
+Jordan: Right. Suppose the mean baseline is off by an average of fifty thousand dollars per house. Now you add features like square footage, bedrooms, and neighborhood. If your model drops the average error down to fifteen thousand dollars across all your cross-validation splits, what does that tell you?
+Alex: It tells me those extra features are actually useful and the model is learning something real.
+Jordan: Exactly. But if your fancy model only drops the error from fifty thousand dollars down to forty-nine thousand dollars, that tiny improvement probably is not worth the extra code and maintenance.
+Alex: In that case, the simple baseline might actually be the better choice for production.
+Jordan: Absolutely. When a task is simple, when data is noisy, or when interpretability matters more than a tiny numerical gain, the baseline is often good enough.
+Alex: Let us hit the knowledge check.
+Jordan: Question one: What is a baseline in machine learning?
+Alex: It is the simplest reasonable method you can use for a task, serving as a comparison point to see if a complex model actually adds value.
+Jordan: Correct. Question two: Why should a baseline be evaluated with the exact same metric you care about for your model?
+Alex: Because metrics reflect your actual goal. If you only look at accuracy, you might miss big failures like zero recall on rare events.
+Jordan: Right again. Final question: Why is cross-validation useful when comparing a model to a baseline?
+Alex: It prevents a single lucky or unlucky data split from giving you a misleading comparison. Evaluating both on the same splits keeps the test fair.
+Jordan: Nailed it. Here is your homework.
+Jordan: Pick twenty examples of a daily habit or estimate you can track. For a category, use the majority class as your baseline; for a number, use the average. Measure it with one appropriate metric, compare it to a rule using one extra feature, and write one sentence answering whether the extra feature beat the baseline enough to matter.
+Alex: Short and sweet. Tomorrow on Day 16, we start looking at specific algorithms with linear models and their limits.
+Jordan: See you then.

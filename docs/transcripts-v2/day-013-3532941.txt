@@ -1,0 +1,41 @@
+Alex: Knowing if an AI model is wrong is helpful, but knowing how it gets things wrong can literally save lives or keep your boss's email from vanishing into the ether. This is AI Foundations, day 13.
+Jordan: Today we are looking under the hood at how classification models make mistakes, because those errors are rarely equal in the real world.
+Alex: Yesterday we touched on evaluation metrics, but where do we start when we want to map out these specific errors?
+Jordan: We start with a confusion matrix. Do not let the name throw you off—it is really just an error map comparing a model's guesses to ground truth.
+Alex: So for a binary problem like spam detection, what does this map show us?
+Jordan: It gives you four distinct outcomes: True Positive, True Negative, False Positive, and False Negative.
+Alex: Those terms can feel abstract. What is the trick to keeping them straight?
+Jordan: The second word is what the model predicted, and the first word tells you if the model was right or wrong.
+Alex: Got it. So a False Positive means the model predicted positive, but was wrong—so the truth was negative.
+Jordan: Exactly. And a False Negative means the model predicted negative, but was wrong, because the actual truth was positive. True Positives and True Negatives mean the model predicted positive or negative and got it right.
+Alex: That is super clear. So why is this matrix better than just looking at overall accuracy?
+Jordan: Because accuracy can easily mislead you. If a rare disease affects one percent of people, a model predicting everyone is healthy is ninety-nine percent accurate, but completely useless. That is why we use two key metrics derived from the confusion matrix: precision and recall.
+Alex: How do those two differ?
+Jordan: Precision asks: of everything the model predicted as positive, how many were actually positive? It measures how trustworthy those positive calls are.
+Alex: And recall?
+Jordan: Recall asks: of everything that was actually positive in reality, how many did the model find?
+Alex: So precision is about being careful with positive flags, while recall is about making sure nothing slips through your net.
+Jordan: Spot on. They answer different questions, which links back to Day 12: the best metric depends entirely on which mistake matters most.
+Alex: How does a model actually decide whether to classify something as positive or negative in practice?
+Jordan: Most classifiers output a probability score, like a seventy-two percent chance an email is spam. Then we apply a decision threshold to turn that score into a label.
+Alex: Like a cutoff line. If the default threshold is zero point five, scores above fifty percent become positive, and scores below become negative.
+Jordan: Right. Changing that cutoff changes the entire confusion matrix. This connects back to Day 7's decision boundaries—the boundary separates the classes, but the threshold decides where that boundary acts as positive or negative in practice.
+Alex: If you lower the threshold, you end up predicting positive more often, right?
+Jordan: Exactly. Lowering it usually raises recall because you catch more positive cases, but lowers precision because you trigger more false alarms. Raising it makes the model cautious, raising precision but lowering recall. That is the core tradeoff—you cannot optimize both equally at once.
+Alex: That smoke detector analogy in the lesson makes this super intuitive.
+Jordan: Think of a kitchen smoke detector. If it is too sensitive, it goes off when you toast bread. That is a false positive. Annoying, but harmless.
+Alex: But if it is not sensitive enough, it stays quiet during a real fire. That is a false negative.
+Jordan: Right. In a busy kitchen, a few false alarms might be fine. In a warehouse of flammable material, missing a real fire is catastrophic. The best detector depends on the setting.
+Alex: We see the same tradeoff with a spam filter. A false positive sends your boss's email straight to spam. A false negative puts a junk email in your inbox.
+Jordan: Exactly. Most people would rather clear out a piece of spam than miss an important message from their boss. So for spam, you set a cautious threshold to favor high precision. But a doctor screening for cancer wants high recall, so they lower the threshold to ensure no sick patient is missed.
+Alex: It really comes down to real-world costs.
+Jordan: Exactly. Now let us test this with three quick questions. First: in plain language, what is a false negative?
+Alex: A false negative means the model predicted negative or no, but the true answer was positive or yes. The model missed a real positive case.
+Jordan: Correct. Question two: which metric asks, of the items predicted positive, how many were truly positive?
+Alex: Precision.
+Jordan: Right again. Third: if you lower the decision threshold, what usually happens to recall?
+Alex: Recall usually increases, because the model predicts positive more often and misses fewer true positives.
+Jordan: Nailed all three.
+Alex: What is our hands-on exercise for today?
+Jordan: On paper or in a spreadsheet, write down twelve imaginary examples with true labels and model predictions, or use this mini dataset: three true positives, five true negatives, two false positives, and two false negatives. Calculate precision and recall from those counts, then ask yourself: if false negatives mattered much more, would you raise or lower the threshold? Notice how your counts shift when you move that boundary.
+Alex: Got it. Tomorrow on Day 14, we will cover Cross-Validation and Reliable Comparisons, showing you how to estimate model performance fairly and avoid being fooled by a lucky split of the data. See you then!

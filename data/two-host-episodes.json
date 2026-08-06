@@ -45,6 +45,18 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 39,
+  "title": "Retrieval-Augmented Generation",
+  "format": "two-host",
+  "guid": "two-host-day-039",
+  "publishedAt": "2026-08-02T07:35:43",
+  "audioPath": "/audio-v2/day-039-retrieval-augmented-generation-4262157.mp3",
+  "transcriptPath": "/transcripts-v2/day-039-4262157.txt",
+  "audioBytes": 4262157,
+  "durationSeconds": 355,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 21,
   "title": "Backpropagation: Assigning Credit for Error",
   "format": "two-host",
@@ -100,6 +112,18 @@
   "durationSeconds": 363
  },
  {
+  "day": 15,
+  "title": "Baselines: The Simplest Useful Benchmark",
+  "format": "two-host",
+  "guid": "two-host-day-015",
+  "publishedAt": "2026-07-08T07:35:41",
+  "audioPath": "/audio-v2/day-015-baselines-the-simplest-useful-benchmark-4162509.mp3",
+  "transcriptPath": "/transcripts-v2/day-015-4162509.txt",
+  "audioBytes": 4162509,
+  "durationSeconds": 346,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
   "day": 14,
   "title": "Cross-Validation and Reliable Comparisons",
   "format": "two-host",
@@ -109,6 +133,18 @@
   "transcriptPath": "/transcripts-v2/day-014-4032621.txt",
   "audioBytes": 4032621,
   "durationSeconds": 335
+ },
+ {
+  "day": 13,
+  "title": "Confusion Matrices and Classification Tradeoffs",
+  "format": "two-host",
+  "guid": "two-host-day-013",
+  "publishedAt": "2026-07-06T07:35:42",
+  "audioPath": "/audio-v2/day-013-confusion-matrices-and-classification-tradeoffs-3532941.mp3",
+  "transcriptPath": "/transcripts-v2/day-013-3532941.txt",
+  "audioBytes": 3532941,
+  "durationSeconds": 294,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
   "day": 12,
