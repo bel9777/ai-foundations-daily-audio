@@ -415,8 +415,11 @@ def git_sync():
     shipped. Syncing first means the other writer's state is visible to
     load_state() before any decision is made.
     """
-    r = subprocess.run(["git", "-C", str(REPO), "pull", "--rebase"],
-                       capture_output=True, text=True)
+    # --autostash: the previous run's heartbeat line is still uncommitted
+    # at this point (it is written after publish() and committed by the
+    # NEXT run), and a plain pull refuses on a dirty tree.
+    r = subprocess.run(["git", "-C", str(REPO), "pull", "--rebase",
+                        "--autostash"], capture_output=True, text=True)
     if r.returncode != 0:
         print(f"WARNING: pre-run git pull failed: {r.stderr.strip()[:200]}")
     return r.returncode == 0
