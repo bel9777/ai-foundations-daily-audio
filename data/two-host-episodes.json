@@ -33,6 +33,18 @@
   "durationSeconds": 355
  },
  {
+  "day": 40,
+  "title": "Chunking, Search, and Reranking",
+  "format": "two-host",
+  "guid": "two-host-day-040",
+  "publishedAt": "2026-08-03T07:35:44",
+  "audioPath": "/audio-v2/day-040-chunking-search-and-reranking-3766797.mp3",
+  "transcriptPath": "/transcripts-v2/day-040-3766797.txt",
+  "audioBytes": 3766797,
+  "durationSeconds": 313,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 21,
   "title": "Backpropagation: Assigning Credit for Error",
   "format": "two-host",

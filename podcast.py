@@ -51,7 +51,11 @@ except ImportError as e:  # hard dependency - never fail soft (f4 lesson)
 KEY = (HOME / ".ai-keys" / "gemini-api-key.txt").read_text().strip()
 GBASE = "https://generativelanguage.googleapis.com/v1beta"
 TEXT_MODEL = "gemini-flash-latest"
-TTS_MODEL = "gemini-3.1-flash-tts-preview"
+# Quota is PER MODEL. When the primary hits 429 the fallback still has a
+# full bucket, which roughly doubles free-tier throughput instead of
+# stalling the backfill until tomorrow. Same voices, same script; the
+# plausibility gate polices quality either way.
+TTS_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
 FFMPEG = (HOME / r"AppData\Local\Microsoft\WinGet\Packages"
                r"\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe"
                r"\ffmpeg-8.1.2-full_build\bin\ffmpeg.exe")
@@ -140,6 +144,24 @@ def gen_script(day, title, lesson):
 
 
 def gen_audio(script):
+    """Render the dialogue, falling through TTS_MODELS on quota errors.
+
+    Returns (pcm, rate, model). Raises the LAST 429 only if every model
+    is exhausted, so the caller's quota-stop logic still works.
+    """
+    last_429 = None
+    for model in TTS_MODELS:
+        try:
+            return (*_gen_audio_with(script, model), model)
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                raise
+            last_429 = e
+            print(f"    {model}: quota exhausted, trying next model")
+    raise last_429
+
+
+def _gen_audio_with(script, TTS_MODEL):
     resp = gapi(f"models/{TTS_MODEL}:generateContent", {
         "contents": [{"parts": [{"text":
             f"TTS the following podcast conversation between {HOST} and "
@@ -221,7 +243,7 @@ def build_episode(day, info, eps):
     except Exception as e:
         raise RuntimeError(f"script-{type(e).__name__}") from e
     try:
-        pcm, rate = gen_audio(script)
+        pcm, rate, tts_model = gen_audio(script)
     except urllib.error.HTTPError:
         raise
     except Exception as e:
@@ -255,6 +277,7 @@ def build_episode(day, info, eps):
         "audioPath": f"/audio-v2/{final.name}",
         "transcriptPath": f"/transcripts-v2/day-{day:03d}-{size}.txt",
         "audioBytes": size, "durationSeconds": int(secs),
+        "ttsModel": tts_model,
     }
     return secs
 

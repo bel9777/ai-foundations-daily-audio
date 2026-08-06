@@ -1,0 +1,37 @@
+Alex: Even the smartest AI gives terrible answers if you feed it entire unorganized documents or microscopic snippets of text.
+Alex: This is AI Foundations, day 40.
+Alex: Yesterday we saw how retrieval gives an AI an external brain so it stops making stuff up. Today we are going one level deeper into how retrieval systems actually decide what information to look at.
+Jordan: Retrieval only works well if your information is split well, searched well, and ranked well. We call those three steps chunking, search, and reranking.
+Alex: Let us start at the beginning with chunking. What is a chunk, exactly?
+Jordan: A chunk is just a manageable slice of a document. Instead of shoving an entire fifty-page manual into the system at once, you cut it up into smaller pieces that are easy to store and compare.
+Alex: Why not store whole documents as single pieces?
+Jordan: Because long documents carry too much noise. If you ask a specific question about a shipping deadline, a huge document brings along pages of unrelated material about returns and payment terms. That dilutes the search. But if your chunks are too tiny, like individual words or short phrases, you lose the surrounding context and the text stops making sense on its own.
+Alex: So chunking is finding that middle ground. It is like an index and a filing cabinet. If every page is one massive folder, finding a note takes forever. But if every single word gets its own folder, you lose the meaning of the sentence.
+Jordan: Right. Good chunking usually keeps related ideas together by breaking text along headings or paragraphs rather than every fifty words.
+Alex: Makes sense. Once your document is chopped into useful chunks, how does the system find the right one?
+Jordan: That is step two: search. Search looks across all your stored chunks and pulls a quick shortlist of candidates that might answer the question. It usually relies on keyword search or semantic search.
+Alex: Keyword search is matching exact words, like searching for refund policy.
+Jordan: Exactly. Semantic search matches meaning rather than exact wording. If someone asks about canceling a subscription, semantic search can pull a chunk that says ending your membership, even without matching words.
+Alex: How does it match meanings if the words are different?
+Jordan: It uses embeddings, which are numeric representations of text that place similar concepts close to each other in a mathematical space.
+Alex: And search needs to be fast because it might scan millions of chunks at once.
+Jordan: Speed is key, but fast search can be imprecise. That is why we need step three: reranking. Reranking takes that initial shortlist of maybe twenty chunks and sorts them again using a much more thorough evaluation.
+Alex: Give me an analogy for that.
+Jordan: Search is the librarian running down the aisles and grabbing ten promising books off the shelf. Reranking is the librarian sitting at the desk, opening those ten books, and placing the single best page on top.
+Alex: Search is the quick scan; reranking is the careful read. How do these three work together in practice?
+Jordan: Imagine a customer support system for an online store. The help center pages are chunked into logical sections like return windows, print labels, and refund timing.
+Alex: A customer asks: how long do I have to send back a damaged item?
+Jordan: Search quickly pulls candidate chunks about returns, damaged items, and deadlines. Then the reranker steps in. It evaluates those candidates against the specific question and puts the chunk about damaged-item deadlines right on top of the generic return policy chunk.
+Alex: So the AI gets the precise exception it needs without getting confused by general rules.
+Jordan: Exactly. If the chunks were too big, search would bring in a mountain of policy noise. If search were weak, it would miss the damaged item section entirely. And without reranking, the system might grab a general return rule instead of the damaged item exception.
+Alex: This connects back to what we talked about on days thirty-five and thirty-six with clear prompting. The way you write the user query changes what search finds.
+Jordan: It does. And do not forget day thirty-eight: retrieved chunks are evidence, not instructions. If a chunk contains untrusted or malicious text, the model should treat it as facts to inspect, not commands to execute.
+Alex: Right. And as we saw on day thirty-seven, asking for structured outputs makes it easy to format citations so users can check the retrieved sources themselves.
+Jordan: Time for a quick knowledge check, Alex. Question one: what is chunking, and why is it useful?
+Alex: Chunking is breaking a document into smaller pieces called chunks. It is useful because smaller pieces are easier to store, search, and match to specific questions.
+Jordan: Correct. Question two: what is the difference between search and reranking?
+Alex: Search finds a broad shortlist of candidates quickly. Reranking evaluates that shortlist more carefully to order them from best to worst.
+Jordan: Perfect. Question three: why do both very large chunks and very small chunks cause problems?
+Alex: Very large chunks contain too much extra noise, making search imprecise. Very small chunks lose context, making the text hard to understand on its own.
+Jordan: Spot on. Here is your homework for today. Pick a short article or FAQ page and paste it into a text file. Manually split it into five to ten chunks using headings or paragraphs. Write three questions a reader might ask, pretend to be the search engine to pick relevant chunks, and then rerank those chunks from best to worst for each question. As you answer using the top chunk, notice how chunk size makes search easier or harder.
+Alex: Tomorrow on day forty-one, we build on this by learning how to ground answers in sources with exact quotes and citations. See you then!
