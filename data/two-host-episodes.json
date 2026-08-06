@@ -5,10 +5,10 @@
   "format": "two-host",
   "guid": "two-host-day-043",
   "publishedAt": "2026-08-06T07:35:45",
-  "audioPath": "/audio-v2/day-043-agents-models-that-plan-and-act-7954029.mp3",
-  "transcriptPath": "/transcripts-v2/day-043-7954029.txt",
-  "audioBytes": 7954029,
-  "durationSeconds": 662
+  "audioPath": "/audio-v2/day-043-agents-models-that-plan-and-act-4191309.mp3",
+  "transcriptPath": "/transcripts-v2/day-043-4191309.txt",
+  "audioBytes": 4191309,
+  "durationSeconds": 349
  },
  {
   "day": 42,
@@ -170,10 +170,10 @@
   "format": "two-host",
   "guid": "two-host-day-006",
   "publishedAt": "2026-06-29T09:10:31",
-  "audioPath": "/audio-v2/day-006-learning-from-labeled-examples-4826925.mp3",
-  "transcriptPath": "/transcripts-v2/day-006-4826925.txt",
-  "audioBytes": 4826925,
-  "durationSeconds": 402
+  "audioPath": "/audio-v2/day-006-learning-from-labeled-examples-5276781.mp3",
+  "transcriptPath": "/transcripts-v2/day-006-5276781.txt",
+  "audioBytes": 5276781,
+  "durationSeconds": 439
  },
  {
   "day": 5,
