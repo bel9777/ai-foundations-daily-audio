@@ -33,6 +33,7 @@ import time
 import urllib.error
 import urllib.request
 import wave
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from html import escape
@@ -55,9 +56,28 @@ FFMPEG = (HOME / r"AppData\Local\Microsoft\WinGet\Packages"
                r"\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe"
                r"\ffmpeg-8.1.2-full_build\bin\ffmpeg.exe")
 
+# split timeouts: the text call is quick; the TTS call must synthesize ~6
+# min of 24 kHz audio and return it base64-inlined in one non-streaming
+# response. A shared 300s timed out 3 of 13 day-attempts on 2026-08-06.
+TEXT_TIMEOUT, TTS_TIMEOUT = 120, 600
+RUN_CAP_SECONDS = 3 * 3600  # a bad run must not grind all day
+# a good episode is ~2.4-3.4 spoken words/sec with only natural pauses;
+# Day 43 shipped 50% digital silence at 1.53 wps and the duration-only
+# gate could not see it (duration is computed from PCM bytes, and silence
+# is bytes too)
+MAX_SILENCE_RATIO, MIN_WORDS_PER_SEC = 0.10, 2.0
+
 HOST, EXPERT = "Alex", "Jordan"
 VOICE_HOST, VOICE_EXPERT = "Puck", "Sulafat"
 SITE = "https://bel9777.github.io/ai-foundations-daily-audio"
+# Audio is served from jsDelivr (the git branch), NOT from Pages. The
+# legacy feed has always done this, which is the only reason Brian's
+# listening was untouched by the 2026-08-06 Pages outage - during which
+# every audio-v2 file was 404 on Pages and 200 on the CDN. Safe for a
+# daily show despite jsDelivr's 12h s-maxage because every episode gets a
+# UNIQUE filename (the byte size is embedded), so a new episode's URL has
+# never been cached and cannot be served stale.
+CDN = "https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs"
 STATE = REPO / "data" / "two-host-episodes.json"
 AUDIO_DIR = REPO / "docs" / "audio-v2"
 TRANS_DIR = REPO / "docs" / "transcripts-v2"
@@ -108,7 +128,7 @@ Today's lesson (Day {day}: {title}):
 def gen_script(day, title, lesson):
     resp = gapi(f"models/{TEXT_MODEL}:generateContent", {
         "contents": [{"parts": [{"text": dialogue_prompt(day, title, lesson)}]}],
-        "generationConfig": {"temperature": 0.8}})
+        "generationConfig": {"temperature": 0.8}}, timeout=TEXT_TIMEOUT)
     script = resp["candidates"][0]["content"]["parts"][0]["text"].strip()
     script = re.sub(r"^```.*$", "", script, flags=re.M).strip()
     lines = [ln for ln in script.splitlines() if ln.strip()]
@@ -131,7 +151,8 @@ def gen_audio(script):
                 {"speaker": HOST, "voiceConfig":
                     {"prebuiltVoiceConfig": {"voiceName": VOICE_HOST}}},
                 {"speaker": EXPERT, "voiceConfig":
-                    {"prebuiltVoiceConfig": {"voiceName": VOICE_EXPERT}}}]}}}})
+                    {"prebuiltVoiceConfig": {"voiceName": VOICE_EXPERT}}}]}}}},
+        timeout=TTS_TIMEOUT)
     part = resp["candidates"][0]["content"]["parts"][0]
     mime = part["inlineData"]["mimeType"]
     pcm = base64.b64decode(part["inlineData"]["data"])
@@ -151,6 +172,21 @@ def encode_mp3(pcm, rate, out_path):
                    check=True)
     tmp.unlink()
     return len(pcm) / (rate * 2)
+
+
+def silence_ratio(path):
+    """Fraction of the rendered file that is TRUE digital silence."""
+    r = subprocess.run(
+        [str(FFMPEG), "-i", str(path), "-af",
+         "silencedetect=noise=-50dB:d=2", "-f", "null", "-"],
+        capture_output=True, text=True)
+    quiet = sum(float(m) for m in
+                re.findall(r"silence_duration: ([\d.]+)", r.stderr))
+    m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", r.stderr)
+    if not m:
+        return 0.0
+    secs = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + float(m.group(3))
+    return quiet / secs if secs else 0.0
 
 
 def slugify(title):
@@ -176,16 +212,37 @@ def save_state(eps):
 
 def build_episode(day, info, eps):
     lesson = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", info["html"])).strip()
-    script = gen_script(day, info["title"], lesson)
-    pcm, rate = gen_audio(script)
+    # name the failing stage so the heartbeat says which one (HTTPError must
+    # pass through untouched - the 429 quota-stop upstream depends on it)
+    try:
+        script = gen_script(day, info["title"], lesson)
+    except urllib.error.HTTPError:
+        raise
+    except Exception as e:
+        raise RuntimeError(f"script-{type(e).__name__}") from e
+    try:
+        pcm, rate = gen_audio(script)
+    except urllib.error.HTTPError:
+        raise
+    except Exception as e:
+        raise RuntimeError(f"tts-{type(e).__name__}") from e
     slug = slugify(info["title"])
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
     TRANS_DIR.mkdir(parents=True, exist_ok=True)
     tmp_mp3 = AUDIO_DIR / f"day-{day:03d}-{slug}.new.mp3"
     secs = encode_mp3(pcm, rate, tmp_mp3)
+    # plausibility, not just reconciliation: duration alone reconciled fine
+    # on an episode that was half dead air
     if not 180 <= secs <= 800:
         tmp_mp3.unlink()
         raise ValueError(f"audio duration {secs:.0f}s outside sanity range")
+    sil = silence_ratio(tmp_mp3)
+    wps = len(script.split()) / secs if secs else 0
+    if sil > MAX_SILENCE_RATIO or wps < MIN_WORDS_PER_SEC:
+        tmp_mp3.unlink()
+        raise ValueError(f"audio failed plausibility: {sil:.0%} silence, "
+                         f"{wps:.2f} words/sec ({len(script.split())} words "
+                         f"in {secs:.0f}s) - TTS dropped content")
     size = tmp_mp3.stat().st_size
     final = AUDIO_DIR / f"day-{day:03d}-{slug}-{size}.mp3"
     tmp_mp3.rename(final)
@@ -216,7 +273,7 @@ def build_feed(eps):
       <description>{escape(e['title'])} - AI Foundations day {e['day']}, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
       <pubDate>{rfc822(e['publishedAt'])}</pubDate>
-      <enclosure url="{SITE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
+      <enclosure url="{CDN}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
     </item>""")
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -271,7 +328,7 @@ def build_preview_feed(eps):
       <description>Two-host rebuild of AI Foundations day {e['day']}.</description>
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
       <pubDate>{rfc822(e['publishedAt'])}</pubDate>
-      <enclosure url="{SITE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
+      <enclosure url="{CDN}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
     </item>""")
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -326,6 +383,50 @@ def send_cutover_email():
         return json.loads(r.read())["id"]
 
 
+def git_sync():
+    """Rebase onto the other writer BEFORE generating anything.
+
+    2026-08-06: the ChatGPT-side job's commit deleted 10 two-host mp3s.
+    publish() pulled that deletion in 28 seconds AFTER build_preview_feed()
+    had already rendered the feed from memory, so 10 dead enclosures
+    shipped. Syncing first means the other writer's state is visible to
+    load_state() before any decision is made.
+    """
+    r = subprocess.run(["git", "-C", str(REPO), "pull", "--rebase"],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        print(f"WARNING: pre-run git pull failed: {r.stderr.strip()[:200]}")
+    return r.returncode == 0
+
+
+def feed_enclosures_on_disk():
+    """Every enclosure OUR feeds advertise must exist on disk.
+
+    Only validates enclosures served from SITE (our two-host output).
+    The legacy feed's enclosures point at jsDelivr and belong to the
+    ChatGPT-side job - not ours to gate on.
+    """
+    missing = []
+    for name in ("feed.xml", "preview/feed.xml"):
+        f = REPO / "docs" / name
+        if not f.exists():
+            continue
+        try:
+            root = ET.fromstring(f.read_text(encoding="utf-8"))
+        except ET.ParseError as e:
+            missing.append(f"{name}: UNPARSEABLE ({e})")
+            continue
+        for enc in root.findall(".//enclosure"):
+            url = enc.get("url") or ""
+            base = next((b for b in (CDN, SITE) if url.startswith(b)), None)
+            if base is None:
+                continue  # legacy feed's own URLs - the other writer's
+            rel = url[len(base):].lstrip("/")
+            if not (REPO / "docs" / rel).exists():
+                missing.append(f"{name}->{rel}")
+    return missing
+
+
 def publish(msg):
     # commit FIRST, then rebase onto whatever the (pre-cutover) ChatGPT-side
     # job pushed this morning, then push - pulling before staging always
@@ -343,6 +444,13 @@ def publish(msg):
         return False
     subprocess.run(["git", "-C", str(REPO), "pull", "--rebase", "--quiet"],
                    check=True)
+    # LAST GATE: the rebase may have just applied the other writer's
+    # deletions. Never push a feed that advertises files we do not have.
+    missing = feed_enclosures_on_disk()
+    if missing:
+        raise RuntimeError(
+            f"refusing to push: {len(missing)} advertised enclosure(s) "
+            f"missing after rebase, e.g. {missing[:3]}")
     subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True)
     return True
 
@@ -352,8 +460,10 @@ def main():
     limit = None
     if "--limit" in sys.argv:
         limit = int(sys.argv[sys.argv.index("--limit") + 1])
-    now = datetime.now()
+    started = datetime.now()
 
+    if run:
+        git_sync()  # see the other writer BEFORE deciding anything
     tok = gmail_token()
     canon = {int(k): v for k, v in json.loads(
         (HOME / "ai-foundations-kindle" / "canon.json")
@@ -374,6 +484,10 @@ def main():
     queue = [missing[-1]] + missing[:-1] if missing else []
     made, fails, stopped = [], [], ""
     for day in queue[:limit] if limit else queue:
+        if (datetime.now() - started).total_seconds() > RUN_CAP_SECONDS:
+            stopped = f"run-cap {RUN_CAP_SECONDS}s reached at day {day}"
+            print(f"  {stopped}")
+            break
         try:
             secs = build_episode(day, days[day], eps)
             save_state(eps)
@@ -415,7 +529,18 @@ def main():
     except Exception as e:  # push can fail right after laptop wake (no
         pushed = f"PUSH-FAILED:{type(e).__name__}"  # network) - commit is
         print(f"publish failed: {e!r}")             # local, next run retries
-    line = (f"{now:%Y-%m-%d %H:%M} OK made:{len(made)} total:{len(eps)} "
+    # HONEST STATUS TOKEN. This line is the watchdog's only build-layer
+    # signal, so it must never read OK for a run that lost episodes or
+    # failed to publish. quota-429 is deliberate pacing, NOT a failure.
+    ondisk = len(load_state())
+    if pushed.startswith("PUSH-FAILED") or ondisk != len(eps):
+        status = "FAIL"
+    elif fails or (made and pushed == "no-push"):
+        status = "WARN"
+    else:
+        status = "OK"
+    line = (f"{datetime.now():%Y-%m-%d %H:%M} {status} made:{len(made)} "
+            f"ondisk:{ondisk} ledger:{len(eps)} "
             f"missing:{len([d for d in days if d not in eps])} "
             f"feed:{'two-host' if complete_now else 'legacy'} {pushed}"
             + (f" failed:{','.join(fails)}" if fails else "")
