@@ -1,5 +1,18 @@
 [
   {
+    "day": 43,
+    "title": "Agents: Models That Plan and Act",
+    "subject": "AI Foundations Day 43: Agents: Models That Plan and Act",
+    "publishedAt": "2026-08-06T11:35:45-04:00",
+    "sourceMessageId": "19fd6dba0c3c607b",
+    "audioPath": "/audio/day-043-agents-models-that-plan-and-act.mp3",
+    "transcriptPath": "/transcripts/day-043.txt",
+    "audioBytes": 4388374,
+    "durationSeconds": 365,
+    "durationLabel": "06:05",
+    "summary": "Day 43 — Agents: Models That Plan and Act Objective: Learn what an agent is, how it differs from a plain chatbot, and how planning, tool use, and feedback let an AI system take multi-step actions toward a goal. An agent is an AI system that can plan steps and act by choosing tools, collecting inf…"
+  },
+  {
     "day": 42,
     "title": "Tools and Function Calling",
     "subject": "AI Foundations Day 42: Tools and Function Calling",
@@ -475,9 +488,9 @@
     "sourceMessageId": "19f1380bde65f981",
     "audioPath": "/audio/day-006-learning-from-labeled-examples.mp3",
     "transcriptPath": "/transcripts/day-006.txt",
-    "audioBytes": 8864023,
-    "durationSeconds": 738,
-    "durationLabel": "12:18",
+    "audioBytes": 4420061,
+    "durationSeconds": 368,
+    "durationLabel": "06:08",
     "summary": "Understand supervised learning: how a model uses examples with known answers to learn a mapping, how training reduces error, and why success on training data is not enough. Time: 8–12 minutes"
   },
   {

@@ -9,7 +9,7 @@
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.rss" rel="self" type="application/rss+xml" />
     <description>Short daily AI lessons connected to the AI Foundations email course and Kindle library.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 15:35:48 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 15:35:45 GMT</lastBuildDate>
     <generator>AI Foundations Library Builder</generator>
     <itunes:author>AI Foundations</itunes:author>
     <itunes:summary>Every episode is the audio companion to the matching daily course email and Kindle chapter.</itunes:summary>
@@ -19,6 +19,22 @@
     <itunes:category text="Education">
       <itunes:category text="Courses" />
     </itunes:category>
+    <item>
+      <title>Day 43: Agents: Models That Plan and Act</title>
+      <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-043</link>
+      <guid isPermaLink="false">urn:ai-foundations:gmail:19fd6dba0c3c607b</guid>
+      <pubDate>Thu, 06 Aug 2026 15:35:45 GMT</pubDate>
+      <description>The audio companion to AI Foundations Day 43: Agents: Models That Plan and Act and Kindle chapter Day 43. Day 43 — Agents: Models That Plan and Act Objective: Learn what an agent is, how it differs from a plain chatbot, and how planning, tool use, and feedback let an AI system take multi-step actions toward a goal. An agent is an AI system that can plan steps and act by choosing tools, collecting inf…</description>
+      <itunes:title>Agents: Models That Plan and Act</itunes:title>
+      <itunes:episode>43</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>06:05</itunes:duration>
+      <itunes:summary>The audio companion to AI Foundations Day 43: Agents: Models That Plan and Act and Kindle chapter Day 43. Day 43 — Agents: Models That Plan and Act Objective: Learn what an agent is, how it differs from a plain chatbot, and how planning, tool use, and feedback let an AI system take multi-step actions toward a goal. An agent is an AI system that can plan steps and act by choosing tools, collecting inf…</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-043-agents-models-that-plan-and-act-4388374.mp3" length="4388374" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-043-4388374.txt" type="text/plain" rel="captions" />
+    </item>
     <item>
       <title>Day 42: Tools and Function Calling</title>
       <link>https://bel9777.github.io/ai-foundations-daily-audio/#day-042</link>
@@ -605,11 +621,11 @@
       <itunes:episode>6</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:duration>12:18</itunes:duration>
+      <itunes:duration>06:08</itunes:duration>
       <itunes:summary>The audio companion to AI Foundations Day 6: Learning from Labeled Examples and Kindle chapter Day 6. Understand supervised learning: how a model uses examples with known answers to learn a mapping, how training reduces error, and why success on training data is not enough. Time: 8–12 minutes</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-006-learning-from-labeled-examples-8864023.mp3" length="8864023" type="audio/mpeg" />
-      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-006-8864023.txt" type="text/plain" rel="captions" />
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/day-006-learning-from-labeled-examples-4420061.mp3" length="4420061" type="audio/mpeg" />
+      <podcast:transcript url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/transcripts/day-006-4420061.txt" type="text/plain" rel="captions" />
     </item>
     <item>
       <title>Day 5: Data Is the Model&apos;s Experience</title>
