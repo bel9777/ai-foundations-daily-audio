@@ -1,5 +1,16 @@
 [
  {
+  "day": 43,
+  "title": "Agents: Models That Plan and Act",
+  "format": "two-host",
+  "guid": "two-host-day-043",
+  "publishedAt": "2026-08-06T07:35:45",
+  "audioPath": "/audio-v2/day-043-agents-models-that-plan-and-act-7954029.mp3",
+  "transcriptPath": "/transcripts-v2/day-043-7954029.txt",
+  "audioBytes": 7954029,
+  "durationSeconds": 662
+ },
+ {
   "day": 42,
   "title": "Tools and Function Calling",
   "format": "two-host",
@@ -20,6 +31,94 @@
   "transcriptPath": "/transcripts-v2/day-041-4271949.txt",
   "audioBytes": 4271949,
   "durationSeconds": 355
+ },
+ {
+  "day": 21,
+  "title": "Backpropagation: Assigning Credit for Error",
+  "format": "two-host",
+  "guid": "two-host-day-021",
+  "publishedAt": "2026-07-14T07:35:44",
+  "audioPath": "/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415309.mp3",
+  "transcriptPath": "/transcripts-v2/day-021-5415309.txt",
+  "audioBytes": 5415309,
+  "durationSeconds": 451
+ },
+ {
+  "day": 19,
+  "title": "Neural Networks from First Principles",
+  "format": "two-host",
+  "guid": "two-host-day-019",
+  "publishedAt": "2026-07-12T07:35:21",
+  "audioPath": "/audio-v2/day-019-neural-networks-from-first-principles-4849101.mp3",
+  "transcriptPath": "/transcripts-v2/day-019-4849101.txt",
+  "audioBytes": 4849101,
+  "durationSeconds": 404
+ },
+ {
+  "day": 18,
+  "title": "Probability, Calibration, and Confidence",
+  "format": "two-host",
+  "guid": "two-host-day-018",
+  "publishedAt": "2026-07-11T07:35:47",
+  "audioPath": "/audio-v2/day-018-probability-calibration-and-confidence-3934125.mp3",
+  "transcriptPath": "/transcripts-v2/day-018-3934125.txt",
+  "audioBytes": 3934125,
+  "durationSeconds": 327
+ },
+ {
+  "day": 17,
+  "title": "Decision Trees and Ensembles",
+  "format": "two-host",
+  "guid": "two-host-day-017",
+  "publishedAt": "2026-07-10T07:35:46",
+  "audioPath": "/audio-v2/day-017-decision-trees-and-ensembles-3804525.mp3",
+  "transcriptPath": "/transcripts-v2/day-017-3804525.txt",
+  "audioBytes": 3804525,
+  "durationSeconds": 316
+ },
+ {
+  "day": 16,
+  "title": "Linear Models and Their Limits",
+  "format": "two-host",
+  "guid": "two-host-day-016",
+  "publishedAt": "2026-07-09T07:35:46",
+  "audioPath": "/audio-v2/day-016-linear-models-and-their-limits-4357485.mp3",
+  "transcriptPath": "/transcripts-v2/day-016-4357485.txt",
+  "audioBytes": 4357485,
+  "durationSeconds": 363
+ },
+ {
+  "day": 14,
+  "title": "Cross-Validation and Reliable Comparisons",
+  "format": "two-host",
+  "guid": "two-host-day-014",
+  "publishedAt": "2026-07-07T07:35:53",
+  "audioPath": "/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032621.mp3",
+  "transcriptPath": "/transcripts-v2/day-014-4032621.txt",
+  "audioBytes": 4032621,
+  "durationSeconds": 335
+ },
+ {
+  "day": 12,
+  "title": "Evaluation Metrics That Match the Goal",
+  "format": "two-host",
+  "guid": "two-host-day-012",
+  "publishedAt": "2026-07-05T07:39:09",
+  "audioPath": "/audio-v2/day-012-evaluation-metrics-that-match-the-goal-5000589.mp3",
+  "transcriptPath": "/transcripts-v2/day-012-5000589.txt",
+  "audioBytes": 5000589,
+  "durationSeconds": 416
+ },
+ {
+  "day": 11,
+  "title": "Optimization and Gradient Descent",
+  "format": "two-host",
+  "guid": "two-host-day-011",
+  "publishedAt": "2026-07-04T07:35:40",
+  "audioPath": "/audio-v2/day-011-optimization-and-gradient-descent-4535469.mp3",
+  "transcriptPath": "/transcripts-v2/day-011-4535469.txt",
+  "audioBytes": 4535469,
+  "durationSeconds": 377
  },
  {
   "day": 10,

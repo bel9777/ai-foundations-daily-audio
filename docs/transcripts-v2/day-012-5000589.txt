@@ -1,0 +1,35 @@
+Alex: Just because your AI model gets a low error score during training doesn't mean it won't ruin your business when real customers use it. This is AI Foundations, day 12.
+Jordan: Yesterday we watched gradient descent push down training loss. But loss is just a mathematical steering wheel for the optimizer during training. An evaluation metric is a measurement human beings use to judge whether the model actually solves a real-world task.
+Alex: So loss guides the engine, but metrics tell us if the car drove to the right city.
+Jordan: Exactly. And before you judge a metric, you need a baseline. That is a simple reference result your model must beat, like always predicting the most common outcome or using last week's average. If a baseline gives you ninety-five percent accuracy by doing nothing, your fancy ninety percent model is a total failure.
+Alex: That makes sense. Now, for yes-or-no decisions, models make mistakes. But I am guessing not all mistakes carry the same price tag?
+Jordan: Not at all. Every prediction lands in one of four boxes in a table called a confusion matrix. True positive and true negative are correct guesses. False positive means you raised a false alarm. False negative means you missed a real case.
+Alex: Right, like if an AI flags a healthy crop plant as diseased, that is a false positive. You waste time inspecting it. But if it misses a diseased plant, that is a false negative—and the disease spreads to the whole field.
+Jordan: Spot on. That is why a single overall summary number can hide what really matters. Which brings us to accuracy, precision, and recall. Accuracy is the share of all predictions that were correct. It works fine when classes are balanced, but it completely breaks when the important outcome is rare.
+Alex: Like credit card fraud.
+Jordan: Precisely. If only one out of a hundred transactions is fraudulent, a lazy model that always predicts not fraud is ninety-nine percent accurate, but completely useless for stopping fraud.
+Alex: So how do precision and recall fix that blind spot?
+Jordan: Think about searching a pond for one specific kind of fish using a fishing net. Recall asks: of all the target fish swimming in that pond, how many ended up inside your net? High recall means few missed fish. Precision asks: of everything you pulled up in your net, what share is actually the target fish? High precision means few unwanted items.
+Alex: Ah, so a massive net gives high recall because you scoop up every target fish, but terrible precision because you also dragged up boots and trash. A narrow net gets high precision with zero trash, but misses half the target fish in the pond.
+Jordan: Perfect analogy. Neither metric is universally better. It depends on which mistake hurts more. And you adjust that trade-off using a decision threshold. Classifiers output probability scores, like a seventy percent chance an order will arrive late. If you set your threshold at fifty percent, that score triggers a late alert. If you raise the threshold to eighty percent, fewer orders get flagged.
+Alex: So raising the threshold makes the model pickier. You get higher precision and fewer false alarms, but lower recall because you miss more late orders.
+Jordan: Exactly. Choosing that threshold is an operational decision about costs and staff capacity, not pure math.
+Alex: What about regression models that predict continuous numbers instead of yes or no categories, like exact delivery times?
+Jordan: There you look at distance. Mean absolute error, or MAE, measures the average error size directly. Root mean squared error, or RMSE, squares the errors before averaging, which heavily penalizes large misses. If predictions miss by two minutes, three minutes, and ten minutes, RMSE screams much louder about that ten-minute miss than MAE does.
+Alex: So use RMSE when a huge miss is catastrophic, and MAE when an error twice as large is just twice as costly.
+Jordan: Right. And no matter which metric you choose, always inspect slices of your data—subgroups like rural delivery routes or bad weather days—because a good overall average can hide terrible local failures.
+Alex: Let's ground this with a concrete example. Suppose we have one hundred deliveries, and twenty are truly late.
+Jordan: Your model flags twenty-five deliveries as late. Out of those twenty-five, fifteen are actually late, but ten are on time. That means five late deliveries were missed completely, and seventy on-time deliveries were correctly left alone.
+Alex: Let me compute the metrics. Accuracy is fifteen true late plus seventy true on-time, divided by one hundred total, which is eighty-five percent. Precision is fifteen true late divided by twenty-five total flagged, which gives sixty percent. And recall is fifteen found out of twenty actual late deliveries, so seventy-five percent.
+Jordan: Spot on. Now, is eighty-five percent accuracy good? You cannot answer from numbers alone. You have to ask: can the operations team handle ten false alarms? How badly does missing those five late orders hurt customer loyalty? The right metric follows the operational reality.
+Alex: That brings us to our daily knowledge check. Hit me with the questions, Jordan.
+Jordan: Question one: Why can ninety-nine percent accuracy describe a completely useless model?
+Alex: Because if the target event is rare, like one percent of all cases, a model that blindly predicts negative every time gets ninety-nine percent accuracy while catching zero actual cases.
+Jordan: Question two: What is the core difference between precision and recall?
+Alex: Precision measures how trustworthy your positive alerts are—how many flagged cases were real. Recall measures how thorough your search was—how many total real cases you actually caught.
+Jordan: Question three: A safety system must avoid missing dangerous cases, even if that creates more false alarms. Which direction should its threshold move, and which metric takes priority?
+Alex: Move the threshold lower so it flags anything remotely suspicious, prioritizing high recall to catch every single danger.
+Jordan: Correct, though you still keep an eye on operational capacity so false alarms do not paralyze your team.
+Alex: What is today's hands-on homework?
+Jordan: Build a tiny evaluation card for an invoice review system using paper or a spreadsheet. In a set of fifty invoices, eight contain errors, and the model flags ten. Out of those ten, six truly contain errors. Fill in the four confusion matrix counts, calculate accuracy, precision, and recall, decide whether false positives or false negatives cost more for this workflow, recommend whether to raise or lower the threshold, and name one subgroup you would check separately. Pay close attention to how changing the threshold trades wasted auditor time against missed financial errors.
+Alex: Tomorrow, we go inside a neural network to see how weights, layers, and activations combine to learn complex patterns.

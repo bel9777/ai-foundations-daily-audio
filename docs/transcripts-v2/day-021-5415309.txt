@@ -1,0 +1,41 @@
+Alex: If a neural network makes a massive mistake on a prediction, how does it figure out which of its millions of internal settings actually caused the problem?
+Alex: This is AI Foundations, day 21.
+Jordan: Yesterday we talked about how layers create useful representations as data moves forward through a network. Today we tackle the next logical question: once the network makes a mistake, how does it know which weights caused that mistake and how much to change them?
+Alex: That is the job of backpropagation. Short for backward propagation of errors, right?
+Jordan: Exactly. The big idea is credit assignment. When the network makes a prediction, backpropagation figures out how much each parameter contributed to the final error. Each parameter gets either some blame for making the prediction worse, or credit for making it better.
+Alex: And parameters are just the numbers the model learns from data, mainly weights and biases. A weight controls how strongly one input affects the next layer, while a bias shifts a layer's output up or down.
+Jordan: Right. Think of a neural network like a long line of people passing buckets of water down a chain to put out a fire. If the fire is still burning when the water arrives, the chain failed. Backpropagation is the process of walking backward down that bucket line and asking each person: did you spill water, did you slow things down, or do you need to throw a larger bucket next time?
+Alex: So instead of just blaming the last person holding the bucket, you trace responsibility all the way back to the start.
+Jordan: Precisely. But before you can assign blame, you need a clear way to measure how big the fire still is. That score is the loss.
+Alex: Loss is a single number measuring how far the network's prediction was from the correct answer. A large loss means a bad prediction; a small loss means a good one.
+Jordan: That loss drives the core training loop of deep learning. Step one is the forward pass, where inputs move through the layers to produce a guess. Step two is loss calculation, where we compare that guess to the real answer.
+Alex: Step three is the backward pass, where backpropagation calculates how much each weight contributed to that loss.
+Jordan: And step four is the update, where we tweak the weights a tiny bit to reduce future loss. Today we are focusing squarely on that backward pass.
+Alex: How does the network know which direction to tweak a weight? Does it just guess higher or lower?
+Jordan: It uses gradients. A gradient is a number that tells you how a tiny change in a weight will change the loss. If increasing a weight makes the loss go up, the gradient is positive. If increasing it makes the loss go down, the gradient is negative.
+Alex: In plain English, the gradient answers: if I nudge this specific dial a millimeter to the right, does the model get better or worse, and by how much?
+Jordan: That is it. And we use that answer for gradient descent, which is the rule for updating weights. Imagine standing on a mountain in thick fog. You cannot see the mountain peak or the bottom of the valley, but you can feel the slope under your feet.
+Alex: So you step in the direction that goes downhill.
+Jordan: Exactly. That foggy landscape is the loss surface—the map of all possible loss values for different weight settings. The gradient is your local compass, telling you which direction is steepest uphill. Gradient descent simply means taking a small step in the opposite direction, downhill.
+Alex: Makes sense. But why does this process have to move backward through the layers? Why not calculate it from front to back?
+Jordan: Because the error is only visible at the very end when you compare the final output to the target answer. Each layer transforms the numbers it got from the previous layer. An error at the end depends on what happened earlier.
+Alex: So to find out how much earlier weights mattered, you have to trace backward from the output.
+Jordan: Right. Under the hood, it uses the chain rule from calculus, which combines small sequential effects. You do not need the calculus today, just the concept: backpropagation starts at the output where the error is plain to see, then moves backward layer by layer, assigning blame to each weight based on how much it influenced that final output.
+Alex: Let us anchor this with an example. Suppose a network tries to predict house prices using square footage and the number of bedrooms.
+Jordan: It predicts three hundred ten thousand dollars, but the true price is three hundred fifty thousand. The loss shows the prediction was forty thousand dollars too low.
+Alex: During the backward pass, what questions does backpropagation answer?
+Jordan: It calculates gradients to see if the output layer pushed the price too far down, if a hidden layer shrank the signal, or if the weight attached to square footage mattered more than bedrooms. If the square footage weight had too little influence, its gradient suggests increasing it. If a bias pulled the output down, its gradient suggests raising that bias.
+Alex: It does not guess randomly. It uses the network's structure to trace the error through the whole chain of decisions.
+Jordan: And notice how this ties everything together. From day twenty, each layer creates representations, and backpropagation tells each layer how to adjust that process. From day eighteen on calibration, we know models can be confidently wrong; backprop reduces those errors over time. And from day sixteen, backpropagation is what allows multi-layer networks to learn complex non-linear patterns together instead of getting stuck like linear models.
+Alex: Before we do the knowledge check, there are three common misunderstandings we should clear up.
+Jordan: First, backpropagation is not the optimizer. Backpropagation computes the gradients. The optimizer, like gradient descent, actually uses those gradients to update the weights.
+Alex: Second, backpropagation does not understand the task. It is just calculating how weight changes affect a math score.
+Jordan: And third, backpropagation is not magic memory. One backward pass only provides local feedback for one batch or example. The model still needs thousands of updates across many examples to learn. But without backpropagation systematically answering which part caused the mistake, training deep networks would be practically impossible.
+Jordan: Ready for your quiz? Question one: What is the difference between the loss and the gradient?
+Alex: The loss is a single summary number showing how wrong the prediction was. The gradient tells you how changing a specific weight will change that loss number.
+Jordan: Correct. Question two: Why does backpropagation move backward through the network instead of only looking at the output layer?
+Alex: Because earlier layers feed their results into later layers. The error at the output depends on the whole chain, so you have to trace backward to assign blame or credit to earlier weights.
+Jordan: Spot on. Question three: In one sentence, what does gradient descent do with the information produced by backpropagation?
+Alex: Gradient descent takes the gradients from backpropagation and uses them to adjust the weights in the direction that lowers future loss.
+Jordan: Perfect. Now here is your homework for today. Draw a tiny network on paper with one input set to two, a weight of three to a hidden unit, a weight of four to the output, and a target output of thirty. Run the forward pass, calculate the difference as your loss, and then ask yourself: if you nudge weight one or weight two higher, does the prediction move closer to thirty or farther away? Write one sentence for each weight stating whether it should go up or down, and notice how you are manually tracing the effect of each weight all the way to the final error.
+Alex: Tomorrow on day 22, we dive into training deep networks reliably, exploring why deep models get unstable or slow and how techniques like initialization and normalization keep learning on track.

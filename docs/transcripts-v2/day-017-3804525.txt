@@ -1,0 +1,28 @@
+Alex: Knowing how a model makes decisions can be the difference between trusting an AI system and throwing it out entirely. This is AI Foundations, day 17. Today we are looking at decision trees and ensembles, starting with how a model asks questions to reach an answer.
+Jordan: Right, think of a decision tree like a choose-your-own-adventure book. At each step, it asks a single question about one feature, like age, income, or past purchases. If income is over fifty thousand dollars, go left. If debt is under twenty thousand, go right. You follow the path down to a final prediction, like approving or denying a loan.
+Alex: So it is basically a flowchart of if-then rules checking one input column at a time. That sounds super easy to interpret.
+Jordan: It really is. You can point right to the path the model took. But single trees can also overfit easily. If the choose-your-own-adventure book is too detailed, it learns the specific noise and quirks of your training data rather than general patterns.
+Alex: How does the tree decide which question to ask first? You could split on income, age, or debt.
+Jordan: It looks for splits that make the groups purer, meaning similar outcomes end up together. For classification, like predicting spam versus not spam, we measure purity using Gini impurity or entropy. Both measure disorder or uncertainty, so lower scores are better.
+Alex: What if we are doing regression and predicting a number instead of a category?
+Jordan: Then the tree chooses splits that reduce the spread or variance of the numbers in each branch, making the predictions inside each group more consistent.
+Alex: That gives trees some real strengths. They handle non-linear patterns where relationships are not straight lines, and they work well with mixed feature types without needing a ton of prep work.
+Jordan: Exactly, but the big weakness is stability. A tiny change in your data can produce a completely different tree structure. That is why our earlier lessons matter here. On day twelve, we talked about matching metrics to goals, because high accuracy does not help if false positives hurt you. And on day fourteen, we learned that cross-validation reveals if a tree is actually generalizing or just memorizing training folds.
+Alex: Which brings us to ensembles, where we combine multiple models to fix those weaknesses.
+Jordan: Right. An ensemble pools many weak models together to build a stronger one. The two main strategies are bagging and boosting. Bagging stands for bootstrap aggregating. You draw bootstrap samples from your dataset randomly with replacement, meaning the same example can show up multiple times in one sample.
+Alex: Then you train a separate tree on each sample?
+Jordan: Exactly. For classification, the trees vote on the outcome. For regression, you average their predictions. That averaging calms down the instability of any single tree. A random forest is a popular bagging method where each tree also only considers a random subset of features at each split, keeping the trees diverse.
+Alex: And how does boosting work?
+Jordan: Boosting builds trees sequentially in a chain rather than in parallel. Each new tree focuses specifically on correcting the mistakes made by the previous ones. Boosting usually gives higher predictive accuracy, but the tradeoff is that boosted models are harder to interpret and require careful tuning.
+Alex: So if you need quick insight and a simple explanation, stick with a single tree. If you want a stable boost over one tree, use a random forest. And if you need maximum predictive power, go with boosting.
+Jordan: Perfect summary. Think about a bank approving loans. A single decision tree checking income thresholds, debt ratios, and missed payments is easy for loan officers and regulators to inspect. A random forest might catch subtle patterns better, but if regulations demand clear explanations to customers, the simple tree or a linear model from day fifteen might still be the right choice.
+Alex: Plus, if your fancy ensemble cannot beat a simple majority-vote baseline, the extra complexity is not worth it.
+Jordan: Exactly. Time for today's knowledge check. Question one: what is the main difference between a single decision tree and an ensemble?
+Alex: A single decision tree relies on its own set of sequential rules to predict, while an ensemble combines predictions from multiple trees using voting or averaging to make the final call.
+Jordan: Right. Question two: why can a single decision tree overfit?
+Alex: Because a deep tree can keep splitting until it learns all the noise and specific quirks of the training data, making rules that do not hold up on new data.
+Jordan: Spot on. Question three: in your own words, what does bagging do?
+Alex: Bagging creates multiple random training sets using bootstrap sampling with replacement, trains a separate model on each set, and then averages their predictions or takes a majority vote to make the model more stable.
+Jordan: Nailed it. Here is today's hands-on exercise. Create a tiny dataset of twelve fictional loan applicants on paper or in a spreadsheet, with columns for income, debt, and approval status. Pick your first split rule, like income over sixty thousand, and count how many approved and denied cases end up on each side. Add a second split inside one branch, and compare your tree's predictions against a simple baseline that just predicts the majority class for everyone. Notice how your rules beat the baseline, and notice how a small change in applicant data might change your splits.
+Alex: Tomorrow on day eighteen, we look at probability, calibration, and confidence to see whether a model's predicted certainty can actually be trusted.
+Jordan: See you then.

@@ -1,0 +1,33 @@
+Alex: If you want an AI that does not just answer your questions, but actually completes multi-step tasks for you, you need to understand agents. This is AI Foundations, day 43. Today we are looking at how language models move beyond simple chat to plan and take action.
+Jordan: Up until now, we have mostly talked about chatbots. You ask a question, the model gives an answer, and the turn ends. An agent is fundamentally different because it takes on a goal over multiple steps.
+Alex: So instead of asking a knowledgeable person a single question, it is like handing an assignment to a capable assistant.
+Jordan: Exactly. If you tell an assistant to find three cheap flights, compare them, and tell you which is best, they do not just blurt out a guess. They decide what to do next, pick the right tools, and work through the problem.
+Alex: Break down those moving pieces for me. What actually makes up an agent?
+Jordan: It starts with a goal, which is the outcome you want. Then comes a plan, which is the sequence of steps to get there. Finally, you have actions, which are concrete moves like searching, calling a function, writing a draft, or asking a clarifying question.
+Alex: Does the agent always write out a master plan before taking step one?
+Jordan: Not necessarily. Some write a full plan first, while others improvise step by step. That brings us to the observe-think-act loop.
+Alex: A loop that keeps running until the job is done?
+Jordan: Right. First, it observes the current situation—reading user requests, tool outputs, or retrieved documents. Second, it thinks, deciding the next useful move. Third, it acts—using a tool, asking a question, or giving a response. Then it loops back to observe the result.
+Alex: That ties right into our earlier lessons. In Day 42 we covered tools and function calling, which the agent uses during the act phase. And in Day 41 we talked about grounding, which ensures the agent bases its thinking on actual observed facts rather than making things up.
+Jordan: Precisely. And because tasks change, agents blend upfront planning with improvisation. Think about asking an agent to help you choose a used laptop under five hundred dollars for writing and coding.
+Alex: It shouldn't just dump a random list of generic laptops on me.
+Jordan: Right. A smart agent clarifies missing details like preferred screen size, searches listings, compares options against your needs, summarizes the tradeoffs, and recommends the best fit.
+Alex: How does it know if a step worked or when it is time to stop?
+Jordan: Through feedback and stopping conditions. Feedback is information about whether a step helped, like search results or a user reply. A stopping condition is a clear rule to end the loop—like achieving the goal, reaching a safety threshold, or hitting a point where no more progress is possible.
+Alex: It sounds like a road trip navigator. You set the destination, and the navigator checks the map, spots traffic, picks the next turn, and recalculates if a road is closed. It does not just speak once and give up. It keeps adjusting until you arrive.
+Jordan: That is the perfect mental model. We see this in real systems, like customer support triage. Suppose an email arrives saying someone was charged twice and needs it fixed today.
+Alex: Walk me through how an agent handles that compared to a standard bot.
+Jordan: First, it classifies the email as a billing request. Second, it calls a database tool to retrieve recent transactions. Third, it checks if duplicate charges actually exist. Fourth, it drafts a grounded response based on those account records. Finally, if the issue is ambiguous or high risk, it escalates to a human.
+Alex: It uses retrieval for records, grounding for truthfulness, and tools to check real data instead of guessing. But where are the limits? What are agents not?
+Jordan: An agent is not magic autonomy. It is still just a language model working inside software rules and boundaries. It can fail if goals are unclear, tools are weak, or sources are incomplete.
+Alex: And there is a big security side here, right? Connecting back to prompt injection from Day 38.
+Jordan: Huge risk. Agents read external content like web pages or emails and then take real actions. If untrusted text contains hidden instructions that override the system prompt, the agent can be hijacked. Designers must treat external data as untrusted by default.
+Jordan: Let's do a quick knowledge check. Question one: What is the main difference between a plain chatbot and an agent?
+Alex: A plain chatbot just responds to a prompt in a single turn. An agent takes a goal, plans steps, uses tools, and adjusts its actions over a loop until the goal is achieved.
+Jordan: Spot on. Question two: Why are feedback and stopping conditions important in an agent loop?
+Alex: Feedback tells the agent whether its last move actually helped so it can choose the next action wisely. Stopping conditions tell the agent when to end the loop so it does not run forever or overcomplicate the answer.
+Jordan: Exactly. Question three: Why do agents need protection against prompt injection?
+Alex: Because agents actively read and act on outside information. Untrusted text could override their instructions and cause them to trigger unsafe tool actions or leak data.
+Jordan: Correct again.
+Jordan: Time for homework. Open a text editor or grab a piece of paper. Take this prompt: Help me plan a one-hour study session for tomorrow. Write the goal in one sentence, list three actions the agent could take, define one stopping condition, and write out a four-to-six-line observe-think-act loop. Also identify one spot where grounded evidence is needed and one potential prompt injection risk. Notice how defining clear loop boundaries forces you to design control rather than just relying on text generation.
+Alex: Tomorrow on Day 44, we will dig into agent loops, state, and memory to see how systems track what has happened over time. See you then!

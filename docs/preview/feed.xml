@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 43: Agents: Models That Plan and Act</title>
+      <description>Two-host rebuild of AI Foundations day 43.</description>
+      <guid isPermaLink="false">two-host-day-043</guid>
+      <pubDate>Thu, 06 Aug 2026 07:35:45 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-043-agents-models-that-plan-and-act-7954029.mp3" length="7954029" type="audio/mpeg"/>
+      <itunes:duration>11:02</itunes:duration>
+    </item>
+    <item>
       <title>Day 42: Tools and Function Calling</title>
       <description>Two-host rebuild of AI Foundations day 42.</description>
       <guid isPermaLink="false">two-host-day-042</guid>
@@ -22,6 +30,70 @@
       <pubDate>Tue, 04 Aug 2026 07:35:52 +0000</pubDate>
       <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-041-grounding-answers-in-sources-4271949.mp3" length="4271949" type="audio/mpeg"/>
       <itunes:duration>5:55</itunes:duration>
+    </item>
+    <item>
+      <title>Day 21: Backpropagation: Assigning Credit for Error</title>
+      <description>Two-host rebuild of AI Foundations day 21.</description>
+      <guid isPermaLink="false">two-host-day-021</guid>
+      <pubDate>Tue, 14 Jul 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415309.mp3" length="5415309" type="audio/mpeg"/>
+      <itunes:duration>7:31</itunes:duration>
+    </item>
+    <item>
+      <title>Day 19: Neural Networks from First Principles</title>
+      <description>Two-host rebuild of AI Foundations day 19.</description>
+      <guid isPermaLink="false">two-host-day-019</guid>
+      <pubDate>Sun, 12 Jul 2026 07:35:21 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-019-neural-networks-from-first-principles-4849101.mp3" length="4849101" type="audio/mpeg"/>
+      <itunes:duration>6:44</itunes:duration>
+    </item>
+    <item>
+      <title>Day 18: Probability, Calibration, and Confidence</title>
+      <description>Two-host rebuild of AI Foundations day 18.</description>
+      <guid isPermaLink="false">two-host-day-018</guid>
+      <pubDate>Sat, 11 Jul 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-018-probability-calibration-and-confidence-3934125.mp3" length="3934125" type="audio/mpeg"/>
+      <itunes:duration>5:27</itunes:duration>
+    </item>
+    <item>
+      <title>Day 17: Decision Trees and Ensembles</title>
+      <description>Two-host rebuild of AI Foundations day 17.</description>
+      <guid isPermaLink="false">two-host-day-017</guid>
+      <pubDate>Fri, 10 Jul 2026 07:35:46 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-017-decision-trees-and-ensembles-3804525.mp3" length="3804525" type="audio/mpeg"/>
+      <itunes:duration>5:16</itunes:duration>
+    </item>
+    <item>
+      <title>Day 16: Linear Models and Their Limits</title>
+      <description>Two-host rebuild of AI Foundations day 16.</description>
+      <guid isPermaLink="false">two-host-day-016</guid>
+      <pubDate>Thu, 09 Jul 2026 07:35:46 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-016-linear-models-and-their-limits-4357485.mp3" length="4357485" type="audio/mpeg"/>
+      <itunes:duration>6:03</itunes:duration>
+    </item>
+    <item>
+      <title>Day 14: Cross-Validation and Reliable Comparisons</title>
+      <description>Two-host rebuild of AI Foundations day 14.</description>
+      <guid isPermaLink="false">two-host-day-014</guid>
+      <pubDate>Tue, 07 Jul 2026 07:35:53 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032621.mp3" length="4032621" type="audio/mpeg"/>
+      <itunes:duration>5:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 12: Evaluation Metrics That Match the Goal</title>
+      <description>Two-host rebuild of AI Foundations day 12.</description>
+      <guid isPermaLink="false">two-host-day-012</guid>
+      <pubDate>Sun, 05 Jul 2026 07:39:09 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-012-evaluation-metrics-that-match-the-goal-5000589.mp3" length="5000589" type="audio/mpeg"/>
+      <itunes:duration>6:56</itunes:duration>
+    </item>
+    <item>
+      <title>Day 11: Optimization and Gradient Descent</title>
+      <description>Two-host rebuild of AI Foundations day 11.</description>
+      <guid isPermaLink="false">two-host-day-011</guid>
+      <pubDate>Sat, 04 Jul 2026 07:35:40 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-011-optimization-and-gradient-descent-4535469.mp3" length="4535469" type="audio/mpeg"/>
+      <itunes:duration>6:17</itunes:duration>
     </item>
     <item>
       <title>Day 10: Loss Functions: Defining What Wrong Means</title>

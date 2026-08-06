@@ -1,0 +1,30 @@
+Alex: When an AI gives you a percentage like eighty-three percent, blindly trusting that number can ruin your decisions. This is AI Foundations, day 18.
+Jordan: Right. People see eighty-three percent and assume the model is eighty-three percent sure. Sometimes that is true, but often it is just a raw confidence score, not a real probability.
+Alex: Okay, what is the actual difference between a confidence score and a probability? They sound identical on the surface.
+Jordan: A probability has a strict meaning. If a medical model outputs zero point two zero for a condition, it means that out of one hundred similar patients, roughly twenty will actually have it. It measures real-world frequency between zero and one.
+Alex: So zero means impossible, one means certain, and zero point five is a coin toss.
+Jordan: Exactly. A confidence score, on the other hand, might just be an internal ranking score. Model A outputs zero point nine zero because it is calibrated to match real frequencies. Model B outputs zero point nine zero just because its internal math produced a high score after normalization. They look the same, but Model B only tells you it favors that choice over others, not how often it actually happens.
+Alex: So calibration is the bridge that turns those arbitrary confidence scores into trustworthy probabilities.
+Jordan: That is calibration in a nutshell. A model is well calibrated when its predicted probabilities match real outcomes. Think of a weather forecaster. When they say a thirty percent chance of rain, they do not mean vague emotional hesitation. They mean on days with these exact atmospheric conditions, it rains about three times out of ten.
+Alex: A good forecaster isn't someone who always sounds super confident, it's someone whose percentages actually match reality over time.
+Jordan: Exactly. If a model predicts zero point eight zero for a hundred cases, but only forty of them are truly positive, that model is overconfident. It claimed eighty percent, but reality was forty.
+Alex: And if it predicts zero point three zero, but sixty percent turn out positive, it is underconfident. It is being too cautious.
+Jordan: Right. And calibration matters immensely depending on how you use the output. Look at loan approvals. Applicant A gets a predicted probability of zero point nine zero, Applicant B gets zero point six zero, and Applicant C gets zero point two zero.
+Alex: If those numbers are true probabilities, the bank can set concrete decision rules. They can approve anyone above zero point seven five, manually review applicants between zero point four zero and zero point seven five, and reject the rest.
+Jordan: Exactly. But if that model is secretly overconfident and its zero point nine zero estimates actually behave like zero point seven zero, the bank takes on way more financial risk than it budgeted for.
+Alex: That connects back to our previous lessons. Day 12 taught us that evaluation metrics must match our goals, like risk management. Day 13 showed us that thresholds turn probabilities into decisions, where raising or lowering the bar shifts our tradeoffs.
+Jordan: Plus, Day 14 reminded us to use cross-validation so we do not evaluate calibration on a single lucky data split, and Day 15 showed why we need simple baselines for comparison.
+Alex: And from Days 16 and 17, linear models and decision tree ensembles produce scores differently. Trees can have high accuracy but still output poorly calibrated probabilities.
+Jordan: That is right. High accuracy does not equal good probabilities. Whenever you assess a model, ask three simple questions: Does the score rank cases well? Does the score match real-world reality? And what specific decision will use this score?
+Alex: Ranking tells you who is riskier, but calibration tells you if the percentage itself is reliable for business math.
+Jordan: Yes. And watch out for three common mistakes. First, treating every raw output score as a probability. Second, confusing overall accuracy with good calibration. Third, trusting a model's confidence without validating it against real data.
+Jordan: Time for a quick quiz to test your memory. Question one: what does it mean for a model to be well calibrated?
+Alex: It means the model's predicted probabilities match real-world outcome frequencies. If it predicts zero point eight zero across many cases, about eighty percent of them are actually positive.
+Jordan: Correct. Question two: why is a confidence score not always the same as a probability?
+Alex: A confidence score might just be an internal ranking score. It tells you the model favors one answer over another, but the number itself might not reflect real-world frequency.
+Jordan: Right. Question three: if a model predicts zero point eight zero for a set of cases, but only forty percent are positive, is it overconfident or underconfident?
+Alex: It is overconfident because its predicted probability is much higher than the actual frequency.
+Jordan: Exactly. Here is your homework for today: write down ten predictions for simple yes or no events in your daily life, assign a probability to each, and later record the actual outcomes. Group your predictions into bins like zero to zero point three, zero point four to zero point six, and zero point seven to one point zero, then count how often the events actually happened in each bin to see if you are overconfident or underconfident.
+Alex: I am definitely going to test my own calibration on tomorrow's schedule.
+Jordan: See if your guesses match reality.
+Alex: Tomorrow on Day 19, we will build neural networks from first principles to see how simple computations combine into flexible models step by step.

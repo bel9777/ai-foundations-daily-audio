@@ -1,0 +1,37 @@
+Alex: If you want to understand how modern AI actually makes sense of complex data, you have to look under the hood at neural networks. This is AI Foundations, day 19.
+Jordan: Today we step inside neural networks. Despite the sci-fi name, these are not simulated human brains. They are flexible mathematical systems built from lots of simple computational units working together in layers.
+Alex: Let's start with one of those small units. What is an individual neuron actually doing?
+Jordan: A single neuron takes in input values, multiplies each one by a learned weight, adds them together with a learned bias, and passes that total through an activation function. In compact form, output equals activation of weighted inputs plus bias.
+Alex: Give me a real scenario for that calculation.
+Jordan: Imagine a neuron helping estimate if a delivery will be late. Inputs might include distance, order size, rain forecast, and departure delay. A large positive rain weight pushes the neuron's output upward, while an early departure weight pushes it downward.
+Alex: But one neuron is pretty limited on its own. That's why we organize them into layers, right?
+Jordan: Exactly. Networks usually contain three kinds of layers: an input layer for original features, hidden layers in the middle, and an output layer for the final prediction.
+Alex: Why call them hidden? Are they secret?
+Jordan: Not secret, just internal. They sit between the input features and the final output. What makes them so useful is that hidden layers build intermediate representations. For an order delivery model, raw fields pass into hidden layers that might gradually build internal signals like delivery complexity or risk patterns before producing a final prediction. The training data never explicitly labeled delivery complexity. The network learns that internal representation because it helps lower prediction error.
+Alex: That's convenient so we don't have to hand-design every single feature. But if every layer is just doing weighted addition, why doesn't a stack of hidden layers collapse into just one big linear addition problem?
+Jordan: That is the crucial point. Without an extra step, stacking purely linear calculations just results in one combined linear calculation. The network could never model curved or irregular relationships. That extra step is the activation function, which adds nonlinearity.
+Alex: What does a common activation function actually do to the math?
+Jordan: Take ReLU, which is short for rectified linear unit. Its rule is simple: if the input is negative, output zero. If the input is positive, keep it as it is. That simple bend allows networks to combine basic rules into complex decision boundaries. For example, delivery risk might jump when distance is high and weather is bad, but not rise much when only one is true.
+Alex: Got it. So passing an example from the input layer through the hidden layers to the output prediction is called a forward pass. But before training, those weights are just random guesses. How does the network fix its mistakes?
+Jordan: That takes two connected steps: backpropagation and an optimizer like gradient descent. Imagine a kitchen team making soup through several stations. Station one prepares vegetables, station two builds the broth, station three seasons it, and station four plates it. If a customer says the soup is too salty, the team works backward from the finished dish to figure out which station contributed to each problem. That step backward, assigning responsibility for the mistake, is backpropagation. It calculates the gradients. Then, each station making a small recipe tweak before the next batch is the parameter update done by the optimizer.
+Alex: Backpropagation works backward to assign responsibility for the loss, and gradient descent actually changes the recipe weights.
+Jordan: Exactly.
+Alex: Walk us through a concrete example. How does a network learn to recognize handwritten numbers?
+Jordan: Take a twenty-eight by twenty-eight pixel image of a handwritten digit. The input layer gets seven hundred eighty-four pixel brightness values. Early hidden layers might learn simple patterns like edges and short curves. Later hidden layers combine those into loops, intersections, and digit shapes. Finally, the output layer produces ten scores, one for each digit from zero to nine.
+Alex: So if the image is a three but the model predicts an eight, backpropagation calculates which weights caused that error, and the optimizer nudges them.
+Jordan: Right. The network isn't storing a verbal rule like a three has two right-facing curves. It is learning numerical transformations that separate the labeled images.
+Alex: Since deeper networks build richer representations, is deeper always better?
+Jordan: Not automatically. A deep neural network just means it has multiple hidden layers. Larger networks require more data and compute, cost more to train, take longer, can overfit, and are harder to interpret. You still have to validate against a simple baseline.
+Alex: Time for my pop quiz. What do you have for me?
+Jordan: Question one: why would a neural network with several hidden layers but no activation functions still act like a single linear model?
+Alex: Because without nonlinear activation functions, every layer only performs linear addition. Combining multiple linear operations mathematically collapses into one linear operation, so extra layers wouldn't add the ability to model nonlinear relationships.
+Jordan: Question two: what is the difference between backpropagation and gradient descent?
+Alex: Backpropagation efficiently calculates how much each parameter contributed to the loss, giving us the gradients. Gradient descent or another optimizer takes those gradients and actually updates the weights and biases.
+Jordan: Question three: in the handwritten digit example, what might early hidden layers learn compared to later hidden layers?
+Alex: Early hidden layers learn basic features like edges and simple curves. Later hidden layers combine those into loops, intersections, and full digit shapes.
+Jordan: Bonus recall from our earlier lessons: if a model performs extremely well on training data but fails on new real-world data, what concept explains that?
+Alex: That is classic overfitting.
+Jordan: Now for today's hands-on homework. Take five minutes to build a tiny paper network with two inputs, rain forecast and departure delay, and two hidden neurons using the ReLU formulas from today's lesson text. Calculate the risk score by hand for four cases: no rain no delay, rain with no delay, no rain with a one-hour delay, and rain with a one-hour delay. Notice how the ReLU function turns negative values into zero, and then change just one weight to see how the predicted risk behavior changes.
+Alex: What are we exploring tomorrow?
+Jordan: Tomorrow on day twenty, we will look closer at how neural networks learn representations, connecting hidden layers to embeddings and showing why similar inputs end up near each other in a learned space.
+Alex: See you all tomorrow for day twenty!
