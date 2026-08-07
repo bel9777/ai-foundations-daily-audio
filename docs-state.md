@@ -1,5 +1,24 @@
 # docs-state.md — ai-foundations-daily-audio (Claude-side handoff)
 
+## 2026-08-07 status: 43 of 44 days done — ONE episode from cutover
+
+Verified 09:38: preview feed carries 43 items, all 43 enclosures return
+HTTP 200 via the CDN, coverage = days 1-32 and 34-44. **Only day 33 is
+missing** (its render died on `tts-URLError`, then both TTS quota buckets
+hit 429). Tomorrow's 07:45 run makes day 33 + the new day 45; when
+nothing is missing, `complete_now` flips the main feed to two-host and
+fires `send_cutover_email()`. Nothing else is pending.
+
+Resilience added after this morning's partial run: `gapi()` retries
+transient 5xx (a single 503 at day 33 had killed a whole run and left 8
+episodes unmade), only 401/403 abandons a run, and the heartbeat keeps
+the stage label (`33:tts-URLError`) instead of a bare exception class.
+Quota is PER MODEL — `TTS_MODELS` falls through
+gemini-3.1-flash-tts-preview to gemini-2.5-flash-preview-tts, roughly
+doubling free-tier throughput. Note a small probe can succeed while a
+full episode 429s: the remaining allowance is token-based, so "the model
+answered" does NOT mean an episode will render.
+
 ## 2026-08-06 — incident session (READ THIS FIRST)
 
 Brian asked why GitHub was emailing build failures. An 11-agent
