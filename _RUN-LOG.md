@@ -7,3 +7,4 @@
 2026-08-06 14:39 OK made:3 ondisk:25 ledger:25 missing:18 feed:legacy PUSHED stopped:quota-429 at day 20, resumes next run
 2026-08-07 08:46 WARN made:11 ondisk:36 ledger:36 missing:8 feed:legacy PUSHED failed:27:RuntimeError,28:RuntimeError stopped:HTTP-503 at day 33
 2026-08-07 09:32 WARN made:7 ondisk:43 ledger:43 missing:1 feed:legacy PUSHED failed:33:tts-URLError
+2026-08-07 09:34 OK made:0 ondisk:43 ledger:43 missing:1 feed:legacy PUSHED stopped:quota-429 at day 33, resumes next run
