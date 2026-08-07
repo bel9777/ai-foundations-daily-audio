@@ -88,12 +88,28 @@ TRANS_DIR = REPO / "docs" / "transcripts-v2"
 RUN_LOG = REPO / "_RUN-LOG.md"
 
 
-def gapi(path, payload, timeout=300):
-    req = urllib.request.Request(
-        f"{GBASE}/{path}", data=json.dumps(payload).encode(),
-        headers={"x-goog-api-key": KEY, "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+def gapi(path, payload, timeout=300, attempts=3):
+    """POST to Gemini, retrying transient 5xx.
+
+    2026-08-07: a single HTTP 503 at day 33 killed a whole run and left 8
+    episodes unmade. Server errors are transient and must not end the
+    backfill; 429 (quota) must still propagate so the caller can stop.
+    """
+    for attempt in range(1, attempts + 1):
+        req = urllib.request.Request(
+            f"{GBASE}/{path}", data=json.dumps(payload).encode(),
+            headers={"x-goog-api-key": KEY, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code in (500, 502, 503, 504) and attempt < attempts:
+                wait = 20 * attempt
+                print(f"    HTTP {e.code} - retry {attempt}/{attempts - 1} "
+                      f"in {wait}s")
+                time.sleep(wait)
+                continue
+            raise
 
 
 def dialogue_prompt(day, title, lesson):
@@ -526,11 +542,17 @@ def main():
                 stopped = f"quota-429 at day {day}, resumes next run"
                 print(f"  day {day}: {stopped}")
                 break
+            # only auth/permission errors are worth abandoning the run for;
+            # anything else is this day's problem, not the fleet's
             print(f"  day {day}: HTTP {e.code} {body}")
-            stopped = f"HTTP-{e.code} at day {day}"
-            break
+            if e.code in (401, 403):
+                stopped = f"HTTP-{e.code} at day {day}"
+                break
+            fails.append(f"{day}:HTTP{e.code}")
         except Exception as e:
-            fails.append(f"{day}:{type(e).__name__}")
+            # keep the stage label (script-/tts-) rather than the bare
+            # exception class, so the heartbeat names what actually broke
+            fails.append(f"{day}:{e.args[0] if isinstance(e, RuntimeError) and e.args else type(e).__name__}")
             print(f"  day {day}: FAILED {e!r} - continuing")
 
     complete_now = not [d for d in days if d not in eps]

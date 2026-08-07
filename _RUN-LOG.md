@@ -5,3 +5,4 @@
 2026-08-06 14:24 OK made:0 ondisk:21 ledger:21 missing:22 feed:legacy no-push stopped:quota-429 at day 40, resumes next run
 2026-08-06 14:29 OK made:1 ondisk:22 ledger:22 missing:21 feed:legacy PUSHED
 2026-08-06 14:39 OK made:3 ondisk:25 ledger:25 missing:18 feed:legacy PUSHED stopped:quota-429 at day 20, resumes next run
+2026-08-07 08:46 WARN made:11 ondisk:36 ledger:36 missing:8 feed:legacy PUSHED failed:27:RuntimeError,28:RuntimeError stopped:HTTP-503 at day 33
