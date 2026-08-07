@@ -1,0 +1,37 @@
+Alex: Just because an AI sounds completely sure of itself doesn't mean it isn't making things up out of thin air. This is AI Foundations, day 34.
+Jordan: Today we are tackling hallucinations, which happen when a model confidently gives you information that is false, unsupported, or completely fabricated.
+Alex: And the tricky part is that these mistakes usually look polished. There are no typos or weird phrasing to warn you that something is wrong.
+Jordan: That is why we have to separate fluency from accuracy. Fluency means the text flows naturally and reads well. Accuracy means the text matches reality or your source material. A model is built to generate fluent text, not to verify absolute truth.
+Alex: So why does this happen? Does it start with next-token prediction from day 29?
+Jordan: Exactly. The model is trained to guess the most statistically likely next word. It doesn't have a separate process that asks if a statement is factually true. If the correct answer is "I don't know," next-token prediction naturally pushes the model to output a plausible guess instead.
+Alex: And pretraining from day 28 feeds into that.
+Jordan: Right. Pretraining exposes the model to massive amounts of internet text, which includes typos, rumors, outdated facts, and contradictions. The model learns patterns of human language, not a built-in fact-checker.
+Alex: We also talked about sampling and temperature back on day 33. How does that fit in?
+Jordan: When you raise the temperature, the model picks from a wider range of possible next words. That variety is fantastic for creative writing, but it makes the model far more likely to drift off into unsupported claims.
+Alex: What about instruction following and human feedback from days 30 and 31? Wouldn't training a model to be helpful fix false statements?
+Jordan: Surprisingly, it can sometimes make things worse. When we train models to be helpful, they want to give you an answer no matter what. If you ask a tough question, an eager-to-please model will fill in the blanks with guesswork rather than pause and say it lacks the facts.
+Alex: Plus, as we learned on day 32 with generative models, generating text, images, or audio isn't the same as verifying them.
+Jordan: Exactly. Generating is just outputting content that fits a pattern.
+Alex: So the core pattern here is that a plausible completion is not the same thing as a verified fact.
+Jordan: That is the big takeaway. Think of it like a person who has read millions of books and articles, but they never keep a notebook and they can't check a library while speaking to you. They can give a polished explanation and make educated guesses, but sometimes they will confidently blend two separate facts together or invent a detail because it sounds right in context.
+Alex: They aren't trying to trick us or lying on purpose. They're just blindly matching patterns.
+Jordan: Right. It's a confident blend of patterns, not a deliberate lie.
+Alex: How does this usually look when it happens in the real world?
+Jordan: It shows up in a few common forms. First, fabricated details, like inventing names, dates, study citations, or quotes. Second, confident errors, where it states a wrong fact with strong, certain wording. Third, source drift, where it answers as if it's reading a document you mentioned, but it's actually pulling from general training. And fourth, overgeneralization, where it takes a true general rule and misapplies it to a specific case.
+Alex: Give us a practical example of how someone could get burned by this.
+Jordan: Imagine you ask an AI to summarize yesterday's meeting notes and give you three action items, but the system doesn't actually have access to those notes. Instead of saying it can't see the notes, it might spit out a neat summary with items like "send revised budget," "schedule follow-up," and "confirm deadlines."
+Alex: Those sound like totally normal meeting items! Anyone would fall for that.
+Jordan: Exactly. The problem isn't just that the text is wrong; it's the false confidence it creates. People end up making real decisions based on made-up information.
+Alex: How do we guard against this in our daily work?
+Jordan: A few simple habits help a lot. First, explicitly ask the model to tell you if it's uncertain. Second, ask it to point out which parts of its answer come from provided sources versus general knowledge. Third, use grounded input, which means feeding the model the exact text or data you want it to summarize. Fourth, manually check high-stakes facts like names, numbers, and dates. And fifth, lower the temperature setting when accuracy matters most.
+Alex: Time for the quiz. Let me see if I've got this down.
+Jordan: Question one: What is a hallucination in the context of AI?
+Alex: It's when an AI generates information that is false, unsupported, or completely made up, even though it sounds totally confident.
+Jordan: Correct. Question two: Why can a model produce text that is completely fluent yet totally inaccurate?
+Alex: Because the model is trained to generate statistically likely text that sounds natural, not to verify whether that text matches real-world facts.
+Jordan: Spot on. Question three: What is one practical way to reduce hallucinations when you need accuracy?
+Alex: You can give it grounded input by providing the exact source document, or you can lower the temperature setting to reduce randomness.
+Jordan: Right on both counts. Asking the model to state its uncertainty works well too.
+Alex: What's our homework for today?
+Jordan: Open any free chatbot and ask it for five facts about a topic you know well. Next, ask it to mark each fact as certain or uncertain and explain why. Then, paste in a short paragraph you wrote yourself and tell it to summarize only that paragraph in three bullets. Notice how much more reliable the model becomes when you restrict it with grounded input.
+Alex: Tomorrow, on Day 35, we cover Prompting as Interface Design, looking at how the way you structure your request shapes what the model can actually deliver. See you then.

@@ -1,0 +1,34 @@
+Alex: If you treat an AI like a magic mind-reader instead of designing how you talk to it, you are going to get frustrating results. This is AI Foundations, day 35.
+Jordan: Today we are talking about prompt design. Specifically, how thinking of your prompt as an interface completely changes the quality of what you get back from an AI.
+Alex: Interface design sounds like something for software engineers building apps. What does that actually mean when I'm just typing in a chat box?
+Jordan: Think about the control panel on a microwave. If the buttons are vague, hidden, or confusing, people make mistakes and burn their food. An interface is just the system that connects a person to a machine. When you write a prompt, you're designing that interaction. A good interface reduces friction and stops mistakes before they happen.
+Alex: So I'm not just asking a question. I'm building the controls for the model to use.
+Jordan: Exactly. Your prompt sets the goal by defining what success looks like. It frames the task by giving the model a role or perspective. It sets constraints on length, tone, or format. And it guides the model with structure or examples.
+Alex: Okay, so what are the actual design tools we use when building a prompt?
+Jordan: There are three core ideas: specificity, constraints, and context.
+Alex: Let's take specificity first. What does that look like?
+Jordan: Specificity means giving enough detail that the model aims at the exact target you want. If you just type, "Explain photosynthesis," the model has to guess your audience, depth, and format. But if you say, "Explain photosynthesis to a twelve-year-old in five bullet points using one everyday analogy," you've given it a clear interface.
+Alex: That makes sense. It keeps the model from giving me a dense college textbook answer when I just wanted a quick overview for a kid. What about constraints?
+Jordan: Constraints are explicit limits you place on the output. Things like word counts, using bullet points, or saying "do not use technical jargon." Back on day 33, we talked about how temperature and sampling create output diversity. Constraints narrow down that range of possibilities so the answer actually fits your needs.
+Alex: Right, constraints keep the model on the rails. And the third piece was context?
+Jordan: Yes, context is the background information the model needs to make smart choices. That includes who the output is for, the situation, or key facts. Remember from day 34, a model can sound totally fluent while being completely wrong. Giving good context reduces the chance it guesses incorrectly just to fill in missing details.
+Alex: So if I'm sitting down to write a prompt, what's my design checklist?
+Jordan: Ask yourself five quick questions: What is the task? Who is the output for? What format do I want? What should the model avoid? And what background information does it need?
+Alex: Let's look at a real example. Say my apartment heat breaks and I need to email my landlord.
+Jordan: A weak prompt would be: "Write an email about my heater."
+Alex: Right, that leaves everything open to interpretation. It could write a ten-page essay on heating systems.
+Jordan: Exactly. A prompt designed like an interface looks like this: "Write a polite but firm email to my landlord about a broken heater. I want to request a repair within 48 hours. Keep it under 180 words. Use a professional tone. Include the date the problem started and a clear request for next steps."
+Alex: That states the goal, sets the tone, imposes a word limit, and gives the relevant facts. The model barely has to guess at all.
+Jordan: Precisely. It's like ordering food at a restaurant. If you walk up to the counter and say, "I want food," the kitchen is stuck guessing. If you say, "I want a vegetarian sandwich, toasted, with mustard on the side and no onions," you actually get what you wanted.
+Alex: Though there's one big catch with AI compared to a restaurant, right? If a restaurant is out of rye bread, the waiter tells you. An AI might just make something up and act confident.
+Jordan: That's a crucial difference. We covered instruction following on day 30, but an AI will still answer even when it's uncertain. Clear prompting helps immensely, but it never replaces double-checking the facts.
+Alex: Time for today's knowledge check. Hit me with the questions, Jordan.
+Jordan: Question one: What does it mean to treat a prompt as an interface?
+Alex: It means designing how you and the AI communicate so the task, format, and expectations are clear before it starts writing.
+Jordan: Spot on. You're designing the interaction to reduce confusion. Question two: What is the difference between context and constraints?
+Alex: Context is the background information the model needs to understand the task, while constraints are the hard limits you put on the output, like length, tone, or structure.
+Jordan: Perfect. Context informs, constraints limit. Final question: Why does a specific prompt lower the chance of a bad answer?
+Alex: Because it leaves less room for the model to guess what you want, which helps it hit the exact target you intended.
+Jordan: Exactly right. Less guessing means far more reliable outputs.
+Jordan: Now for your homework today. Pick a simple task like drafting a message to a teacher, writing a grocery list, or summarizing an article. Start with a bare-bones prompt. Then revise it three times: first add context, then add constraints, and finally add clear success criteria for what a good answer looks like. Run all four versions and notice which output requires the least amount of cleanup from you, and ask yourself what you left for the model to guess.
+Alex: Tomorrow on day 36, we are building a repeatable framework for clear instructions, context, and constraints. See you then!

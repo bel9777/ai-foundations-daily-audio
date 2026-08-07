@@ -1,0 +1,38 @@
+Alex: If you've ever noticed an AI chatbot completely forget what you talked about five minutes ago, you've already run into the limits of tokens and context windows. This is AI Foundations, day 27. So Jordan, we always talk about language models reading text, but today's lesson says they don't actually read full words the way humans do. What are they actually looking at?
+Jordan: They process text in chunks called tokens. A token can be a whole word like cat, but it can also be part of a word like un, believ, or able. Punctuation marks like periods or question marks are tokens too, and sometimes even a space attached to a word fragment counts as one.
+Alex: Who decides where those splits happen?
+Jordan: That is done by a rule-based system called a tokenizer. Before the model sees your prompt, the tokenizer chops the raw text into tokens. Then the model maps each token into an embedding, which is that numerical pattern representing meaning we talked about back on day 23.
+Alex: Why not just use whole words directly? Wouldn't that be simpler?
+Jordan: It sounds simpler, but your vocabulary list would be impossibly huge. You'd need a separate entry for every plural form, verb tense, slang word, typo, and foreign term. Subword tokens let the model construct almost any word out of a much smaller dictionary of building blocks.
+Alex: That makes sense. So where does the context window come in?
+Jordan: The context window is the model's short-term working memory for a single turn in a conversation. It sets a strict limit on how much text the model can look at at one time when generating an answer.
+Alex: And everything has to fit inside that window, right?
+Jordan: Everything. Your current prompt, the previous chat history, and the tokens the model generates as its answer. If you have an eight-thousand token context window, the model can only attend to text that fits within those eight thousand tokens. Older text gets pushed out.
+Alex: People often confuse tokens with words. Is eight thousand tokens just eight thousand words?
+Jordan: Not at all. A short, common word might be one token, but a rare technical term, a number, or weird punctuation might break into three or four tokens. Different languages tokenize differently, too. So token count gives you an approximate size footprint, not a clean word count.
+Alex: I really liked the suitcase analogy from the lesson for visualizing this.
+Jordan: It's a useful mental model. Think of tokens as items you pack, and the context window as the size of your suitcase. Lightweight items like common words take up little room, while bulky items like long numbers or rare terms fill it up fast.
+Alex: And once the suitcase is full, you can't force more stuff in without taking something out.
+Jordan: Exactly. If you pack new items, the oldest items fall out of the suitcase.
+Alex: So if I paste a massive customer support email thread into a model and ask what the client originally wanted, the earliest emails might fall out of the window.
+Jordan: Right. The model might give you a totally coherent response based on the recent messages, but miss the original complaint entirely because that text fell out of the suitcase.
+Alex: How does this connect back to how transformers work from days 25 and 26?
+Jordan: Remember, attention is the mechanism that lets tokens compare themselves to other tokens to figure out what matters. But attention can only scan tokens that are currently inside the context window.
+Alex: Right, attention can't find something that isn't there.
+Jordan: Exactly. And even though training uses error signals and backpropagation to teach the model patterns—like we covered in days 21 and 22—that training doesn't expand the memory boundary when the model is running. The architecture processes visible tokens in parallel, but it is strictly bounded by the context length.
+Alex: Which leads to some big practical consequences for prompt design.
+Jordan: It really does. You want to place your most important instructions clearly and near the relevant text so they don't get lost. And if you have massive documents, you can't just paste them all in. You have to split them up, summarize them, or use search tools to fetch only the relevant passages into the window.
+Alex: The model relies on external tools to select what gets stuffed into the suitcase.
+Jordan: That is the whole idea behind modern search-augmented AI systems.
+Alex: Time for our daily check. Quiz me.
+Jordan: First question: What is a token in the context of language models?
+Alex: A token is a chunk of text that a model reads as a single unit. It can be a whole word, part of a word, or punctuation.
+Jordan: Correct. Second question: What is a context window?
+Alex: It is the maximum amount of text, measured in tokens, that a model can hold in its working memory at one time when generating a response.
+Jordan: Spot on. Third question: Why can a model miss crucial information in a long document or chat thread?
+Alex: Because if the text exceeds the context window, earlier information falls outside the window, meaning the attention mechanism cannot access it or use it.
+Jordan: Exactly. If it is outside the window, as far as the model is concerned, it doesn't exist.
+Alex: What's our homework for today?
+Jordan: Write a passage of two hundred fifty to four hundred words about a topic you know well, then underline every spot where punctuation, numbers, or unusual words might increase token count. Rewrite it in a concise version and a wordy version, compare them, and notice how wording changes the token footprint and how extra length might cause details to get missed if the context fills up.
+Alex: Got it. Tomorrow on day 28, we're covering pretraining and how language models learn from massive corpora of text.
+Jordan: See you tomorrow.

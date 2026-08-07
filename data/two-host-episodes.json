@@ -69,6 +69,66 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 38,
+  "title": "Prompt Injection and Untrusted Instructions",
+  "format": "two-host",
+  "guid": "two-host-day-038",
+  "publishedAt": "2026-08-01T07:35:44",
+  "audioPath": "/audio-v2/day-038-prompt-injection-and-untrusted-instructions-3921453.mp3",
+  "transcriptPath": "/transcripts-v2/day-038-3921453.txt",
+  "audioBytes": 3921453,
+  "durationSeconds": 326,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 37,
+  "title": "Examples, Decomposition, and Structured Outputs",
+  "format": "two-host",
+  "guid": "two-host-day-037",
+  "publishedAt": "2026-07-31T07:35:48",
+  "audioPath": "/audio-v2/day-037-examples-decomposition-and-structured-outputs-3807693.mp3",
+  "transcriptPath": "/transcripts-v2/day-037-3807693.txt",
+  "audioBytes": 3807693,
+  "durationSeconds": 317,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 36,
+  "title": "Clear Instructions, Context, and Constraints",
+  "format": "two-host",
+  "guid": "two-host-day-036",
+  "publishedAt": "2026-07-30T07:35:48",
+  "audioPath": "/audio-v2/day-036-clear-instructions-context-and-constraints-3946797.mp3",
+  "transcriptPath": "/transcripts-v2/day-036-3946797.txt",
+  "audioBytes": 3946797,
+  "durationSeconds": 328,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 35,
+  "title": "Prompting as Interface Design",
+  "format": "two-host",
+  "guid": "two-host-day-035",
+  "publishedAt": "2026-07-29T07:35:49",
+  "audioPath": "/audio-v2/day-035-prompting-as-interface-design-3632877.mp3",
+  "transcriptPath": "/transcripts-v2/day-035-3632877.txt",
+  "audioBytes": 3632877,
+  "durationSeconds": 302,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 34,
+  "title": "Hallucinations: Why Fluent Can Still Be False",
+  "format": "two-host",
+  "guid": "two-host-day-034",
+  "publishedAt": "2026-07-28T07:35:49",
+  "audioPath": "/audio-v2/day-034-hallucinations-why-fluent-can-still-be-false-3717261.mp3",
+  "transcriptPath": "/transcripts-v2/day-034-3717261.txt",
+  "audioBytes": 3717261,
+  "durationSeconds": 309,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 32,
   "title": "Generative AI across Text, Images, and Audio",
   "format": "two-host",
@@ -115,6 +175,30 @@
   "audioBytes": 4023405,
   "durationSeconds": 335,
   "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 28,
+  "title": "Pretraining: Learning from Massive Corpora",
+  "format": "two-host",
+  "guid": "two-host-day-028",
+  "publishedAt": "2026-07-21T07:35:47",
+  "audioPath": "/audio-v2/day-028-pretraining-learning-from-massive-corpora-4468077.mp3",
+  "transcriptPath": "/transcripts-v2/day-028-4468077.txt",
+  "audioBytes": 4468077,
+  "durationSeconds": 372,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 27,
+  "title": "Tokens and Context Windows",
+  "format": "two-host",
+  "guid": "two-host-day-027",
+  "publishedAt": "2026-07-20T07:35:44",
+  "audioPath": "/audio-v2/day-027-tokens-and-context-windows-3631437.mp3",
+  "transcriptPath": "/transcripts-v2/day-027-3631437.txt",
+  "audioBytes": 3631437,
+  "durationSeconds": 302,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
   "day": 26,

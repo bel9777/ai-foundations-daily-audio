@@ -56,6 +56,46 @@
       <itunes:duration>5:55</itunes:duration>
     </item>
     <item>
+      <title>Day 38: Prompt Injection and Untrusted Instructions</title>
+      <description>Two-host rebuild of AI Foundations day 38.</description>
+      <guid isPermaLink="false">two-host-day-038</guid>
+      <pubDate>Sat, 01 Aug 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-038-prompt-injection-and-untrusted-instructions-3921453.mp3" length="3921453" type="audio/mpeg"/>
+      <itunes:duration>5:26</itunes:duration>
+    </item>
+    <item>
+      <title>Day 37: Examples, Decomposition, and Structured Outputs</title>
+      <description>Two-host rebuild of AI Foundations day 37.</description>
+      <guid isPermaLink="false">two-host-day-037</guid>
+      <pubDate>Fri, 31 Jul 2026 07:35:48 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-037-examples-decomposition-and-structured-outputs-3807693.mp3" length="3807693" type="audio/mpeg"/>
+      <itunes:duration>5:17</itunes:duration>
+    </item>
+    <item>
+      <title>Day 36: Clear Instructions, Context, and Constraints</title>
+      <description>Two-host rebuild of AI Foundations day 36.</description>
+      <guid isPermaLink="false">two-host-day-036</guid>
+      <pubDate>Thu, 30 Jul 2026 07:35:48 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-036-clear-instructions-context-and-constraints-3946797.mp3" length="3946797" type="audio/mpeg"/>
+      <itunes:duration>5:28</itunes:duration>
+    </item>
+    <item>
+      <title>Day 35: Prompting as Interface Design</title>
+      <description>Two-host rebuild of AI Foundations day 35.</description>
+      <guid isPermaLink="false">two-host-day-035</guid>
+      <pubDate>Wed, 29 Jul 2026 07:35:49 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-035-prompting-as-interface-design-3632877.mp3" length="3632877" type="audio/mpeg"/>
+      <itunes:duration>5:02</itunes:duration>
+    </item>
+    <item>
+      <title>Day 34: Hallucinations: Why Fluent Can Still Be False</title>
+      <description>Two-host rebuild of AI Foundations day 34.</description>
+      <guid isPermaLink="false">two-host-day-034</guid>
+      <pubDate>Tue, 28 Jul 2026 07:35:49 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-034-hallucinations-why-fluent-can-still-be-false-3717261.mp3" length="3717261" type="audio/mpeg"/>
+      <itunes:duration>5:09</itunes:duration>
+    </item>
+    <item>
       <title>Day 32: Generative AI across Text, Images, and Audio</title>
       <description>Two-host rebuild of AI Foundations day 32.</description>
       <guid isPermaLink="false">two-host-day-032</guid>
@@ -86,6 +126,22 @@
       <pubDate>Wed, 22 Jul 2026 07:35:46 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023405.mp3" length="4023405" type="audio/mpeg"/>
       <itunes:duration>5:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 28: Pretraining: Learning from Massive Corpora</title>
+      <description>Two-host rebuild of AI Foundations day 28.</description>
+      <guid isPermaLink="false">two-host-day-028</guid>
+      <pubDate>Tue, 21 Jul 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-028-pretraining-learning-from-massive-corpora-4468077.mp3" length="4468077" type="audio/mpeg"/>
+      <itunes:duration>6:12</itunes:duration>
+    </item>
+    <item>
+      <title>Day 27: Tokens and Context Windows</title>
+      <description>Two-host rebuild of AI Foundations day 27.</description>
+      <guid isPermaLink="false">two-host-day-027</guid>
+      <pubDate>Mon, 20 Jul 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-027-tokens-and-context-windows-3631437.mp3" length="3631437" type="audio/mpeg"/>
+      <itunes:duration>5:02</itunes:duration>
     </item>
     <item>
       <title>Day 26: Transformers: The Core Architecture</title>

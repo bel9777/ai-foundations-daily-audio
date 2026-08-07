@@ -1,0 +1,40 @@
+Alex: If you want an AI to stop giving you generic, useless answers, you have to stop giving it vague requests. This is AI Foundations, day 36.
+Jordan: Exactly. Yesterday we talked about prompting as interface design. Today, we are building that interface using three basic ingredients: clear instructions, context, and explicit constraints.
+Alex: Sounds simple enough, but I know most people, including me, usually just type a vague sentence and hope for the best. What does a good prompt actually look like?
+Jordan: Let's start with the first ingredient: clear instructions. An instruction is just the plain statement of the job you want done. A good one names the task, the audience, and the desired outcome.
+Alex: So instead of typing "tell me about this article," I should say "summarize this article for a high school student in five bullet points."
+Jordan: Right. You named the action, the audience, and the output format. That is a clear instruction.
+Alex: Got it. What about context?
+Jordan: Context is the surrounding information that helps the model make the right decision. If the instruction is the job, context is the file folder, the background notes, or the prior conversation.
+Alex: It gives the AI the setup before it starts working.
+Jordan: Exactly. Think about asking a chef to make dinner. That is just an instruction, so the chef has to guess. But if you say it is for two people, vegetarian, no peanuts, and ready in twenty minutes, you have given context and limits. Now the chef can actually make something suitable.
+Alex: That makes total sense. And without that context, the AI starts guessing. That connects right back to day 34 on hallucinations: when a model lacks background context, it fills the gaps with confident guesses that might be totally wrong.
+Jordan: Spot on. Better context grounds the model and reduces those missing-information mistakes, even if you still need to verify facts.
+Alex: Okay, what about constraints? How are they different from context?
+Jordan: Constraints are explicit rules or boundaries the output must follow. They limit the space of possible answers. Common constraints are length limits, like keep it under 100 words, format rules, like put it in a table, or style rules, like using plain language or avoiding pricing.
+Alex: So constraints narrow down the options. On day 33 we learned that lowering temperature reduces output diversity, but adding explicit constraints gives us consistency in a practical, prompt-level way.
+Jordan: Exactly. Constraints keep the model from writing a long essay when you just wanted a quick summary, or using formal jargon when you needed a casual tone.
+Alex: How do we put all three together? Is there a template?
+Jordan: There is. Break it into three parts: Task, Context, and Constraints. State what you want done, give the background or audience, and set your rules.
+Alex: Can you show us how that works with a realistic example?
+Jordan: Sure. Say you need help rescheduling a meeting. A weak prompt is just: write a message about the meeting.
+Alex: That leaves the AI guessing everything.
+Jordan: Exactly. A much better prompt is: write a short, polite email asking to reschedule tomorrow's 3 p.m. meeting because of a family conflict. The recipient is a client, so keep the tone respectful and avoid oversharing. Limit it to 80 words.
+Alex: That is a night and day difference. The instruction is asking to reschedule. The context is tomorrow's meeting with a client due to a family conflict. And the constraints are under 80 words, polite, and respectful.
+Jordan: And because of that, the result is much more likely to be useful on the very first try.
+Alex: Is there a risk of giving too much detail though? Can you overload a prompt?
+Jordan: Absolutely. More detail is not always better. You do not need to dump everything you know into the prompt, only the background that actually changes the answer.
+Alex: So before sending a prompt, what should we ask ourselves?
+Jordan: Ask three questions: What exactly do I want done? What background would a smart helper need to know? What rules must the answer follow?
+Alex: Keep it clear, relevant, and bounded. It ties right into day 35: good prompt design reduces friction and makes the output far easier to use.
+Jordan: Now let's test if you have this down. Knowledge check time. First question: what is the difference between an instruction and a constraint?
+Alex: An instruction is the task you want done, the actual job. A constraint is a rule that limits what the answer can look like or include, such as length, format, or tone limits.
+Jordan: Perfect. Second question: why does context matter when you are prompting an AI?
+Alex: Because context provides the necessary background so the AI can interpret the task correctly. Without context, the model has to make guesses about your situation and priorities.
+Jordan: Exactly right. Last question: rewrite this weak prompt by adding an instruction, context, and a constraint: "Help me with this report."
+Alex: "Summarize this report for a non-technical manager. Focus on the main findings and action items, and keep it under 150 words."
+Jordan: Spot on. You have the task to summarize, context about the non-technical manager and focus areas, and a 150-word constraint.
+Alex: That felt pretty intuitive once you break it into those three parts.
+Jordan: For your homework today, pick three vague prompts you might actually write, like "explain this" or "make this better." Rewrite each one by adding one clear instruction, one piece of context, and one explicit constraint. If you have a free AI tool, run both versions and notice how the specific constraints and context produce a far more useful result.
+Alex: Simple enough to practice on your next email draft. Tomorrow on day 37, we will cover examples, decomposition, and structured outputs to make AI responses even more reliable.
+Jordan: See you tomorrow!

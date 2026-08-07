@@ -1,0 +1,42 @@
+Alex: If you want an AI to actually give you reliable work instead of a coin toss, you have to stop asking for everything all at once.
+Alex: This is AI Foundations, day 37.
+Jordan: Yesterday we focused on making requests clearer. Today we go one step further to make requests easier for the model to follow.
+Alex: Because even a clear instruction still leaves a lot of room for guessing.
+Jordan: Exactly. That brings us to our first technique: using examples. Language models are pattern matchers. If you tell an AI to summarize a document professionally, your idea of professional and its idea might be totally different.
+Alex: So instead of just telling it what you want, you show it.
+Jordan: Right. In plain language, an example is a concrete illustration that teaches by showing, not just telling. Examples show the model what good looks like, which cuts down on guessing and gives you a consistent tone or shape. Think of examples like training wheels. They do not do the riding for the AI, but they keep it upright until it catches the pattern.
+Alex: That makes total sense. Show, don't just tell. What is the second technique?
+Jordan: Decomposition. In plain language, decomposition is the act of turning one complicated task into several smaller tasks.
+Alex: Like if I need help writing a tricky email to my landlord about a leak, I shouldn't just ask the model to write a good email.
+Jordan: Right, because a big request hides a dozen smaller decisions. When you split it up, each step becomes simpler. You ask the model to first identify the key issue, then list the facts, then draft a polite message, and finally make sure the tone stays firm but respectful.
+Alex: So decomposition turns a complex job into small steps that are much easier for me to check for mistakes.
+Jordan: Spot on. And that leads right into the third idea: structured outputs. In plain language, a structured output is a response arranged in a predictable format, like a list, table, numbered steps, or labeled fields.
+Alex: Instead of getting back three dense paragraphs of text.
+Jordan: Exactly. If you ask for specific fields like Issue, Cause, and Next Step, you strip away ambiguity.
+Alex: Plus, it makes it super obvious if the model missed something, because the label will just be blank.
+Jordan: Exactly. And these three ideas work best when you combine them. Picture assembling flat-pack furniture. An example is having a finished chair standing right next to you so you can see the end goal.
+Alex: Decomposition is the instruction booklet broken down step by step.
+Jordan: And structured output is a parts list with labeled sections for every screw and bolt.
+Alex: That sounds a thousand times better than a vague note saying build it well.
+Jordan: Let us look at a real-world example. Say you are helping a student study for a history quiz. A vague prompt would be: make me study notes on the French Revolution.
+Alex: That is way too open. You might get a long essay or a lazy summary.
+Jordan: Exactly. A stronger prompt uses all three ideas. For an example, you say: use this sample style: Cause — Economic hardship made people angry. For decomposition, you say: first list five causes, then five major events, then three outcomes.
+Alex: And for structured output, you ask it to format the result under three clear headings with bullet points under each.
+Jordan: Now you get notes that are easy to read, easy to inspect, and easy to study from.
+Alex: Hold on though, does using examples and structure mean we can forget what we covered on day 36 about clear instructions, context, and constraints?
+Jordan: Not at all. Examples and structure do not replace clear instructions, context, and constraints; they strengthen them. You still need to state the overall task, give relevant background, and set limits.
+Alex: Got it. And what about hallucinations from day 34? Remember how we said a fluent answer can still be completely false?
+Jordan: Decomposition is a great defense against hallucinations. When you break a task into smaller pieces, those pieces are much easier to inspect for factual errors. And structured outputs force the model into specific fields, making it obvious when a response is missing substance.
+Alex: That ties into day 33 on sampling and diversity, too. If I want high consistency and less random variety, examples and structure pull the model into line.
+Jordan: Precisely. If you want wild brainstorming, loosen the format. If you want strict reliability, tighten it up.
+Jordan: Time for a quick knowledge check. Question one: What is the main purpose of giving examples in a prompt?
+Alex: Examples show the model what good looks like, which reduces guessing and keeps the output consistent.
+Jordan: Perfect. Question two: What does decomposition mean in plain language?
+Alex: Decomposition means breaking one big, complex task into smaller, easier steps.
+Jordan: Right on. Question three: Why are structured outputs useful?
+Alex: Structured outputs put answers into a predictable format, which makes them easier to read, inspect for errors, compare, and reuse later.
+Jordan: Spot on. Three for three.
+Jordan: Here is your homework for today. Pick one real task from your life, like planning groceries, drafting an apology text, preparing interview questions, or organizing a weekend project. Write three versions of a prompt for it. Version one is a vague request. Version two adds one example of the style or format you want. Version three breaks the task into three smaller steps and requires a structured output. Run all three, compare the results, and notice which version gives you the cleanest, most usable output and why. If you want an extra challenge, revise the best prompt once more by adding one clear constraint like length, tone, or audience.
+Alex: Remember today's big takeaway: when you want better AI output, do not just ask harder. Show the pattern, split the task, and choose a format that makes quality easier to see.
+Jordan: Tomorrow on day 38, we take on Prompt Injection and Untrusted Instructions, where we look at how bad actors try to steer an AI away from your goal and how to keep your prompts safe.
+Alex: See you tomorrow.
