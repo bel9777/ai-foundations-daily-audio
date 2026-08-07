@@ -1,0 +1,38 @@
+Alex: Swapping two words in a sentence can completely flip its meaning, which is why artificial intelligence needs special tools to handle data where order matters. This is AI Foundations, day 24. Today we are exploring sequence models before transformers.
+Jordan: Right. Up until now, most machine learning models we looked at took one fixed chunk of input and gave us one fixed output. But real-world data like sentences, musical notes, or server logs arrive in a specific order.
+Alex: Like the classic example: dog bites man versus man bites dog. The exact same words, but a totally different news story.
+Jordan: Exactly. If you change the order, you change the meaning. To handle that, early sequence models were built to process data one item at a time while keeping track of what came before. The foundation for this was the recurrent neural network, or RNN.
+Alex: So how does an RNN actually remember what happened five words ago? Does it store every single word in memory?
+Jordan: No, that would take way too much memory. Instead, at each time step, the RNN reads the current item and updates something called a hidden state. Think of the hidden state as a single compact notebook page you keep erasing and rewriting as you read a story step by step.
+Alex: So it is just a running summary passed forward from one step to the next.
+Jordan: Precisely. But plain RNNs had a major flaw. If the sequence got too long, important notes from the beginning got overwritten and forgotten.
+Alex: Is that because of backpropagation? On day 21 we learned how networks assign credit for errors, and it seems like doing that over time would be tricky.
+Jordan: Exactly. In sequence models, we use backpropagation through time, meaning we trace the credit for error backward through every single time step. Two big problems pop up: vanishing gradients and exploding gradients.
+Alex: When gradients vanish, the training signal shrinks to near zero as it moves backward, so the network stops learning from those early steps.
+Jordan: Right. And when gradients explode, the training signal grows way too large and becomes unstable. As we talked about on day 22, we often need gradient clipping to cap those exploding gradients and keep our training stable.
+Alex: So plain RNNs suffer from short-term memory loss. How did researchers fix that?
+Jordan: They built gated RNNs, specifically Long Short-Term Memory networks, or LSTMs, and Gated Recurrent Units, or GRUs.
+Alex: What is a gate in plain English?
+Jordan: A gate is a learned switch that decides how much information to keep, forget, or write to memory at each step. Imagine you are following a long cooking recipe. A plain RNN tries to hold every instruction in its head and forgets step two by the time it reaches step ten.
+Alex: And how does an LSTM handle that?
+Jordan: An LSTM is like cooking with three sticky notes. You have one sticky note for ingredients to keep, one for steps you can forget, and one for the next action to write down. That gives the network precise control over its memory across long sequences.
+Alex: That makes sense. Now, how do these models handle different tasks? Because not every problem is a single sentence in and a single word out.
+Jordan: We have three main shapes. First is sequence-to-one, where you feed in many inputs to get one output, like reading a full customer review to predict whether it is positive or negative.
+Alex: Second is sequence-to-sequence, like reading a whole English sentence and outputting a Spanish translation.
+Jordan: And third is one-to-sequence, like taking a single image to generate a multi-word caption, or starting with one musical note to generate a whole melody.
+Alex: And tying back to day 23, at every time step, the input is usually a word embedding vector rather than raw text.
+Jordan: Spot on. Take the real-world example of phone text autocompletion. When you type "I'm going to the...", the sequence model reads those words one by one, building its hidden state as it goes.
+Alex: Because it uses word embeddings, it knows words like store, office, and park sit near each other in vector space, so it can suggest those as likely next words.
+Jordan: Exactly. And because it tracks order, it knows "going to the" sets up a destination, which a simple bag-of-words model that ignores order would completely miss.
+Alex: So why did we eventually move away from RNNs and LSTMs if those gates solved the memory problem?
+Jordan: Because they still process items strictly one at a time, sequentially. You cannot easily process words in parallel, which makes training slow, and extremely long-range connections are still hard to capture.
+Alex: Got it. Time for today's knowledge check. Hit me.
+Jordan: Question one: What is a hidden state in an RNN?
+Alex: It’s the network’s running summary of what it has seen so far in a sequence, updated at every time step.
+Jordan: Correct. Question two: Why do plain RNNs struggle with very long sequences?
+Alex: Because backpropagation through time forces the training signal through many steps, causing gradients to either vanish or explode, which prevents early steps from learning.
+Jordan: Nailed it. Question three: What is a gate in an LSTM or GRU?
+Alex: It’s a learned switch that controls how much information the model keeps, forgets, or writes into memory.
+Jordan: Perfect score. Now for today's hands-on exercise. Open a notebook or text editor and write five short sentences using the exact same words in different orders, like "cats chase mice" and "mice chase cats". Read each sentence one word at a time, and after every word, write a one-line summary of what a hidden state should remember. Then choose one task—sentiment detection, translation, or next-word prediction—and write one short paragraph explaining why a sequence model helps. Pay attention to how the meaning shifts as you step through the words.
+Alex: Simple enough. Tomorrow, on Day 25, we cover Attention: Choosing What Matters, where models learn to look back at any part of a sequence directly instead of relying only on a single running memory.
+Jordan: See you tomorrow.

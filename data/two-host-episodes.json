@@ -1,5 +1,17 @@
 [
  {
+  "day": 44,
+  "title": "Agent Loops, State, and Memory",
+  "format": "two-host",
+  "guid": "two-host-day-044",
+  "publishedAt": "2026-08-07T07:35:44",
+  "audioPath": "/audio-v2/day-044-agent-loops-state-and-memory-4151565.mp3",
+  "transcriptPath": "/transcripts-v2/day-044-4151565.txt",
+  "audioBytes": 4151565,
+  "durationSeconds": 345,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
   "day": 43,
   "title": "Agents: Models That Plan and Act",
   "format": "two-host",
@@ -57,6 +69,114 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 32,
+  "title": "Generative AI across Text, Images, and Audio",
+  "format": "two-host",
+  "guid": "two-host-day-032",
+  "publishedAt": "2026-07-26T07:35:52",
+  "audioPath": "/audio-v2/day-032-generative-ai-across-text-images-and-audio-4018797.mp3",
+  "transcriptPath": "/transcripts-v2/day-032-4018797.txt",
+  "audioBytes": 4018797,
+  "durationSeconds": 334,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 31,
+  "title": "Human Feedback and Preference Optimization",
+  "format": "two-host",
+  "guid": "two-host-day-031",
+  "publishedAt": "2026-07-24T07:35:47",
+  "audioPath": "/audio-v2/day-031-human-feedback-and-preference-optimization-3960621.mp3",
+  "transcriptPath": "/transcripts-v2/day-031-3960621.txt",
+  "audioBytes": 3960621,
+  "durationSeconds": 329,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 30,
+  "title": "Fine-Tuning and Instruction Following",
+  "format": "two-host",
+  "guid": "two-host-day-030",
+  "publishedAt": "2026-07-23T07:35:45",
+  "audioPath": "/audio-v2/day-030-fine-tuning-and-instruction-following-4262157.mp3",
+  "transcriptPath": "/transcripts-v2/day-030-4262157.txt",
+  "audioBytes": 4262157,
+  "durationSeconds": 355,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 29,
+  "title": "Next-Token Prediction and Emergent Capabilities",
+  "format": "two-host",
+  "guid": "two-host-day-029",
+  "publishedAt": "2026-07-22T07:35:46",
+  "audioPath": "/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023405.mp3",
+  "transcriptPath": "/transcripts-v2/day-029-4023405.txt",
+  "audioBytes": 4023405,
+  "durationSeconds": 335,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 26,
+  "title": "Transformers: The Core Architecture",
+  "format": "two-host",
+  "guid": "two-host-day-026",
+  "publishedAt": "2026-07-19T07:35:43",
+  "audioPath": "/audio-v2/day-026-transformers-the-core-architecture-4511565.mp3",
+  "transcriptPath": "/transcripts-v2/day-026-4511565.txt",
+  "audioBytes": 4511565,
+  "durationSeconds": 375,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 25,
+  "title": "Attention: Choosing What Matters",
+  "format": "two-host",
+  "guid": "two-host-day-025",
+  "publishedAt": "2026-07-18T07:35:44",
+  "audioPath": "/audio-v2/day-025-attention-choosing-what-matters-4265325.mp3",
+  "transcriptPath": "/transcripts-v2/day-025-4265325.txt",
+  "audioBytes": 4265325,
+  "durationSeconds": 355,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 24,
+  "title": "Sequence Models before Transformers",
+  "format": "two-host",
+  "guid": "two-host-day-024",
+  "publishedAt": "2026-07-17T07:35:43",
+  "audioPath": "/audio-v2/day-024-sequence-models-before-transformers-4397805.mp3",
+  "transcriptPath": "/transcripts-v2/day-024-4397805.txt",
+  "audioBytes": 4397805,
+  "durationSeconds": 366,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 23,
+  "title": "Embeddings: Meaning as Geometry",
+  "format": "two-host",
+  "guid": "two-host-day-023",
+  "publishedAt": "2026-07-16T07:35:51",
+  "audioPath": "/audio-v2/day-023-embeddings-meaning-as-geometry-4713165.mp3",
+  "transcriptPath": "/transcripts-v2/day-023-4713165.txt",
+  "audioBytes": 4713165,
+  "durationSeconds": 392,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
+  "day": 22,
+  "title": "Training Deep Networks Reliably",
+  "format": "two-host",
+  "guid": "two-host-day-022",
+  "publishedAt": "2026-07-15T07:35:45",
+  "audioPath": "/audio-v2/day-022-training-deep-networks-reliably-3807981.mp3",
+  "transcriptPath": "/transcripts-v2/day-022-3807981.txt",
+  "audioBytes": 3807981,
+  "durationSeconds": 317,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
   "day": 21,
   "title": "Backpropagation: Assigning Credit for Error",
   "format": "two-host",
@@ -66,6 +186,18 @@
   "transcriptPath": "/transcripts-v2/day-021-5415309.txt",
   "audioBytes": 5415309,
   "durationSeconds": 451
+ },
+ {
+  "day": 20,
+  "title": "Layers, Activations, and Representations",
+  "format": "two-host",
+  "guid": "two-host-day-020",
+  "publishedAt": "2026-07-13T07:35:41",
+  "audioPath": "/audio-v2/day-020-layers-activations-and-representations-4800141.mp3",
+  "transcriptPath": "/transcripts-v2/day-020-4800141.txt",
+  "audioBytes": 4800141,
+  "durationSeconds": 399,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
  },
  {
   "day": 19,

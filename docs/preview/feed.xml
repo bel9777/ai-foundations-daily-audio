@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 44: Agent Loops, State, and Memory</title>
+      <description>Two-host rebuild of AI Foundations day 44.</description>
+      <guid isPermaLink="false">two-host-day-044</guid>
+      <pubDate>Fri, 07 Aug 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-044-agent-loops-state-and-memory-4151565.mp3" length="4151565" type="audio/mpeg"/>
+      <itunes:duration>5:45</itunes:duration>
+    </item>
+    <item>
       <title>Day 43: Agents: Models That Plan and Act</title>
       <description>Two-host rebuild of AI Foundations day 43.</description>
       <guid isPermaLink="false">two-host-day-043</guid>
@@ -48,12 +56,92 @@
       <itunes:duration>5:55</itunes:duration>
     </item>
     <item>
+      <title>Day 32: Generative AI across Text, Images, and Audio</title>
+      <description>Two-host rebuild of AI Foundations day 32.</description>
+      <guid isPermaLink="false">two-host-day-032</guid>
+      <pubDate>Sun, 26 Jul 2026 07:35:52 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-032-generative-ai-across-text-images-and-audio-4018797.mp3" length="4018797" type="audio/mpeg"/>
+      <itunes:duration>5:34</itunes:duration>
+    </item>
+    <item>
+      <title>Day 31: Human Feedback and Preference Optimization</title>
+      <description>Two-host rebuild of AI Foundations day 31.</description>
+      <guid isPermaLink="false">two-host-day-031</guid>
+      <pubDate>Fri, 24 Jul 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-031-human-feedback-and-preference-optimization-3960621.mp3" length="3960621" type="audio/mpeg"/>
+      <itunes:duration>5:29</itunes:duration>
+    </item>
+    <item>
+      <title>Day 30: Fine-Tuning and Instruction Following</title>
+      <description>Two-host rebuild of AI Foundations day 30.</description>
+      <guid isPermaLink="false">two-host-day-030</guid>
+      <pubDate>Thu, 23 Jul 2026 07:35:45 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-030-fine-tuning-and-instruction-following-4262157.mp3" length="4262157" type="audio/mpeg"/>
+      <itunes:duration>5:55</itunes:duration>
+    </item>
+    <item>
+      <title>Day 29: Next-Token Prediction and Emergent Capabilities</title>
+      <description>Two-host rebuild of AI Foundations day 29.</description>
+      <guid isPermaLink="false">two-host-day-029</guid>
+      <pubDate>Wed, 22 Jul 2026 07:35:46 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023405.mp3" length="4023405" type="audio/mpeg"/>
+      <itunes:duration>5:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 26: Transformers: The Core Architecture</title>
+      <description>Two-host rebuild of AI Foundations day 26.</description>
+      <guid isPermaLink="false">two-host-day-026</guid>
+      <pubDate>Sun, 19 Jul 2026 07:35:43 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-026-transformers-the-core-architecture-4511565.mp3" length="4511565" type="audio/mpeg"/>
+      <itunes:duration>6:15</itunes:duration>
+    </item>
+    <item>
+      <title>Day 25: Attention: Choosing What Matters</title>
+      <description>Two-host rebuild of AI Foundations day 25.</description>
+      <guid isPermaLink="false">two-host-day-025</guid>
+      <pubDate>Sat, 18 Jul 2026 07:35:44 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-025-attention-choosing-what-matters-4265325.mp3" length="4265325" type="audio/mpeg"/>
+      <itunes:duration>5:55</itunes:duration>
+    </item>
+    <item>
+      <title>Day 24: Sequence Models before Transformers</title>
+      <description>Two-host rebuild of AI Foundations day 24.</description>
+      <guid isPermaLink="false">two-host-day-024</guid>
+      <pubDate>Fri, 17 Jul 2026 07:35:43 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-024-sequence-models-before-transformers-4397805.mp3" length="4397805" type="audio/mpeg"/>
+      <itunes:duration>6:06</itunes:duration>
+    </item>
+    <item>
+      <title>Day 23: Embeddings: Meaning as Geometry</title>
+      <description>Two-host rebuild of AI Foundations day 23.</description>
+      <guid isPermaLink="false">two-host-day-023</guid>
+      <pubDate>Thu, 16 Jul 2026 07:35:51 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-023-embeddings-meaning-as-geometry-4713165.mp3" length="4713165" type="audio/mpeg"/>
+      <itunes:duration>6:32</itunes:duration>
+    </item>
+    <item>
+      <title>Day 22: Training Deep Networks Reliably</title>
+      <description>Two-host rebuild of AI Foundations day 22.</description>
+      <guid isPermaLink="false">two-host-day-022</guid>
+      <pubDate>Wed, 15 Jul 2026 07:35:45 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-022-training-deep-networks-reliably-3807981.mp3" length="3807981" type="audio/mpeg"/>
+      <itunes:duration>5:17</itunes:duration>
+    </item>
+    <item>
       <title>Day 21: Backpropagation: Assigning Credit for Error</title>
       <description>Two-host rebuild of AI Foundations day 21.</description>
       <guid isPermaLink="false">two-host-day-021</guid>
       <pubDate>Tue, 14 Jul 2026 07:35:44 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415309.mp3" length="5415309" type="audio/mpeg"/>
       <itunes:duration>7:31</itunes:duration>
+    </item>
+    <item>
+      <title>Day 20: Layers, Activations, and Representations</title>
+      <description>Two-host rebuild of AI Foundations day 20.</description>
+      <guid isPermaLink="false">two-host-day-020</guid>
+      <pubDate>Mon, 13 Jul 2026 07:35:41 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-020-layers-activations-and-representations-4800141.mp3" length="4800141" type="audio/mpeg"/>
+      <itunes:duration>6:39</itunes:duration>
     </item>
     <item>
       <title>Day 19: Neural Networks from First Principles</title>

@@ -1,0 +1,33 @@
+Alex: If you want to understand how modern AI actually reads, writes, and reasons, you have to understand the Transformer. This is AI Foundations, day 26.
+Jordan: Up until a few years ago, AI processed text like a human reading through a tiny straw, moving step by step through a sequence. That meant by the time a model reached the end of a long sentence, it often forgot how the sentence started. The Transformer changed everything by letting a model look at every word in a sequence all at once.
+Alex: Right, but before a network can look at words, it needs numbers. We already know embeddings turn words into vectors, but how does sequence order fit into that?
+Jordan: Order is critical. Take the sentences "dog bites man" and "man bites dog." The exact same word embeddings go into the system, but the meaning is completely different because the order changed.
+Alex: Because who is doing the biting gets flipped.
+Jordan: Exactly. So the Transformer adds positional information directly to those token embeddings. That signal tells the model not just what a word means, but where it sits in line. Without it, the network would treat the sequence as an unordered bag of words.
+Alex: Okay, so now we have numeric vectors carrying both meaning and position. How do those vectors actually talk to each other?
+Jordan: That's where self-attention comes in. "Self" just means the sequence attends to itself. Every token creates a query about what information it needs, then compares that query against every other token in the text to decide where to focus.
+Alex: Like a team meeting where everyone has a specific question written on a note.
+Jordan: Exactly. Everyone scans the room, finds the teammate who has the answer, and builds a summary. A pronoun like "it" scans back to find the noun it refers to. A verb looks across the sentence for its subject.
+Alex: And because every token can look directly at any other token, you don't lose important connections just because two words are far apart.
+Jordan: Exactly. Take an email assistant reading the sentence: "Please send the report to Maria after you update the chart."
+Alex: In an older step-by-step model, "send" and "chart" are separated by several words.
+Jordan: Right, but self-attention lets "report" link directly to "send," "chart" link directly to "update," and the timing word "after" connect the whole sequence of actions instantly. That direct connection across distances is why Transformers excel at translation, summarization, and autocomplete.
+Alex: But a real Transformer isn't just one self-attention layer. It's a whole stack of them. How do you pass information through dozens of layers without the signal getting degraded or lost?
+Jordan: That's where residual connections and layer normalization come in. A residual connection is a shortcut. It takes the input coming into a layer and adds it directly to the output of that layer.
+Alex: So the original signal passes straight through alongside whatever new information the layer calculated.
+Jordan: Yes, which preserves information and makes it much easier for gradients to flow during training. A gradient is just the directional signal used to adjust model weights and reduce error. And layer normalization keeps the numbers in a healthy, manageable range at each step so training stays steady.
+Alex: Okay, so self-attention lets tokens listen to each other, residual connections preserve the signal, and layer norm keeps the numbers well-behaved. What happens at the end of a Transformer layer?
+Jordan: Once self-attention mixes information across tokens, each token passes through a feed-forward layer. This is a small neural network applied to each token separately, using the same learned weights.
+Alex: Why separate them again right after letting them talk?
+Jordan: Think of it like this: attention is listening to the sequence, while the feed-forward layer is private thinking about what was heard. Attention gathers context from the group; the feed-forward layer transforms that context into a richer internal representation for that specific token.
+Alex: So the whole pattern is: start with embeddings and position, apply self-attention, add a residual connection and normalize, run the feed-forward layer, add another residual connection and normalize.
+Jordan: You've got it. Stack dozens of those layers together, and the network gradually refines its understanding. Early layers spot basic word pairs, while deeper layers build complex, abstract ideas. The main tradeoff is that calculating attention between every single pair of tokens gets computationally expensive on very long texts.
+Alex: That makes total sense.
+Jordan: Ready for a quick knowledge check? Question one: What problem does positional information solve in a Transformer?
+Alex: Embeddings give words meaning in vector space, but positional information tells the model the order of those words. That's how it knows the difference between "dog bites man" and "man bites dog" instead of seeing a chaotic bag of words.
+Jordan: Spot on. Question two: In plain language, what does self-attention allow each token to do?
+Alex: Self-attention lets each token look across the whole sequence, evaluate which other tokens are relevant to its task, and gather context from them—like a pronoun connecting to its noun.
+Jordan: Exactly. Question three: Why are residual connections helpful when training deep Transformer models?
+Alex: Residual connections add the layer's input back to its output. That shortcut keeps the original information alive and gives gradients a clear path during training, making deep networks stable and trainable.
+Jordan: Three for three. Now for today's hands-on exercise. On a piece of paper, write out the sentence: "The cat chased the mouse." Draw a box around each word, write a quick note on what context that word needs to understand its job, and draw arrows between the words that should pay attention to each other. Then imagine each word taking a step of private thinking to process that context, and notice which word needed the most surrounding context versus which was easiest to understand on its own.
+Alex: Tomorrow, we take a closer look at tokens themselves and explore context windows to see where a Transformer's vision begins and ends.

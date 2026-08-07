@@ -1,0 +1,38 @@
+Alex: Just because an AI follows your instructions doesn't mean it gives you an answer you actually want to read. This is AI Foundations, day 31.
+Jordan: Up until now, we’ve talked about how models learn patterns from text, predict the next token, and get fine-tuned to answer prompts. But following an instruction is only half the battle.
+Alex: Right. If I ask a bot how to fix my sink, telling me to "turn off the water and call a plumber" technically follows my instruction, but it’s pretty useless if I want step-by-step help.
+Jordan: Exactly. That gap between "it answered the prompt" and "it gave me an answer I prefer" is where human feedback and preference optimization come in.
+Alex: So preference optimization is training the model to output answers that people actually prefer when multiple options exist?
+Jordan: Precisely. Text on the internet contains plenty of useful knowledge, but also plenty of rude, confusing, or misleading stuff. Pretraining teaches the model language patterns. Fine-tuning teaches it to respond to prompts. Human feedback teaches it preferences, like being helpful, honest, clear, and safe.
+Alex: Give me a mental model for this. How does it build on what we’ve learned?
+Jordan: Think of a student writer. Pretraining is like the student reading thousands of books to absorb language structure. Fine-tuning is working with a tutor who says, "Make sure you answer the essay prompt directly."
+Alex: And human feedback?
+Jordan: That's like a judge looking at two drafts the student wrote for the same prompt and saying, "Draft B is much clearer and more respectful than Draft A." Preference optimization is the student gradually learning to write more like the drafts the judge keeps picking.
+Alex: So the judge isn't just checking basic grammar. They're actively shaping style, usefulness, and behavior.
+Jordan: Exactly.
+Alex: How does that workflow play out in practice?
+Jordan: It usually has three steps. First, the model generates candidate answers for a single prompt. Second, a human compares those candidates and ranks them from best to worst. Third, the training process uses those rankings to update the model so future outputs match those choices.
+Alex: Let’s walk through an example. Say someone asks the model, "Explain why leaves change color in autumn."
+Jordan: The model generates two options. Answer A is short and vague: "Leaves change color because trees stop making chlorophyll when days get shorter." Answer B is clear and complete: "In autumn, shorter days mean less sunlight, so trees slow down chlorophyll production. As that green pigment fades, hidden pigments like yellow and orange show through."
+Alex: Answer A is technically true, but Answer B is way more helpful because it explains the process simply.
+Jordan: Right. A human reviewer picks Answer B. When this happens across thousands of prompts, the model learns that clear explanations are preferred. That is huge in places like customer support, tutoring, or medical and legal settings where clarity matters.
+Alex: But having humans manually rank millions of responses sounds painfully slow. How do developers scale that up?
+Jordan: They build a reward model. That’s a separate model trained to predict what a human reviewer would pick. Think of a reward signal as a score in a game—higher numbers mean better answers according to human taste.
+Alex: So the main model gets guided by this automated judge instead of waiting for a person to rate every single attempt?
+Jordan: Exactly. But remember, a reward model is just an estimate of human judgment. It can be wrong or miss nuances, which is why human review still matters.
+Alex: How does this connect back to tokens and next-token prediction from earlier lessons?
+Jordan: The underlying engine never changes. The model is still just predicting the next token inside a context window. Preference optimization doesn't replace next-token prediction; it just reshapes which tokens become more likely. And if a prompt gets cut off by a context window limit, the model might produce a truncated output that humans rank lower.
+Alex: What are the limits here? It sounds like human feedback could introduce its own set of problems.
+Jordan: It definitely does. First, people disagree—different reviewers want different styles. Second, bias can creep in if your reviewer pool is narrow. Third, preference isn't truth. A flattering or polished lie might get ranked higher than a blunt truth.
+Alex: Right, so over-optimizing for human approval might make the model overly cautious, vague, or sycophantic just to keep us happy.
+Jordan: Exactly. The goal isn't just pleasing the user, it's balancing usefulness with honesty and safety.
+Alex: Time for today's knowledge check. Test me.
+Jordan: First question: What is the difference between human feedback and pretraining?
+Alex: Pretraining teaches the model from massive raw text patterns across the web. Human feedback uses human judgments on candidate outputs to shape which responses are preferred.
+Jordan: Spot on. Second question: What does preference optimization try to make the model do?
+Alex: It adjusts the model so it naturally produces answers humans judge as better, like outputs that are clearer, more helpful, or safer.
+Jordan: Right again. Third: Why is a reward model useful, and why is it not perfect?
+Alex: It’s useful because it acts as an automated stand-in for human judgment, saving time. It’s not perfect because it's only an estimate, so it can misjudge outputs or copy human biases.
+Jordan: Three for three. Now for your homework assignment. Pick one prompt you would ask an AI, like "Explain photosynthesis to a ten-year-old." Draft three different answers yourself. Rank them from best to worst using clarity, correctness, and completeness, and write one sentence explaining why the winner won. Then rewrite your weakest answer to make it competitive. As you do this, notice that the best answer isn't just the longest one—it's usually the easiest to understand and least misleading.
+Alex: Got it. And tomorrow, we're stepping back to look at generative AI across text, images, and audio.
+Jordan: See you then.
