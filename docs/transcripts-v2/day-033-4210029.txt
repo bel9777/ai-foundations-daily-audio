@@ -1,0 +1,35 @@
+Alex: Ever wonder why asking an AI model the exact same question twice can give you two completely different answers?
+Alex: This is AI Foundations, day 33.
+Alex: I used to think that if you put the exact same prompt into a computer, you should get the exact same output every single time, like a math equation or a calculator. Why does a language model behave more like a roll of the dice?
+Jordan: Because when a language model generates text, it almost never has just one single word in mind. At each step, it calculates probability scores for thousands of possible next tokens. Sampling is the choice process where the model selects a token from a bucket of likely options instead of blindly picking the single top-ranked choice every time.
+Alex: So if it always picked the absolute top token, it would be totally predictable.
+Jordan: Predictable, but also repetitive and dry. Sampling allows the model to choose among several sensible options, giving the output natural variety and flair.
+Alex: Okay, but how does it decide how adventurous or wild to be with those picks? That brings us to temperature, right?
+Jordan: Exactly. Temperature is a setting that controls how focused or spread out those choices are during sampling. Think of it as a thermostat for creativity. A colder setting narrows the choices down to the safest, most likely tokens. A warmer setting widens the bucket to include less common tokens.
+Alex: Does a higher temperature make the model smarter or dumber?
+Jordan: Neither. Temperature does not change the model's factual knowledge or underlying intelligence at all. It simply adjusts how much randomness is permitted in the output. And in this context, randomness is not chaos. It is controlled variation among plausible options.
+Alex: You shared a great mental model for this earlier using a restaurant menu. Walk us through that chef analogy again.
+Jordan: Imagine a restaurant with a huge menu, and the chef has to choose a dish for you based on your order. Sampling is the chef choosing the meal from many options. Temperature is how adventurous the chef feels today. At a low temperature, the chef picks the absolute safest, most standard dish that matches your request. At a higher temperature, the chef might choose a less obvious, more creative dish that still fits what you asked for.
+Alex: But if the chef gets too adventurous, you might end up with something weird that you did not want at all.
+Jordan: Exactly. That tradeoff is output diversity, which is how different the answers are across multiple runs. High diversity gives you fresh ideas, but if diversity is too high, the answers start drifting away from your original prompt.
+Alex: Give me a concrete example. How does this actually look in real life?
+Jordan: Say you ask a model for a product slogan for a water bottle. At a low temperature, it plays it safe and gives you something simple like, Drink better. Carry lighter.
+Alex: Short, safe, totally predictable.
+Jordan: Right. Bump the temperature up to a medium or higher level, and you might get something more expressive like, Hydration that keeps up with your day. Push it way too high, and it might output something strange about neon waterfalls, which completely misses the mark for a real brand.
+Alex: So it is not about setting temperature high or low permanently. It is a task choice. Low temperature for legal summaries, factual data extraction, or customer support where you need steady, consistent answers. High temperature when you are writing fiction, brainstorming slogan ideas, or looking for creative marketing angles.
+Jordan: Spot on.
+Alex: Let me try to connect this back to what we learned over the last few days. Back on Day 29, we covered next-token prediction step by step. Sampling happens at every single token step along the way.
+Jordan: Yes, the model draws from that probability bucket for every single word it builds.
+Alex: And on Day 27, we learned about context windows. If older parts of a long conversation drop out of the context window, the model's probability scores change, which means sampling will produce different choices.
+Jordan: Exactly.
+Alex: Plus, those probability buckets were shaped during instruction tuning and human feedback, which we talked about on Days 30 and 31. Training makes helpful answers more likely in the bucket, and temperature just controls how freely the model samples from those options.
+Jordan: That is a perfect synthesis. The rule of thumb is simple. Use low temperature for precision and factual consistency. Use medium temperature for balanced conversations and everyday writing. Use high temperature for creative exploration and brainstorming. If your output feels repetitive, nudge the temperature up. If it feels loose or unreliable, dial it down.
+Jordan: Time for a quick knowledge check to lock this in. Question one: What is sampling in a language model?
+Alex: Sampling is the process of picking the next token from a pool of likely options instead of always picking the single most probable token.
+Jordan: Exactly. Question two: What does lowering the temperature usually do to the model's output?
+Alex: Lowering temperature narrows the options down to the most likely tokens, making the output more focused, consistent, and safe, but less varied.
+Jordan: Perfect. Question three: When would you actually want higher output diversity?
+Alex: When you want brainstorming, creative writing, slogan ideas, or multiple different solution paths for a single prompt.
+Jordan: Three for three. Now for today's hands-on exercise. Try this prompt in any free chat model: Write three different one-sentence explanations of what a neural network is for a complete beginner. If your tool allows you to change the temperature setting, run it once on low and once on high. If you cannot change temperature, simply run the same prompt three separate times and compare how much the text varies. Notice which version sounds most consistent, which sounds most creative, and which version feels easiest to trust for a clear factual explanation.
+Alex: That is a great quick test to run. What is on deck for tomorrow?
+Jordan: Tomorrow on Day 34, we look at hallucinations—why an AI can sound completely fluent and confident while being entirely wrong.

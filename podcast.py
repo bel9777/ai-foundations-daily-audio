@@ -56,6 +56,7 @@ TEXT_MODEL = "gemini-flash-latest"
 # stalling the backfill until tomorrow. Same voices, same script; the
 # plausibility gate polices quality either way.
 TTS_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
+CHUNK_PARTS = 4  # last-resort chunked render when a whole script 429s
 FFMPEG = (HOME / r"AppData\Local\Microsoft\WinGet\Packages"
                r"\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe"
                r"\ffmpeg-8.1.2-full_build\bin\ffmpeg.exe")
@@ -174,7 +175,36 @@ def gen_audio(script):
                 raise
             last_429 = e
             print(f"    {model}: quota exhausted, trying next model")
+
+    # LAST RESORT: render in chunks. The remaining free-tier allowance is
+    # TOKEN-based, so several small requests can succeed where one large
+    # one 429s (verified: a 2-line probe returned audio minutes after a
+    # full ~1000-word script was refused). Raw PCM concatenates cleanly -
+    # same rate, mono, 16-bit - and each chunk carries the same voice
+    # config, so the speakers stay consistent across seams.
+    for model in TTS_MODELS:
+        try:
+            parts, rate = [], None
+            chunks = _split_script(script, CHUNK_PARTS)
+            for i, chunk in enumerate(chunks, 1):
+                pcm, rate = _gen_audio_with(chunk, model)
+                parts.append(pcm)
+                print(f"    {model}: chunk {i}/{len(chunks)} rendered")
+                time.sleep(8)
+            return b"".join(parts), rate, f"{model}+chunked"
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                raise
+            last_429 = e
+            print(f"    {model}: chunked render also quota-blocked")
     raise last_429
+
+
+def _split_script(script, parts):
+    """Split on speaker-line boundaries so no utterance is cut in half."""
+    lines = [ln for ln in script.splitlines() if ln.strip()]
+    size = -(-len(lines) // parts)  # ceil
+    return ["\n".join(lines[i:i + size]) for i in range(0, len(lines), size)]
 
 
 def _gen_audio_with(script, TTS_MODEL):
@@ -561,6 +591,16 @@ def main():
     if complete_now:
         build_feed(eps)
         build_index(eps)
+        # durable marker: fleet-watchdog only asserts the two-host format
+        # once cutover has actually happened, and any later reversion to
+        # the legacy feed (the ChatGPT-side job overwriting docs/feed.xml
+        # each morning until Brian disables it) then reads as a failure
+        marker = REPO / "data" / "cutover.json"
+        if not marker.exists():
+            marker.parent.mkdir(exist_ok=True)
+            marker.write_text(json.dumps({
+                "cutoverAt": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+                "days": len(eps)}, indent=1), encoding="utf-8")
         if not complete_before:
             try:
                 send_cutover_email()

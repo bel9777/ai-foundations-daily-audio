@@ -129,6 +129,18 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 33,
+  "title": "Sampling, Temperature, and Output Diversity",
+  "format": "two-host",
+  "guid": "two-host-day-033",
+  "publishedAt": "2026-07-27T07:35:47",
+  "audioPath": "/audio-v2/day-033-sampling-temperature-and-output-diversity-4210029.mp3",
+  "transcriptPath": "/transcripts-v2/day-033-4210029.txt",
+  "audioBytes": 4210029,
+  "durationSeconds": 350,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
   "day": 32,
   "title": "Generative AI across Text, Images, and Audio",
   "format": "two-host",
