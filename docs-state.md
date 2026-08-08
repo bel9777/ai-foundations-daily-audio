@@ -1,5 +1,23 @@
 # docs-state.md — ai-foundations-daily-audio (Claude-side handoff)
 
+## 2026-08-08 (later) — LOUDNESS REMEDIATION, catalog verified stable
+
+Brian reported Day 1 "goes in and out, can barely be heard". EBU R128
+audit: 22 of 45 episodes LRA > 10 LU (max 23.6), levels spanning -13.9
+to -26.4 LUFS. Every fallback-model (2.5-flash) render was stable; the
+long 3.1-preview renders wobbled. Actions, all shipped:
+- `normalize_catalog.py`: dynaudnorm + loudnorm (-16 LUFS/TP -1.5/LRA 7)
+  across the catalog, per-file post-measurement, originals kept on any
+  post-check failure (no silent regressions).
+- Days 4 + 11 (unsalvageable by filtering) re-rendered fresh.
+- podcast.py now normalizes at encode time, gates every render on
+  loudness (LRA <= 8.5, -19.5 <= I <= -13.5), and 2.5-flash is PRIMARY.
+- docs/preview/ deleted per the cutover checklist (Brian's steps done);
+  regen_episode.py rebuilds the MAIN feed post-cutover.
+FINAL AUDIT: 45/45 episodes, LRA median 4.9 / max 8.1, zero over 10.
+Live feed verified: live==origin, 45 items days 1-45, 45/45 enclosures
+HTTP 200. Remaining subjective check = Brian's ears.
+
 ## 2026-08-08 07:28 — CUTOVER DONE, VERIFIED
 
 All 44 days two-host. Main feed flipped, deployed, and PROVEN live:
