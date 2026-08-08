@@ -1,6 +1,18 @@
 # docs-state.md — ai-foundations-daily-audio (Claude-side handoff)
 
-## 2026-08-07 status: 43 of 44 days done — ONE episode from cutover
+## 2026-08-08 07:28 — CUTOVER DONE, VERIFIED
+
+All 44 days two-host. Main feed flipped, deployed, and PROVEN live:
+44/44 enclosures HTTP 200, live bytes == origin/main, cutover email sent,
+`data/cutover.json` marker written, all three post-cutover watchdog
+checks OK. Day 33 rendered via the new CHUNKED fallback (4 TTS calls
+concatenated; passed silence/wps gates; seams not yet human-audited).
+**Waiting on Brian: disable the ChatGPT-side job** (its ~9:11 daily push
+reverts feed.xml to legacy until the next 7:45 re-flip — the watchdog
+feed_format FAIL each morning is the deliberate nag) **and re-add the
+feed by URL in his app.** Then delete docs/preview/ per the checklist.
+
+## Previous status (2026-08-07): 43 of 44 — superseded above
 
 Verified 09:38: preview feed carries 43 items, all 43 enclosures return
 HTTP 200 via the CDN, coverage = days 1-32 and 34-44. **Only day 33 is
