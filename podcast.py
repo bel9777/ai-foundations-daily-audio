@@ -55,7 +55,14 @@ TEXT_MODEL = "gemini-flash-latest"
 # full bucket, which roughly doubles free-tier throughput instead of
 # stalling the backfill until tomorrow. Same voices, same script; the
 # plausibility gate polices quality either way.
-TTS_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
+# ORDER (2026-08-08 loudness audit): 2.5-flash is PRIMARY - every one of
+# its renders measured stable (LRA 3.8-6.5), while most long
+# 3.1-preview renders wobbled (LRA up to 23.6 - the "audio goes in and
+# out" Brian reported on Day 1).
+TTS_MODELS = ["gemini-2.5-flash-preview-tts", "gemini-3.1-flash-tts-preview"]
+# every render is normalized to podcast loudness at encode time
+AUDIO_FILTERS = "dynaudnorm=f=300:g=31:p=0.95,loudnorm=I=-16:TP=-1.5:LRA=7"
+MAX_LRA, MIN_I, MAX_I = 8.5, -19.5, -13.5
 CHUNK_PARTS = 4  # last-resort chunked render when a whole script 429s
 FFMPEG = (HOME / r"AppData\Local\Microsoft\WinGet\Packages"
                r"\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe"
@@ -236,10 +243,20 @@ def encode_mp3(pcm, rate, out_path):
         w.setframerate(rate)
         w.writeframes(pcm)
     subprocess.run([str(FFMPEG), "-y", "-loglevel", "error", "-i", str(tmp),
+                    "-af", AUDIO_FILTERS,
                     "-codec:a", "libmp3lame", "-b:a", "96k", str(out_path)],
                    check=True)
     tmp.unlink()
     return len(pcm) / (rate * 2)
+
+
+def loudness(path):
+    """EBU R128: (integrated LUFS, loudness range LU)."""
+    r = subprocess.run([str(FFMPEG), "-i", str(path), "-af", "ebur128",
+                        "-f", "null", "-"], capture_output=True, text=True)
+    tail = r.stderr[-2000:]
+    return (float(re.search(r"I:\s*(-?[\d.]+) LUFS", tail).group(1)),
+            float(re.search(r"LRA:\s*([\d.]+) LU", tail).group(1)))
 
 
 def silence_ratio(path):
@@ -311,6 +328,15 @@ def build_episode(day, info, eps):
         raise ValueError(f"audio failed plausibility: {sil:.0%} silence, "
                          f"{wps:.2f} words/sec ({len(script.split())} words "
                          f"in {secs:.0f}s) - TTS dropped content")
+    # loudness gate (2026-08-08): a render whose volume wanders passed the
+    # old gates and reached Brian's headphones. Post-normalization these
+    # bounds hold for every good render; a violation means the render (or
+    # the filter chain) is genuinely defective.
+    li, lra = loudness(tmp_mp3)
+    if lra > MAX_LRA or not MIN_I <= li <= MAX_I:
+        tmp_mp3.unlink()
+        raise ValueError(f"audio failed loudness gate: I={li:+.1f} LUFS, "
+                         f"LRA={lra:.1f} LU - unstable render")
     size = tmp_mp3.stat().st_size
     final = AUDIO_DIR / f"day-{day:03d}-{slug}-{size}.mp3"
     tmp_mp3.rename(final)

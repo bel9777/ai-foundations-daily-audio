@@ -58,7 +58,8 @@ def main():
         print(f"day {day}: regenerated OK ({secs:.0f}s) -> {new['audioPath']}")
 
     eps = podcast.load_state()
-    podcast.build_preview_feed(eps)
+    podcast.build_feed(eps)   # post-cutover: the MAIN feed is ours
+    podcast.build_index(eps)
     missing = podcast.feed_enclosures_on_disk()
     print(f"feed rebuilt: {len(eps)} episodes | gate: {missing or 'NONE MISSING'}")
     if missing:

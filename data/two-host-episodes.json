@@ -5,11 +5,12 @@
   "format": "two-host",
   "guid": "two-host-day-045",
   "publishedAt": "2026-08-08T07:35:45",
-  "audioPath": "/audio-v2/day-045-multi-agent-systems-and-delegation-4541229.mp3",
-  "transcriptPath": "/transcripts-v2/day-045-4541229.txt",
-  "audioBytes": 4541229,
+  "audioPath": "/audio-v2/day-045-multi-agent-systems-and-delegation-4540941.mp3",
+  "transcriptPath": "/transcripts-v2/day-045-4540941.txt",
+  "audioBytes": 4540941,
   "durationSeconds": 378,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 44,
@@ -17,11 +18,12 @@
   "format": "two-host",
   "guid": "two-host-day-044",
   "publishedAt": "2026-08-07T07:35:44",
-  "audioPath": "/audio-v2/day-044-agent-loops-state-and-memory-4151565.mp3",
-  "transcriptPath": "/transcripts-v2/day-044-4151565.txt",
-  "audioBytes": 4151565,
+  "audioPath": "/audio-v2/day-044-agent-loops-state-and-memory-4151277.mp3",
+  "transcriptPath": "/transcripts-v2/day-044-4151277.txt",
+  "audioBytes": 4151277,
   "durationSeconds": 345,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 43,
@@ -29,10 +31,11 @@
   "format": "two-host",
   "guid": "two-host-day-043",
   "publishedAt": "2026-08-06T07:35:45",
-  "audioPath": "/audio-v2/day-043-agents-models-that-plan-and-act-4191309.mp3",
-  "transcriptPath": "/transcripts-v2/day-043-4191309.txt",
-  "audioBytes": 4191309,
-  "durationSeconds": 349
+  "audioPath": "/audio-v2/day-043-agents-models-that-plan-and-act-4191021.mp3",
+  "transcriptPath": "/transcripts-v2/day-043-4191021.txt",
+  "audioBytes": 4191021,
+  "durationSeconds": 349,
+  "normalized": true
  },
  {
   "day": 42,
@@ -40,10 +43,11 @@
   "format": "two-host",
   "guid": "two-host-day-042",
   "publishedAt": "2026-08-05T07:35:48",
-  "audioPath": "/audio-v2/day-042-tools-and-function-calling-4394061.mp3",
-  "transcriptPath": "/transcripts-v2/day-042-4394061.txt",
-  "audioBytes": 4394061,
-  "durationSeconds": 366
+  "audioPath": "/audio-v2/day-042-tools-and-function-calling-4393773.mp3",
+  "transcriptPath": "/transcripts-v2/day-042-4393773.txt",
+  "audioBytes": 4393773,
+  "durationSeconds": 366,
+  "normalized": true
  },
  {
   "day": 41,
@@ -51,10 +55,11 @@
   "format": "two-host",
   "guid": "two-host-day-041",
   "publishedAt": "2026-08-04T07:35:52",
-  "audioPath": "/audio-v2/day-041-grounding-answers-in-sources-4271949.mp3",
-  "transcriptPath": "/transcripts-v2/day-041-4271949.txt",
-  "audioBytes": 4271949,
-  "durationSeconds": 355
+  "audioPath": "/audio-v2/day-041-grounding-answers-in-sources-4271661.mp3",
+  "transcriptPath": "/transcripts-v2/day-041-4271661.txt",
+  "audioBytes": 4271661,
+  "durationSeconds": 355,
+  "normalized": true
  },
  {
   "day": 40,
@@ -62,11 +67,12 @@
   "format": "two-host",
   "guid": "two-host-day-040",
   "publishedAt": "2026-08-03T07:35:44",
-  "audioPath": "/audio-v2/day-040-chunking-search-and-reranking-3766797.mp3",
-  "transcriptPath": "/transcripts-v2/day-040-3766797.txt",
-  "audioBytes": 3766797,
+  "audioPath": "/audio-v2/day-040-chunking-search-and-reranking-3766509.mp3",
+  "transcriptPath": "/transcripts-v2/day-040-3766509.txt",
+  "audioBytes": 3766509,
   "durationSeconds": 313,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 39,
@@ -74,11 +80,12 @@
   "format": "two-host",
   "guid": "two-host-day-039",
   "publishedAt": "2026-08-02T07:35:43",
-  "audioPath": "/audio-v2/day-039-retrieval-augmented-generation-4262157.mp3",
-  "transcriptPath": "/transcripts-v2/day-039-4262157.txt",
-  "audioBytes": 4262157,
+  "audioPath": "/audio-v2/day-039-retrieval-augmented-generation-4261869.mp3",
+  "transcriptPath": "/transcripts-v2/day-039-4261869.txt",
+  "audioBytes": 4261869,
   "durationSeconds": 355,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 38,
@@ -86,11 +93,12 @@
   "format": "two-host",
   "guid": "two-host-day-038",
   "publishedAt": "2026-08-01T07:35:44",
-  "audioPath": "/audio-v2/day-038-prompt-injection-and-untrusted-instructions-3921453.mp3",
-  "transcriptPath": "/transcripts-v2/day-038-3921453.txt",
-  "audioBytes": 3921453,
+  "audioPath": "/audio-v2/day-038-prompt-injection-and-untrusted-instructions-3921165.mp3",
+  "transcriptPath": "/transcripts-v2/day-038-3921165.txt",
+  "audioBytes": 3921165,
   "durationSeconds": 326,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 37,
@@ -98,11 +106,12 @@
   "format": "two-host",
   "guid": "two-host-day-037",
   "publishedAt": "2026-07-31T07:35:48",
-  "audioPath": "/audio-v2/day-037-examples-decomposition-and-structured-outputs-3807693.mp3",
-  "transcriptPath": "/transcripts-v2/day-037-3807693.txt",
-  "audioBytes": 3807693,
+  "audioPath": "/audio-v2/day-037-examples-decomposition-and-structured-outputs-3807405.mp3",
+  "transcriptPath": "/transcripts-v2/day-037-3807405.txt",
+  "audioBytes": 3807405,
   "durationSeconds": 317,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 36,
@@ -110,11 +119,12 @@
   "format": "two-host",
   "guid": "two-host-day-036",
   "publishedAt": "2026-07-30T07:35:48",
-  "audioPath": "/audio-v2/day-036-clear-instructions-context-and-constraints-3946797.mp3",
-  "transcriptPath": "/transcripts-v2/day-036-3946797.txt",
-  "audioBytes": 3946797,
+  "audioPath": "/audio-v2/day-036-clear-instructions-context-and-constraints-3946509.mp3",
+  "transcriptPath": "/transcripts-v2/day-036-3946509.txt",
+  "audioBytes": 3946509,
   "durationSeconds": 328,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 35,
@@ -122,11 +132,12 @@
   "format": "two-host",
   "guid": "two-host-day-035",
   "publishedAt": "2026-07-29T07:35:49",
-  "audioPath": "/audio-v2/day-035-prompting-as-interface-design-3632877.mp3",
-  "transcriptPath": "/transcripts-v2/day-035-3632877.txt",
-  "audioBytes": 3632877,
+  "audioPath": "/audio-v2/day-035-prompting-as-interface-design-3632589.mp3",
+  "transcriptPath": "/transcripts-v2/day-035-3632589.txt",
+  "audioBytes": 3632589,
   "durationSeconds": 302,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 34,
@@ -134,11 +145,12 @@
   "format": "two-host",
   "guid": "two-host-day-034",
   "publishedAt": "2026-07-28T07:35:49",
-  "audioPath": "/audio-v2/day-034-hallucinations-why-fluent-can-still-be-false-3717261.mp3",
-  "transcriptPath": "/transcripts-v2/day-034-3717261.txt",
-  "audioBytes": 3717261,
+  "audioPath": "/audio-v2/day-034-hallucinations-why-fluent-can-still-be-false-3716973.mp3",
+  "transcriptPath": "/transcripts-v2/day-034-3716973.txt",
+  "audioBytes": 3716973,
   "durationSeconds": 309,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 33,
@@ -146,11 +158,12 @@
   "format": "two-host",
   "guid": "two-host-day-033",
   "publishedAt": "2026-07-27T07:35:47",
-  "audioPath": "/audio-v2/day-033-sampling-temperature-and-output-diversity-4210029.mp3",
-  "transcriptPath": "/transcripts-v2/day-033-4210029.txt",
-  "audioBytes": 4210029,
+  "audioPath": "/audio-v2/day-033-sampling-temperature-and-output-diversity-4209741.mp3",
+  "transcriptPath": "/transcripts-v2/day-033-4209741.txt",
+  "audioBytes": 4209741,
   "durationSeconds": 350,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 32,
@@ -158,11 +171,12 @@
   "format": "two-host",
   "guid": "two-host-day-032",
   "publishedAt": "2026-07-26T07:35:52",
-  "audioPath": "/audio-v2/day-032-generative-ai-across-text-images-and-audio-4018797.mp3",
-  "transcriptPath": "/transcripts-v2/day-032-4018797.txt",
-  "audioBytes": 4018797,
+  "audioPath": "/audio-v2/day-032-generative-ai-across-text-images-and-audio-4018509.mp3",
+  "transcriptPath": "/transcripts-v2/day-032-4018509.txt",
+  "audioBytes": 4018509,
   "durationSeconds": 334,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 31,
@@ -170,11 +184,12 @@
   "format": "two-host",
   "guid": "two-host-day-031",
   "publishedAt": "2026-07-24T07:35:47",
-  "audioPath": "/audio-v2/day-031-human-feedback-and-preference-optimization-3960621.mp3",
-  "transcriptPath": "/transcripts-v2/day-031-3960621.txt",
-  "audioBytes": 3960621,
+  "audioPath": "/audio-v2/day-031-human-feedback-and-preference-optimization-3960333.mp3",
+  "transcriptPath": "/transcripts-v2/day-031-3960333.txt",
+  "audioBytes": 3960333,
   "durationSeconds": 329,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 30,
@@ -182,11 +197,12 @@
   "format": "two-host",
   "guid": "two-host-day-030",
   "publishedAt": "2026-07-23T07:35:45",
-  "audioPath": "/audio-v2/day-030-fine-tuning-and-instruction-following-4262157.mp3",
-  "transcriptPath": "/transcripts-v2/day-030-4262157.txt",
-  "audioBytes": 4262157,
+  "audioPath": "/audio-v2/day-030-fine-tuning-and-instruction-following-4261869.mp3",
+  "transcriptPath": "/transcripts-v2/day-030-4261869.txt",
+  "audioBytes": 4261869,
   "durationSeconds": 355,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 29,
@@ -194,11 +210,12 @@
   "format": "two-host",
   "guid": "two-host-day-029",
   "publishedAt": "2026-07-22T07:35:46",
-  "audioPath": "/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023405.mp3",
-  "transcriptPath": "/transcripts-v2/day-029-4023405.txt",
-  "audioBytes": 4023405,
+  "audioPath": "/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023117.mp3",
+  "transcriptPath": "/transcripts-v2/day-029-4023117.txt",
+  "audioBytes": 4023117,
   "durationSeconds": 335,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 28,
@@ -206,11 +223,12 @@
   "format": "two-host",
   "guid": "two-host-day-028",
   "publishedAt": "2026-07-21T07:35:47",
-  "audioPath": "/audio-v2/day-028-pretraining-learning-from-massive-corpora-4468077.mp3",
-  "transcriptPath": "/transcripts-v2/day-028-4468077.txt",
-  "audioBytes": 4468077,
+  "audioPath": "/audio-v2/day-028-pretraining-learning-from-massive-corpora-4467789.mp3",
+  "transcriptPath": "/transcripts-v2/day-028-4467789.txt",
+  "audioBytes": 4467789,
   "durationSeconds": 372,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 27,
@@ -218,11 +236,12 @@
   "format": "two-host",
   "guid": "two-host-day-027",
   "publishedAt": "2026-07-20T07:35:44",
-  "audioPath": "/audio-v2/day-027-tokens-and-context-windows-3631437.mp3",
-  "transcriptPath": "/transcripts-v2/day-027-3631437.txt",
-  "audioBytes": 3631437,
+  "audioPath": "/audio-v2/day-027-tokens-and-context-windows-3631149.mp3",
+  "transcriptPath": "/transcripts-v2/day-027-3631149.txt",
+  "audioBytes": 3631149,
   "durationSeconds": 302,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 26,
@@ -230,11 +249,12 @@
   "format": "two-host",
   "guid": "two-host-day-026",
   "publishedAt": "2026-07-19T07:35:43",
-  "audioPath": "/audio-v2/day-026-transformers-the-core-architecture-4511565.mp3",
-  "transcriptPath": "/transcripts-v2/day-026-4511565.txt",
-  "audioBytes": 4511565,
+  "audioPath": "/audio-v2/day-026-transformers-the-core-architecture-4511277.mp3",
+  "transcriptPath": "/transcripts-v2/day-026-4511277.txt",
+  "audioBytes": 4511277,
   "durationSeconds": 375,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 25,
@@ -242,11 +262,12 @@
   "format": "two-host",
   "guid": "two-host-day-025",
   "publishedAt": "2026-07-18T07:35:44",
-  "audioPath": "/audio-v2/day-025-attention-choosing-what-matters-4265325.mp3",
-  "transcriptPath": "/transcripts-v2/day-025-4265325.txt",
-  "audioBytes": 4265325,
+  "audioPath": "/audio-v2/day-025-attention-choosing-what-matters-4265037.mp3",
+  "transcriptPath": "/transcripts-v2/day-025-4265037.txt",
+  "audioBytes": 4265037,
   "durationSeconds": 355,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 24,
@@ -254,11 +275,12 @@
   "format": "two-host",
   "guid": "two-host-day-024",
   "publishedAt": "2026-07-17T07:35:43",
-  "audioPath": "/audio-v2/day-024-sequence-models-before-transformers-4397805.mp3",
-  "transcriptPath": "/transcripts-v2/day-024-4397805.txt",
-  "audioBytes": 4397805,
+  "audioPath": "/audio-v2/day-024-sequence-models-before-transformers-4397517.mp3",
+  "transcriptPath": "/transcripts-v2/day-024-4397517.txt",
+  "audioBytes": 4397517,
   "durationSeconds": 366,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 23,
@@ -266,11 +288,12 @@
   "format": "two-host",
   "guid": "two-host-day-023",
   "publishedAt": "2026-07-16T07:35:51",
-  "audioPath": "/audio-v2/day-023-embeddings-meaning-as-geometry-4713165.mp3",
-  "transcriptPath": "/transcripts-v2/day-023-4713165.txt",
-  "audioBytes": 4713165,
+  "audioPath": "/audio-v2/day-023-embeddings-meaning-as-geometry-4712877.mp3",
+  "transcriptPath": "/transcripts-v2/day-023-4712877.txt",
+  "audioBytes": 4712877,
   "durationSeconds": 392,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 22,
@@ -278,11 +301,12 @@
   "format": "two-host",
   "guid": "two-host-day-022",
   "publishedAt": "2026-07-15T07:35:45",
-  "audioPath": "/audio-v2/day-022-training-deep-networks-reliably-3807981.mp3",
-  "transcriptPath": "/transcripts-v2/day-022-3807981.txt",
-  "audioBytes": 3807981,
+  "audioPath": "/audio-v2/day-022-training-deep-networks-reliably-3807693.mp3",
+  "transcriptPath": "/transcripts-v2/day-022-3807693.txt",
+  "audioBytes": 3807693,
   "durationSeconds": 317,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 21,
@@ -290,10 +314,11 @@
   "format": "two-host",
   "guid": "two-host-day-021",
   "publishedAt": "2026-07-14T07:35:44",
-  "audioPath": "/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415309.mp3",
-  "transcriptPath": "/transcripts-v2/day-021-5415309.txt",
-  "audioBytes": 5415309,
-  "durationSeconds": 451
+  "audioPath": "/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415021.mp3",
+  "transcriptPath": "/transcripts-v2/day-021-5415021.txt",
+  "audioBytes": 5415021,
+  "durationSeconds": 451,
+  "normalized": true
  },
  {
   "day": 20,
@@ -301,11 +326,12 @@
   "format": "two-host",
   "guid": "two-host-day-020",
   "publishedAt": "2026-07-13T07:35:41",
-  "audioPath": "/audio-v2/day-020-layers-activations-and-representations-4800141.mp3",
-  "transcriptPath": "/transcripts-v2/day-020-4800141.txt",
-  "audioBytes": 4800141,
+  "audioPath": "/audio-v2/day-020-layers-activations-and-representations-4799853.mp3",
+  "transcriptPath": "/transcripts-v2/day-020-4799853.txt",
+  "audioBytes": 4799853,
   "durationSeconds": 399,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 19,
@@ -313,10 +339,11 @@
   "format": "two-host",
   "guid": "two-host-day-019",
   "publishedAt": "2026-07-12T07:35:21",
-  "audioPath": "/audio-v2/day-019-neural-networks-from-first-principles-4849101.mp3",
-  "transcriptPath": "/transcripts-v2/day-019-4849101.txt",
-  "audioBytes": 4849101,
-  "durationSeconds": 404
+  "audioPath": "/audio-v2/day-019-neural-networks-from-first-principles-4848813.mp3",
+  "transcriptPath": "/transcripts-v2/day-019-4848813.txt",
+  "audioBytes": 4848813,
+  "durationSeconds": 404,
+  "normalized": true
  },
  {
   "day": 18,
@@ -324,10 +351,11 @@
   "format": "two-host",
   "guid": "two-host-day-018",
   "publishedAt": "2026-07-11T07:35:47",
-  "audioPath": "/audio-v2/day-018-probability-calibration-and-confidence-3934125.mp3",
-  "transcriptPath": "/transcripts-v2/day-018-3934125.txt",
-  "audioBytes": 3934125,
-  "durationSeconds": 327
+  "audioPath": "/audio-v2/day-018-probability-calibration-and-confidence-3933837.mp3",
+  "transcriptPath": "/transcripts-v2/day-018-3933837.txt",
+  "audioBytes": 3933837,
+  "durationSeconds": 327,
+  "normalized": true
  },
  {
   "day": 17,
@@ -335,10 +363,11 @@
   "format": "two-host",
   "guid": "two-host-day-017",
   "publishedAt": "2026-07-10T07:35:46",
-  "audioPath": "/audio-v2/day-017-decision-trees-and-ensembles-3804525.mp3",
-  "transcriptPath": "/transcripts-v2/day-017-3804525.txt",
-  "audioBytes": 3804525,
-  "durationSeconds": 316
+  "audioPath": "/audio-v2/day-017-decision-trees-and-ensembles-3804237.mp3",
+  "transcriptPath": "/transcripts-v2/day-017-3804237.txt",
+  "audioBytes": 3804237,
+  "durationSeconds": 316,
+  "normalized": true
  },
  {
   "day": 16,
@@ -346,10 +375,11 @@
   "format": "two-host",
   "guid": "two-host-day-016",
   "publishedAt": "2026-07-09T07:35:46",
-  "audioPath": "/audio-v2/day-016-linear-models-and-their-limits-4357485.mp3",
-  "transcriptPath": "/transcripts-v2/day-016-4357485.txt",
-  "audioBytes": 4357485,
-  "durationSeconds": 363
+  "audioPath": "/audio-v2/day-016-linear-models-and-their-limits-4357197.mp3",
+  "transcriptPath": "/transcripts-v2/day-016-4357197.txt",
+  "audioBytes": 4357197,
+  "durationSeconds": 363,
+  "normalized": true
  },
  {
   "day": 15,
@@ -357,11 +387,12 @@
   "format": "two-host",
   "guid": "two-host-day-015",
   "publishedAt": "2026-07-08T07:35:41",
-  "audioPath": "/audio-v2/day-015-baselines-the-simplest-useful-benchmark-4162509.mp3",
-  "transcriptPath": "/transcripts-v2/day-015-4162509.txt",
-  "audioBytes": 4162509,
+  "audioPath": "/audio-v2/day-015-baselines-the-simplest-useful-benchmark-4162221.mp3",
+  "transcriptPath": "/transcripts-v2/day-015-4162221.txt",
+  "audioBytes": 4162221,
   "durationSeconds": 346,
-  "ttsModel": "gemini-3.1-flash-tts-preview"
+  "ttsModel": "gemini-3.1-flash-tts-preview",
+  "normalized": true
  },
  {
   "day": 14,
@@ -369,10 +400,11 @@
   "format": "two-host",
   "guid": "two-host-day-014",
   "publishedAt": "2026-07-07T07:35:53",
-  "audioPath": "/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032621.mp3",
-  "transcriptPath": "/transcripts-v2/day-014-4032621.txt",
-  "audioBytes": 4032621,
-  "durationSeconds": 335
+  "audioPath": "/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032333.mp3",
+  "transcriptPath": "/transcripts-v2/day-014-4032333.txt",
+  "audioBytes": 4032333,
+  "durationSeconds": 335,
+  "normalized": true
  },
  {
   "day": 13,
@@ -380,11 +412,12 @@
   "format": "two-host",
   "guid": "two-host-day-013",
   "publishedAt": "2026-07-06T07:35:42",
-  "audioPath": "/audio-v2/day-013-confusion-matrices-and-classification-tradeoffs-3532941.mp3",
-  "transcriptPath": "/transcripts-v2/day-013-3532941.txt",
-  "audioBytes": 3532941,
+  "audioPath": "/audio-v2/day-013-confusion-matrices-and-classification-tradeoffs-3532653.mp3",
+  "transcriptPath": "/transcripts-v2/day-013-3532653.txt",
+  "audioBytes": 3532653,
   "durationSeconds": 294,
-  "ttsModel": "gemini-2.5-flash-preview-tts"
+  "ttsModel": "gemini-2.5-flash-preview-tts",
+  "normalized": true
  },
  {
   "day": 12,
@@ -392,10 +425,11 @@
   "format": "two-host",
   "guid": "two-host-day-012",
   "publishedAt": "2026-07-05T07:39:09",
-  "audioPath": "/audio-v2/day-012-evaluation-metrics-that-match-the-goal-5000589.mp3",
-  "transcriptPath": "/transcripts-v2/day-012-5000589.txt",
-  "audioBytes": 5000589,
-  "durationSeconds": 416
+  "audioPath": "/audio-v2/day-012-evaluation-metrics-that-match-the-goal-5000301.mp3",
+  "transcriptPath": "/transcripts-v2/day-012-5000301.txt",
+  "audioBytes": 5000301,
+  "durationSeconds": 416,
+  "normalized": true
  },
  {
   "day": 11,
@@ -403,10 +437,11 @@
   "format": "two-host",
   "guid": "two-host-day-011",
   "publishedAt": "2026-07-04T07:35:40",
-  "audioPath": "/audio-v2/day-011-optimization-and-gradient-descent-4535469.mp3",
-  "transcriptPath": "/transcripts-v2/day-011-4535469.txt",
-  "audioBytes": 4535469,
-  "durationSeconds": 377
+  "audioPath": "/audio-v2/day-011-optimization-and-gradient-descent-4946445.mp3",
+  "transcriptPath": "/transcripts-v2/day-011-4946445.txt",
+  "audioBytes": 4946445,
+  "durationSeconds": 412,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
   "day": 10,
@@ -414,10 +449,11 @@
   "format": "two-host",
   "guid": "two-host-day-010",
   "publishedAt": "2026-07-03T07:35:39",
-  "audioPath": "/audio-v2/day-010-loss-functions-defining-what-wrong-means-3826989.mp3",
-  "transcriptPath": "/transcripts-v2/day-010-3826989.txt",
-  "audioBytes": 3826989,
-  "durationSeconds": 318
+  "audioPath": "/audio-v2/day-010-loss-functions-defining-what-wrong-means-3826701.mp3",
+  "transcriptPath": "/transcripts-v2/day-010-3826701.txt",
+  "audioBytes": 3826701,
+  "durationSeconds": 318,
+  "normalized": true
  },
  {
   "day": 9,
@@ -425,10 +461,11 @@
   "format": "two-host",
   "guid": "two-host-day-009",
   "publishedAt": "2026-07-02T07:36:55",
-  "audioPath": "/audio-v2/day-009-features-turning-reality-into-inputs-4153005.mp3",
-  "transcriptPath": "/transcripts-v2/day-009-4153005.txt",
-  "audioBytes": 4153005,
-  "durationSeconds": 346
+  "audioPath": "/audio-v2/day-009-features-turning-reality-into-inputs-4152717.mp3",
+  "transcriptPath": "/transcripts-v2/day-009-4152717.txt",
+  "audioBytes": 4152717,
+  "durationSeconds": 346,
+  "normalized": true
  },
  {
   "day": 8,
@@ -436,10 +473,11 @@
   "format": "two-host",
   "guid": "two-host-day-008",
   "publishedAt": "2026-07-01T07:35:44",
-  "audioPath": "/audio-v2/day-008-learning-without-labels-4390029.mp3",
-  "transcriptPath": "/transcripts-v2/day-008-4390029.txt",
-  "audioBytes": 4390029,
-  "durationSeconds": 365
+  "audioPath": "/audio-v2/day-008-learning-without-labels-4389741.mp3",
+  "transcriptPath": "/transcripts-v2/day-008-4389741.txt",
+  "audioBytes": 4389741,
+  "durationSeconds": 365,
+  "normalized": true
  },
  {
   "day": 7,
@@ -447,10 +485,11 @@
   "format": "two-host",
   "guid": "two-host-day-007",
   "publishedAt": "2026-06-30T07:35:43",
-  "audioPath": "/audio-v2/day-007-classification-regression-and-decision-boundaries-3857805.mp3",
-  "transcriptPath": "/transcripts-v2/day-007-3857805.txt",
-  "audioBytes": 3857805,
-  "durationSeconds": 321
+  "audioPath": "/audio-v2/day-007-classification-regression-and-decision-boundaries-3857517.mp3",
+  "transcriptPath": "/transcripts-v2/day-007-3857517.txt",
+  "audioBytes": 3857517,
+  "durationSeconds": 321,
+  "normalized": true
  },
  {
   "day": 6,
@@ -458,10 +497,11 @@
   "format": "two-host",
   "guid": "two-host-day-006",
   "publishedAt": "2026-06-29T09:10:31",
-  "audioPath": "/audio-v2/day-006-learning-from-labeled-examples-5276781.mp3",
-  "transcriptPath": "/transcripts-v2/day-006-5276781.txt",
-  "audioBytes": 5276781,
-  "durationSeconds": 439
+  "audioPath": "/audio-v2/day-006-learning-from-labeled-examples-5276493.mp3",
+  "transcriptPath": "/transcripts-v2/day-006-5276493.txt",
+  "audioBytes": 5276493,
+  "durationSeconds": 439,
+  "normalized": true
  },
  {
   "day": 5,
@@ -469,10 +509,11 @@
   "format": "two-host",
   "guid": "two-host-day-005",
   "publishedAt": "2026-06-27T10:17:43",
-  "audioPath": "/audio-v2/day-005-data-is-the-model-s-experience-4711725.mp3",
-  "transcriptPath": "/transcripts-v2/day-005-4711725.txt",
-  "audioBytes": 4711725,
-  "durationSeconds": 392
+  "audioPath": "/audio-v2/day-005-data-is-the-model-s-experience-4711437.mp3",
+  "transcriptPath": "/transcripts-v2/day-005-4711437.txt",
+  "audioBytes": 4711437,
+  "durationSeconds": 392,
+  "normalized": true
  },
  {
   "day": 4,
@@ -480,10 +521,11 @@
   "format": "two-host",
   "guid": "two-host-day-004",
   "publishedAt": "2026-06-26T00:00:00",
-  "audioPath": "/audio-v2/day-004-day-4-how-ai-learns-to-generalize-4248045.mp3",
-  "transcriptPath": "/transcripts-v2/day-004-4248045.txt",
-  "audioBytes": 4248045,
-  "durationSeconds": 353
+  "audioPath": "/audio-v2/day-004-how-ai-learns-to-generalize-4487373.mp3",
+  "transcriptPath": "/transcripts-v2/day-004-4487373.txt",
+  "audioBytes": 4487373,
+  "durationSeconds": 373,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
   "day": 3,
@@ -491,10 +533,11 @@
   "format": "two-host",
   "guid": "two-host-day-003",
   "publishedAt": "2026-06-26T07:39:07",
-  "audioPath": "/audio-v2/day-003-the-basic-machine-learning-workflow-4214349.mp3",
-  "transcriptPath": "/transcripts-v2/day-003-4214349.txt",
-  "audioBytes": 4214349,
-  "durationSeconds": 351
+  "audioPath": "/audio-v2/day-003-the-basic-machine-learning-workflow-4214061.mp3",
+  "transcriptPath": "/transcripts-v2/day-003-4214061.txt",
+  "audioBytes": 4214061,
+  "durationSeconds": 351,
+  "normalized": true
  },
  {
   "day": 2,
@@ -502,10 +545,11 @@
   "format": "two-host",
   "guid": "two-host-day-002",
   "publishedAt": "2026-06-24T07:44:41",
-  "audioPath": "/audio-v2/day-002-how-machines-learn-from-examples-4170285.mp3",
-  "transcriptPath": "/transcripts-v2/day-002-4170285.txt",
-  "audioBytes": 4170285,
-  "durationSeconds": 347
+  "audioPath": "/audio-v2/day-002-how-machines-learn-from-examples-4169997.mp3",
+  "transcriptPath": "/transcripts-v2/day-002-4169997.txt",
+  "audioBytes": 4169997,
+  "durationSeconds": 347,
+  "normalized": true
  },
  {
   "day": 1,
@@ -513,9 +557,10 @@
   "format": "two-host",
   "guid": "two-host-day-001",
   "publishedAt": "2026-06-23T08:32:47",
-  "audioPath": "/audio-v2/day-001-what-ai-is-and-what-it-is-not-5268429.mp3",
-  "transcriptPath": "/transcripts-v2/day-001-5268429.txt",
-  "audioBytes": 5268429,
-  "durationSeconds": 438
+  "audioPath": "/audio-v2/day-001-what-ai-is-and-what-it-is-not-5268141.mp3",
+  "transcriptPath": "/transcripts-v2/day-001-5268141.txt",
+  "audioBytes": 5268141,
+  "durationSeconds": 438,
+  "normalized": true
  }
 ]
