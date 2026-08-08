@@ -1,5 +1,17 @@
 [
  {
+  "day": 45,
+  "title": "Multi-Agent Systems and Delegation",
+  "format": "two-host",
+  "guid": "two-host-day-045",
+  "publishedAt": "2026-08-08T07:35:45",
+  "audioPath": "/audio-v2/day-045-multi-agent-systems-and-delegation-4541229.mp3",
+  "transcriptPath": "/transcripts-v2/day-045-4541229.txt",
+  "audioBytes": 4541229,
+  "durationSeconds": 378,
+  "ttsModel": "gemini-3.1-flash-tts-preview"
+ },
+ {
   "day": 44,
   "title": "Agent Loops, State, and Memory",
   "format": "two-host",

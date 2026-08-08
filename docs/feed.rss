@@ -9,6 +9,14 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 45: Multi-Agent Systems and Delegation</title>
+      <description>Multi-Agent Systems and Delegation - AI Foundations day 45, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-045</guid>
+      <pubDate>Sat, 08 Aug 2026 07:35:45 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-045-multi-agent-systems-and-delegation-4541229.mp3" length="4541229" type="audio/mpeg"/>
+      <itunes:duration>6:18</itunes:duration>
+    </item>
+    <item>
       <title>Day 44: Agent Loops, State, and Memory</title>
       <description>Agent Loops, State, and Memory - AI Foundations day 44, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-044</guid>
