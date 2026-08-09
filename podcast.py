@@ -368,6 +368,7 @@ def build_feed(eps):
       <description>{escape(e['title'])} - AI Foundations day {e['day']}, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
       <pubDate>{rfc822(e['publishedAt'])}</pubDate>
+      <itunes:episode>{e['day']}</itunes:episode>
       <enclosure url="{CDN}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
     </item>""")
@@ -379,6 +380,7 @@ def build_feed(eps):
     <language>en-us</language>
     <description>The AI Foundations course as a daily two-host conversation. Companion to the daily email and Kindle edition.</description>
     <itunes:author>AI Foundations</itunes:author>
+    <itunes:type>serial</itunes:type>
     <itunes:image href="{SITE}/podcast-cover.png"/>
     <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}

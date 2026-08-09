@@ -6,6 +6,7 @@
     <language>en-us</language>
     <description>The AI Foundations course as a daily two-host conversation. Companion to the daily email and Kindle edition.</description>
     <itunes:author>AI Foundations</itunes:author>
+    <itunes:type>serial</itunes:type>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -13,6 +14,7 @@
       <description>Multi-Agent Systems and Delegation - AI Foundations day 45, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-045</guid>
       <pubDate>Sat, 08 Aug 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>45</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-045-multi-agent-systems-and-delegation-4540941.mp3" length="4540941" type="audio/mpeg"/>
       <itunes:duration>6:18</itunes:duration>
     </item>
@@ -21,6 +23,7 @@
       <description>Agent Loops, State, and Memory - AI Foundations day 44, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-044</guid>
       <pubDate>Fri, 07 Aug 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>44</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-044-agent-loops-state-and-memory-4151277.mp3" length="4151277" type="audio/mpeg"/>
       <itunes:duration>5:45</itunes:duration>
     </item>
@@ -29,6 +32,7 @@
       <description>Agents: Models That Plan and Act - AI Foundations day 43, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-043</guid>
       <pubDate>Thu, 06 Aug 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>43</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-043-agents-models-that-plan-and-act-4191021.mp3" length="4191021" type="audio/mpeg"/>
       <itunes:duration>5:49</itunes:duration>
     </item>
@@ -37,6 +41,7 @@
       <description>Tools and Function Calling - AI Foundations day 42, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-042</guid>
       <pubDate>Wed, 05 Aug 2026 07:35:48 +0000</pubDate>
+      <itunes:episode>42</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-042-tools-and-function-calling-4393773.mp3" length="4393773" type="audio/mpeg"/>
       <itunes:duration>6:06</itunes:duration>
     </item>
@@ -45,6 +50,7 @@
       <description>Grounding Answers in Sources - AI Foundations day 41, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-041</guid>
       <pubDate>Tue, 04 Aug 2026 07:35:52 +0000</pubDate>
+      <itunes:episode>41</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-041-grounding-answers-in-sources-4271661.mp3" length="4271661" type="audio/mpeg"/>
       <itunes:duration>5:55</itunes:duration>
     </item>
@@ -53,6 +59,7 @@
       <description>Chunking, Search, and Reranking - AI Foundations day 40, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-040</guid>
       <pubDate>Mon, 03 Aug 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>40</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-040-chunking-search-and-reranking-3766509.mp3" length="3766509" type="audio/mpeg"/>
       <itunes:duration>5:13</itunes:duration>
     </item>
@@ -61,6 +68,7 @@
       <description>Retrieval-Augmented Generation - AI Foundations day 39, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-039</guid>
       <pubDate>Sun, 02 Aug 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>39</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-039-retrieval-augmented-generation-4261869.mp3" length="4261869" type="audio/mpeg"/>
       <itunes:duration>5:55</itunes:duration>
     </item>
@@ -69,6 +77,7 @@
       <description>Prompt Injection and Untrusted Instructions - AI Foundations day 38, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-038</guid>
       <pubDate>Sat, 01 Aug 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>38</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-038-prompt-injection-and-untrusted-instructions-3921165.mp3" length="3921165" type="audio/mpeg"/>
       <itunes:duration>5:26</itunes:duration>
     </item>
@@ -77,6 +86,7 @@
       <description>Examples, Decomposition, and Structured Outputs - AI Foundations day 37, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-037</guid>
       <pubDate>Fri, 31 Jul 2026 07:35:48 +0000</pubDate>
+      <itunes:episode>37</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-037-examples-decomposition-and-structured-outputs-3807405.mp3" length="3807405" type="audio/mpeg"/>
       <itunes:duration>5:17</itunes:duration>
     </item>
@@ -85,6 +95,7 @@
       <description>Clear Instructions, Context, and Constraints - AI Foundations day 36, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-036</guid>
       <pubDate>Thu, 30 Jul 2026 07:35:48 +0000</pubDate>
+      <itunes:episode>36</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-036-clear-instructions-context-and-constraints-3946509.mp3" length="3946509" type="audio/mpeg"/>
       <itunes:duration>5:28</itunes:duration>
     </item>
@@ -93,6 +104,7 @@
       <description>Prompting as Interface Design - AI Foundations day 35, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-035</guid>
       <pubDate>Wed, 29 Jul 2026 07:35:49 +0000</pubDate>
+      <itunes:episode>35</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-035-prompting-as-interface-design-3632589.mp3" length="3632589" type="audio/mpeg"/>
       <itunes:duration>5:02</itunes:duration>
     </item>
@@ -101,6 +113,7 @@
       <description>Hallucinations: Why Fluent Can Still Be False - AI Foundations day 34, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-034</guid>
       <pubDate>Tue, 28 Jul 2026 07:35:49 +0000</pubDate>
+      <itunes:episode>34</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-034-hallucinations-why-fluent-can-still-be-false-3716973.mp3" length="3716973" type="audio/mpeg"/>
       <itunes:duration>5:09</itunes:duration>
     </item>
@@ -109,6 +122,7 @@
       <description>Sampling, Temperature, and Output Diversity - AI Foundations day 33, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-033</guid>
       <pubDate>Mon, 27 Jul 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>33</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-033-sampling-temperature-and-output-diversity-4209741.mp3" length="4209741" type="audio/mpeg"/>
       <itunes:duration>5:50</itunes:duration>
     </item>
@@ -117,6 +131,7 @@
       <description>Generative AI across Text, Images, and Audio - AI Foundations day 32, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-032</guid>
       <pubDate>Sun, 26 Jul 2026 07:35:52 +0000</pubDate>
+      <itunes:episode>32</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-032-generative-ai-across-text-images-and-audio-4018509.mp3" length="4018509" type="audio/mpeg"/>
       <itunes:duration>5:34</itunes:duration>
     </item>
@@ -125,6 +140,7 @@
       <description>Human Feedback and Preference Optimization - AI Foundations day 31, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-031</guid>
       <pubDate>Fri, 24 Jul 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>31</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-031-human-feedback-and-preference-optimization-3960333.mp3" length="3960333" type="audio/mpeg"/>
       <itunes:duration>5:29</itunes:duration>
     </item>
@@ -133,6 +149,7 @@
       <description>Fine-Tuning and Instruction Following - AI Foundations day 30, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-030</guid>
       <pubDate>Thu, 23 Jul 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>30</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-030-fine-tuning-and-instruction-following-4261869.mp3" length="4261869" type="audio/mpeg"/>
       <itunes:duration>5:55</itunes:duration>
     </item>
@@ -141,6 +158,7 @@
       <description>Next-Token Prediction and Emergent Capabilities - AI Foundations day 29, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-029</guid>
       <pubDate>Wed, 22 Jul 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>29</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-029-next-token-prediction-and-emergent-capabilities-4023117.mp3" length="4023117" type="audio/mpeg"/>
       <itunes:duration>5:35</itunes:duration>
     </item>
@@ -149,6 +167,7 @@
       <description>Pretraining: Learning from Massive Corpora - AI Foundations day 28, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-028</guid>
       <pubDate>Tue, 21 Jul 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>28</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-028-pretraining-learning-from-massive-corpora-4467789.mp3" length="4467789" type="audio/mpeg"/>
       <itunes:duration>6:12</itunes:duration>
     </item>
@@ -157,6 +176,7 @@
       <description>Tokens and Context Windows - AI Foundations day 27, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-027</guid>
       <pubDate>Mon, 20 Jul 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>27</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-027-tokens-and-context-windows-3631149.mp3" length="3631149" type="audio/mpeg"/>
       <itunes:duration>5:02</itunes:duration>
     </item>
@@ -165,6 +185,7 @@
       <description>Transformers: The Core Architecture - AI Foundations day 26, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-026</guid>
       <pubDate>Sun, 19 Jul 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>26</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-026-transformers-the-core-architecture-4511277.mp3" length="4511277" type="audio/mpeg"/>
       <itunes:duration>6:15</itunes:duration>
     </item>
@@ -173,6 +194,7 @@
       <description>Attention: Choosing What Matters - AI Foundations day 25, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-025</guid>
       <pubDate>Sat, 18 Jul 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>25</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-025-attention-choosing-what-matters-4265037.mp3" length="4265037" type="audio/mpeg"/>
       <itunes:duration>5:55</itunes:duration>
     </item>
@@ -181,6 +203,7 @@
       <description>Sequence Models before Transformers - AI Foundations day 24, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-024</guid>
       <pubDate>Fri, 17 Jul 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>24</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-024-sequence-models-before-transformers-4397517.mp3" length="4397517" type="audio/mpeg"/>
       <itunes:duration>6:06</itunes:duration>
     </item>
@@ -189,6 +212,7 @@
       <description>Embeddings: Meaning as Geometry - AI Foundations day 23, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-023</guid>
       <pubDate>Thu, 16 Jul 2026 07:35:51 +0000</pubDate>
+      <itunes:episode>23</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-023-embeddings-meaning-as-geometry-4712877.mp3" length="4712877" type="audio/mpeg"/>
       <itunes:duration>6:32</itunes:duration>
     </item>
@@ -197,6 +221,7 @@
       <description>Training Deep Networks Reliably - AI Foundations day 22, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-022</guid>
       <pubDate>Wed, 15 Jul 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>22</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-022-training-deep-networks-reliably-3807693.mp3" length="3807693" type="audio/mpeg"/>
       <itunes:duration>5:17</itunes:duration>
     </item>
@@ -205,6 +230,7 @@
       <description>Backpropagation: Assigning Credit for Error - AI Foundations day 21, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-021</guid>
       <pubDate>Tue, 14 Jul 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>21</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-021-backpropagation-assigning-credit-for-error-5415021.mp3" length="5415021" type="audio/mpeg"/>
       <itunes:duration>7:31</itunes:duration>
     </item>
@@ -213,6 +239,7 @@
       <description>Layers, Activations, and Representations - AI Foundations day 20, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-020</guid>
       <pubDate>Mon, 13 Jul 2026 07:35:41 +0000</pubDate>
+      <itunes:episode>20</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-020-layers-activations-and-representations-4799853.mp3" length="4799853" type="audio/mpeg"/>
       <itunes:duration>6:39</itunes:duration>
     </item>
@@ -221,6 +248,7 @@
       <description>Neural Networks from First Principles - AI Foundations day 19, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-019</guid>
       <pubDate>Sun, 12 Jul 2026 07:35:21 +0000</pubDate>
+      <itunes:episode>19</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-019-neural-networks-from-first-principles-4848813.mp3" length="4848813" type="audio/mpeg"/>
       <itunes:duration>6:44</itunes:duration>
     </item>
@@ -229,6 +257,7 @@
       <description>Probability, Calibration, and Confidence - AI Foundations day 18, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-018</guid>
       <pubDate>Sat, 11 Jul 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>18</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-018-probability-calibration-and-confidence-3933837.mp3" length="3933837" type="audio/mpeg"/>
       <itunes:duration>5:27</itunes:duration>
     </item>
@@ -237,6 +266,7 @@
       <description>Decision Trees and Ensembles - AI Foundations day 17, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-017</guid>
       <pubDate>Fri, 10 Jul 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>17</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-017-decision-trees-and-ensembles-3804237.mp3" length="3804237" type="audio/mpeg"/>
       <itunes:duration>5:16</itunes:duration>
     </item>
@@ -245,6 +275,7 @@
       <description>Linear Models and Their Limits - AI Foundations day 16, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-016</guid>
       <pubDate>Thu, 09 Jul 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>16</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-016-linear-models-and-their-limits-4357197.mp3" length="4357197" type="audio/mpeg"/>
       <itunes:duration>6:03</itunes:duration>
     </item>
@@ -253,6 +284,7 @@
       <description>Baselines: The Simplest Useful Benchmark - AI Foundations day 15, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-015</guid>
       <pubDate>Wed, 08 Jul 2026 07:35:41 +0000</pubDate>
+      <itunes:episode>15</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-015-baselines-the-simplest-useful-benchmark-4162221.mp3" length="4162221" type="audio/mpeg"/>
       <itunes:duration>5:46</itunes:duration>
     </item>
@@ -261,6 +293,7 @@
       <description>Cross-Validation and Reliable Comparisons - AI Foundations day 14, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-014</guid>
       <pubDate>Tue, 07 Jul 2026 07:35:53 +0000</pubDate>
+      <itunes:episode>14</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-014-cross-validation-and-reliable-comparisons-4032333.mp3" length="4032333" type="audio/mpeg"/>
       <itunes:duration>5:35</itunes:duration>
     </item>
@@ -269,6 +302,7 @@
       <description>Confusion Matrices and Classification Tradeoffs - AI Foundations day 13, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-013</guid>
       <pubDate>Mon, 06 Jul 2026 07:35:42 +0000</pubDate>
+      <itunes:episode>13</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-013-confusion-matrices-and-classification-tradeoffs-3532653.mp3" length="3532653" type="audio/mpeg"/>
       <itunes:duration>4:54</itunes:duration>
     </item>
@@ -277,6 +311,7 @@
       <description>Evaluation Metrics That Match the Goal - AI Foundations day 12, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-012</guid>
       <pubDate>Sun, 05 Jul 2026 07:39:09 +0000</pubDate>
+      <itunes:episode>12</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-012-evaluation-metrics-that-match-the-goal-5000301.mp3" length="5000301" type="audio/mpeg"/>
       <itunes:duration>6:56</itunes:duration>
     </item>
@@ -285,6 +320,7 @@
       <description>Optimization and Gradient Descent - AI Foundations day 11, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-011</guid>
       <pubDate>Sat, 04 Jul 2026 07:35:40 +0000</pubDate>
+      <itunes:episode>11</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-011-optimization-and-gradient-descent-4946445.mp3" length="4946445" type="audio/mpeg"/>
       <itunes:duration>6:52</itunes:duration>
     </item>
@@ -293,6 +329,7 @@
       <description>Loss Functions: Defining What Wrong Means - AI Foundations day 10, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-010</guid>
       <pubDate>Fri, 03 Jul 2026 07:35:39 +0000</pubDate>
+      <itunes:episode>10</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-010-loss-functions-defining-what-wrong-means-3826701.mp3" length="3826701" type="audio/mpeg"/>
       <itunes:duration>5:18</itunes:duration>
     </item>
@@ -301,6 +338,7 @@
       <description>Features: Turning Reality into Inputs - AI Foundations day 9, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-009</guid>
       <pubDate>Thu, 02 Jul 2026 07:36:55 +0000</pubDate>
+      <itunes:episode>9</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-009-features-turning-reality-into-inputs-4152717.mp3" length="4152717" type="audio/mpeg"/>
       <itunes:duration>5:46</itunes:duration>
     </item>
@@ -309,6 +347,7 @@
       <description>Learning without Labels - AI Foundations day 8, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-008</guid>
       <pubDate>Wed, 01 Jul 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>8</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-008-learning-without-labels-4389741.mp3" length="4389741" type="audio/mpeg"/>
       <itunes:duration>6:05</itunes:duration>
     </item>
@@ -317,6 +356,7 @@
       <description>Classification, Regression, and Decision Boundaries - AI Foundations day 7, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-007</guid>
       <pubDate>Tue, 30 Jun 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>7</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-007-classification-regression-and-decision-boundaries-3857517.mp3" length="3857517" type="audio/mpeg"/>
       <itunes:duration>5:21</itunes:duration>
     </item>
@@ -325,6 +365,7 @@
       <description>Learning from Labeled Examples - AI Foundations day 6, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-006</guid>
       <pubDate>Mon, 29 Jun 2026 09:10:31 +0000</pubDate>
+      <itunes:episode>6</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-006-learning-from-labeled-examples-5276493.mp3" length="5276493" type="audio/mpeg"/>
       <itunes:duration>7:19</itunes:duration>
     </item>
@@ -333,6 +374,7 @@
       <description>Data Is the Model&#x27;s Experience - AI Foundations day 5, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-005</guid>
       <pubDate>Sat, 27 Jun 2026 10:17:43 +0000</pubDate>
+      <itunes:episode>5</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-005-data-is-the-model-s-experience-4711437.mp3" length="4711437" type="audio/mpeg"/>
       <itunes:duration>6:32</itunes:duration>
     </item>
@@ -341,6 +383,7 @@
       <description>How AI Learns to Generalize - AI Foundations day 4, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-004</guid>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <itunes:episode>4</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-004-how-ai-learns-to-generalize-4487373.mp3" length="4487373" type="audio/mpeg"/>
       <itunes:duration>6:13</itunes:duration>
     </item>
@@ -349,6 +392,7 @@
       <description>The Basic Machine Learning Workflow - AI Foundations day 3, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-003</guid>
       <pubDate>Fri, 26 Jun 2026 07:39:07 +0000</pubDate>
+      <itunes:episode>3</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-003-the-basic-machine-learning-workflow-4214061.mp3" length="4214061" type="audio/mpeg"/>
       <itunes:duration>5:51</itunes:duration>
     </item>
@@ -357,6 +401,7 @@
       <description>How Machines Learn From Examples - AI Foundations day 2, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-002</guid>
       <pubDate>Wed, 24 Jun 2026 07:44:41 +0000</pubDate>
+      <itunes:episode>2</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-002-how-machines-learn-from-examples-4169997.mp3" length="4169997" type="audio/mpeg"/>
       <itunes:duration>5:47</itunes:duration>
     </item>
@@ -365,6 +410,7 @@
       <description>What AI Is (and What It Is Not) - AI Foundations day 1, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-001</guid>
       <pubDate>Tue, 23 Jun 2026 08:32:47 +0000</pubDate>
+      <itunes:episode>1</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-001-what-ai-is-and-what-it-is-not-5268141.mp3" length="5268141" type="audio/mpeg"/>
       <itunes:duration>7:18</itunes:duration>
     </item>
