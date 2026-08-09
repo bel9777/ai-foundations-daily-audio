@@ -1,5 +1,17 @@
 [
  {
+  "day": 46,
+  "title": "Evaluating AI Systems",
+  "format": "two-host",
+  "guid": "two-host-day-046",
+  "publishedAt": "2026-08-09T07:35:46",
+  "audioPath": "/audio-v2/day-046-evaluating-ai-systems-4207725.mp3",
+  "transcriptPath": "/transcripts-v2/day-046-4207725.txt",
+  "audioBytes": 4207725,
+  "durationSeconds": 350,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 45,
   "title": "Multi-Agent Systems and Delegation",
   "format": "two-host",

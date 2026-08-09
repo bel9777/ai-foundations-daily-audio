@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 46: Evaluating AI Systems</title>
+      <description>Evaluating AI Systems - AI Foundations day 46, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-046</guid>
+      <pubDate>Sun, 09 Aug 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>46</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-046-evaluating-ai-systems-4207725.mp3" length="4207725" type="audio/mpeg"/>
+      <itunes:duration>5:50</itunes:duration>
+    </item>
+    <item>
       <title>Day 45: Multi-Agent Systems and Delegation</title>
       <description>Multi-Agent Systems and Delegation - AI Foundations day 45, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-045</guid>

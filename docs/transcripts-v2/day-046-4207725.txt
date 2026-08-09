@@ -1,0 +1,35 @@
+Alex: An AI demo might look amazing in a presentation, but completely flop when real users start hitting it with messy, real-world problems. This is AI Foundations, day 46. Jordan, everyone wants to know if their AI system is actually good, but how do we answer that without relying on just a vibe check?
+Jordan: You have to stop relying on vibes and start evaluating deliberately. When someone asks if an AI is good, they usually mean five different things at once. Is it accurate? Is it fast? Is it safe? Does it follow instructions? Does it actually use its sources?
+Alex: Right, because a customer service bot could sound super polite and friendly, but still give you totally wrong refund instructions.
+Jordan: Exactly. Or a coding assistant might write perfect code, but take forty-five seconds to reply, which makes it useless in real life. Evaluation means measuring those distinct qualities so you can see the tradeoffs clearly.
+Alex: So how do we actually turn fuzzy behavior into concrete numbers?
+Jordan: We use metrics. Think of metrics as your scorecard. Accuracy tells you the percentage of answers that are correct. Precision measures how many of the given results were actually right, while recall tells you how many of the things it should have found were actually retrieved.
+Alex: And for practical stuff, you have latency for speed, compute cost for money, and pass rate for whether it follows specific rules.
+Jordan: Precisely. And this ties back to our earlier lessons on chunking and reranking. You might tweak your search setup and think it feels smarter, but metrics actually prove whether your retrieval change improved the final answer quality.
+Alex: That makes sense. Don't assume a technical tweak helped just because you want it to. But once you have a scorecard, what are you testing it on?
+Jordan: That brings us to test sets. A test set is just a collection of examples you run through the system. But it has to be representative of real life. Think of it like test-driving a car. If you only drive around an empty parking lot, you have no idea how it handles rain, hills, traffic, or tight parallel parking.
+Alex: A narrow test set gives you a fake report card.
+Jordan: That is the perfect analogy. Just like a school report card has separate grades for math, reading, writing, attendance, and behavior, an AI needs multiple checks. And remember what we learned about grounding and tool use? Your test set needs to explicitly check if the AI cites correct sources without making things up, and whether it selects and executes the right tools.
+Alex: Okay, but can software measure everything automatically? What about tone or how helpful an answer feels?
+Jordan: That is where human review comes in. A person sits down and judges things like tone, helpfulness, safety, and reasoning quality. And when things break, you do error analysis. Instead of just staring at a score, you dig into the exact failure patterns.
+Alex: Like asking whether it failed because the question was too long, or because it struggled when it needed two tools instead of one.
+Jordan: Exactly. Did it do well when a source was present, but poorly when it was missing? Did the agent loop stop too early or run too long? If your system fails because retrieval is weak, improving the prompt text won't help much. You need to know what broke so you do not waste time fixing the wrong component.
+Alex: And I imagine this gets even trickier when we talk about memory, agent loops, and multi-agent setups.
+Jordan: It really does. With agent loops, you have to check task success, how many steps it took, and whether it stopped at the right time instead of looping forever. With multi-agent delegation, you have to evaluate coordination. Did delegating a subtask actually help, or did the agents just confuse each other and duplicate work?
+Alex: Walk me through a real example. Say we are building a travel-planning assistant that answers questions like, plan a three-day weekend in Chicago under six hundred dollars. How do we judge it?
+Jordan: You check correctness first: are those hotel, transit, and attraction suggestions realistic and within budget? Grounding: if it claims a museum is open Monday, does it have a source or updated data? Tool use: did it search actual prices and dates, or just guess? Latency: did it return quickly enough to be useful? Human review: is the plan readable and practical?
+Alex: And if it uses retrieval, you check if the search results were relevant. If it uses an agent loop, you check if it made too many tool calls. And if it delegates to a budget agent and a schedule agent, you check if they coordinated without contradicting each other.
+Jordan: Exactly. You evaluate the individual pieces and the whole system together.
+Alex: Time for my favorite part. Quiz me, Jordan.
+Jordan: Question one: why is a single score usually not enough to evaluate an AI system?
+Alex: Because a single score hides tradeoffs. An AI can be extremely accurate but painfully slow, or really polite while giving completely wrong information. You need a multi-part scorecard to see the full picture across correctness, speed, safety, and reliability.
+Jordan: Spot on. Question two: what is the difference between a metric and a test set?
+Alex: A metric is the rule or scorecard you use to measure performance, like accuracy or latency. A test set is the collection of representative examples and scenarios you run through the AI to calculate those metrics.
+Jordan: Perfect distinction. Last question: why does a multi-agent system need evaluation beyond just checking the final answer?
+Alex: Because multi-agent systems can fail in coordination, delegation, stopping, or duplicating work. Even if the final answer looks decent, the agents might have fought each other, looped endlessly, or wasted resources. You have to evaluate how they worked together, not just the end output.
+Jordan: Nailed all three. Ready for your homework?
+Alex: Hit me with it.
+Jordan: Open any text editor and pick a simple AI system like a homework helper, recipe bot, or support bot. Write down three goals for it, like accuracy, using sources, and quick responses, and assign one metric or check to each goal. Next, write five test prompts: one easy case, one tricky case, one ambiguous case, and one where the system should admit it does not know. Run them on an AI, record what happens, and note one clear failure pattern.
+Alex: Simple enough. Define the goals, set metrics, test representative prompts, and inspect where it fails.
+Jordan: Tomorrow, we build on this by learning how to create representative evaluation sets—small but carefully chosen test collections that reflect real use, edge cases, and failure modes.
+Alex: See you tomorrow on AI Foundations.
