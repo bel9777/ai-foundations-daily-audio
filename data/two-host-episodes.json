@@ -1,5 +1,17 @@
 [
  {
+  "day": 47,
+  "title": "Building Representative Eval Sets",
+  "format": "two-host",
+  "guid": "two-host-day-047",
+  "publishedAt": "2026-08-10T07:36:09",
+  "audioPath": "/audio-v2/day-047-building-representative-eval-sets-4114989.mp3",
+  "transcriptPath": "/transcripts-v2/day-047-4114989.txt",
+  "audioBytes": 4114989,
+  "durationSeconds": 342,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 46,
   "title": "Evaluating AI Systems",
   "format": "two-host",

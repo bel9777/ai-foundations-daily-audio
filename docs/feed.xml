@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 47: Building Representative Eval Sets</title>
+      <description>Building Representative Eval Sets - AI Foundations day 47, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-047</guid>
+      <pubDate>Mon, 10 Aug 2026 07:36:09 +0000</pubDate>
+      <itunes:episode>47</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-047-building-representative-eval-sets-4114989.mp3" length="4114989" type="audio/mpeg"/>
+      <itunes:duration>5:42</itunes:duration>
+    </item>
+    <item>
       <title>Day 46: Evaluating AI Systems</title>
       <description>Evaluating AI Systems - AI Foundations day 46, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-046</guid>

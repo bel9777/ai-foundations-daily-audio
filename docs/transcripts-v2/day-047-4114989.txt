@@ -1,0 +1,41 @@
+Alex: An AI model can look like an absolute genius on paper, but if your test questions are too easy, real users will destroy it on day one.
+Alex: This is AI Foundations, day 47.
+Jordan: Yesterday we talked about how to run evaluations. Today is all about what you actually test the model on.
+Alex: Because if you give it a bad test, the final score is totally useless.
+Jordan: Exactly. That brings us to representative evaluation sets. An eval set is just a collection of test prompts you run through your system to see how it behaves.
+Alex: And to make it representative, it has to match the actual mix of inputs real users are going to throw at it.
+Jordan: Right. Think of it like tasting soup before you serve it to guests. If you only dip your spoon into the top layer, you might think it tastes great, but you will miss the fact that the spices sank to the bottom and the rest is bland.
+Alex: So you need a spoonful that reaches all the way to the bottom of the pot. What makes a test set reach the whole pot?
+Jordan: Three key qualities: coverage, balance, and difficulty mix. Coverage means you include all the main kinds of requests you expect. Balance means you are not flooding the set with one easy category while ignoring the rest.
+Alex: And difficulty mix means you do not just test the simple stuff, you give it medium and hard prompts too.
+Jordan: Spot on. The biggest mistake people make is building these sets out of pure guesswork. You have to start from real use cases, which are the specific jobs your system exists to do.
+Alex: Like, if I build a support bot for an online store, a use case might be answering questions about shipping.
+Jordan: Right. From there, you break that use case into input categories. For that support bot, that might be simple factual questions, ambiguous requests, prompts that need a tool, questions grounded in source documents, multi-turn chats, or nasty edge cases.
+Alex: If I only test "Where is my package?" and it gets a ninety-five percent, I might feel great, but I am actually just being overly optimistic.
+Jordan: Exactly. You are testing one tiny category.
+Alex: How do edge cases fit in? Because by definition, edge cases do not happen all the time.
+Jordan: They do not happen often, but when they do, they can wreck your user experience or cost you real money. A good set has typical cases, near-boundary cases that are almost simple but not quite, and failure-prone cases where the model has messed up before.
+Alex: Is there a good rule of thumb for what counts as an edge case worth testing?
+Jordan: Here is the rule: if a failure would be annoying, risky, or expensive in production, it belongs in the eval set, even if it is rare.
+Alex: Okay, so it is not just a random pile of prompts. How do you structure each test example?
+Jordan: Every single example needs three things: the input prompt, the expected good behavior, and the reason that example matters. Behavior means something visible, like picking the right tool, citing a source correctly, or asking a clarifying question.
+Alex: That way, when you update your model later, you know exactly why a test failed. But how do you know if you missed something big?
+Jordan: You actively hunt for blind spots. You ask yourself: which user types are missing? Which writing styles? Are we testing tool failures or hard memory situations? Finding one blind spot is usually worth more than adding fifty duplicate easy cases.
+Alex: Walk me through a full example. Say we are building that store assistant.
+Jordan: If your test set only has "Where is my order?", the model looks brilliant. But a representative set forces it to handle real messiness. Like a customer giving an incomplete order number, or a question that requires calling a shipping tool.
+Alex: Or a case where the source document conflicts with what the customer is claiming.
+Jordan: Exactly. Or follow-up questions that depend on conversation memory from three turns ago, or edge cases like canceled orders or international shipping rules.
+Alex: That ties directly into everything we covered over the past week, right?
+Jordan: It really does. Remember from Day 41, if your system uses sources, your eval set must test whether it actually grounds its answer in those sources instead of hallucinating confidently.
+Alex: And from Day 42, if it uses tools, you have to test if it knows when to call a tool, which tool to pick, and what happens when the tool fails.
+Jordan: Plus Day 44, if your app keeps conversation history, you need multi-turn test cases, not just single questions, because memory bugs only pop up after a few back-and-forth turns.
+Jordan: Time for a quick quiz to see if this stuck. First question: what makes an eval set representative instead of just large?
+Alex: Size does not matter if all the questions are the same. A set is representative when it actually mirrors the real-world mix of inputs, edge cases, tool needs, and difficulty levels your system will face in production.
+Jordan: Spot on. Second question: why should an eval set for a tool-using agent include tool failures, instead of just successful tool calls?
+Alex: Because real tools break, time out, or return bad data. You need to test if the model can handle a failed tool call gracefully instead of crashing or making up a fake answer.
+Jordan: Exactly right. Final question: what is a major blind spot you introduce if you only test easy, single-turn examples?
+Alex: You completely miss multi-turn memory issues, source grounding failures, and hard edge cases. The model looks great in testing but falls apart as soon as a real user asks a complex question.
+Jordan: Nailed all three. Here is your homework for today. Pick a simple AI product idea, like a study helper, travel assistant, or support bot. Build a mini eval set with twelve examples: four typical cases, three near-boundary cases, three edge cases, and two cases that require tools, sources, or memory. For each example, add one line explaining what good behavior looks like. As you build it, notice whether your examples actually cover more than one user need or if you are secretly repeating the same basic prompt.
+Alex: A tight twelve-prompt set beats a hundred easy ones every time.
+Jordan: Tomorrow on Day 48, we look at LLM-as-judge and human review to figure out who should actually score those outputs.
+Alex: See you tomorrow!
