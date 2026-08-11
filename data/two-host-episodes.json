@@ -1,5 +1,17 @@
 [
  {
+  "day": 48,
+  "title": "LLM-as-Judge and Human Review",
+  "format": "two-host",
+  "guid": "two-host-day-048",
+  "publishedAt": "2026-08-11T07:35:45",
+  "audioPath": "/audio-v2/day-048-llm-as-judge-and-human-review-3731949.mp3",
+  "transcriptPath": "/transcripts-v2/day-048-3731949.txt",
+  "audioBytes": 3731949,
+  "durationSeconds": 310,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 47,
   "title": "Building Representative Eval Sets",
   "format": "two-host",
