@@ -1,5 +1,17 @@
 [
  {
+  "day": 49,
+  "title": "Reliability, Observability, and Failure Analysis",
+  "format": "two-host",
+  "guid": "two-host-day-049",
+  "publishedAt": "2026-08-12T07:35:57",
+  "audioPath": "/audio-v2/day-049-reliability-observability-and-failure-analysis-3996909.mp3",
+  "transcriptPath": "/transcripts-v2/day-049-3996909.txt",
+  "audioBytes": 3996909,
+  "durationSeconds": 333,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 48,
   "title": "LLM-as-Judge and Human Review",
   "format": "two-host",

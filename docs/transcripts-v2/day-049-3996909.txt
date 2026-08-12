@@ -1,0 +1,36 @@
+Alex: A flashy demo might win you applause, but if your AI app breaks on real customers, you do not have a product yet. This is AI Foundations, day 49.
+Jordan: Today we are talking about what turns a fragile prototype into something you can actually rely on: reliability, observability, and failure analysis.
+Alex: Let us start with an analogy. Picture a car you plan to drive every single day.
+Jordan: Reliability is whether that car actually starts and gets you to work without breaking down. Observability is your dashboard: speed, fuel gauge, engine light, and temperature. Failure analysis is opening the hood after a breakdown and figuring out why the engine stalled.
+Alex: Without all three, you are just guessing when something goes wrong. Let us take reliability first. In AI, reliability does not mean getting the exact same words every single time, right?
+Jordan: Right. Language models are probabilistic, so their outputs naturally vary. Reliability means the system performs correctly and stays within acceptable boundaries under normal conditions.
+Alex: And it is not just about the prompt or the model performing well.
+Jordan: Exactly. A real system has prompt reliability, tool reliability like search or database lookups, workflow reliability across multi-step processes, and input reliability for messy user queries. A great habit is asking yourself what can fail here besides the model.
+Alex: That brings us to observability. If reliability asks whether it worked, observability asks if you can prove what happened behind the scenes.
+Jordan: Think of it like footprints in fresh snow. When something breaks, observability shows you the path the request took, where it slipped, and where it left the path. In practice, that comes down to logs, traces, and metrics.
+Alex: Break those three down for us.
+Jordan: Logs record specific events, like user prompts, tool responses, and timestamps. Traces map out the step-by-step path of a single request from input to final answer. Metrics are numbers that show trends over time, like your error rates or response times.
+Alex: So when those footprints show that a request went off the rails, that is where failure analysis comes in. But you mentioned earlier that people often stop at the wrong point during an investigation.
+Jordan: They stop at the symptom. Saying the model was wrong or hallucinated is just describing what happened. It is not the root cause.
+Alex: The root cause being the deepest practical reason for the failure.
+Jordan: Exactly. The real culprit might be a vague prompt, missing context, poor retrieval, or a tool returning stale data. Any breakdown that impacts the user is an incident, whether it is a total crash, a slow response, or a bad citation.
+Alex: So to debug an incident properly, you walk through a set of clear questions. What was supposed to happen, what actually happened, where did they diverge, which layer broke, how do you reproduce it, and what fix prevents it next time.
+Jordan: Right, because explaining the failure is only half the battle. The goal is making the system stronger. And this builds directly on what we covered earlier this week.
+Alex: Day 46 gave us evaluations to measure if a fix actually works. Day 47 taught us to build representative test sets so our observability catches realistic failures. And Day 48 showed us that while automated judges scale well, human review is essential for finding subtle root causes.
+Jordan: Exactly. Let us anchor this with a concrete example. Imagine a support bot that helps users reset passwords and check order status.
+Alex: Say it gives a customer the wrong order status.
+Jordan: That is the symptom. If you only look at the final answer, you might think the model lied. But you check your observability traces, and you see the bot called the order tool with the right customer name, but the wrong account ID.
+Alex: So where did that wrong account ID come from?
+Jordan: You trace it further back and realize the account ID was pulled from an old conversation summary stored in long-term memory. The model actually followed instructions, but the memory step fed it bad context.
+Alex: Wow, so the model was fine, but the workflow context broke. How do you fix that?
+Jordan: You stop using memory for sensitive account identifiers, and you require fresh authentication before any tool calls. That fixes the system, not just the prompt.
+Jordan: Ready for your quick quiz on today's concepts?
+Alex: Let us do it.
+Jordan: Question one: what is the difference between reliability and observability?
+Alex: Reliability is whether the system consistently does what it is supposed to do under normal conditions. Observability is having the logs, traces, and metrics to see inside the system and prove what happened.
+Jordan: Spot on. Question two: why is a wrong answer not the same thing as a root cause?
+Alex: A wrong answer is just the symptom. The root cause is the underlying technical reason it failed, like a bad prompt, missing retrieval context, stale tool data, or a broken workflow step.
+Jordan: Clean answer. Question three: name one kind of signal that helps you investigate an AI failure.
+Alex: A trace! It maps out the exact step-by-step path of a single request, showing you where the system diverged from what you expected.
+Jordan: Three for three. Now here is your homework for today. Open a text editor or spreadsheet and make a table with four columns: Input, Expected behavior, Observed behavior, and Likely cause. Write five prompts for a hypothetical AI assistant: one easy case, one ambiguous case, one case with missing info, one requiring a tool, and one case that should fail safely. Define what should happen, invent a realistic failure for each, and label the root cause as model, prompt, or workflow. Watch how often the failure happens outside the model itself.
+Alex: Tomorrow on Day 50, we move from investigating failures to preventing harm in AI Safety: Hazards, Controls, and Defense in Depth. See you then!
