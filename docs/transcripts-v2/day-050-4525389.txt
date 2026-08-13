@@ -1,0 +1,39 @@
+Alex: If you give an AI system real responsibility without putting boundaries around it, a single bad output or automated action can cause serious real-world damage. This is AI Foundations, day 50.
+Jordan: Today we are talking about AI safety, but not in some sci-fi, world-ending sense. In the real world, AI safety just means reducing the chance that your system causes harm because it made a wrong decision, behaved unexpectedly, or got used in a risky way.
+Alex: So it is not about building a flawless system that never makes a mistake.
+Jordan: Exactly. Perfect systems do not exist. Safety is about making the system safer by design, testing, monitoring, and setting clear limits. Whenever you evaluate a feature, you ask three basic questions: What can go wrong, how likely is it, and how bad would it be?
+Alex: That brings us to what safety practitioners call hazards. How do we categorize them?
+Jordan: A hazard is anything that can cause harm. In AI, hazards usually fall into four main buckets. First, wrong output hazards, where the model gives an answer that is confidently wrong. Second, misuse hazards, where a person uses the system for something harmful or unintended.
+Alex: Like trying to trick a customer service bot into giving away free products. What about the other two?
+Jordan: Third, over-trust hazards, where people believe the model more than they should and stop verifying its work. Fourth, automation hazards, where the system takes action too quickly or too broadly across other software.
+Alex: Once you identify those hazards, you need controls to keep them in check.
+Jordan: Right. A control is any measure that reduces the chance or impact of harm. We classify controls as preventive, detective, or corrective.
+Alex: Preventive stops a problem before it happens, like putting a lock on a door.
+Jordan: Exactly. In AI, preventive controls include input filtering to block risky prompts, permission limits so the model cannot access unauthorized tools or data, rate limiting to slow down repeated automated requests, or requiring human approval before a high-stakes action happens.
+Alex: Detective controls spot a problem while it is happening, like logging unusual behavior or flagging weird responses.
+Jordan: Spot on. And corrective controls help you recover after a problem occurs, like rolling back a change or having a human intervene to fix an error. Output filtering also plays a huge role here by checking model responses before users ever see them.
+Alex: This hooks right back into what we covered over the past few days. A representative evaluation set tells you what failure modes to test, LLM-as-judge and human review help inspect the outputs, and observability alerts you when real-world behavior changes.
+Jordan: Exactly. Evaluation provides evidence about risk during testing, observability tells you what happens after deployment, and safety controls use all that information to reduce harm. But no single control can do the job alone. That is why we use defense in depth.
+Alex: Defense in depth means putting multiple layers of protection in place so if one layer fails, another one catches the issue.
+Jordan: Think of a ship crossing rough water. You do not rely on just one thing to keep everyone safe. You have a navigation map, a lookout on deck, a strong hull, lifeboats, and an emergency radio. If the map is wrong, the lookout spots the danger. If the hull takes damage, the lifeboat is right there.
+Alex: For an AI product, those layers start with the design layer, where you choose a narrow task and set strict boundaries. Then the training and evaluation layer tests for known failures before launch.
+Jordan: Next is the runtime layer, where you filter inputs, limit tools, and require approvals. Then the monitoring layer logs actions, sends alerts, and watches for drift.
+Alex: Drift is when the system's behavior changes over time because the underlying data, the users, or the overall environment shifted. A model that looks safe in testing can become less safe later if the world changes around it.
+Jordan: Finally, you have the response layer, where you can pause the system, roll back updates, and investigate incidents.
+Alex: Let us look at a concrete example. Picture an AI assistant used in a small medical clinic to draft appointment reminders and summarize patient notes for staff. The clinic wants efficiency, but the risk is obvious.
+Jordan: Right, a mistaken summary could directly affect patient care. What are the hazards there?
+Alex: The model could omit critical allergy details or confuse patient names.
+Jordan: So how do you layer controls around those hazards?
+Alex: As a preventive control, the assistant only drafts text; it cannot send messages or alter records without staff approval. As a detective control, all drafts are logged, and unusual outputs get flagged for review. As a corrective control, if staff members catch a bad summary, they correct it manually and update the workflow instructions so it does not repeat.
+Jordan: Exactly. You are not expecting the AI to be perfect. You are making sure one mistake does not turn into patient harm.
+Alex: That gives us a clear four-question safety checklist: What are the hazards? Which controls reduce them? What can we monitor? What is the fallback if something fails?
+Jordan: That checklist is vital, especially when working with agent loops and tool delegation from earlier lessons. As capability grows, the need for tighter controls grows right alongside it. Adding capability without adding control is just adding risk.
+Alex: Time for the knowledge check. What have you got for me?
+Jordan: Question one: What is the difference between a hazard and a control?
+Alex: A hazard is something that can cause harm, like an AI output that drops important safety facts. A control is a measure you put in place to reduce the chance or impact of that harm, like requiring a human to check the draft.
+Jordan: Exactly right. Question two: Why is defense in depth safer than relying on one safety measure?
+Alex: Because no single safety measure is perfect. If one layer fails, like an input filter missing a tricky prompt, another layer like permission limits or human review can still stop the harm from happening.
+Jordan: Perfect. Question three: Name one preventive control and one detective control for an AI system.
+Alex: A preventive control could be rate limiting requests or setting strict permission limits on tool access. A detective control could be logging unusual behavior or running automated sample reviews on outputs.
+Jordan: Spot on. Here is your homework for today: Pick a free AI chatbot you can access, and pick one harmless task, like summarizing a short public paragraph or brainstorming product names. Write down the task in one single sentence. List three hazards that could happen, name one control to reduce each hazard, explain how you would monitor whether those controls are working, and write one fallback plan if the AI makes a serious mistake.
+Alex: Tomorrow on Day 51, we cover Privacy, Security, and Data Governance, building directly on today's safety layers to protect data, manage access, and keep systems secure.

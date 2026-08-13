@@ -1,5 +1,17 @@
 [
  {
+  "day": 50,
+  "title": "AI Safety: Hazards, Controls, and Defense in Depth",
+  "format": "two-host",
+  "guid": "two-host-day-050",
+  "publishedAt": "2026-08-13T07:35:45",
+  "audioPath": "/audio-v2/day-050-ai-safety-hazards-controls-and-defense-in-depth-4525389.mp3",
+  "transcriptPath": "/transcripts-v2/day-050-4525389.txt",
+  "audioBytes": 4525389,
+  "durationSeconds": 377,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 49,
   "title": "Reliability, Observability, and Failure Analysis",
   "format": "two-host",
