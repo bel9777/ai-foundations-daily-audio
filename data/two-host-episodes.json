@@ -1,5 +1,17 @@
 [
  {
+  "day": 51,
+  "title": "Privacy, Security, and Data Governance",
+  "format": "two-host",
+  "guid": "two-host-day-051",
+  "publishedAt": "2026-08-14T07:35:50",
+  "audioPath": "/audio-v2/day-051-privacy-security-and-data-governance-4191309.mp3",
+  "transcriptPath": "/transcripts-v2/day-051-4191309.txt",
+  "audioBytes": 4191309,
+  "durationSeconds": 349,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 50,
   "title": "AI Safety: Hazards, Controls, and Defense in Depth",
   "format": "two-host",

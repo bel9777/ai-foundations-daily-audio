@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 51: Privacy, Security, and Data Governance</title>
+      <description>Privacy, Security, and Data Governance - AI Foundations day 51, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-051</guid>
+      <pubDate>Fri, 14 Aug 2026 07:35:50 +0000</pubDate>
+      <itunes:episode>51</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-051-privacy-security-and-data-governance-4191309.mp3" length="4191309" type="audio/mpeg"/>
+      <itunes:duration>5:49</itunes:duration>
+    </item>
+    <item>
       <title>Day 50: AI Safety: Hazards, Controls, and Defense in Depth</title>
       <description>AI Safety: Hazards, Controls, and Defense in Depth - AI Foundations day 50, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-050</guid>
