@@ -17,3 +17,4 @@
 2026-08-12 07:59 OK made:1 ondisk:49 ledger:49 missing:0 feed:two-host PUSHED
 2026-08-13 08:39 OK made:1 ondisk:50 ledger:50 missing:0 feed:two-host PUSHED
 2026-08-14 07:49 OK made:1 ondisk:51 ledger:51 missing:0 feed:two-host PUSHED
+2026-08-15 07:47 WARN made:0 ondisk:51 ledger:51 missing:1 feed:legacy PUSHED failed:52:HTTP503
