@@ -18,3 +18,4 @@
 2026-08-13 08:39 OK made:1 ondisk:50 ledger:50 missing:0 feed:two-host PUSHED
 2026-08-14 07:49 OK made:1 ondisk:51 ledger:51 missing:0 feed:two-host PUSHED
 2026-08-15 07:47 WARN made:0 ondisk:51 ledger:51 missing:1 feed:legacy PUSHED failed:52:HTTP503
+2026-08-16 14:32 WARN made:0 ondisk:51 ledger:51 missing:2 feed:legacy PUSHED failed:53:script-TimeoutError,52:HTTP503
