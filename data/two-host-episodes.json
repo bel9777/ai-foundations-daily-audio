@@ -1,5 +1,17 @@
 [
  {
+  "day": 52,
+  "title": "Bias, Fairness, and Unequal Errors",
+  "format": "two-host",
+  "guid": "two-host-day-052",
+  "publishedAt": "2026-08-15T07:35:47",
+  "audioPath": "/audio-v2/day-052-bias-fairness-and-unequal-errors-4383405.mp3",
+  "transcriptPath": "/transcripts-v2/day-052-4383405.txt",
+  "audioBytes": 4383405,
+  "durationSeconds": 365,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 51,
   "title": "Privacy, Security, and Data Governance",
   "format": "two-host",

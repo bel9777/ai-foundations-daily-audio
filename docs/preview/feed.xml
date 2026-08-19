@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 52: Bias, Fairness, and Unequal Errors</title>
+      <description>Two-host rebuild of AI Foundations day 52.</description>
+      <guid isPermaLink="false">two-host-day-052</guid>
+      <pubDate>Sat, 15 Aug 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-052-bias-fairness-and-unequal-errors-4383405.mp3" length="4383405" type="audio/mpeg"/>
+      <itunes:duration>6:05</itunes:duration>
+    </item>
+    <item>
       <title>Day 51: Privacy, Security, and Data Governance</title>
       <description>Two-host rebuild of AI Foundations day 51.</description>
       <guid isPermaLink="false">two-host-day-051</guid>
