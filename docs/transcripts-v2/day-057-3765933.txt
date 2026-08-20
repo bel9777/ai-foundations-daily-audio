@@ -1,0 +1,33 @@
+Alex: Running a massive AI model from scratch for every single user click is a fast track to bankrupting your project and slowing your app to a crawl. This is AI Foundations, day 57.
+Jordan: Today is all about three practical optimization tools: caching, batching, and model routing. They help you answer faster and spend less money, without changing the underlying model at all.
+Alex: Let's start with caching. What does that look like in an AI pipeline?
+Jordan: Caching just means storing the result of a previous computation so you can reuse it later instead of redoing the work. If five hundred users ask your store bot for your return policy, you do not need an expensive neural network to generate that same answer five hundred times.
+Alex: Right, you just pull the saved answer. That is a cache hit, right?
+Jordan: Exactly. A cache hit means the system found a ready-made answer and delivered it instantly. A cache miss means there was no saved answer, so the system had to call the model and generate a fresh one.
+Alex: It is like keeping a cheat sheet of common answers on your desk instead of walking over to ask your manager every time.
+Jordan: That is the perfect analogy. But there is a big catch: freshness and privacy. If a user asks for their personal account balance, or if your return policy changed ten minutes ago, serving a cached answer is either dangerous or wrong. You only cache when the data is stable and safe to share across users.
+Alex: Makes sense. Keep the cheat sheet updated and do not write private info on it. What about batching?
+Jordan: Batching means grouping several incoming requests together so the model can process them in one single pass. AI models running on GPUs are built to handle chunks of data at once much more efficiently than handling one request at a time.
+Alex: So if ten questions arrive at roughly the same moment, you send them as a pack.
+Jordan: Exactly. That pack size is your batch size, and the waiting line where requests sit while that batch fills up is the queue. This is huge for throughput, meaning the total number of requests your system can finish in a minute or an hour.
+Alex: But there has to be a tradeoff. If I am the first person in the queue, I have to sit there waiting for the batch to fill up before my answer gets generated.
+Jordan: Spot on. Batching improves overall throughput, but it can hurt individual latency. If you wait half a second to gather a batch of twenty support tickets during a busy flash sale, users will not care. But if you make someone wait three seconds in a live voice conversation, they will notice immediately.
+Alex: Balance between efficiency and responsiveness. Got it. Now, what about model routing?
+Jordan: Not every user question needs a giant, hundred-billion-parameter model. If someone asks to summarize a two-sentence email or classify a review as positive or negative, a tiny, cheap model can do it in milliseconds. If someone asks for complex multi-step code debugging, you send that to your heavy-duty model.
+Alex: And the router is the traffic cop deciding where each request goes.
+Jordan: Yes. A router can be a simple set of programmed rules, like keyword matching, or a small, ultra-fast classifier model. It looks at the prompt and decides whether to send it to a small model, a large model, or maybe bypass models entirely with a database search.
+Alex: What happens if the router messes up?
+Jordan: If your router sends a hard question to a weak model, your quality tanks and the user gets nonsense. If it sends simple questions to the giant model, your monthly cloud bill explodes. You have to test and benchmark your routing logic just like any other system component.
+Alex: How do all three fit together in a real system?
+Jordan: Picture a busy restaurant. Caching is the pre-made soup sitting in a warmer ready to serve in five seconds. Batching is the server waiting until they have three table orders before walking them back to the kitchen. Routing is sending the simple salad order to the prep station while sending the ribeye steak to the head chef.
+Alex: In practice, a request comes in, hits the cache first. If it is a miss, the router picks the right model tier, and then the batcher groups it with similar requests to run efficiently.
+Jordan: Exactly. It ties directly back to our tradeoffs from yesterday: balancing latency, throughput, and cost. Now, let's see how well you locked these down. Ready for a quick quiz?
+Alex: Bring it on.
+Jordan: Question one: What is the primary purpose of caching in an AI system?
+Alex: It saves and reuses previous answers so the system does not waste time and money recomputing the exact same thing.
+Jordan: Perfect. Question two: What is the main tradeoff when you implement batching?
+Alex: You get higher throughput and better hardware efficiency, but individual requests might suffer extra latency because they have to wait in the queue for the batch to fill up.
+Jordan: Right on the money. Final question: Why would an AI architecture use model routing instead of sending everything to one model?
+Alex: Because tasks have different difficulty levels. Routing simple tasks to smaller, cheaper models and hard tasks to larger models keeps costs down and speed up without sacrificing quality on hard problems.
+Jordan: Exactly right. Match the tool to the specific job. Now for today's homework. You do not need any paid software, just a piece of paper or a spreadsheet. Write down twelve realistic sample requests for a customer support bot. Label each one as repeatable, easy, or hard. Note which ones can be served from a cache, which can go to a small model, and which require a large model. Then, group them into batches of three and write one clear paragraph describing your overall routing rule. Notice how many requests you can resolve without ever touching the expensive model.
+Alex: Tomorrow on day 58, we are talking about monitoring drift and quality after launch so you know when your production system starts slipping. See you then.

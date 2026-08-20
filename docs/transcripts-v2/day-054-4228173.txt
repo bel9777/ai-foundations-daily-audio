@@ -1,0 +1,35 @@
+Alex: If you cannot reliably reproduce your training data, you cannot reliably explain what your AI model is actually doing. This is AI Foundations, day 54.
+Jordan: When people start out in machine learning, they usually think training the model is the main event. But in reality, your model is only ever as good as the data that actually reaches it.
+Alex: If you feed it garbage, you get garbage. But an even bigger trap is feeding it something, getting weird results, and saying, "I think this is the same dataset we used last week."
+Jordan: That happens way more often than teams want to admit. To prevent it, we build a data pipeline. Think of a pipeline as an assembly line for data. You pull raw records out of a database, clean broken entries, filter for the right language, remove duplicates, apply labels, and save a final dataset.
+Alex: And if those steps are just vague instructions in someone's head, two developers can start with the same raw database and produce two completely different datasets.
+Jordan: Exactly. That is why repeatability is the golden rule here. You need to be able to run that exact same sequence next month and get the exact same training set, or at least be able to explain every single difference.
+Alex: So we treat the data pipeline like software. We write down the code, we test it, and we validate it along the way.
+Jordan: Right. Validation is your frontline defense. It means setting strict gate checks before data moves to the next station. You verify that required columns are not blank, text lengths fall within normal bounds, category labels only come from an approved list, IDs are unique, and date formats are consistent.
+Alex: Because if you skip validation, you get silent errors. The pipeline does not crash, the model trains, but the data is subtly corrupted.
+Jordan: Spot on. And that leads straight into dataset versioning. A version is a named, immutable snapshot of your dataset at a specific point in time. It is just like saving numbered drafts of an important paper.
+Alex: Instead of saving a file called "support_data_final_really_final.csv", you keep an actual structured record.
+Jordan: Exactly. A solid version record tracks five things: the source where the raw data originated, a timestamp, the exact transformations applied, the schema, and a checksum.
+Alex: Break down schema and checksum for us.
+Jordan: A schema is the blueprint of your table. It defines your column names and the exact data types expected in each one. A checksum is a compact digital fingerprint calculated from the file contents. If even a single comma changes in that file, the checksum changes completely, like a broken tamper seal on a package.
+Alex: That brings us to lineage. How does lineage differ from a version snapshot?
+Jordan: Versioning tells you what snapshot you have on the shelf right now. Lineage tells you the entire history of how that snapshot was made: where the data came from, what tools transformed it, and where it went downstream.
+Alex: Use your kitchen analogy here. That made it click for me.
+Jordan: Imagine a busy restaurant kitchen. Raw ingredients arrive at the loading dock. The prep team washes, chops, portions, and boxes them. That prep station is your data pipeline. The labeled containers sitting on the walk-in shelf are your dataset versions. And the clipboard on the wall logging which farm the spinach came from, who washed it, and when it was prepped? That is your lineage.
+Alex: If a customer gets sick, the chef checks the clipboard and knows immediately whether the issue was a bad supplier, a prep mistake, or the cooking recipe.
+Jordan: Precisely. Let us ground this in a real-world example: classifying customer support tickets into categories like billing, login issues, or bug reports.
+Alex: Walk through how that pipeline looks.
+Jordan: Step one: export raw tickets from the help desk. Step two: remove tickets with empty text. Step three: deduplicate identical submissions. Step four: mask names and credit card numbers to protect privacy. Step five: have human reviewers label ambiguous tickets. Step six: save that clean output as version tickets-v3.
+Alex: And look at how that weaves in our recent lessons. Masking personal info ties right back to Day 51 on privacy and governance.
+Jordan: And the human reviewers tie back to Day 48 on human oversight. Plus, Day 49 taught us observability, which means keeping logs and counts at each step so we notice if half our billing tickets vanish during filtering.
+Alex: And if the final model ends up with unequal error rates, like we covered in Day 52 on fairness, we can check the lineage of tickets-v3 to see if certain user groups were accidentally filtered out.
+Jordan: That is the whole power of this setup. To make it work, adopt five practical habits: write down every pipeline step, always keep raw and processed data strictly separated, validate early, version your datasets alongside your code, and track who made changes and why.
+Alex: Simple habits, but they save hundreds of hours of debugging.
+Jordan: They really do. Let us see how well this stuck. Time for your knowledge check. Question one: what is the main job of a data pipeline?
+Alex: It is the structured sequence of steps that moves raw data from its source, cleans, filters, validates it, and outputs a reliable dataset ready for training or evaluation.
+Jordan: Right on target. Question two: why is dataset versioning important when training or evaluating a model?
+Alex: Because a model is shaped by its data just as much as its code. Versioning lets you identify the exact data used, reproduce past experiments, and explain shifts in model behavior.
+Jordan: Exactly. Question three: what is lineage in plain language?
+Alex: It is the full history and family tree of a dataset: where it came from, how it was transformed, and what it became.
+Jordan: Three for three. Now for your homework. Open a spreadsheet or text editor and build a tiny ten-row dataset with columns for ID, text, and label. Save that raw version as v1. Next, apply two pipeline steps: remove any duplicate rows and fix one incorrect label. Save that result as v2. Write a short version note recording what changed, why, who did it, and what validation checks you ran. Then answer this: if a model trained on v2 behaves differently than on v1, can you explain why using only your notes? If not, add more detail.
+Alex: Tomorrow, we take our prepared data and put it to work in Day 55: serving models in production. See you then.

@@ -1,5 +1,41 @@
 [
  {
+  "day": 57,
+  "title": "Caching, Batching, and Model Routing",
+  "format": "two-host",
+  "guid": "two-host-day-057",
+  "publishedAt": "2026-08-20T07:35:59",
+  "audioPath": "/audio-v2/day-057-caching-batching-and-model-routing-3765933.mp3",
+  "transcriptPath": "/transcripts-v2/day-057-3765933.txt",
+  "audioBytes": 3765933,
+  "durationSeconds": 313,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 56,
+  "title": "Latency, Throughput, and Cost",
+  "format": "two-host",
+  "guid": "two-host-day-056",
+  "publishedAt": "2026-08-19T07:36:01",
+  "audioPath": "/audio-v2/day-056-latency-throughput-and-cost-4743693.mp3",
+  "transcriptPath": "/transcripts-v2/day-056-4743693.txt",
+  "audioBytes": 4743693,
+  "durationSeconds": 395,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 54,
+  "title": "Data Pipelines and Dataset Versioning",
+  "format": "two-host",
+  "guid": "two-host-day-054",
+  "publishedAt": "2026-08-17T07:35:47",
+  "audioPath": "/audio-v2/day-054-data-pipelines-and-dataset-versioning-4228173.mp3",
+  "transcriptPath": "/transcripts-v2/day-054-4228173.txt",
+  "audioBytes": 4228173,
+  "durationSeconds": 352,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 52,
   "title": "Bias, Fairness, and Unequal Errors",
   "format": "two-host",
