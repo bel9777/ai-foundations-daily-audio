@@ -1,5 +1,17 @@
 [
  {
+  "day": 58,
+  "title": "Monitoring Drift and Quality after Launch",
+  "format": "two-host",
+  "guid": "two-host-day-058",
+  "publishedAt": "2026-08-21T07:35:51",
+  "audioPath": "/audio-v2/day-058-monitoring-drift-and-quality-after-launch-4284909.mp3",
+  "transcriptPath": "/transcripts-v2/day-058-4284909.txt",
+  "audioBytes": 4284909,
+  "durationSeconds": 357,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 57,
   "title": "Caching, Batching, and Model Routing",
   "format": "two-host",

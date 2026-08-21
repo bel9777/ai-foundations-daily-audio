@@ -22,3 +22,4 @@
 2026-08-17 10:00 WARN made:0 ondisk:51 ledger:51 missing:3 feed:legacy PUSHED failed:54:HTTP503,52:HTTP503,53:HTTP503
 2026-08-18 10:09 WARN made:0 ondisk:51 ledger:51 missing:4 feed:legacy PUSHED failed:55:HTTP503,52:HTTP503,53:HTTP503,54:HTTP503
 2026-08-19 08:55 WARN made:1 ondisk:52 ledger:52 missing:4 feed:legacy PUSHED failed:56:HTTP503,53:HTTP503,54:HTTP503,55:HTTP503
+2026-08-20 09:11 WARN made:3 ondisk:55 ledger:55 missing:2 feed:legacy PUSHED failed:53:HTTP503,55:HTTP503

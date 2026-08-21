@@ -1,0 +1,38 @@
+Alex: Launching an AI model is not the finish line, it is the exact moment the messy real world starts testing everything you built. This is AI Foundations, day 58.
+Jordan: And that test never really stops. When teams deploy a model, they often assume it will keep performing the way it did during testing. But the world changes, users change, and software around the model changes.
+Alex: Right. Before launch, you ask, does this work on our test dataset? After launch, the only question that matters is, is it still working for real people right now?
+Jordan: That continuous check is what monitoring is all about. And when things quietly degrade, the culprit is usually drift.
+Alex: Break down drift for us. I know there are a couple of distinct flavors.
+Jordan: Drift is just a shift in data, behavior, or performance over time. The two big types are data drift and concept drift. Data drift means the inputs change. Think of a support chatbot that suddenly gets flooded with questions about a brand new product feature that never existed in the training data.
+Alex: The model has literally never seen those words or topics before.
+Jordan: Exactly. Concept drift is different. That is when the meaning of the task or the relationship between inputs and outputs changes. Think about fraud detection. Fraudsters adapt constantly. A pattern of transactions that used to mean legitimate shopping might now mean fraud. The rules of the world shifted under the model.
+Alex: You can also have population drift, right? Where the model itself does not change, but you expand into a new region or demographic with totally different habits and phrasing.
+Jordan: Exactly. The model is suddenly facing a slice of reality it was never built to handle.
+Alex: So how do you catch that in production? You cannot have humans manually review millions of live predictions.
+Jordan: You use a mix of automated signals and sampling. First, you look for ground-truth labels. That is the actual real-world outcome. If your model routes a support ticket, did the customer confirm it was resolved, or did they reopen it ten minutes later?
+Alex: The catch is that ground truth often takes days or weeks to show up, if it shows up at all.
+Jordan: That is why teams rely on proxy metrics. A proxy metric is a stand-in measurement. In a recommender system, a user click is a proxy metric. A click does not prove the recommendation was genuinely helpful, but it gives you an immediate signal.
+Alex: Alongside sampled human reviews, where people inspect a small percentage of outputs, and standard error rate tracking.
+Jordan: Yes. You need both fast proxy signals and slower, high-quality human checks, because a model can look fine on surface metrics while quietly accumulating serious errors.
+Alex: And we are not just watching the model in isolation. It lives inside an entire software stack.
+Jordan: Think of an AI system like an airport control tower. The model is just one airplane. The control tower does not wait for a crash report to realize something is wrong. It monitors runway conditions, weather radar, delays, and traffic volume all at once.
+Alex: So in production, that means tracking input health, output health, performance health, and business health.
+Jordan: Exactly. Input health checks whether incoming payloads have missing fields, weird formatting, or out-of-range values. Output health checks if model responses are suddenly repetitive, empty, or throwing extreme confidence scores.
+Alex: Performance health is our latency and throughput from Day 56, though a fast response that is totally wrong is still useless.
+Jordan: And business health tracks whether users are actually converting, completing workflows, or complaining. This also ties back to caching and routing from Day 57. An aggressive cache can hide data drift because you keep serving old stored answers instead of running fresh requests. And if a dynamic router shifts traffic, your monitoring must track which specific model is handling which requests.
+Alex: Let us walk through a real scenario. Say we launch an email spam filter.
+Jordan: It works great on day one. A month later, your marketing department starts a huge campaign using new link shorteners and promotional phrasing. Suddenly, the filter starts dropping legitimate customer emails into the spam folder. That is data drift because the input patterns changed.
+Alex: And if actual spammers copy that exact marketing campaign style, that becomes concept drift.
+Jordan: Exactly. If you only look at whether the server is running, you miss the failure. But if you track spam folder volume, keyword frequency, user complaints, and false positives where good mail gets blocked, you spot it early.
+Alex: What does a team actually do once those signals light up?
+Jordan: You follow a clean five-step playbook. Alert: notify the team when a metric crosses a pre-set threshold. Inspect: pull up twenty recent bad examples to see what broke. Compare: check if the failure is in the input data, the model, the cache, or a business rule. Mitigate: roll back or switch to a safe fallback rule. Retrain or revise: update the model using versioned datasets like we covered in Day 54.
+Alex: Having that playbook ready ahead of time beats panicking in the middle of an incident.
+Jordan: Every single time. Let us do a quick knowledge check. Question one: what is the difference between data drift and concept drift?
+Alex: Data drift is when the input data changes, like users typing new slang or asking about new features. Concept drift is when the underlying relationship between inputs and outputs changes, like fraud patterns evolving so old indicators mean something new.
+Jordan: Sharp. Question two: why use a proxy metric, and why is it not enough on its own?
+Alex: A proxy metric gives you a fast, easy signal when ground-truth outcomes are delayed or unavailable, like using clicks to guess if a recommendation worked. But it is not enough alone because it is only a stand-in. High clicks could just mean clickbait, not real quality.
+Jordan: Exactly. Last one: name two layers of an AI system you should monitor besides model accuracy.
+Alex: Input health, to catch missing fields or corrupted data formats, and business health, to track if real metrics like user drop-offs or support escalations are spiking.
+Jordan: Spot on. Here is your homework for today. Pick a hypothetical AI product, like a meeting summarizer or a job recommender. Write down three input signals to watch, three output or quality signals, and one proxy metric with a note explaining why it is only a stand-in. Set one alert threshold for each signal, write a clear response action for when that threshold gets breached, and add one sentence explaining how caching or routing could complicate that monitoring setup.
+Alex: Tomorrow on Day 59, we move from system health to economics, breaking down the costs and strategy behind building your own AI features versus buying them.
+Jordan: See you tomorrow.
