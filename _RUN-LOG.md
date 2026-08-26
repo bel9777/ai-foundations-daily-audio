@@ -26,3 +26,4 @@
 2026-08-21 07:53 WARN made:1 ondisk:56 ledger:56 missing:2 feed:legacy PUSHED failed:53:HTTP503,55:HTTP503
 2026-08-22 07:51 WARN made:0 ondisk:56 ledger:56 missing:3 feed:legacy PUSHED failed:59:HTTP503,53:HTTP503,55:HTTP503
 2026-08-24 10:28 WARN made:0 ondisk:56 ledger:56 missing:5 feed:legacy PUSHED failed:61:HTTP503,53:HTTP503,55:HTTP503,59:script-TimeoutError,60:script-TimeoutError
+2026-08-25 08:07 WARN made:0 ondisk:56 ledger:56 missing:6 feed:legacy PUSHED failed:62:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:script-TimeoutError,61:script-TimeoutError
