@@ -1,0 +1,37 @@
+Alex: You do not always need a massive supercomputer to get real work done with artificial intelligence. This is AI Foundations, day 62.
+Jordan: Today is about making AI smaller, faster, and cheaper to run without gutting the quality of what it produces.
+Alex: Which matters immediately if you are trying to deploy something on a smartphone, a cheap cloud instance, or anywhere with a strict budget.
+Jordan: Exactly. When we talk about a small model, we mean one with fewer parameters. Parameters are the internal numbers a model learns during training. Fewer parameters mean the model demands less memory and compute when it runs inference.
+Alex: And just to keep our terms straight, training is when the model learns from data, while inference is when we actually run the trained model to answer a prompt.
+Jordan: Right. In production, inference is where your ongoing bills come from. Smaller models slash latency, boost throughput, and fit on constrained devices. But the real test is whether a smaller model is good enough for your specific task.
+Alex: A tiny model might nail sentiment analysis, data extraction, or sorting emails, but fall flat on multi-step reasoning or complex multimodal inputs.
+Jordan: Precisely. If a task is narrow, you usually do not need all that extra bulk.
+Alex: So if we want a capable small model, how do we actually build one without losing all the smarts of a bigger system?
+Jordan: One major technique is distillation. You take a massive, capable model as the teacher and train a smaller student model to mimic its outputs.
+Alex: So the student is not trying to learn the whole world from raw data. It gets a guided curriculum.
+Jordan: Exactly. Think of it like turning a giant eight-hundred-page textbook into a compact study guide written by an expert tutor. The study guide is shorter, easier to carry, and captures the core patterns. But it might skip some edge-case nuances.
+Alex: Is there a catch with distillation?
+Jordan: The student inherits the teacher's blind spots. If the teacher hallucinates, carries specific biases, or makes inconsistent errors, the student will faithfully copy those exact flaws.
+Alex: That makes sense. Now, what about quantization? I hear people throwing that term around constantly whenever local models come up.
+Jordan: Quantization changes how the model stores its numbers. Model weights are usually stored in high precision, like sixteen-bit numbers. Quantization rounds those numbers down to something smaller, like eight-bit values.
+Alex: Like taking a detailed map with ten decimal places for every GPS coordinate and rounding them to two.
+Jordan: That is the exact mental model. The map still gets you to the right street, but you lose sub-millimeter precision. That rounding introduces approximation error. It saves massive amounts of memory and speeds up calculations, but if you compress too aggressively, the model gets sloppy.
+Alex: And we also hear about pruning. How does that fit in?
+Jordan: Pruning is literally cutting out unimportant weights or connections entirely. Both pruning and quantization fall under the broad umbrella of model compression. But remember the distinction: distillation changes what the model learns during training, while quantization changes how the model stores and computes its numbers during inference.
+Alex: How do these pieces fit into real systems alongside the caching and batching tricks we talked about recently?
+Jordan: Let us look at a concrete setup. Say a company gets ten thousand customer support tickets a day. Most are dead simple: asking for an invoice, resetting a password, or canceling an account.
+Alex: Running a massive frontier model on every single password reset request would burn money for no reason.
+Jordan: Total waste. So they train a compact intent classification model. They distill it using a large model that already labeled historical tickets. Then they quantize that small model so it runs lightning fast on basic servers.
+Alex: The small, quantized model handles the vast majority of routine routing in milliseconds.
+Jordan: And if a ticket is strange, ambiguous, or angry, the system routes that single request up to a larger model or a human agent. You combine compression with model routing to get speed, low cost, and safety all at once.
+Alex: It makes the entire architecture lean.
+Jordan: Let us see how well you internalized this. First question: what is the fundamental difference between distillation and quantization?
+Alex: Distillation changes the training process by having a smaller student model learn from a big teacher model. Quantization changes the numerical precision of the weights, like shrinking sixteen-bit numbers down to eight-bit, to save memory and compute during inference.
+Jordan: Spot on. Second question: why would a company use a small model for customer support ticket routing instead of a giant general model?
+Alex: Ticket classification is a narrow, repetitive task. A small model is faster, costs much less, runs on lighter hardware, and handles the high volume without sacrificing quality on simple queries.
+Jordan: Exactly right. Last one: in what situation would model routing be better than just picking one single model for every request?
+Alex: When your workload is a mix of easy and hard tasks. You let the cheap, fast model handle the simple eighty percent, and only pay the latency and cost penalty of a big model for the tricky edge cases.
+Jordan: Clean sweep.
+Alex: Ready for the homework.
+Jordan: For your exercise, write down three AI tasks from your own life or work, like spam filtering, drafting email replies, or answering product FAQs. For each task, decide if a small model is enough, if distillation would help train it, and if quantization makes sense for latency or memory limits. Rank each task by its risk of mistakes, and decide which ones should default to a small model with routing to a larger model only when needed. Notice how high-volume, low-risk tasks deliver massive cost savings once compressed.
+Alex: Tomorrow, we tackle mixture-of-experts models to see how large systems route inputs to specialized sub-networks under the hood.

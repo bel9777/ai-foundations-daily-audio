@@ -1,5 +1,17 @@
 [
  {
+  "day": 62,
+  "title": "Small Models, Distillation, and Quantization",
+  "format": "two-host",
+  "guid": "two-host-day-062",
+  "publishedAt": "2026-08-25T07:35:47",
+  "audioPath": "/audio-v2/day-062-small-models-distillation-and-quantization-3839085.mp3",
+  "transcriptPath": "/transcripts-v2/day-062-3839085.txt",
+  "audioBytes": 3839085,
+  "durationSeconds": 319,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 58,
   "title": "Monitoring Drift and Quality after Launch",
   "format": "two-host",

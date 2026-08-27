@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 62: Small Models, Distillation, and Quantization</title>
+      <description>Two-host rebuild of AI Foundations day 62.</description>
+      <guid isPermaLink="false">two-host-day-062</guid>
+      <pubDate>Tue, 25 Aug 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-062-small-models-distillation-and-quantization-3839085.mp3" length="3839085" type="audio/mpeg"/>
+      <itunes:duration>5:19</itunes:duration>
+    </item>
+    <item>
       <title>Day 58: Monitoring Drift and Quality after Launch</title>
       <description>Two-host rebuild of AI Foundations day 58.</description>
       <guid isPermaLink="false">two-host-day-058</guid>
