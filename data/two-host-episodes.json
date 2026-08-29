@@ -1,5 +1,17 @@
 [
  {
+  "day": 66,
+  "title": "Reasoning Models and Test-Time Compute",
+  "format": "two-host",
+  "guid": "two-host-day-066",
+  "publishedAt": "2026-08-29T07:36:03",
+  "audioPath": "/audio-v2/day-066-reasoning-models-and-test-time-compute-4002669.mp3",
+  "transcriptPath": "/transcripts-v2/day-066-4002669.txt",
+  "audioBytes": 4002669,
+  "durationSeconds": 333,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 62,
   "title": "Small Models, Distillation, and Quantization",
   "format": "two-host",
