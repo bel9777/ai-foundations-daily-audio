@@ -24,6 +24,18 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 61,
+  "title": "Multimodal Models",
+  "format": "two-host",
+  "guid": "two-host-day-061",
+  "publishedAt": "2026-08-24T07:35:47",
+  "audioPath": "/audio-v2/day-061-multimodal-models-4246893.mp3",
+  "transcriptPath": "/transcripts-v2/day-061-4246893.txt",
+  "audioBytes": 4246893,
+  "durationSeconds": 353,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 58,
   "title": "Monitoring Drift and Quality after Launch",
   "format": "two-host",

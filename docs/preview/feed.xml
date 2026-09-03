@@ -24,6 +24,14 @@
       <itunes:duration>5:19</itunes:duration>
     </item>
     <item>
+      <title>Day 61: Multimodal Models</title>
+      <description>Two-host rebuild of AI Foundations day 61.</description>
+      <guid isPermaLink="false">two-host-day-061</guid>
+      <pubDate>Mon, 24 Aug 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-061-multimodal-models-4246893.mp3" length="4246893" type="audio/mpeg"/>
+      <itunes:duration>5:53</itunes:duration>
+    </item>
+    <item>
       <title>Day 58: Monitoring Drift and Quality after Launch</title>
       <description>Two-host rebuild of AI Foundations day 58.</description>
       <guid isPermaLink="false">two-host-day-058</guid>
