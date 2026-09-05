@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 72: Advanced Synthesis 1: Model Architecture</title>
+      <description>Two-host rebuild of AI Foundations day 72.</description>
+      <guid isPermaLink="false">two-host-day-072</guid>
+      <pubDate>Sat, 05 Sep 2026 07:35:43 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-072-advanced-synthesis-1-model-architecture-3269133.mp3" length="3269133" type="audio/mpeg"/>
+      <itunes:duration>4:32</itunes:duration>
+    </item>
+    <item>
       <title>Day 66: Reasoning Models and Test-Time Compute</title>
       <description>Two-host rebuild of AI Foundations day 66.</description>
       <guid isPermaLink="false">two-host-day-066</guid>
@@ -54,6 +62,14 @@
       <pubDate>Wed, 19 Aug 2026 07:36:01 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-056-latency-throughput-and-cost-4743693.mp3" length="4743693" type="audio/mpeg"/>
       <itunes:duration>6:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 55: Serving Models in Production</title>
+      <description>Two-host rebuild of AI Foundations day 55.</description>
+      <guid isPermaLink="false">two-host-day-055</guid>
+      <pubDate>Tue, 18 Aug 2026 07:35:49 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-055-serving-models-in-production-4396653.mp3" length="4396653" type="audio/mpeg"/>
+      <itunes:duration>6:06</itunes:duration>
     </item>
     <item>
       <title>Day 54: Data Pipelines and Dataset Versioning</title>

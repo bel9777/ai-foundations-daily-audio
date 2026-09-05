@@ -1,5 +1,17 @@
 [
  {
+  "day": 72,
+  "title": "Advanced Synthesis 1: Model Architecture",
+  "format": "two-host",
+  "guid": "two-host-day-072",
+  "publishedAt": "2026-09-05T07:35:43",
+  "audioPath": "/audio-v2/day-072-advanced-synthesis-1-model-architecture-3269133.mp3",
+  "transcriptPath": "/transcripts-v2/day-072-3269133.txt",
+  "audioBytes": 3269133,
+  "durationSeconds": 272,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 66,
   "title": "Reasoning Models and Test-Time Compute",
   "format": "two-host",
@@ -69,6 +81,18 @@
   "transcriptPath": "/transcripts-v2/day-056-4743693.txt",
   "audioBytes": 4743693,
   "durationSeconds": 395,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 55,
+  "title": "Serving Models in Production",
+  "format": "two-host",
+  "guid": "two-host-day-055",
+  "publishedAt": "2026-08-18T07:35:49",
+  "audioPath": "/audio-v2/day-055-serving-models-in-production-4396653.mp3",
+  "transcriptPath": "/transcripts-v2/day-055-4396653.txt",
+  "audioBytes": 4396653,
+  "durationSeconds": 366,
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {

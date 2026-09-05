@@ -35,3 +35,4 @@
 2026-09-01 07:55 WARN made:0 ondisk:58 ledger:58 missing:11 feed:legacy PUSHED failed:69:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:HTTP503,61:HTTP503 stopped:quota-429 at day 63, resumes next run
 2026-09-02 08:15 WARN made:0 ondisk:58 ledger:58 missing:12 feed:legacy PUSHED failed:70:script-TimeoutError,53:script-TimeoutError,55:script-TimeoutError,59:script-TimeoutError,60:script-TimeoutError,61:script-TimeoutError,63:script-TimeoutError,64:script-TimeoutError,65:script-TimeoutError,67:script-TimeoutError,68:script-TimeoutError,69:script-TimeoutError
 2026-09-03 07:59 WARN made:1 ondisk:59 ledger:59 missing:11 feed:legacy PUSHED failed:70:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:HTTP503,63:tts-ConnectionResetError stopped:quota-429 at day 64, resumes next run
+2026-09-04 08:01 WARN made:0 ondisk:59 ledger:59 missing:12 feed:legacy PUSHED failed:71:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:HTTP503,63:HTTP503 stopped:quota-429 at day 64, resumes next run
