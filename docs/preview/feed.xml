@@ -24,6 +24,14 @@
       <itunes:duration>5:33</itunes:duration>
     </item>
     <item>
+      <title>Day 63: Mixture-of-Experts Models</title>
+      <description>Two-host rebuild of AI Foundations day 63.</description>
+      <guid isPermaLink="false">two-host-day-063</guid>
+      <pubDate>Wed, 26 Aug 2026 07:35:49 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-063-mixture-of-experts-models-4610925.mp3" length="4610925" type="audio/mpeg"/>
+      <itunes:duration>6:24</itunes:duration>
+    </item>
+    <item>
       <title>Day 62: Small Models, Distillation, and Quantization</title>
       <description>Two-host rebuild of AI Foundations day 62.</description>
       <guid isPermaLink="false">two-host-day-062</guid>

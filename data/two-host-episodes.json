@@ -24,6 +24,18 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 63,
+  "title": "Mixture-of-Experts Models",
+  "format": "two-host",
+  "guid": "two-host-day-063",
+  "publishedAt": "2026-08-26T07:35:49",
+  "audioPath": "/audio-v2/day-063-mixture-of-experts-models-4610925.mp3",
+  "transcriptPath": "/transcripts-v2/day-063-4610925.txt",
+  "audioBytes": 4610925,
+  "durationSeconds": 384,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 62,
   "title": "Small Models, Distillation, and Quantization",
   "format": "two-host",
