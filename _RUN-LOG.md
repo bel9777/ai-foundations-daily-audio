@@ -37,3 +37,4 @@
 2026-09-03 07:59 WARN made:1 ondisk:59 ledger:59 missing:11 feed:legacy PUSHED failed:70:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:HTTP503,63:tts-ConnectionResetError stopped:quota-429 at day 64, resumes next run
 2026-09-04 08:01 WARN made:0 ondisk:59 ledger:59 missing:12 feed:legacy PUSHED failed:71:HTTP503,53:HTTP503,55:HTTP503,59:HTTP503,60:HTTP503,63:HTTP503 stopped:quota-429 at day 64, resumes next run
 2026-09-05 07:59 WARN made:2 ondisk:61 ledger:61 missing:11 feed:legacy PUSHED failed:53:HTTP503,59:HTTP503,60:HTTP503,63:HTTP503,64:HTTP503 stopped:quota-429 at day 65, resumes next run
+2026-09-06 07:58 WARN made:1 ondisk:62 ledger:62 missing:11 feed:legacy PUSHED failed:73:HTTP503,53:HTTP503,59:HTTP503,60:HTTP503,64:HTTP503,65:HTTP503 stopped:quota-429 at day 67, resumes next run
