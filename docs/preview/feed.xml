@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 93: Advanced Synthesis 22: Safety And Security</title>
+      <description>Two-host rebuild of AI Foundations day 93.</description>
+      <guid isPermaLink="false">two-host-day-093</guid>
+      <pubDate>Sat, 26 Sep 2026 07:35:36 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-093-advanced-synthesis-22-safety-and-security-4644045.mp3" length="4644045" type="audio/mpeg"/>
+      <itunes:duration>6:26</itunes:duration>
+    </item>
+    <item>
       <title>Day 72: Advanced Synthesis 1: Model Architecture</title>
       <description>Two-host rebuild of AI Foundations day 72.</description>
       <guid isPermaLink="false">two-host-day-072</guid>
@@ -22,6 +30,22 @@
       <pubDate>Sat, 29 Aug 2026 07:36:03 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-066-reasoning-models-and-test-time-compute-4002669.mp3" length="4002669" type="audio/mpeg"/>
       <itunes:duration>5:33</itunes:duration>
+    </item>
+    <item>
+      <title>Day 65: Synthetic Data and Data Flywheels</title>
+      <description>Two-host rebuild of AI Foundations day 65.</description>
+      <guid isPermaLink="false">two-host-day-065</guid>
+      <pubDate>Fri, 28 Aug 2026 07:35:48 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-065-synthetic-data-and-data-flywheels-4627053.mp3" length="4627053" type="audio/mpeg"/>
+      <itunes:duration>6:25</itunes:duration>
+    </item>
+    <item>
+      <title>Day 64: Long Context, Memory, and Retrieval Tradeoffs</title>
+      <description>Two-host rebuild of AI Foundations day 64.</description>
+      <guid isPermaLink="false">two-host-day-064</guid>
+      <pubDate>Thu, 27 Aug 2026 07:35:52 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-064-long-context-memory-and-retrieval-tradeoffs-4170285.mp3" length="4170285" type="audio/mpeg"/>
+      <itunes:duration>5:47</itunes:duration>
     </item>
     <item>
       <title>Day 63: Mixture-of-Experts Models</title>
@@ -46,6 +70,22 @@
       <pubDate>Mon, 24 Aug 2026 07:35:47 +0000</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-061-multimodal-models-4246893.mp3" length="4246893" type="audio/mpeg"/>
       <itunes:duration>5:53</itunes:duration>
+    </item>
+    <item>
+      <title>Day 60: Experiment Design and Measuring Business Value</title>
+      <description>Two-host rebuild of AI Foundations day 60.</description>
+      <guid isPermaLink="false">two-host-day-060</guid>
+      <pubDate>Sun, 23 Aug 2026 07:35:46 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-060-experiment-design-and-measuring-business-value-4177773.mp3" length="4177773" type="audio/mpeg"/>
+      <itunes:duration>5:48</itunes:duration>
+    </item>
+    <item>
+      <title>Day 59: AI Product Economics and Build-versus-Buy</title>
+      <description>Two-host rebuild of AI Foundations day 59.</description>
+      <guid isPermaLink="false">two-host-day-059</guid>
+      <pubDate>Sat, 22 Aug 2026 07:35:47 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-059-ai-product-economics-and-build-versus-buy-4508109.mp3" length="4508109" type="audio/mpeg"/>
+      <itunes:duration>6:15</itunes:duration>
     </item>
     <item>
       <title>Day 58: Monitoring Drift and Quality after Launch</title>

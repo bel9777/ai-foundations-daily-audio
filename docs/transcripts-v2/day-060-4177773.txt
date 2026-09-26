@@ -1,0 +1,35 @@
+Alex: Just because a new AI feature looks slick in a demo doesn't mean it actually helps your business make money or save time. This is AI Foundations, day 60.
+Jordan: And that is the exact trap so many teams fall into right now. They build something neat, someone says it feels faster or smarter, and they roll it out to everyone without proving a thing.
+Alex: Feelings aren't data. So how do we actually prove an AI update is worth keeping?
+Jordan: You run an experiment. That is a planned test where you change one variable and measure the result. In product development, that almost always means an A/B test. Version A is what you already have, version B is the new version, and you compare how both perform on a specific outcome.
+Alex: And that outcome shouldn't just be whether model accuracy went up, right?
+Jordan: Exactly. That is mistake number one. A model might be ten percent more accurate, but did more users actually complete the purchase? Did customer support tickets drop? Did revenue per visitor increase? Did response times stay acceptable? Those are business metrics. A good experiment picks one primary metric, the single number you care about most.
+Alex: It reminds me of cooking for a taste test. If you dump five new spices into the pot at once, you have no idea which one made the soup better or worse.
+Jordan: Right. You change one ingredient, serve both bowls to similar tasters, and see what happens.
+Alex: But in software, tuning for just one number can backfire fast.
+Jordan: It really can, which is why you never just track a primary metric. You also set guardrail metrics. Guardrails are the things that must not get significantly worse while you chase your primary goal. Take an AI tool that drafts replies for customer support agents. Your primary metric might be average time to resolve a ticket.
+Alex: Faster replies sound great, until the AI starts hallucinating and agents send bad answers just to clear tickets faster.
+Jordan: Exactly. So your guardrails are customer satisfaction, error rates, and handling time. If resolution time drops by twenty percent, but angry follow-up tickets double, you did not win. You just broke something. As a rule of thumb: if your change saves time, check quality. If it improves quality, check latency and serving cost, exactly like we talked about back on Day 56 and Day 59.
+Alex: To test this fairly, we need two groups: control and treatment.
+Jordan: Treatment is the new experience. Control is the baseline experience. To make the test fair, you have to use randomization, meaning users get sorted into group A or group B purely by chance.
+Alex: Because if you hand the shiny new AI feature only to your most active, enthusiastic users, your numbers look amazing just because of who got it.
+Jordan: Exactly. Randomization washes out those differences so you measure the feature, not the user's personality. That is also why a between-user test, where some people get A and others get B at the exact same time, is so much stronger than a before-and-after test.
+Alex: Right, because before-and-after gets contaminated by outside stuff, like seasonal shopping spikes, marketing promos, or random outages.
+Jordan: Exactly. Once you have clean numbers from both groups, you translate that metric into cash. The formula is basic: business value equals benefit minus cost.
+Alex: Benefit is revenue gained, costs avoided, or hours saved. Cost is the compute, the engineering time, and the price of fixing errors.
+Jordan: Look at a real example. A support team tests AI draft replies. Hypothesis: if agents get suggested replies, they will respond faster without hurting customer satisfaction. Control group uses the regular support tool. Treatment group gets the AI drafts. Primary metric: average time to send a reply. Guardrails: customer satisfaction, escalations, and error corrections.
+Alex: How did it turn out?
+Jordan: After two weeks, reply time improved by twelve percent. Customer satisfaction stayed flat. The model added a small serving cost, but the twelve percent time savings freed up enough agent hours to easily outweigh the compute bill. That gave leadership clear proof to roll it out broadly.
+Alex: This really pulls together the whole week. Day 55 on serving live systems, Day 56 on latency and throughput, and Day 58 on monitoring. Monitoring tells you what is happening right now, but an experiment tells you what actually caused the change.
+Jordan: That is the whole point. And before you ever launch an experiment, you should always answer three questions: What exact behavior are we trying to change? How will we know if the change helped the business? And what could get worse even if our main metric improves?
+Alex: If you can answer those three, you won't get blinded by demo hype.
+Jordan: Let's see if you can put today's pieces together. First question: what is the difference between a primary metric and a guardrail metric?
+Alex: The primary metric is the main business outcome you are actively trying to improve, like resolution time. A guardrail metric is a boundary you watch closely, like error rate or server cost, to make sure you don't ruin something else while chasing that primary win.
+Jordan: Spot on. Primary is your target; guardrails keep you out of the ditch. Next: why is randomization so important in an A/B test?
+Alex: It assigns users by chance so the control and treatment groups are roughly identical on average. That way, any difference in results comes from your AI change, not from differences in who saw it.
+Jordan: Exactly. It isolates your change. Last one: in plain language, how do you decide whether an AI feature actually creates business value?
+Alex: You take the concrete benefits it creates, like saved labor hours, lower costs, or extra revenue, and you subtract the full cost of running, serving, and maintaining the model. If the benefit is bigger than the cost, it creates value.
+Jordan: Nailed all three.
+Alex: Ready for the homework.
+Jordan: Grab a notebook or open a blank text file and pick an AI feature for a product you use. Write down five things: your hypothesis, the control, the treatment, your primary metric, and two to three guardrail metrics. Then add one plain sentence estimating the net business value. As you do it, notice how forcing yourself to write down guardrails instantly exposes the real risks of your AI idea.
+Alex: Tomorrow, on Day 61, we dive into multimodal models that handle text and images together, and when that extra flexibility is actually worth the cost.

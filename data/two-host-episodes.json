@@ -1,5 +1,17 @@
 [
  {
+  "day": 93,
+  "title": "Advanced Synthesis 22: Safety And Security",
+  "format": "two-host",
+  "guid": "two-host-day-093",
+  "publishedAt": "2026-09-26T07:35:36",
+  "audioPath": "/audio-v2/day-093-advanced-synthesis-22-safety-and-security-4644045.mp3",
+  "transcriptPath": "/transcripts-v2/day-093-4644045.txt",
+  "audioBytes": 4644045,
+  "durationSeconds": 386,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
   "day": 72,
   "title": "Advanced Synthesis 1: Model Architecture",
   "format": "two-host",
@@ -21,6 +33,30 @@
   "transcriptPath": "/transcripts-v2/day-066-4002669.txt",
   "audioBytes": 4002669,
   "durationSeconds": 333,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 65,
+  "title": "Synthetic Data and Data Flywheels",
+  "format": "two-host",
+  "guid": "two-host-day-065",
+  "publishedAt": "2026-08-28T07:35:48",
+  "audioPath": "/audio-v2/day-065-synthetic-data-and-data-flywheels-4627053.mp3",
+  "transcriptPath": "/transcripts-v2/day-065-4627053.txt",
+  "audioBytes": 4627053,
+  "durationSeconds": 385,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 64,
+  "title": "Long Context, Memory, and Retrieval Tradeoffs",
+  "format": "two-host",
+  "guid": "two-host-day-064",
+  "publishedAt": "2026-08-27T07:35:52",
+  "audioPath": "/audio-v2/day-064-long-context-memory-and-retrieval-tradeoffs-4170285.mp3",
+  "transcriptPath": "/transcripts-v2/day-064-4170285.txt",
+  "audioBytes": 4170285,
+  "durationSeconds": 347,
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
@@ -57,6 +93,30 @@
   "transcriptPath": "/transcripts-v2/day-061-4246893.txt",
   "audioBytes": 4246893,
   "durationSeconds": 353,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 60,
+  "title": "Experiment Design and Measuring Business Value",
+  "format": "two-host",
+  "guid": "two-host-day-060",
+  "publishedAt": "2026-08-23T07:35:46",
+  "audioPath": "/audio-v2/day-060-experiment-design-and-measuring-business-value-4177773.mp3",
+  "transcriptPath": "/transcripts-v2/day-060-4177773.txt",
+  "audioBytes": 4177773,
+  "durationSeconds": 348,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 59,
+  "title": "AI Product Economics and Build-versus-Buy",
+  "format": "two-host",
+  "guid": "two-host-day-059",
+  "publishedAt": "2026-08-22T07:35:47",
+  "audioPath": "/audio-v2/day-059-ai-product-economics-and-build-versus-buy-4508109.mp3",
+  "transcriptPath": "/transcripts-v2/day-059-4508109.txt",
+  "audioBytes": 4508109,
+  "durationSeconds": 375,
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {

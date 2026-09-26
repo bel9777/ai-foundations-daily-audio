@@ -1,0 +1,40 @@
+Alex: Picking the cheaper AI model can still bankrupt your product if you do not understand the hidden math behind running it. This is AI Foundations, day 59.
+Jordan: Today is about build versus buy, and really, AI product economics. Teams get stuck arguing whether they have the engineering chops to build something, but the real question is almost always about cost, speed, risk, and control.
+Alex: Right, engineers want to build cool things, finance wants to keep the lights on, and product just wants to ship before competitors do. Where do we even start to evaluate that?
+Jordan: You start with the product unit, not the model. A huge beginner trap is comparing token prices on two different provider websites. That tells you very little.
+Alex: What do you mean by a product unit?
+Jordan: Ask yourself: what is one unit of actual value to the user? Is it one drafted support reply? One document summary? One search query with AI reranking?
+Alex: Because a single product action might take three model calls behind the scenes, or maybe zero if you cached it.
+Jordan: Exactly. That is why our earlier days matter so much here. Back on day 56 we talked about latency, which can force you to buy bigger infrastructure to keep up. And on day 57 we covered caching and batching, which directly lower your variable cost by avoiding redundant calls. The model price is just one ingredient.
+Alex: So you need to know what one successful user action costs. How do you break that down into an actual budget?
+Jordan: A simple formula: total cost equals fixed cost plus variable cost multiplied by usage. Fixed cost stays flat whether you have five users or five thousand. Think engineering salaries, infrastructure setup, security reviews, and monitoring pipelines.
+Alex: And variable cost is what scales with traffic.
+Jordan: Yes. API fees, GPU compute hours for inference, database storage, or paying human reviewers to check tricky outputs.
+Alex: I am guessing the classic tradeoff is high fixed cost for building, and high variable cost for buying?
+Jordan: Generally, yes. Think of buying an existing AI API like renting a furnished apartment. You move in tomorrow, the landlord fixes the sink, but your rent per month is relatively high. Building your own model pipeline is like buying a fixer-upper house. Massive upfront cash and renovation time, but once it is paid off, your baseline cost to live there is much lower, and you can knock down whatever walls you want.
+Alex: That apartment analogy makes total sense. But it cannot just be a math formula. When does it make sense to pick the more expensive option?
+Jordan: There are five core questions beyond raw price. First, control. Do you need strict custom safety guardrails or specific model behavior? Second, speed. Do you need to launch in two weeks to beat a rival? Third, differentiation. Is this AI feature your secret sauce, or just a table-stakes utility?
+Alex: Like, if AI is your core product, you probably do not want a third-party vendor holding all the keys.
+Jordan: Exactly. Fourth is scale. If volume is tiny or unpredictable, buying shields you from wasted capital. If volume is massive and steady, building pays off. And fifth is operational burden. Remember day 58 on monitoring drift? If you build it, your team owns the on-call pager when outputs go sideways at two in the morning.
+Alex: People always forget maintenance. A system that looks cheap per request on paper gets very expensive once two senior engineers spend half their week babysitting it.
+Jordan: All the time. Development time, testing, evaluation, compliance, maintenance—those are the hidden costs that blow up build projects.
+Alex: Walk me through a concrete scenario. Say we are a startup building an AI tool that drafts customer support replies for agents.
+Jordan: If you buy, you plug into a commercial vendor's API with a clean wrapper interface. It takes two weeks. You pay a few cents per drafted ticket. The vendor handles uptime, model improvements, and hosting.
+Alex: And if we build?
+Jordan: You spend two months setting up an open-source model, tuning prompts, adding caching for repeat questions, batching overnight tasks, and wiring up quality monitoring. Much higher upfront spend. But you completely control the tone, you keep customer data inside your firewall, and if your ticket volume explodes, your cost per ticket stays tiny.
+Alex: So if you are just testing whether support agents even like AI drafts, buying is a no-brainer.
+Jordan: Completely. Buy to validate the workflow. If volume goes through the roof and support becomes your company's core differentiator, you calculate the break-even point and consider building.
+Alex: The break-even point being the exact monthly volume where the upfront build investment is cheaper than paying those ongoing vendor fees.
+Jordan: Exactly.
+Alex: All right, hit me with today's questions. Let's see if this stuck.
+Jordan: First one. What is the fundamental difference between fixed cost and variable cost in an AI product?
+Alex: Fixed cost stays the same no matter how much traffic you get—like engineer salaries, setup, and platform base fees. Variable cost scales directly with usage, like paying per API token or per model call.
+Jordan: Spot on. Question two. Why is a bought AI solution often cheaper at low usage, but way more expensive at high usage?
+Alex: Because buying usually has almost no setup or upfront engineering cost, but higher per-request fees. So when traffic is light, you pay next to nothing. But once request numbers get huge, those per-call vendor fees stack up and quickly overtake the cost of running your own dedicated system.
+Jordan: Exactly. Third question. Name two non-price factors that could make building a better choice than buying.
+Alex: Needing deep control over custom behavior or privacy, and building something that is a core differentiator for the business rather than a generic commodity.
+Jordan: Those are the big ones. Speed to launch, scale, and operational capacity round out the list.
+Alex: What should listeners do for hands-on practice tonight?
+Jordan: Grab a blank note or spreadsheet and run a toy build-versus-buy model for an AI feature like document summarization. Set the buy option at zero dollars upfront and five cents per request. Set the build option at three thousand dollars upfront and one cent per request. Calculate the total cost at one thousand, ten thousand, and one hundred thousand requests per month to find where they cross. Then add two hidden costs to the build column—like ongoing monitoring time or security reviews—and notice how drastically the break-even point shifts. Finally, write one sentence on what would have to change in six months for you to flip your choice.
+Alex: Love that. Seeing the break-even line move in real time makes it real. Tomorrow on day 60, we are tackling experiment design and measuring business value to prove whether an AI feature actually moves the needle before you scale it.
+Jordan: Talk to you tomorrow.
