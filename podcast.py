@@ -35,7 +35,7 @@ import urllib.error
 import urllib.request
 import wave
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from html import escape
 from pathlib import Path
@@ -453,11 +453,38 @@ def rfc822(iso):
         datetime.fromisoformat(iso).replace(tzinfo=timezone.utc))
 
 
+def _weekly_items():
+    """Week-long collections, also shown IN the daily feed (2026-10-05:
+    Brian wanted them in the show he already follows, not a second one).
+    Titled "Full Week N ... Days A-B" - never "Day N:", which the
+    watchdog's newest-episode check parses. Dated one minute after the
+    week's last episode so each lands just above it."""
+    f = REPO / "data" / "weekly.json"
+    out = []
+    for w in json.loads(f.read_text(encoding="utf-8")) if f.exists() else []:
+        when = (datetime.fromisoformat(w["publishedAt"])
+                + timedelta(minutes=1)).strftime("%Y-%m-%dT%H:%M:%S")
+        hrs, rem = divmod(w["durationSeconds"], 3600)
+        chap = "".join(
+            f"{c['start'] // 60}:{c['start'] % 60:02d} {escape(c['title'])}&lt;br/&gt;"
+            for c in w["chapters"])
+        out.append((when, f"""    <item>
+      <title>Full {escape(w['title'])}</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;{chap}</description>
+      <guid isPermaLink="false">weekly-{w['weekStart']}-{w['key']}</guid>
+      <pubDate>{rfc822(when)}</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="{w['url']}" length="{w['bytes']}" type="audio/mpeg"/>
+      <itunes:duration>{hrs}:{rem // 60:02d}:{rem % 60:02d}</itunes:duration>
+    </item>"""))
+    return out
+
+
 def build_feed(eps):
     items = []
     for e in sorted(eps.values(), key=lambda x: -x["day"]):
         mins, secs = divmod(e["durationSeconds"], 60)
-        items.append(f"""    <item>
+        items.append((e["publishedAt"], f"""    <item>
       <title>Day {e['day']}: {escape(e['title'])}</title>
       <description>{escape(e['title'])} - AI Foundations day {e['day']}, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
@@ -465,7 +492,9 @@ def build_feed(eps):
       <itunes:episode>{e['day']}</itunes:episode>
       <enclosure url="{AUDIO_BASE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
-    </item>""")
+    </item>"""))
+    items = [xml for _, xml in sorted(items + _weekly_items(),
+                                      key=lambda t: t[0], reverse=True)]
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -748,6 +777,8 @@ def main():
             import weekly
             n = weekly.update(eps)
             weekly_note = f" weekly:+{n}" if n else ""
+            if n:
+                build_feed(eps)  # the new week also belongs in the daily feed
         except Exception as e:
             weekly_note = f" weekly-FAILED:{type(e).__name__}"
             fails.append(f"weekly:{type(e).__name__}")
