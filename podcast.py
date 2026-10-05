@@ -25,6 +25,7 @@ Usage:
 """
 
 import base64
+import io
 import json
 import re
 import subprocess
@@ -62,6 +63,13 @@ TEXT_MODELS = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-3.5-flash"]
 # 3.1-preview renders wobbled (LRA up to 23.6 - the "audio goes in and
 # out" Brian reported on Day 1).
 TTS_MODELS = ["gemini-2.5-flash-preview-tts", "gemini-3.1-flash-tts-preview"]
+# 2026-10-05: gemini-3.8-flash-tts (GA, not preview) is PRIMARY. The two
+# previews 503'd for weeks (Aug-Oct) and 3.1's long renders wobble. 3.8
+# wants each line as its own part tagged speechMetadata.speaker.
+TTS_MODELS = ["gemini-3.8-flash-tts"] + TTS_MODELS
+PER_PART_SPEAKER_MODELS = {"gemini-3.8-flash-tts"}
+# fall through to the next model on quota OR server overload
+FALLTHROUGH_CODES = (429, 500, 502, 503, 504)
 # every render is normalized to podcast loudness at encode time
 AUDIO_FILTERS = "dynaudnorm=f=300:g=31:p=0.95,loudnorm=I=-16:TP=-1.5:LRA=7"
 MAX_LRA, MIN_I, MAX_I = 8.5, -19.5, -13.5
@@ -123,6 +131,51 @@ def gapi(path, payload, timeout=300, attempts=3):
             raise
 
 
+def episode_shape(day, title, lesson):
+    """Episode structure by lesson type (v2 weekly rhythm, Brian-approved
+    2026-10-05): Mon-Thu lesson, Fri lab, Sat briefing, Sun review. The
+    v1 shape (hook, concepts, quiz, homework, tease) is the lesson case."""
+    intro = f'then "This is AI Foundations, day {day}."'
+    if title.startswith("This Week in AI"):
+        return f"""Rules:
+- Open with {HOST} teasing the single biggest story of the week, {intro}
+- Walk through every story in the briefing: what happened, why it
+  matters, and how it connects to ideas from the course. {EXPERT} names
+  the source for each claim ("according to the announcement", "the paper
+  reports") - never invent details beyond the briefing.
+- End with the briefing's "what to watch next week" in one beat."""
+    if title.startswith("Weekly Review"):
+        return f"""Rules:
+- Open with {HOST} saying this is review day, {intro}
+- Run it as a quiz show: {EXPERT} asks every review question from the
+  lesson; {HOST} answers out loud first, then {EXPERT} gives the answer
+  and one sentence on why it matters. Keep the energy up.
+- Close with the review's single most important takeaway."""
+    if title.startswith("Lab:"):
+        return f"""Rules:
+- Open with {HOST} saying what we're building today and why it's
+  useful, {intro}
+- Walk through the lab step by step: what to do, what you should see,
+  and the most likely way it goes wrong.
+- Then {EXPERT} quizzes {HOST} on the lab's check questions.
+- Close with how to know the lab worked, and tomorrow's tease if named."""
+    cold_open = ""
+    if re.search(r"frontier note", lesson, re.I):
+        cold_open = (f"- COLD OPEN (about 60 seconds): {HOST} and {EXPERT} "
+                     "discuss the lesson's Frontier Note - the recent real "
+                     "development - naming its source. Then:\n")
+    return f"""Rules:
+{cold_open}- {HOST} gives a one-sentence hook about why today's topic matters,
+  {intro} Then dive in.
+- Cover every concept in the lesson and the worked example.
+- Then {EXPERT} quizzes {HOST} with the lesson's knowledge-check
+  questions - {HOST} answers in their own words, {EXPERT} confirms or
+  sharpens.
+- Then {EXPERT} assigns the lesson's hands-on exercise as homework in one
+  tight beat: exactly what to do and what to notice while doing it.
+- Close with a one-line tease of tomorrow's topic if the lesson names one."""
+
+
 def dialogue_prompt(day, title, lesson):
     return f"""You write scripts for a two-host educational podcast called
 "AI Foundations Daily". Turn today's lesson into a natural conversation.
@@ -133,16 +186,7 @@ Hosts:
 - {EXPERT}: the expert. Explains clearly with everyday analogies, keeps it
   grounded, never lectures for long without {HOST} jumping in.
 
-Rules:
-- Open with {HOST} giving a one-sentence hook about why today's topic
-  matters, then "This is AI Foundations, day {day}." Then dive in.
-- Cover every concept in the lesson and the worked example.
-- Then {EXPERT} quizzes {HOST} with the lesson's knowledge-check
-  questions - {HOST} answers in their own words, {EXPERT} confirms or
-  sharpens.
-- Then {EXPERT} assigns the lesson's hands-on exercise as homework in one
-  tight beat: exactly what to do and what to notice while doing it.
-- Close with a one-line tease of tomorrow's topic if the lesson names one.
+{episode_shape(day, title, lesson)}
 - Sound like two real people: contractions, short sentences, occasional
   quick banter. No corporate speak, no "delve", no "great question", no
   filler praise between hosts.
@@ -190,10 +234,10 @@ def gen_audio(script):
         try:
             return (*_gen_audio_with(script, model), model)
         except urllib.error.HTTPError as e:
-            if e.code != 429:
+            if e.code not in FALLTHROUGH_CODES:
                 raise
             last_429 = e
-            print(f"    {model}: quota exhausted, trying next model")
+            print(f"    {model}: HTTP {e.code}, trying next model")
 
     # LAST RESORT: render in chunks. The remaining free-tier allowance is
     # TOKEN-based, so several small requests can succeed where one large
@@ -212,10 +256,10 @@ def gen_audio(script):
                 time.sleep(8)
             return b"".join(parts), rate, f"{model}+chunked"
         except urllib.error.HTTPError as e:
-            if e.code != 429:
+            if e.code not in FALLTHROUGH_CODES:
                 raise
             last_429 = e
-            print(f"    {model}: chunked render also quota-blocked")
+            print(f"    {model}: chunked render also blocked (HTTP {e.code})")
     raise last_429
 
 
@@ -226,12 +270,24 @@ def _split_script(script, parts):
     return ["\n".join(lines[i:i + size]) for i in range(0, len(lines), size)]
 
 
-def _gen_audio_with(script, TTS_MODEL):
-    resp = gapi(f"models/{TTS_MODEL}:generateContent", {
-        "contents": [{"parts": [{"text":
+def _tts_parts(script, model):
+    if model not in PER_PART_SPEAKER_MODELS:
+        return [{"text":
             f"TTS the following podcast conversation between {HOST} and "
             f"{EXPERT}. {HOST} sounds curious and engaged; {EXPERT} sounds "
-            "warm and clear. Natural conversational pacing.\n\n" + script}]}],
+            "warm and clear. Natural conversational pacing.\n\n" + script}]
+    parts = []
+    for ln in script.splitlines():
+        m = re.match(rf"^({HOST}|{EXPERT}):\s*(.+)", ln.strip())
+        if m:
+            parts.append({"text": m.group(2),
+                          "speechMetadata": {"speaker": m.group(1)}})
+    return parts
+
+
+def _gen_audio_with(script, TTS_MODEL):
+    resp = gapi(f"models/{TTS_MODEL}:generateContent", {
+        "contents": [{"role": "user", "parts": _tts_parts(script, TTS_MODEL)}],
         "generationConfig": {
             "responseModalities": ["AUDIO"],
             "speechConfig": {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": [
@@ -240,10 +296,16 @@ def _gen_audio_with(script, TTS_MODEL):
                 {"speaker": EXPERT, "voiceConfig":
                     {"prebuiltVoiceConfig": {"voiceName": VOICE_EXPERT}}}]}}}},
         timeout=TTS_TIMEOUT)
-    part = resp["candidates"][0]["content"]["parts"][0]
-    mime = part["inlineData"]["mimeType"]
-    pcm = base64.b64decode(part["inlineData"]["data"])
-    rate = int(re.search(r"rate=(\d+)", mime).group(1)) if "rate=" in mime else 24000
+    pcm, rate = b"", 24000
+    for part in resp["candidates"][0]["content"]["parts"]:
+        mime = part["inlineData"]["mimeType"]
+        data = base64.b64decode(part["inlineData"]["data"])
+        if "wav" in mime:  # 3.8 returns a WAV container, previews raw PCM
+            with wave.open(io.BytesIO(data)) as w:
+                rate, data = w.getframerate(), w.readframes(w.getnframes())
+        elif "rate=" in mime:
+            rate = int(re.search(r"rate=(\d+)", mime).group(1))
+        pcm += data
     return pcm, rate
 
 

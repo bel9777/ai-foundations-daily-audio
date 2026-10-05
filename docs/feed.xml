@@ -10,6 +10,150 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 93: Advanced Synthesis 22: Safety And Security</title>
+      <description>Advanced Synthesis 22: Safety And Security - AI Foundations day 93, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-093</guid>
+      <pubDate>Sat, 26 Sep 2026 07:35:36 +0000</pubDate>
+      <itunes:episode>93</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-093-advanced-synthesis-22-safety-and-security-4644045.mp3" length="4644045" type="audio/mpeg"/>
+      <itunes:duration>6:26</itunes:duration>
+    </item>
+    <item>
+      <title>Day 72: Advanced Synthesis 1: Model Architecture</title>
+      <description>Advanced Synthesis 1: Model Architecture - AI Foundations day 72, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-072</guid>
+      <pubDate>Sat, 05 Sep 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>72</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-072-advanced-synthesis-1-model-architecture-3269133.mp3" length="3269133" type="audio/mpeg"/>
+      <itunes:duration>4:32</itunes:duration>
+    </item>
+    <item>
+      <title>Day 66: Reasoning Models and Test-Time Compute</title>
+      <description>Reasoning Models and Test-Time Compute - AI Foundations day 66, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-066</guid>
+      <pubDate>Sat, 29 Aug 2026 07:36:03 +0000</pubDate>
+      <itunes:episode>66</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-066-reasoning-models-and-test-time-compute-4002669.mp3" length="4002669" type="audio/mpeg"/>
+      <itunes:duration>5:33</itunes:duration>
+    </item>
+    <item>
+      <title>Day 65: Synthetic Data and Data Flywheels</title>
+      <description>Synthetic Data and Data Flywheels - AI Foundations day 65, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-065</guid>
+      <pubDate>Fri, 28 Aug 2026 07:35:48 +0000</pubDate>
+      <itunes:episode>65</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-065-synthetic-data-and-data-flywheels-4627053.mp3" length="4627053" type="audio/mpeg"/>
+      <itunes:duration>6:25</itunes:duration>
+    </item>
+    <item>
+      <title>Day 64: Long Context, Memory, and Retrieval Tradeoffs</title>
+      <description>Long Context, Memory, and Retrieval Tradeoffs - AI Foundations day 64, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-064</guid>
+      <pubDate>Thu, 27 Aug 2026 07:35:52 +0000</pubDate>
+      <itunes:episode>64</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-064-long-context-memory-and-retrieval-tradeoffs-4170285.mp3" length="4170285" type="audio/mpeg"/>
+      <itunes:duration>5:47</itunes:duration>
+    </item>
+    <item>
+      <title>Day 63: Mixture-of-Experts Models</title>
+      <description>Mixture-of-Experts Models - AI Foundations day 63, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-063</guid>
+      <pubDate>Wed, 26 Aug 2026 07:35:49 +0000</pubDate>
+      <itunes:episode>63</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-063-mixture-of-experts-models-4610925.mp3" length="4610925" type="audio/mpeg"/>
+      <itunes:duration>6:24</itunes:duration>
+    </item>
+    <item>
+      <title>Day 62: Small Models, Distillation, and Quantization</title>
+      <description>Small Models, Distillation, and Quantization - AI Foundations day 62, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-062</guid>
+      <pubDate>Tue, 25 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>62</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-062-small-models-distillation-and-quantization-3839085.mp3" length="3839085" type="audio/mpeg"/>
+      <itunes:duration>5:19</itunes:duration>
+    </item>
+    <item>
+      <title>Day 61: Multimodal Models</title>
+      <description>Multimodal Models - AI Foundations day 61, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-061</guid>
+      <pubDate>Mon, 24 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>61</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-061-multimodal-models-4246893.mp3" length="4246893" type="audio/mpeg"/>
+      <itunes:duration>5:53</itunes:duration>
+    </item>
+    <item>
+      <title>Day 60: Experiment Design and Measuring Business Value</title>
+      <description>Experiment Design and Measuring Business Value - AI Foundations day 60, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-060</guid>
+      <pubDate>Sun, 23 Aug 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>60</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-060-experiment-design-and-measuring-business-value-4177773.mp3" length="4177773" type="audio/mpeg"/>
+      <itunes:duration>5:48</itunes:duration>
+    </item>
+    <item>
+      <title>Day 59: AI Product Economics and Build-versus-Buy</title>
+      <description>AI Product Economics and Build-versus-Buy - AI Foundations day 59, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-059</guid>
+      <pubDate>Sat, 22 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>59</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-059-ai-product-economics-and-build-versus-buy-4508109.mp3" length="4508109" type="audio/mpeg"/>
+      <itunes:duration>6:15</itunes:duration>
+    </item>
+    <item>
+      <title>Day 58: Monitoring Drift and Quality after Launch</title>
+      <description>Monitoring Drift and Quality after Launch - AI Foundations day 58, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-058</guid>
+      <pubDate>Fri, 21 Aug 2026 07:35:51 +0000</pubDate>
+      <itunes:episode>58</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-058-monitoring-drift-and-quality-after-launch-4284909.mp3" length="4284909" type="audio/mpeg"/>
+      <itunes:duration>5:57</itunes:duration>
+    </item>
+    <item>
+      <title>Day 57: Caching, Batching, and Model Routing</title>
+      <description>Caching, Batching, and Model Routing - AI Foundations day 57, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-057</guid>
+      <pubDate>Thu, 20 Aug 2026 07:35:59 +0000</pubDate>
+      <itunes:episode>57</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-057-caching-batching-and-model-routing-3765933.mp3" length="3765933" type="audio/mpeg"/>
+      <itunes:duration>5:13</itunes:duration>
+    </item>
+    <item>
+      <title>Day 56: Latency, Throughput, and Cost</title>
+      <description>Latency, Throughput, and Cost - AI Foundations day 56, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-056</guid>
+      <pubDate>Wed, 19 Aug 2026 07:36:01 +0000</pubDate>
+      <itunes:episode>56</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-056-latency-throughput-and-cost-4743693.mp3" length="4743693" type="audio/mpeg"/>
+      <itunes:duration>6:35</itunes:duration>
+    </item>
+    <item>
+      <title>Day 55: Serving Models in Production</title>
+      <description>Serving Models in Production - AI Foundations day 55, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-055</guid>
+      <pubDate>Tue, 18 Aug 2026 07:35:49 +0000</pubDate>
+      <itunes:episode>55</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-055-serving-models-in-production-4396653.mp3" length="4396653" type="audio/mpeg"/>
+      <itunes:duration>6:06</itunes:duration>
+    </item>
+    <item>
+      <title>Day 54: Data Pipelines and Dataset Versioning</title>
+      <description>Data Pipelines and Dataset Versioning - AI Foundations day 54, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-054</guid>
+      <pubDate>Mon, 17 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>54</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-054-data-pipelines-and-dataset-versioning-4228173.mp3" length="4228173" type="audio/mpeg"/>
+      <itunes:duration>5:52</itunes:duration>
+    </item>
+    <item>
+      <title>Day 52: Bias, Fairness, and Unequal Errors</title>
+      <description>Bias, Fairness, and Unequal Errors - AI Foundations day 52, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-052</guid>
+      <pubDate>Sat, 15 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>52</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-052-bias-fairness-and-unequal-errors-4383405.mp3" length="4383405" type="audio/mpeg"/>
+      <itunes:duration>6:05</itunes:duration>
+    </item>
+    <item>
       <title>Day 51: Privacy, Security, and Data Governance</title>
       <description>Privacy, Security, and Data Governance - AI Foundations day 51, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-051</guid>
