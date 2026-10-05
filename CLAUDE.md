@@ -31,7 +31,9 @@ retired at cutover — do not run or extend it.
    byte-identical and already-published enclosure URLs keep resolving,
    at zero Gemini quota.
 
-1. **Two-writer safety until cutover is confirmed**: podcast.py writes
+1. **(HISTORICAL - cutover done 2026-08-08; post-cutover the main feed
+   is rebuilt every run from all episodes on disk, fixed 2026-10-05 after
+   it froze at Day 51 for 7 weeks.)** Two-writer safety until cutover: podcast.py writes
    ONLY `docs/audio-v2/`, `docs/transcripts-v2/`,
    `data/two-host-episodes.json`, `_RUN-LOG.md`. It must not touch
    `docs/feed.xml` / `feed.rss` / `index.html` until every course day has
@@ -43,16 +45,23 @@ retired at cutover — do not run or extend it.
 2. **HARD dependency on `~\ai-foundations-kindle`** (canon.json +
    build.py selection logic — the single adjudication of what each course
    day IS). Import failure must stay FATAL, never fail-soft.
-3. **Episode spec is Brian-approved (2026-08-04)**: Alex (Puck, curious)
-   + Jordan (Sulafat, expert); hook → concepts + example → knowledge
-   check as quiz → homework beat (the lesson's hands-on exercise — it was
-   dropped once and Brian caught it) → tomorrow tease; 900–1050 words.
-   Change voices/format only on Brian's say-so.
+3. **Episode spec is Brian-approved (2026-08-04, v2 shapes approved
+   2026-10-05)**: Alex (Puck, curious) + Jordan (Sulafat, expert). Lesson
+   days: Frontier-Note cold open (when the lesson has one) → hook →
+   concepts + example → quiz → homework beat (it was dropped once and
+   Brian caught it) → tomorrow tease. `episode_shape()` switches on title
+   prefix: "Lab:" walkthrough, "This Week in AI" news show, "Weekly
+   Review" quiz show. 900–1050 words. Change voices/format only on
+   Brian's say-so.
 4. **Gemini key**: `~\.ai-keys\gemini-api-key.txt` — never commit, never
    log. Free-tier quota (429) pauses the backfill by design; the next
-   run resumes. Models: `gemini-flash-latest` + `gemini-3.1-flash-tts-preview`
-   (re-discover via the models endpoint if either 404s — entitlements
-   shift; `gemini-2.5-flash` lists but 404s on this key).
+   run resumes. Models (2026-10-05): TEXT_MODELS chain led by
+   `gemini-3.8-flash`; TTS PRIMARY `gemini-3.8-flash-tts` (GA; needs one
+   part per line tagged `speechMetadata.speaker`, returns WAV) with the
+   two previews as fallback; fall-through on 429 AND 5xx. Re-discover via
+   the models endpoint if any 404 (`gemini-2.5-flash` lists but 404s).
+   Network: IPv4 forced via the kindle build.py import + per-user
+   usercustomize.py (IPv6 blackholed on this laptop).
 5. **Feed titles are load-bearing**: `Day N: Title` — fleet-watchdog's
    live-feed check parses `Day (\d+)`. Keep the format.
 6. `docs/preview/` is the pre-cutover follow-along feed Brian listens to.
