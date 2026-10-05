@@ -80,6 +80,13 @@ retired at cutover — do not run or extend it.
    +~4.5 MB/day, so prune (e.g. the retired legacy docs/audio, 233 MB)
    before ~Jan 2027. Re-check every enclosure before ever flipping back.
 
+9. **Weekly collections** (`weekly.py`, 2026-10-05): each Mon-Sun week as
+   one chaptered mp3 in `docs/weekly.xml`; audio on the GitHub release
+   `weekly-collections` (NOT Pages - 1 GB cap). Recompiles when a week's
+   episode set changes. Called from `podcast.py --run`; failures show as
+   `weekly-FAILED` in the heartbeat and never block the daily episode.
+   Main feed is `itunes:type episodic` (serial made apps list oldest first).
+
 ## Ops
 
 - Daily task 7:45 (battery-safe flags). Heartbeat `_RUN-LOG.md`:
