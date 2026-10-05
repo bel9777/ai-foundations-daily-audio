@@ -6,7 +6,7 @@
     <language>en-us</language>
     <description>The AI Foundations course as a daily two-host conversation. Companion to the daily email and Kindle edition.</description>
     <itunes:author>AI Foundations</itunes:author>
-    <itunes:type>serial</itunes:type>
+    <itunes:type>episodic</itunes:type>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>

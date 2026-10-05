@@ -1,0 +1,717 @@
+[
+ {
+  "weekStart": "2026-09-28",
+  "week": 15,
+  "key": "4c1cdf5a",
+  "title": "Week 15 (Sep 28–Oct 4): Days 95–101",
+  "days": [
+   95,
+   96,
+   97,
+   98,
+   99,
+   100,
+   101
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 95: Advanced Synthesis 24: Deployment And Economics"
+   },
+   {
+    "start": 435,
+    "title": "Day 96: Advanced Synthesis 25: Model Architecture"
+   },
+   {
+    "start": 859,
+    "title": "Day 97: Advanced Synthesis 26: Reasoning And Planning"
+   },
+   {
+    "start": 1290,
+    "title": "Day 98: Advanced Synthesis 27: Retrieval And Memory"
+   },
+   {
+    "start": 1704,
+    "title": "Day 99: Advanced Synthesis 28: Agents And Tool Use"
+   },
+   {
+    "start": 2161,
+    "title": "Day 100: Advanced Synthesis 29: Evaluation And Reliability"
+   },
+   {
+    "start": 2609,
+    "title": "Day 101: Advanced Synthesis 30: Safety And Security"
+   }
+  ],
+  "durationSeconds": 2896,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-15-2026-09-28-4c1cdf5a.mp3",
+  "bytes": 23176074,
+  "publishedAt": "2026-10-04T07:35:41"
+ },
+ {
+  "weekStart": "2026-09-21",
+  "week": 14,
+  "key": "5dd2ef26",
+  "title": "Week 14 (Sep 21–27): Days 88–94",
+  "days": [
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 88: Advanced Synthesis 17: Model Architecture"
+   },
+   {
+    "start": 457,
+    "title": "Day 89: Advanced Synthesis 18: Reasoning And Planning"
+   },
+   {
+    "start": 877,
+    "title": "Day 90: Advanced Synthesis 19: Retrieval And Memory"
+   },
+   {
+    "start": 1312,
+    "title": "Day 91: Advanced Synthesis 20: Agents And Tool Use"
+   },
+   {
+    "start": 1759,
+    "title": "Day 92: Advanced Synthesis 21: Evaluation And Reliability"
+   },
+   {
+    "start": 2137,
+    "title": "Day 93: Advanced Synthesis 22: Safety And Security"
+   },
+   {
+    "start": 2525,
+    "title": "Day 94: Advanced Synthesis 23: Data And Learning Systems"
+   }
+  ],
+  "durationSeconds": 2989,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-14-2026-09-21-5dd2ef26.mp3",
+  "bytes": 23920065,
+  "publishedAt": "2026-09-27T07:35:48"
+ },
+ {
+  "weekStart": "2026-09-14",
+  "week": 13,
+  "key": "ab40f73f",
+  "title": "Week 13 (Sep 14–20): Days 81–87",
+  "days": [
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 81: Advanced Synthesis 10: Reasoning And Planning"
+   },
+   {
+    "start": 426,
+    "title": "Day 82: Advanced Synthesis 11: Retrieval And Memory"
+   },
+   {
+    "start": 767,
+    "title": "Day 83: Advanced Synthesis 12: Agents And Tool Use"
+   },
+   {
+    "start": 1174,
+    "title": "Day 84: Advanced Synthesis 13: Evaluation And Reliability"
+   },
+   {
+    "start": 1595,
+    "title": "Day 85: Advanced Synthesis 14: Safety And Security"
+   },
+   {
+    "start": 2010,
+    "title": "Day 86: Advanced Synthesis 15: Data And Learning Systems"
+   },
+   {
+    "start": 2434,
+    "title": "Day 87: Advanced Synthesis 16: Deployment And Economics"
+   }
+  ],
+  "durationSeconds": 2846,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-13-2026-09-14-ab40f73f.mp3",
+  "bytes": 22777287,
+  "publishedAt": "2026-09-20T07:35:44"
+ },
+ {
+  "weekStart": "2026-09-07",
+  "week": 12,
+  "key": "f2b3ff94",
+  "title": "Week 12 (Sep 7–13): Days 74–80",
+  "days": [
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 74: Advanced Synthesis 3: Retrieval And Memory"
+   },
+   {
+    "start": 256,
+    "title": "Day 75: Advanced Synthesis 4: Agents And Tool Use"
+   },
+   {
+    "start": 571,
+    "title": "Day 76: Advanced Synthesis 5: Evaluation And Reliability"
+   },
+   {
+    "start": 816,
+    "title": "Day 77: Advanced Synthesis 6: Safety And Security"
+   },
+   {
+    "start": 1088,
+    "title": "Day 78: Advanced Synthesis 7: Data And Learning Systems"
+   },
+   {
+    "start": 1402,
+    "title": "Day 79: Advanced Synthesis 8: Deployment And Economics"
+   },
+   {
+    "start": 1641,
+    "title": "Day 80: Advanced Synthesis 9: Model Architecture"
+   }
+  ],
+  "durationSeconds": 1898,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-12-2026-09-07-f2b3ff94.mp3",
+  "bytes": 15191930,
+  "publishedAt": "2026-09-13T07:35:43"
+ },
+ {
+  "weekStart": "2026-08-31",
+  "week": 11,
+  "key": "90506a5c",
+  "title": "Week 11 (Aug 31–Sep 6): Days 68–73",
+  "days": [
+   68,
+   69,
+   70,
+   71,
+   72,
+   73
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 68: Adversarial Testing and Red Teaming"
+   },
+   {
+    "start": 311,
+    "title": "Day 69: Robust Agent Design"
+   },
+   {
+    "start": 620,
+    "title": "Day 70: AI Governance and Responsible Deployment"
+   },
+   {
+    "start": 940,
+    "title": "Day 71: Capstone: Designing an End-to-End AI System"
+   },
+   {
+    "start": 1274,
+    "title": "Day 72: Advanced Synthesis 1: Model Architecture"
+   },
+   {
+    "start": 1548,
+    "title": "Day 73: Advanced Synthesis 2: Reasoning And Planning"
+   }
+  ],
+  "durationSeconds": 1871,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-11-2026-08-31-90506a5c.mp3",
+  "bytes": 14973880,
+  "publishedAt": "2026-09-06T07:35:48"
+ },
+ {
+  "weekStart": "2026-08-24",
+  "week": 10,
+  "key": "3ac8cb5c",
+  "title": "Week 10 (Aug 24–30): Days 61–67",
+  "days": [
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 61: Multimodal Models"
+   },
+   {
+    "start": 355,
+    "title": "Day 62: Small Models, Distillation, and Quantization"
+   },
+   {
+    "start": 677,
+    "title": "Day 63: Mixture-of-Experts Models"
+   },
+   {
+    "start": 1062,
+    "title": "Day 64: Long Context, Memory, and Retrieval Tradeoffs"
+   },
+   {
+    "start": 1411,
+    "title": "Day 65: Synthetic Data and Data Flywheels"
+   },
+   {
+    "start": 1798,
+    "title": "Day 66: Reasoning Models and Test-Time Compute"
+   },
+   {
+    "start": 2133,
+    "title": "Day 67: Interpretability and Mechanistic Analysis"
+   }
+  ],
+  "durationSeconds": 2428,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-10-2026-08-24-3ac8cb5c.mp3",
+  "bytes": 19429502,
+  "publishedAt": "2026-08-30T07:35:44"
+ },
+ {
+  "weekStart": "2026-08-17",
+  "week": 9,
+  "key": "09930f63",
+  "title": "Week 9 (Aug 17–23): Days 54–60",
+  "days": [
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 54: Data Pipelines and Dataset Versioning"
+   },
+   {
+    "start": 354,
+    "title": "Day 55: Serving Models in Production"
+   },
+   {
+    "start": 722,
+    "title": "Day 56: Latency, Throughput, and Cost"
+   },
+   {
+    "start": 1118,
+    "title": "Day 57: Caching, Batching, and Model Routing"
+   },
+   {
+    "start": 1434,
+    "title": "Day 58: Monitoring Drift and Quality after Launch"
+   },
+   {
+    "start": 1792,
+    "title": "Day 59: AI Product Economics and Build-versus-Buy"
+   },
+   {
+    "start": 2169,
+    "title": "Day 60: Experiment Design and Measuring Business Value"
+   }
+  ],
+  "durationSeconds": 2517,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-09-2026-08-17-09930f63.mp3",
+  "bytes": 20140299,
+  "publishedAt": "2026-08-23T07:35:46"
+ },
+ {
+  "weekStart": "2026-08-10",
+  "week": 8,
+  "key": "62145542",
+  "title": "Week 8 (Aug 10–16): Days 47–53",
+  "days": [
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 47: Building Representative Eval Sets"
+   },
+   {
+    "start": 344,
+    "title": "Day 48: LLM-as-Judge and Human Review"
+   },
+   {
+    "start": 657,
+    "title": "Day 49: Reliability, Observability, and Failure Analysis"
+   },
+   {
+    "start": 991,
+    "title": "Day 50: AI Safety: Hazards, Controls, and Defense in Depth"
+   },
+   {
+    "start": 1370,
+    "title": "Day 51: Privacy, Security, and Data Governance"
+   },
+   {
+    "start": 1721,
+    "title": "Day 52: Bias, Fairness, and Unequal Errors"
+   },
+   {
+    "start": 2087,
+    "title": "Day 53: Model and System Cards"
+   }
+  ],
+  "durationSeconds": 2333,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-08-2026-08-10-62145542.mp3",
+  "bytes": 18671879,
+  "publishedAt": "2026-08-16T07:35:47"
+ },
+ {
+  "weekStart": "2026-08-03",
+  "week": 7,
+  "key": "83e21687",
+  "title": "Week 7 (Aug 3–9): Days 40–46",
+  "days": [
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 40: Chunking, Search, and Reranking"
+   },
+   {
+    "start": 315,
+    "title": "Day 41: Grounding Answers in Sources"
+   },
+   {
+    "start": 685,
+    "title": "Day 42: Tools and Function Calling"
+   },
+   {
+    "start": 1052,
+    "title": "Day 43: Agents: Models That Plan and Act"
+   },
+   {
+    "start": 1492,
+    "title": "Day 44: Agent Loops, State, and Memory"
+   },
+   {
+    "start": 1839,
+    "title": "Day 45: Multi-Agent Systems and Delegation"
+   },
+   {
+    "start": 2219,
+    "title": "Day 46: Evaluating AI Systems"
+   }
+  ],
+  "durationSeconds": 2569,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-07-2026-08-03-83e21687.mp3",
+  "bytes": 20558799,
+  "publishedAt": "2026-08-09T07:35:46"
+ },
+ {
+  "weekStart": "2026-07-27",
+  "week": 6,
+  "key": "220323f8",
+  "title": "Week 6 (Jul 27–Aug 2): Days 33–39",
+  "days": [
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 33: Sampling, Temperature, and Output Diversity"
+   },
+   {
+    "start": 352,
+    "title": "Day 34: Hallucinations: Why Fluent Can Still Be False"
+   },
+   {
+    "start": 663,
+    "title": "Day 35: Prompting as Interface Design"
+   },
+   {
+    "start": 968,
+    "title": "Day 36: Clear Instructions, Context, and Constraints"
+   },
+   {
+    "start": 1298,
+    "title": "Day 37: Examples, Decomposition, and Structured Outputs"
+   },
+   {
+    "start": 1617,
+    "title": "Day 38: Prompt Injection and Untrusted Instructions"
+   },
+   {
+    "start": 1945,
+    "title": "Day 39: Retrieval-Augmented Generation"
+   }
+  ],
+  "durationSeconds": 2299,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-06-2026-07-27-220323f8.mp3",
+  "bytes": 18400808,
+  "publishedAt": "2026-08-02T07:35:43"
+ },
+ {
+  "weekStart": "2026-07-20",
+  "week": 5,
+  "key": "a58a3070",
+  "title": "Week 5 (Jul 20–26): Days 27–32",
+  "days": [
+   27,
+   28,
+   29,
+   30,
+   31,
+   32
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 27: Tokens and Context Windows"
+   },
+   {
+    "start": 304,
+    "title": "Day 28: Pretraining: Learning from Massive Corpora"
+   },
+   {
+    "start": 678,
+    "title": "Day 29: Next-Token Prediction and Emergent Capabilities"
+   },
+   {
+    "start": 1014,
+    "title": "Day 30: Fine-Tuning and Instruction Following"
+   },
+   {
+    "start": 1371,
+    "title": "Day 31: Human Feedback and Preference Optimization"
+   },
+   {
+    "start": 1703,
+    "title": "Day 32: Generative AI across Text, Images, and Audio"
+   }
+  ],
+  "durationSeconds": 2037,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-05-2026-07-20-a58a3070.mp3",
+  "bytes": 16300225,
+  "publishedAt": "2026-07-26T07:35:52"
+ },
+ {
+  "weekStart": "2026-07-13",
+  "week": 4,
+  "key": "1af46834",
+  "title": "Week 4 (Jul 13–19): Days 20–26",
+  "days": [
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 20: Layers, Activations, and Representations"
+   },
+   {
+    "start": 418,
+    "title": "Day 21: Backpropagation: Assigning Credit for Error"
+   },
+   {
+    "start": 870,
+    "title": "Day 22: Training Deep Networks Reliably"
+   },
+   {
+    "start": 1188,
+    "title": "Day 23: Embeddings: Meaning as Geometry"
+   },
+   {
+    "start": 1583,
+    "title": "Day 24: Sequence Models before Transformers"
+   },
+   {
+    "start": 1997,
+    "title": "Day 25: Attention: Choosing What Matters"
+   },
+   {
+    "start": 2354,
+    "title": "Day 26: Transformers: The Core Architecture"
+   }
+  ],
+  "durationSeconds": 2730,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-04-2026-07-13-1af46834.mp3",
+  "bytes": 21843136,
+  "publishedAt": "2026-07-19T07:35:43"
+ },
+ {
+  "weekStart": "2026-07-06",
+  "week": 3,
+  "key": "ec03e100",
+  "title": "Week 3 (Jul 6–12): Days 13–19",
+  "days": [
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 13: Confusion Matrices and Classification Tradeoffs"
+   },
+   {
+    "start": 296,
+    "title": "Day 14: Cross-Validation and Reliable Comparisons"
+   },
+   {
+    "start": 690,
+    "title": "Day 15: Baselines: The Simplest Useful Benchmark"
+   },
+   {
+    "start": 1038,
+    "title": "Day 16: Linear Models and Their Limits"
+   },
+   {
+    "start": 1439,
+    "title": "Day 17: Decision Trees and Ensembles"
+   },
+   {
+    "start": 1758,
+    "title": "Day 18: Probability, Calibration, and Confidence"
+   },
+   {
+    "start": 2087,
+    "title": "Day 19: Neural Networks from First Principles"
+   }
+  ],
+  "durationSeconds": 2491,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-03-2026-07-06-ec03e100.mp3",
+  "bytes": 19929870,
+  "publishedAt": "2026-07-12T07:35:21"
+ },
+ {
+  "weekStart": "2026-06-29",
+  "week": 2,
+  "key": "a554e7da",
+  "title": "Week 2 (Jun 29–Jul 5): Days 6–12",
+  "days": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 6: Learning from Labeled Examples"
+   },
+   {
+    "start": 431,
+    "title": "Day 7: Classification, Regression, and Decision Boundaries"
+   },
+   {
+    "start": 754,
+    "title": "Day 8: Learning without Labels"
+   },
+   {
+    "start": 1121,
+    "title": "Day 9: Features: Turning Reality into Inputs"
+   },
+   {
+    "start": 1531,
+    "title": "Day 10: Loss Functions: Defining What Wrong Means"
+   },
+   {
+    "start": 1852,
+    "title": "Day 11: Optimization and Gradient Descent"
+   },
+   {
+    "start": 2265,
+    "title": "Day 12: Evaluation Metrics That Match the Goal"
+   }
+  ],
+  "durationSeconds": 2681,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-02-2026-06-29-a554e7da.mp3",
+  "bytes": 21456454,
+  "publishedAt": "2026-07-05T07:39:09"
+ },
+ {
+  "weekStart": "2026-06-22",
+  "week": 1,
+  "key": "538fa1e5",
+  "title": "Week 1 (Jun 22–28): Days 1–5",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 1: What AI Is (and What It Is Not)"
+   },
+   {
+    "start": 451,
+    "title": "Day 2: How Machines Learn From Examples"
+   },
+   {
+    "start": 867,
+    "title": "Day 3: The Basic Machine Learning Workflow"
+   },
+   {
+    "start": 1220,
+    "title": "Day 4: How AI Learns to Generalize"
+   },
+   {
+    "start": 1595,
+    "title": "Day 5: Data Is the Model's Experience"
+   }
+  ],
+  "durationSeconds": 1977,
+  "url": "https://github.com/bel9777/ai-foundations-daily-audio/releases/download/weekly-collections/week-01-2026-06-22-538fa1e5.mp3",
+  "bytes": 15824111,
+  "publishedAt": "2026-06-27T10:17:43"
+ }
+]

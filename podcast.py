@@ -474,7 +474,7 @@ def build_feed(eps):
     <language>en-us</language>
     <description>The AI Foundations course as a daily two-host conversation. Companion to the daily email and Kindle edition.</description>
     <itunes:author>AI Foundations</itunes:author>
-    <itunes:type>serial</itunes:type>
+    <itunes:type>episodic</itunes:type>
     <itunes:image href="{SITE}/podcast-cover.png"/>
     <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
@@ -502,7 +502,9 @@ def build_index(eps):
             "max-width:24rem;display:block;margin:.3em 0}</style></head><body>"
             "<h1>AI Foundations Daily</h1>"
             "<p>The AI Foundations course as a daily two-host conversation. "
-            f"Subscribe by URL: <code>{SITE}/feed.xml</code></p><ul>"
+            f"Subscribe by URL: <code>{SITE}/feed.xml</code></p>"
+            "<p>Each week as one continuous listen (chapter per day): "
+            f"<code>{SITE}/weekly.xml</code></p><ul>"
             + "".join(rows) + "</ul></body></html>")
     (REPO / "docs" / "index.html").write_text(html, encoding="utf-8")
 
@@ -738,6 +740,18 @@ def main():
                 print(f"cutover email FAILED: {e!r} - tell Brian manually")
     else:
         build_preview_feed(eps)
+    # weekly collections (2026-10-05): a failure here must never cost the
+    # daily episode, so it is caught and surfaced in the heartbeat instead
+    weekly_note = ""
+    if complete_now or cut_over:
+        try:
+            import weekly
+            n = weekly.update(eps)
+            weekly_note = f" weekly:+{n}" if n else ""
+        except Exception as e:
+            weekly_note = f" weekly-FAILED:{type(e).__name__}"
+            fails.append(f"weekly:{type(e).__name__}")
+            print(f"weekly collections failed: {e!r}")
     label = f"day(s) {', '.join(map(str, made))}" if made else "feed refresh"
     try:
         pushed = "PUSHED" if publish(
@@ -759,7 +773,7 @@ def main():
     line = (f"{datetime.now():%Y-%m-%d %H:%M} {status} made:{len(made)} "
             f"ondisk:{ondisk} ledger:{len(eps)} "
             f"missing:{len([d for d in days if d not in eps])} "
-            f"feed:{'two-host' if complete_now or cut_over else 'legacy'} {pushed}"
+            f"feed:{'two-host' if complete_now or cut_over else 'legacy'} {pushed}{weekly_note}"
             + (f" failed:{','.join(fails)}" if fails else "")
             + (f" stopped:{stopped}" if stopped else ""))
     with open(RUN_LOG, "a", encoding="utf-8") as f:
