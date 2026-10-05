@@ -81,8 +81,10 @@ retired at cutover — do not run or extend it.
    before ~Jan 2027. Re-check every enclosure before ever flipping back.
 
 9. **Weekly collections** (`weekly.py`, 2026-10-05): each Mon-Sun week as
-   one chaptered mp3 in `docs/weekly.xml`; audio on the GitHub release
-   `weekly-collections` (NOT Pages - 1 GB cap). Recompiles when a week's
+   one chaptered mp3 in `docs/weekly.xml`; audio on its OWN Pages site,
+   repo `bel9777/ai-foundations-weekly-audio` (clone `~i-foundations-weekly-audio`,
+   separate 1 GB cap). NEVER GitHub Release assets: apps refuse them
+   (octet-stream + nosniff + expiring redirect = "can't be played"). Recompiles when a week's
    episode set changes. Called from `podcast.py --run`; failures show as
    `weekly-FAILED` in the heartbeat and never block the daily episode.
    The weeks ALSO appear in the main feed as "Full Week N" bonus items
