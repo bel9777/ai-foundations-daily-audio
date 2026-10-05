@@ -85,6 +85,8 @@ retired at cutover — do not run or extend it.
    `weekly-collections` (NOT Pages - 1 GB cap). Recompiles when a week's
    episode set changes. Called from `podcast.py --run`; failures show as
    `weekly-FAILED` in the heartbeat and never block the daily episode.
+   The weeks ALSO appear in the main feed as "Full Week N" bonus items
+   (Brian follows only that show); never title them "Day N:" (watchdog).
    Main feed is `itunes:type episodic` (serial made apps list oldest first).
 
 ## Ops
