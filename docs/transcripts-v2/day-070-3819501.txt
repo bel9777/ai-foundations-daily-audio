@@ -1,0 +1,28 @@
+Alex: If you don't have a plan for when your AI starts hallucinating or leaking private data, you aren't really building a product, you're just waiting for a disaster. This is AI Foundations, day 70.
+Jordan: Exactly. We’ve spent the last few weeks talking about how models think and how to break them, but today is about how we actually put them into the world without causing chaos. We call this AI governance and responsible deployment.
+Alex: Governance sounds like a stuffy corporate board meeting. Can we strip that away? What are we actually talking about here?
+Jordan: Think of it like opening a restaurant. You can have the best chef in the world, but if you don't have health inspections, fire codes, staff training, and a plan for when someone gets food poisoning, you’re eventually going to get shut down. Governance is the set of rules and roles that keeps the "restaurant" running safely. Responsible deployment is just the act of actually opening the doors only after you’ve verified those safety checks.
+Alex: Okay, so it’s not just about the code, it’s about the process. Where do we start before we hit "deploy"?
+Jordan: You start with a risk assessment. You have to sit down and be honest about what could go wrong. Are we looking at bias? Privacy leaks? Is the system going to sound confident while being completely wrong? You want to identify the worst plausible harm, who gets hurt by it, and what guardrails you’re putting in place to stop it.
+Alex: And that’s where the red teaming we talked about yesterday comes in, right? Trying to break it before the public gets their hands on it?
+Jordan: Precisely. Red teaming is a tool, but governance is the broader process of deciding what to do with the findings. Once you know the risks, you have to decide where the humans fit in. We call this human oversight. You’ve got three levels: in-the-loop, where a person must approve every action; on-the-loop, where the AI works but a person monitors it; and out-of-the-loop, where the AI just runs.
+Alex: I’m guessing you don’t want an AI "out-of-the-loop" if it’s deciding someone’s medical treatment or approving a massive loan.
+Jordan: Exactly. Think of it like a co-pilot on a plane. The co-pilot can handle the boring cruise phase, but you wouldn’t want them silently changing the flight plan during a storm without the pilot noticing. You need clear cockpit protocols.
+Alex: So we’ve assessed the risks and set the oversight rules. How do we make sure the next person on the team doesn’t mess it up?
+Jordan: Documentation. This is the "manual" for the system. We use model cards to explain what the model is supposed to do and where it fails, and data sheets to explain where the training data came from. If someone leaves the company, the documentation keeps the institutional knowledge alive so the next person doesn't accidentally use the tool for something it wasn't built for.
+Alex: That makes sense. But the world changes. A model that works today might start acting weird in six months because the data it’s seeing has shifted.
+Jordan: You nailed it. That’s why we need monitoring and an incident response plan. You have to keep watching the outputs after launch. And if things go south, you need a pre-written plan: who gets alerted, how do we shut it off, and how do we tell the users?
+Alex: Let’s walk through that customer support example you mentioned. If I’m building an AI to handle billing, what does this actually look like?
+Jordan: Well, for risks, you identify that it might give wrong refund amounts. For oversight, you decide the AI can answer basic status questions, but any actual money refund requires a human click. For documentation, you clearly state: "Do not use for legal advice." For monitoring, you track how often humans have to override the AI. And for incident response, you have a "kill switch" ready if the AI starts promising impossible discounts.
+Alex: It sounds almost boring, honestly. It’s just discipline.
+Jordan: That’s the point. Boring is safe. Boring is reliable.
+Alex: Okay, hit me with the knowledge check.
+Jordan: First: what’s the difference between AI governance and responsible deployment?
+Alex: Governance is the big-picture rulebook—the roles and processes—while responsible deployment is the actual execution of getting a specific system out the door safely.
+Jordan: Good. Second: what does "human-in-the-loop" mean?
+Alex: It means the AI suggests a move, but a human has to look at it and give the final "thumbs up" before anything actually happens.
+Jordan: Right. And last one: why keep monitoring if the testing went perfectly?
+Alex: Because real-world users are way more creative at breaking things than testers are, and the data the AI sees in the wild is always going to be different from your test set. You have to watch for performance drift or unexpected behavior.
+Jordan: Spot on. Now, for your homework: I want you to pick an AI tool, or imagine a simple one like a resume writer, and write a one-page deployment plan. Define the purpose, three big risks, where you’ll put a human in the loop, what you’ll put in the documentation, and one metric you’ll track for monitoring. Plus, give me one "if X happens, we do Y" for your incident response plan.
+Alex: I’ll get that drafted. And tomorrow?
+Jordan: Tomorrow is the big one: we’re doing a capstone lesson on designing an entire end-to-end AI system.

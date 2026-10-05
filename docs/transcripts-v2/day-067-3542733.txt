@@ -1,0 +1,25 @@
+Alex: Knowing if an AI is actually smart or just lucky is the difference between a reliable tool and a dangerous guess, so today we are popping the hood. This is AI Foundations, day 67.
+Jordan: Exactly. We usually treat AI as a black box—you put a prompt in, you get an answer out, and you hope for the best. But when that model gets something right, we rarely know if it actually understood the concept or if it just got lucky by picking up on a weird pattern in the data.
+Alex: Right, like that old story about the AI trained to spot tanks that was actually just spotting the weather in the photos. So, how do we stop guessing?
+Jordan: That is where interpretability and mechanistic analysis come in. Think of it like an orchestra. Behavioral analysis is just sitting in the audience and listening to the music. If it sounds good, the performance is a success. Mechanistic analysis is like walking onto the stage, looking at the sheet music, and watching exactly when the violinist plays their note.
+Alex: So behavioral is the "what," and mechanistic is the "how."
+Jordan: Spot on. Behavioral analysis is all about the output. Does it answer the prompt correctly? Does it show bias? Mechanistic analysis is about the internal parts. We look at activations, which are the numbers individual neurons spit out, and attention, which is the model deciding which words in your prompt are actually important.
+Alex: That sounds complicated. Do we have to be engineers to do this?
+Jordan: Not necessarily. We have tools like probing, which is basically running a mini-test on the model's brain to see if it’s "thinking" about a specific topic, or attribution, which highlights exactly which words in your prompt tipped the scale for the model. The danger, though, is falling into the correlation trap.
+Alex: I know that one. Just because two things happen together doesn't mean one caused the other.
+Jordan: Exactly. If a neuron lights up every time the model says Paris, it doesn’t mean that neuron is the "capital city" center. It might just be a "French word" sensor. To prove causation, we use things like activation patching, where we actually swap out internal values to see if the model's answer changes. It’s like surgically removing a wire to see if the machine stops working.
+Alex: That makes sense. It reminds me of that phishing filter example. A filter might catch spam, but if you look under the hood, you might find it’s not actually reading the message for fraud—it’s just looking for the word "urgent" or a bunch of exclamation points.
+Jordan: Exactly. And that is a huge problem because if a hacker knows the model is just looking for "urgent," they can just delete that word and walk right past your security. It’s a shortcut, not intelligence.
+Alex: And this ties back to our recent lessons on long context and synthetic data. If we feed a model a massive document, we want to know if it’s actually "reading" the relevant page or just grabbing the first thing it sees.
+Jordan: Right. Interpretability lets us see if the model is doing the work or just taking the easy way out. It’s essential for debugging, safety, and actually knowing if our model is capable or just lucky.
+Alex: Ready to quiz me?
+Jordan: Let's do it. Question one: What is the main difference between behavioral analysis and mechanistic analysis?
+Alex: Behavioral is just looking at the final output—does the model get the right answer or not? Mechanistic is looking at the actual internal math and signals to see how the model got there.
+Jordan: Perfect. Question two: Why is correlation not enough to prove an internal feature causes a specific answer?
+Alex: Because things can happen at the same time without having a cause-and-effect relationship. Just because a neuron fires when the model says "Paris" doesn't mean that neuron is the source of the knowledge. It could be triggered by anything related to France. You need evidence like activation patching to prove it’s actually doing the heavy lifting.
+Jordan: You nailed it. Last one: In that phishing filter example, what is a likely shortcut the model might learn?
+Alex: It would probably just look for surface-level stuff, like the word "urgent" or weird punctuation, instead of actually analyzing the content for malicious intent.
+Jordan: Spot on. You’ve got the theory down. Now, here is your homework. I want you to perform a simple behavioral test. Pick a sentiment classification task. Write three positive prompts and three negative ones, but add a distracting, irrelevant phrase to each—like "this is not a trick question." See if the model’s answer changes. If it does, you’ve caught it using a shortcut. Pay close attention to whether the model relies on the last sentence or specific words rather than the core meaning.
+Alex: I’ll try that. It’s basically testing if the model is actually "reading" or just reacting to noise.
+Jordan: Exactly. And tomorrow, on day 68, we’re going to talk about adversarial testing and red teaming, where we go beyond just looking inside and start actively trying to break the system.
+Alex: Sounds like a plan. See you then.

@@ -1,0 +1,24 @@
+Alex: If you have ever wondered how an AI can sound like it’s actually looking at your specific files instead of just guessing, you’re about to find out. This is AI Foundations, day 74.
+Jordan: We spend a lot of time talking about how models are trained on the internet, but that training is a static snapshot. It doesn't know your company’s internal policy or your personal schedule from ten minutes ago. To fix that, we use retrieval and memory.
+Alex: Right, because if I just dump five hundred documents into a prompt, the model is going to get overwhelmed or lose the point. So, retrieval is basically the librarian?
+Jordan: Exactly. Retrieval is the process of searching through a huge pile of data to find the one or two pieces that actually matter for the current question. We usually do this with embeddings, which is just a fancy way of turning words into coordinates on a map. If two sentences mean similar things, their coordinates are close together. That’s how the system finds the answer even if you don't use the exact same keywords.
+Alex: So the system maps the meaning, finds the closest match, and pulls that into the prompt. That's the retrieval part. Where does memory fit in?
+Jordan: Think of memory as the storage unit. Short-term memory is what’s happening in this current chat, while long-term memory is stuff kept across different sessions, like your preferences. Retrieval is the act of going into that storage to pull something out.
+Alex: Okay, but you mentioned chunking. Why do we need to chop everything up into little bits first?
+Jordan: Imagine trying to find a specific fact in a five-hundred-page book. If you just grab the whole book, it’s too much noise. Chunking breaks that book into paragraphs or small, logical sections. We index those chunks so the system can point exactly to the paragraph that answers your question. That’s the core of RAG, or Retrieval-Augmented Generation. You retrieve the right chunk, give it to the model, and tell it, hey, use this to answer the user.
+Alex: And that’s why it’s not just hallucinating facts, right? Because it’s actually looking at the chunk I provided.
+Jordan: Mostly, yes. But it’s not perfect. If your retrieval system grabs the wrong chunk, the model will confidently give you a wrong answer. That’s why we need memory policies. You have to decide what’s worth keeping, how long you keep it, and whether it’s sensitive information that shouldn't be stored at all. It’s a governance issue.
+Alex: Like if I accidentally tell the system my credit card number, a good policy would be to not store that in its long-term memory?
+Jordan: Exactly. Or, if you update a policy at work, you don't want the system using the old, stale data. It needs to know which info is authoritative and current. It’s like the librarian having a notebook. If the notebook is filled with old, outdated scribbles, the librarian is going to give you bad advice no matter how well they search the library.
+Alex: Makes sense. Let’s hit those knowledge checks. You ready?
+Jordan: Hit me. Question one: What’s the actual difference between retrieval and memory?
+Alex: Retrieval is the active search—it’s the action of going out and grabbing the specific info you need right now. Memory is the place where you keep that info, or the process of deciding what is worth saving for later.
+Jordan: Spot on. Question two: Why do we bother with chunking before we index our documents?
+Alex: Because if you index a massive document, you’ll end up retrieving way too much info at once, which confuses the model. Chunking makes the data bite-sized so the search is precise. You get the exact answer instead of a whole library of irrelevant fluff.
+Jordan: Perfect. Last one: What is a major safety concern with long-term memory?
+Alex: Privacy, definitely. If you’re storing user data, you’re creating a target. Plus, if the system keeps stale or incorrect information, it might start acting on bad data without you realizing it. You need a way to purge or update that memory.
+Jordan: You nailed it. For your homework, I want you to build a tiny, manual retrieval system. Grab a piece of paper or a notes app and write six short notes about a hobby you love. Make each note just one to three sentences. Next to each one, scribble three keywords that summarize it—that’s your index. Now, write three questions someone might ask about that hobby. For each question, pick the best note based on your keywords and write a one-sentence answer using only that note.
+Alex: And while I’m doing that, what should I be looking for?
+Jordan: Pay attention to which notes felt helpful and which ones were too broad. You’ll quickly see how easy it is for a chunk to be "off" and how much that impacts the final answer. It’s the best way to see the system’s limitations.
+Alex: Sounds like a plan. Tomorrow, we’re moving into the really cool stuff.
+Jordan: Day 75: Advanced Synthesis 4, where we talk about agents and tool use.

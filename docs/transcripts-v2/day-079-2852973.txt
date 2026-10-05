@@ -1,0 +1,21 @@
+Alex: If you have ever wondered why some AI tools feel like magic in a demo but fall apart when you actually try to use them for work, this is the episode for you. This is AI Foundations, day 79.
+Jordan: We have spent weeks talking about how to make models smarter, how to give them memory, and how to let them use tools. But today, we stop asking if the model can do the task and start asking if it can do it for real people, at scale, without going bankrupt.
+Alex: Right. Moving from a notebook to a product. I assume that is what we mean by deployment?
+Jordan: Exactly. A model in a notebook is a prototype. It is a one-off. Deployment means it is living in the wild. It has to be available when users click the button, it has to be fast, and it has to handle a hundred users at once without crashing. Plus, you have to watch for drift, where the world changes so much that your model stops being accurate.
+Alex: That makes sense. Everything changes once you introduce real-world chaos. But let’s talk about the money. Where does the cash actually go?
+Jordan: There are five big buckets. You have inference costs, which is just the bill for running the model to get an answer. Then training or fine-tuning costs. You have to pay to store your data and logs. If the task is risky, you need human review. And of course, the engineering time spent building and maintaining the whole pipeline. If you lose money on every single query, your business is just a way to burn cash faster as you grow.
+Alex: Which brings us to the classic engineering headache: the trade-off. Quality, speed, and cost. I want the best, fastest, and cheapest model, but I’m guessing I can’t have all three?
+Jordan: Rarely. A massive, smart model is great for accuracy but it is slow and expensive. A tiny model is fast and cheap but might hallucinate. That is why we use cascades. You set up a simple, cheap model for easy questions, and only "turn on the lights" with the expensive model if the first one fails or if the query is complex.
+Alex: Like a restaurant. You don’t have your head chef peeling potatoes, right? You have a sous-chef for the prep work and the master chef only steps in for the final, complicated plating.
+Jordan: That is a perfect analogy. The restaurant needs a menu, staff, and health inspections. If your AI is brilliant but takes thirty seconds to respond or accidentally refunds a customer’s entire life savings, your restaurant is going under.
+Alex: So guardrails aren't just about safety, they are an economic tool.
+Jordan: Exactly. They prevent expensive mistakes. If you build a customer support bot, you might use retrieval to grab the latest shipping data so it doesn't have to guess. You use evaluation to make sure it is polite. And for something high-stakes like a refund, you force a human to click a button. You slow it down a tiny bit, but you save a fortune in potential liability.
+Alex: Let’s run through the knowledge check. What is the difference between a prototype and a deployed system?
+Jordan: A prototype is just a test bench for an idea. A deployed system is a production-grade service that users depend on, which requires uptime, monitoring, and stability.
+Alex: Makes sense. And what are three major cost drivers in that deployment?
+Jordan: You have inference, which is the cost per run, training, and human review. But don’t forget storage and the ongoing engineering time.
+Alex: And why would anyone pick a more expensive, slower model?
+Jordan: Because sometimes that accuracy and safety actually saves you money. A cheaper model that makes a catastrophic mistake in a legal or financial context is infinitely more expensive than a pricier, more reliable one.
+Alex: I get it. It is all about finding the right tool for the specific job. What is the homework?
+Jordan: Pick one use case, like summarizing meeting notes. Write down three request types: easy, medium, and hard. For each, estimate how often it happens, if a cheap model could handle it, and what happens if the AI messes it up. Then, write one sentence defining your policy: which get automated, which get reviewed, and which get escalated to a human. Focus on balancing that speed, quality, and cost.
+Alex: I’ll get on that. Tomorrow we go under the hood for day 80, covering model architecture to understand why some models are just built differently.

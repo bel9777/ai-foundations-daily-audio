@@ -1,0 +1,29 @@
+Alex: If you have ever wondered why some AI tools seem to actually think through a problem while others just hallucinate a guess, the difference usually comes down to how they handle planning. This is AI Foundations, day 73.
+Jordan: We are moving past the idea of just asking a model a question and getting a single block of text back. Today is about turning a model into an agent that can actually complete a task by thinking between the lines.
+Alex: So we are talking about the difference between a chatbot that chats and an agent that does work. Where does that start?
+Jordan: It starts with distinguishing reasoning from planning. Think of it like a road trip. Reasoning is looking at the map and the road signs to figure out, Okay, I am currently in this specific spot and the weather is rough. Planning is the act of deciding, I will take these three specific exits to get to my destination safely.
+Alex: That makes sense. One is evaluating the situation, and the other is mapping out the moves. Can you have one without the other?
+Jordan: Sure. You might be great at reasoning—you know exactly where you are—but if you pick the wrong route, your plan fails. Or you might have a great plan, but if your reasoning about your starting location is wrong, you end up in the wrong city. To build a solid AI, you need both.
+Alex: Right, but most tasks are way too big to solve in one go. That is where decomposition comes in, right?
+Jordan: Exactly. Decomposition is just breaking a giant, intimidating task into tiny, bite-sized pieces. If I tell an AI to "plan a community workshop," it might get overwhelmed. But if I decompose it into steps—identify the audience, set a goal, list materials, draft a schedule—the AI can tackle each piece individually. It’s like doing a math problem; you solve for X, then Y, then Z, instead of trying to guess the final number all at once.
+Alex: It also makes it easier to spot where things go wrong, I guess. If step two fails, you know exactly where the breakdown happened.
+Jordan: Precisely. And that leads us to search. A lot of people think AI just predicts the next word, but in a planning workflow, the system can actually explore multiple paths. It asks, What are my options right now, and what happens if I take this turn versus that one?
+Alex: So it is not just taking the first idea that pops into its head?
+Jordan: Exactly. Imagine a customer support AI. A package is late. It shouldn’t just blurt out "Here is a refund." It needs to search through options: check the tracking, see if the package was delivered to a neighbor, or ask for the order number. It weighs the options before acting.
+Alex: That sounds smart, but in the real world, you have constraints. You can't just check every possibility forever.
+Jordan: You hit the nail on the head. That is where heuristics and constraints come in. A heuristic is just a rule of thumb to help the AI make a quick, good-enough decision when it doesn't have time to be perfect. And constraints are the hard lines it cannot cross—like a budget limit or a safety policy. It doesn't matter if the best travel plan is a private jet if your constraint is a five-hundred-dollar budget.
+Alex: And what if the plan fails? Like, the AI tries to check the tracking and the system is down?
+Jordan: That is the final piece: the feedback loop. You observe the outcome of an action, and if it fails, you update the plan. If the tracking system is down, you don't just keep hitting refresh. You pivot. You tell the user, "The system is unavailable, let me connect you to a human." It’s about being responsive rather than rigid.
+Alex: So an agent isn't just a model that can talk, it's a system that can reason, break things down, search for options, respect limits, and learn from its own mistakes.
+Jordan: That is the perfect summary. Ready for a quick knowledge check?
+Alex: Let's do it.
+Jordan: In your own words, what is the core difference between reasoning and planning?
+Alex: Reasoning is the act of looking at the facts to decide what is true or what the situation actually is. Planning is the actual sequence of steps you decide to take to get to your goal based on that reasoning.
+Jordan: Spot on. Now, why does decomposition make a hard task easier for an AI system?
+Alex: Because it turns a giant, messy problem into a chain of smaller, manageable tasks. It makes it easier to verify that you’re on the right track and easier to fix a specific part if that one step breaks.
+Jordan: Perfect. Last one: what is a feedback loop, and why is it so important for planning?
+Alex: A feedback loop is just using the result of one action to inform the next one. It's critical because the world is unpredictable. You need a way to see that a plan isn't working and then adjust your course instead of just blindly following a path that leads to a dead end.
+Jordan: Exactly right. You have got the concepts down. Now, here is your homework. I want you to pick one simple task—like planning a grocery list or a meeting agenda—and write out a plan for it. State your goal, decompose it into three to five steps, identify one constraint for each step, write one rule of thumb or heuristic for when you don't have enough info, and finally, define one feedback loop for what happens if your first attempt at a step fails. Keep it simple and just notice how much more reliable the process feels when you map it out like that.
+Alex: That sounds like a good way to see the logic behind the "thinking."
+Jordan: It really is. Tomorrow, we are going to talk about how this all connects to retrieval and memory.
+Alex: See you then.

@@ -1,0 +1,21 @@
+Alex: If you have ever wondered why some AI tools seem to work perfectly for a quick email but fall apart when you ask for legal advice, you need to know about model and system cards. This is AI Foundations, day 53.
+Jordan: We spend a lot of time talking about how to build, test, and secure AI, but we haven't talked enough about how to actually document what you’ve built. That’s where these cards come in.
+Alex: I’ve seen these before, usually as a technical PDF attached to a research paper. Is that all they are?
+Jordan: Not anymore. Think of a model card like the engine manual, but a system card is the manual for the entire car. A model card describes the engine itself—what it’s for, the data used to train it, and its core strengths and weaknesses. A system card is for the whole vehicle. It covers the engine, but also the brakes, the dashboard, the warning lights, the safety guardrails, and the retrieval tools that pull in outside data.
+Alex: Okay, so a system card acknowledges that the AI isn't just a raw model, it's a product. Why does that distinction matter?
+Jordan: Because users need to know if they're looking at a raw, unpredictable model or a hardened, guarded system. If you're building a customer support bot, the system card explains the system prompt that keeps it on track, the tools it uses to look up orders, and the guardrails that prevent it from being rude or giving away private info. If you leave that out, a user has no idea what’s actually happening under the hood.
+Alex: That makes sense. I guess that leads into the "intended use" section. I’ve seen those, but they often feel like they’re just there to cover the company legally. Are they actually useful?
+Jordan: They should be. Intended use is what the system is designed and tested for. Non-intended use is just as important—it’s a warning label saying, "This might look like it can do this, but it will fail." If you build a tool to draft emails, the card should explicitly say: "Do not use this for medical or legal advice." It also lists your assumptions, like "we assume the user is asking in English" or "we assume the retrieval system has current documents." If those assumptions break, the system breaks.
+Alex: And if the system breaks, you need to know why. That’s where the evaluation results come in, right? 
+Jordan: Exactly. A good card doesn't just say "works well." It lists actual metrics. What’s the accuracy? What’s the false positive rate? Where does it fail? It should be honest about known limitations. Pretending a system is perfect is a recipe for disaster. A reliable system isn't one that never fails; it’s one where you understand exactly how and why it fails.
+Alex: So this is basically the "nutrition label" for AI?
+Jordan: Spot on. It lists the ingredients, the serving size, and the allergens. You wouldn't eat something without knowing what's in it, so you shouldn't use an AI system without knowing its limitations and safety guardrails.
+Alex: Let’s test my understanding. What’s the core difference between the two?
+Jordan: A model card is just the engine, but a system card is the whole car—including the prompts, the tools, and the monitoring systems around it.
+Alex: And why include both intended and non-intended use?
+Jordan: Because people will inevitably try to use your tool for things it wasn't built for, and those sections set expectations to prevent misuse.
+Alex: Last one: why are these cards still useful after the system is already launched?
+Jordan: They act as a living record for observability. When a failure happens, you go back to the card to see if the failure matches a documented limitation or if it’s a new behavior you need to investigate.
+Alex: Makes sense. What’s the homework?
+Jordan: Pick an AI tool you use regularly. Write a one-page draft card for it. Use the template from the lesson: name, intended use, non-intended use, components, strengths, limitations, and safety notes. If you don't know a piece of the architecture, write "unknown." Notice how much of the "system" you actually understand versus what’s hidden from you. 
+Alex: Got it. Tomorrow, we’re looking at data pipelines and how to version your datasets.

@@ -12,6 +12,18 @@
   "ttsModel": "gemini-3.8-flash-tts"
  },
  {
+  "day": 101,
+  "title": "Advanced Synthesis 30: Safety And Security",
+  "format": "two-host",
+  "guid": "two-host-day-101",
+  "publishedAt": "2026-10-04T07:35:41",
+  "audioPath": "/audio-v2/day-101-advanced-synthesis-30-safety-and-security-3456621.mp3",
+  "transcriptPath": "/transcripts-v2/day-101-3456621.txt",
+  "audioBytes": 3456621,
+  "durationSeconds": 288,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 93,
   "title": "Advanced Synthesis 22: Safety And Security",
   "format": "two-host",
@@ -24,6 +36,102 @@
   "ttsModel": "gemini-2.5-flash-preview-tts"
  },
  {
+  "day": 80,
+  "title": "Advanced Synthesis 9: Model Architecture",
+  "format": "two-host",
+  "guid": "two-host-day-080",
+  "publishedAt": "2026-09-13T07:35:43",
+  "audioPath": "/audio-v2/day-080-advanced-synthesis-9-model-architecture-3096333.mp3",
+  "transcriptPath": "/transcripts-v2/day-080-3096333.txt",
+  "audioBytes": 3096333,
+  "durationSeconds": 257,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 79,
+  "title": "Advanced Synthesis 8: Deployment And Economics",
+  "format": "two-host",
+  "guid": "two-host-day-079",
+  "publishedAt": "2026-09-12T07:35:45",
+  "audioPath": "/audio-v2/day-079-advanced-synthesis-8-deployment-and-economics-2852973.mp3",
+  "transcriptPath": "/transcripts-v2/day-079-2852973.txt",
+  "audioBytes": 2852973,
+  "durationSeconds": 237,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 78,
+  "title": "Advanced Synthesis 7: Data And Learning Systems",
+  "format": "two-host",
+  "guid": "two-host-day-078",
+  "publishedAt": "2026-09-11T07:35:43",
+  "audioPath": "/audio-v2/day-078-advanced-synthesis-7-data-and-learning-systems-3743469.mp3",
+  "transcriptPath": "/transcripts-v2/day-078-3743469.txt",
+  "audioBytes": 3743469,
+  "durationSeconds": 311,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 77,
+  "title": "Advanced Synthesis 6: Safety And Security",
+  "format": "two-host",
+  "guid": "two-host-day-077",
+  "publishedAt": "2026-09-10T07:35:46",
+  "audioPath": "/audio-v2/day-077-advanced-synthesis-6-safety-and-security-3255309.mp3",
+  "transcriptPath": "/transcripts-v2/day-077-3255309.txt",
+  "audioBytes": 3255309,
+  "durationSeconds": 271,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 76,
+  "title": "Advanced Synthesis 5: Evaluation And Reliability",
+  "format": "two-host",
+  "guid": "two-host-day-076",
+  "publishedAt": "2026-09-09T07:35:53",
+  "audioPath": "/audio-v2/day-076-advanced-synthesis-5-evaluation-and-reliability-2917485.mp3",
+  "transcriptPath": "/transcripts-v2/day-076-2917485.txt",
+  "audioBytes": 2917485,
+  "durationSeconds": 243,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 75,
+  "title": "Advanced Synthesis 4: Agents And Tool Use",
+  "format": "two-host",
+  "guid": "two-host-day-075",
+  "publishedAt": "2026-09-08T07:35:45",
+  "audioPath": "/audio-v2/day-075-advanced-synthesis-4-agents-and-tool-use-3759021.mp3",
+  "transcriptPath": "/transcripts-v2/day-075-3759021.txt",
+  "audioBytes": 3759021,
+  "durationSeconds": 313,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 74,
+  "title": "Advanced Synthesis 3: Retrieval And Memory",
+  "format": "two-host",
+  "guid": "two-host-day-074",
+  "publishedAt": "2026-09-07T07:36:03",
+  "audioPath": "/audio-v2/day-074-advanced-synthesis-3-retrieval-and-memory-3058029.mp3",
+  "transcriptPath": "/transcripts-v2/day-074-3058029.txt",
+  "audioBytes": 3058029,
+  "durationSeconds": 254,
+  "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 73,
+  "title": "Advanced Synthesis 2: Reasoning And Planning",
+  "format": "two-host",
+  "guid": "two-host-day-073",
+  "publishedAt": "2026-09-06T07:35:48",
+  "audioPath": "/audio-v2/day-073-advanced-synthesis-2-reasoning-and-planning-3883437.mp3",
+  "transcriptPath": "/transcripts-v2/day-073-3883437.txt",
+  "audioBytes": 3883437,
+  "durationSeconds": 323,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 72,
   "title": "Advanced Synthesis 1: Model Architecture",
   "format": "two-host",
@@ -34,6 +142,66 @@
   "audioBytes": 3269133,
   "durationSeconds": 272,
   "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 71,
+  "title": "Capstone: Designing an End-to-End AI System",
+  "format": "two-host",
+  "guid": "two-host-day-071",
+  "publishedAt": "2026-09-04T07:35:50",
+  "audioPath": "/audio-v2/day-071-capstone-designing-an-end-to-end-ai-system-3993453.mp3",
+  "transcriptPath": "/transcripts-v2/day-071-3993453.txt",
+  "audioBytes": 3993453,
+  "durationSeconds": 332,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 70,
+  "title": "AI Governance and Responsible Deployment",
+  "format": "two-host",
+  "guid": "two-host-day-070",
+  "publishedAt": "2026-09-02T07:35:50",
+  "audioPath": "/audio-v2/day-070-ai-governance-and-responsible-deployment-3819501.mp3",
+  "transcriptPath": "/transcripts-v2/day-070-3819501.txt",
+  "audioBytes": 3819501,
+  "durationSeconds": 318,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 69,
+  "title": "Robust Agent Design",
+  "format": "two-host",
+  "guid": "two-host-day-069",
+  "publishedAt": "2026-09-01T07:35:58",
+  "audioPath": "/audio-v2/day-069-robust-agent-design-3688461.mp3",
+  "transcriptPath": "/transcripts-v2/day-069-3688461.txt",
+  "audioBytes": 3688461,
+  "durationSeconds": 307,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 68,
+  "title": "Adversarial Testing and Red Teaming",
+  "format": "two-host",
+  "guid": "two-host-day-068",
+  "publishedAt": "2026-08-31T07:35:55",
+  "audioPath": "/audio-v2/day-068-adversarial-testing-and-red-teaming-3718701.mp3",
+  "transcriptPath": "/transcripts-v2/day-068-3718701.txt",
+  "audioBytes": 3718701,
+  "durationSeconds": 309,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 67,
+  "title": "Interpretability and Mechanistic Analysis",
+  "format": "two-host",
+  "guid": "two-host-day-067",
+  "publishedAt": "2026-08-30T07:35:44",
+  "audioPath": "/audio-v2/day-067-interpretability-and-mechanistic-analysis-3542733.mp3",
+  "transcriptPath": "/transcripts-v2/day-067-3542733.txt",
+  "audioBytes": 3542733,
+  "durationSeconds": 295,
+  "ttsModel": "gemini-3.8-flash-tts"
  },
  {
   "day": 66,
@@ -190,6 +358,18 @@
   "audioBytes": 4228173,
   "durationSeconds": 352,
   "ttsModel": "gemini-2.5-flash-preview-tts"
+ },
+ {
+  "day": 53,
+  "title": "Model and System Cards",
+  "format": "two-host",
+  "guid": "two-host-day-053",
+  "publishedAt": "2026-08-16T07:35:47",
+  "audioPath": "/audio-v2/day-053-model-and-system-cards-2958957.mp3",
+  "transcriptPath": "/transcripts-v2/day-053-2958957.txt",
+  "audioBytes": 2958957,
+  "durationSeconds": 246,
+  "ttsModel": "gemini-3.8-flash-tts"
  },
  {
   "day": 52,

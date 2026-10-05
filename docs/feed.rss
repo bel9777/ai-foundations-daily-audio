@@ -19,6 +19,15 @@
       <itunes:duration>5:28</itunes:duration>
     </item>
     <item>
+      <title>Day 101: Advanced Synthesis 30: Safety And Security</title>
+      <description>Advanced Synthesis 30: Safety And Security - AI Foundations day 101, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-101</guid>
+      <pubDate>Sun, 04 Oct 2026 07:35:41 +0000</pubDate>
+      <itunes:episode>101</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-101-advanced-synthesis-30-safety-and-security-3456621.mp3" length="3456621" type="audio/mpeg"/>
+      <itunes:duration>4:48</itunes:duration>
+    </item>
+    <item>
       <title>Day 93: Advanced Synthesis 22: Safety And Security</title>
       <description>Advanced Synthesis 22: Safety And Security - AI Foundations day 93, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-093</guid>
@@ -28,6 +37,78 @@
       <itunes:duration>6:26</itunes:duration>
     </item>
     <item>
+      <title>Day 80: Advanced Synthesis 9: Model Architecture</title>
+      <description>Advanced Synthesis 9: Model Architecture - AI Foundations day 80, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-080</guid>
+      <pubDate>Sun, 13 Sep 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>80</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-080-advanced-synthesis-9-model-architecture-3096333.mp3" length="3096333" type="audio/mpeg"/>
+      <itunes:duration>4:17</itunes:duration>
+    </item>
+    <item>
+      <title>Day 79: Advanced Synthesis 8: Deployment And Economics</title>
+      <description>Advanced Synthesis 8: Deployment And Economics - AI Foundations day 79, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-079</guid>
+      <pubDate>Sat, 12 Sep 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>79</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-079-advanced-synthesis-8-deployment-and-economics-2852973.mp3" length="2852973" type="audio/mpeg"/>
+      <itunes:duration>3:57</itunes:duration>
+    </item>
+    <item>
+      <title>Day 78: Advanced Synthesis 7: Data And Learning Systems</title>
+      <description>Advanced Synthesis 7: Data And Learning Systems - AI Foundations day 78, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-078</guid>
+      <pubDate>Fri, 11 Sep 2026 07:35:43 +0000</pubDate>
+      <itunes:episode>78</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-078-advanced-synthesis-7-data-and-learning-systems-3743469.mp3" length="3743469" type="audio/mpeg"/>
+      <itunes:duration>5:11</itunes:duration>
+    </item>
+    <item>
+      <title>Day 77: Advanced Synthesis 6: Safety And Security</title>
+      <description>Advanced Synthesis 6: Safety And Security - AI Foundations day 77, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-077</guid>
+      <pubDate>Thu, 10 Sep 2026 07:35:46 +0000</pubDate>
+      <itunes:episode>77</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-077-advanced-synthesis-6-safety-and-security-3255309.mp3" length="3255309" type="audio/mpeg"/>
+      <itunes:duration>4:31</itunes:duration>
+    </item>
+    <item>
+      <title>Day 76: Advanced Synthesis 5: Evaluation And Reliability</title>
+      <description>Advanced Synthesis 5: Evaluation And Reliability - AI Foundations day 76, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-076</guid>
+      <pubDate>Wed, 09 Sep 2026 07:35:53 +0000</pubDate>
+      <itunes:episode>76</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-076-advanced-synthesis-5-evaluation-and-reliability-2917485.mp3" length="2917485" type="audio/mpeg"/>
+      <itunes:duration>4:03</itunes:duration>
+    </item>
+    <item>
+      <title>Day 75: Advanced Synthesis 4: Agents And Tool Use</title>
+      <description>Advanced Synthesis 4: Agents And Tool Use - AI Foundations day 75, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-075</guid>
+      <pubDate>Tue, 08 Sep 2026 07:35:45 +0000</pubDate>
+      <itunes:episode>75</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-075-advanced-synthesis-4-agents-and-tool-use-3759021.mp3" length="3759021" type="audio/mpeg"/>
+      <itunes:duration>5:13</itunes:duration>
+    </item>
+    <item>
+      <title>Day 74: Advanced Synthesis 3: Retrieval And Memory</title>
+      <description>Advanced Synthesis 3: Retrieval And Memory - AI Foundations day 74, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-074</guid>
+      <pubDate>Mon, 07 Sep 2026 07:36:03 +0000</pubDate>
+      <itunes:episode>74</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-074-advanced-synthesis-3-retrieval-and-memory-3058029.mp3" length="3058029" type="audio/mpeg"/>
+      <itunes:duration>4:14</itunes:duration>
+    </item>
+    <item>
+      <title>Day 73: Advanced Synthesis 2: Reasoning And Planning</title>
+      <description>Advanced Synthesis 2: Reasoning And Planning - AI Foundations day 73, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-073</guid>
+      <pubDate>Sun, 06 Sep 2026 07:35:48 +0000</pubDate>
+      <itunes:episode>73</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-073-advanced-synthesis-2-reasoning-and-planning-3883437.mp3" length="3883437" type="audio/mpeg"/>
+      <itunes:duration>5:23</itunes:duration>
+    </item>
+    <item>
       <title>Day 72: Advanced Synthesis 1: Model Architecture</title>
       <description>Advanced Synthesis 1: Model Architecture - AI Foundations day 72, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-072</guid>
@@ -35,6 +116,51 @@
       <itunes:episode>72</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-072-advanced-synthesis-1-model-architecture-3269133.mp3" length="3269133" type="audio/mpeg"/>
       <itunes:duration>4:32</itunes:duration>
+    </item>
+    <item>
+      <title>Day 71: Capstone: Designing an End-to-End AI System</title>
+      <description>Capstone: Designing an End-to-End AI System - AI Foundations day 71, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-071</guid>
+      <pubDate>Fri, 04 Sep 2026 07:35:50 +0000</pubDate>
+      <itunes:episode>71</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-071-capstone-designing-an-end-to-end-ai-system-3993453.mp3" length="3993453" type="audio/mpeg"/>
+      <itunes:duration>5:32</itunes:duration>
+    </item>
+    <item>
+      <title>Day 70: AI Governance and Responsible Deployment</title>
+      <description>AI Governance and Responsible Deployment - AI Foundations day 70, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-070</guid>
+      <pubDate>Wed, 02 Sep 2026 07:35:50 +0000</pubDate>
+      <itunes:episode>70</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-070-ai-governance-and-responsible-deployment-3819501.mp3" length="3819501" type="audio/mpeg"/>
+      <itunes:duration>5:18</itunes:duration>
+    </item>
+    <item>
+      <title>Day 69: Robust Agent Design</title>
+      <description>Robust Agent Design - AI Foundations day 69, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-069</guid>
+      <pubDate>Tue, 01 Sep 2026 07:35:58 +0000</pubDate>
+      <itunes:episode>69</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-069-robust-agent-design-3688461.mp3" length="3688461" type="audio/mpeg"/>
+      <itunes:duration>5:07</itunes:duration>
+    </item>
+    <item>
+      <title>Day 68: Adversarial Testing and Red Teaming</title>
+      <description>Adversarial Testing and Red Teaming - AI Foundations day 68, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-068</guid>
+      <pubDate>Mon, 31 Aug 2026 07:35:55 +0000</pubDate>
+      <itunes:episode>68</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-068-adversarial-testing-and-red-teaming-3718701.mp3" length="3718701" type="audio/mpeg"/>
+      <itunes:duration>5:09</itunes:duration>
+    </item>
+    <item>
+      <title>Day 67: Interpretability and Mechanistic Analysis</title>
+      <description>Interpretability and Mechanistic Analysis - AI Foundations day 67, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-067</guid>
+      <pubDate>Sun, 30 Aug 2026 07:35:44 +0000</pubDate>
+      <itunes:episode>67</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-067-interpretability-and-mechanistic-analysis-3542733.mp3" length="3542733" type="audio/mpeg"/>
+      <itunes:duration>4:55</itunes:duration>
     </item>
     <item>
       <title>Day 66: Reasoning Models and Test-Time Compute</title>
@@ -152,6 +278,15 @@
       <itunes:episode>54</itunes:episode>
       <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-054-data-pipelines-and-dataset-versioning-4228173.mp3" length="4228173" type="audio/mpeg"/>
       <itunes:duration>5:52</itunes:duration>
+    </item>
+    <item>
+      <title>Day 53: Model and System Cards</title>
+      <description>Model and System Cards - AI Foundations day 53, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-053</guid>
+      <pubDate>Sun, 16 Aug 2026 07:35:47 +0000</pubDate>
+      <itunes:episode>53</itunes:episode>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-053-model-and-system-cards-2958957.mp3" length="2958957" type="audio/mpeg"/>
+      <itunes:duration>4:06</itunes:duration>
     </item>
     <item>
       <title>Day 52: Bias, Fairness, and Unequal Errors</title>

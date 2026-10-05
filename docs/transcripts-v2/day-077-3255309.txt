@@ -1,0 +1,27 @@
+Alex: If you don’t build guardrails into your AI today, you’re basically just hoping that tomorrow’s version doesn’t accidentally delete your entire database or email your boss a recipe for disaster. This is AI Foundations, day 77.
+Jordan: Exactly. Today we are talking about safety and security. People often think those are just about stopping a model from saying mean things, but it’s actually about the architecture—the actual design of your system.
+Alex: Right. So, where do we even start? It sounds like we’re protecting a digital bank vault.
+Jordan: It’s not far off. We start with threat modeling. It sounds fancy, but it’s just a structured way of asking: What am I building, who would want to mess with it, and what happens if it breaks? You do this before you write a single line of code.
+Alex: That makes sense. You can’t defend against a threat you haven’t even imagined yet. But what if the threat is just a weird email? That brings us to prompt injection, right?
+Jordan: Spot on. Think of prompt injection as a Trojan horse. Your AI is reading an email or a document, and hidden in that text is a command that says, ignore your instructions and do this instead. If your AI is connected to tools—like the ability to send emails or change passwords—that hidden command becomes a real-world problem.
+Alex: Okay, so if the AI thinks the untrusted text is a command, it might go off the rails. How do we keep that from becoming a catastrophe?
+Jordan: That is where the concept of least privilege comes in. Imagine your AI is a guest in your house. You don’t give them the key to your safe, the garage code, and your bank login just because they’re there to help you summarize a book. You give them access to the bookshelf and that’s it.
+Alex: So if the AI gets hacked or just makes a massive logic error, it physically can’t do damage because it doesn’t have the permissions to touch the sensitive stuff.
+Jordan: Exactly. And even with those limits, you should always have human approval and guardrails. If the system is doing something high-stakes, like sending money or firing off a legal document, make it stop and ask a human to click a button.
+Alex: It’s like a circuit breaker. If the AI goes too far, the human is the one who flips the switch back. But how do we know if it’s working?
+Jordan: You have to log and monitor everything. Logging is just keeping a record of what the system saw and what it decided to do. Monitoring is watching those logs so you can spot spikes in weird behavior. Without logs, you’re just guessing why your system crashed.
+Alex: Let’s put this into a real-world scenario. Say, a clinic’s AI assistant that summarizes patient messages. How do these pieces fit together there?
+Jordan: First, the threat model identifies that someone might try to trick the AI into leaking health data. Second, we apply least privilege—the AI can draft a note, but it can’t actually move patient records or delete files. Third, a human must review and approve any reply before it goes to a patient. Finally, we log every single draft so we can audit the system if something goes wrong.
+Alex: It’s not one big silver bullet, it’s just layering these habits.
+Jordan: Precisely. You don’t just rely on the AI to be smart; you rely on the system to be safe. Ready for the check-in?
+Alex: Hit me.
+Jordan: Question one: What’s the actual difference between safety and security?
+Alex: Safety is about the accidents—the model making a mistake because of bad design or simple bugs. Security is about the bad actors—people actively trying to break in or manipulate the system.
+Jordan: Nailed it. Question two: Why is least privilege such a big deal for agents that use tools?
+Alex: Because if an agent has access to everything, one single prompt injection or logic error could let it do massive damage. By restricting its permissions to only what it absolutely needs, you’re basically building a containment field around the AI.
+Jordan: Perfectly put. Last one: What is prompt injection in plain language?
+Alex: It’s when you feed the AI text that looks like data, but is actually a set of instructions designed to override the system’s original rules. It’s like tricking someone into thinking a note from a stranger is actually a direct order from their boss.
+Jordan: That’s it. For today’s homework, I want you to grab a notebook and draft a safety plan for a simple AI product. Pick one: a study-planning chatbot, a travel itinerary assistant, or a customer-support reply drafter. Write down the potential risks, one prompt injection scenario, what permissions you’d limit, which actions need a human override, and what you’d log.
+Alex: Got it. Keep it simple, but cover the layers.
+Jordan: Exactly. Focus on what could go wrong and how you’d catch it.
+Alex: Sounds like a plan. See you tomorrow for Day 78, where we look at data and learning systems.
