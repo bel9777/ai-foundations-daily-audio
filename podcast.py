@@ -102,6 +102,12 @@ SITE = "https://bel9777.github.io/ai-foundations-daily-audio"
 # UNIQUE filename (the byte size is embedded), so a new episode's URL has
 # never been cached and cannot be served stale.
 CDN = "https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs"
+# 2026-10-05: jsDelivr stopped serving this repo reliably once the audio
+# reached ~650 MB (42 of 102 enclosures 404/503/timeout, old ones too)
+# while Pages served 102/102. Enclosures now come from Pages. Flip back to
+# CDN only after re-checking every enclosure. Pages has a 1 GB site limit:
+# docs/ is ~650 MB and grows ~4.5 MB/day, so prune before ~Jan 2027.
+AUDIO_BASE = SITE
 STATE = REPO / "data" / "two-host-episodes.json"
 AUDIO_DIR = REPO / "docs" / "audio-v2"
 TRANS_DIR = REPO / "docs" / "transcripts-v2"
@@ -457,7 +463,7 @@ def build_feed(eps):
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
       <pubDate>{rfc822(e['publishedAt'])}</pubDate>
       <itunes:episode>{e['day']}</itunes:episode>
-      <enclosure url="{CDN}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
+      <enclosure url="{AUDIO_BASE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
     </item>""")
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -513,7 +519,7 @@ def build_preview_feed(eps):
       <description>Two-host rebuild of AI Foundations day {e['day']}.</description>
       <guid isPermaLink="false">{escape(e['guid'])}</guid>
       <pubDate>{rfc822(e['publishedAt'])}</pubDate>
-      <enclosure url="{CDN}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
+      <enclosure url="{AUDIO_BASE}{e['audioPath']}" length="{e['audioBytes']}" type="audio/mpeg"/>
       <itunes:duration>{mins}:{secs:02d}</itunes:duration>
     </item>""")
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
