@@ -142,7 +142,11 @@ def episode_shape(day, title, lesson):
     """Episode structure by lesson type (v2 weekly rhythm, Brian-approved
     2026-10-05): Mon-Thu lesson, Fri lab, Sat briefing, Sun review. The
     v1 shape (hook, concepts, quiz, homework, tease) is the lesson case."""
-    intro = f'then "This is AI Foundations, day {day}."'
+    # since the 2026-10-06 restart, lesson titles carry "Lesson N:" and the
+    # listener-facing number is the lesson, not the internal day counter
+    m = re.match(r"Lesson (\d+):", title)
+    intro = (f'then "This is AI Foundations, lesson {m.group(1)}."' if m
+             else 'then "This is AI Foundations."')  # lab / briefing / review
     if title.startswith("This Week in AI"):
         return f"""Rules:
 - Open with {HOST} teasing the single biggest story of the week, {intro}
