@@ -1,0 +1,35 @@
+Alex: Having an impressive AI demo running in a private notebook does not mean a thing if it falls apart or drains your bank account the second real customers touch it. This is AI Foundations, day 87.
+Jordan: Today is all about that exact leap: moving from a prototype to a deployed system, and looking at the cold economics of running AI in production.
+Alex: When engineers say deployment, what does that actually mean beyond just publishing a link?
+Jordan: A prototype is an early test build. You use it in a controlled environment to see if an idea even works. Deployment means turning that model into an actual product that handles messy reality: thousands of repeated user requests, network dropouts, privacy rules, and unexpected inputs. The easiest way to visualize this is separating the model from the system.
+Alex: Like the model is just the predictive engine.
+Jordan: Exactly. The model is an engine sitting on a workbench. Deployment is building the entire car around it: the steering wheel, brakes, dashboard, fuel lines, and airbags. A powerful engine by itself is not a vehicle you can safely drive.
+Alex: And every time someone turns the key and drives, it costs fuel. In AI terms, that is inference, right?
+Jordan: That is inference. Training is teaching the model; inference is using the trained model to produce an answer for a user. Every single inference has a cost. There is compute, which is the hardware running the math. There is latency, which is how long the user stares at a loading screen. And there is operational overhead to keep servers alive.
+Alex: There is an obvious tug-of-war there. You could use a giant, brilliant model that gives incredible answers, but it might take eight seconds and cost five cents a pop. If you get fifty thousand queries an hour, you go bankrupt.
+Jordan: Or you pick a tiny, ultra-cheap model that responds in two hundred milliseconds, but it hallucinates half the time and gives terrible advice. Then users leave. Deployment is not just making the software run. It is balancing quality, speed, and cost.
+Alex: Which means you cannot just ship it and assume everything stays fine forever.
+Jordan: Never. That is why monitoring is non-negotiable. Models often look flawless in pre-launch testing and then degrade in the wild. User habits shift, new slang emerges, or your business changes. That is drift: when real-world conditions shift away from what the model was built to handle. If your support bot learned your catalog six months ago, it has no clue about your new products today.
+Alex: That ties right back to our evaluation lesson from day 84. You run benchmarks before launch, but you also need live metrics after launch to catch that drift.
+Jordan: And it ties into day 85 on safety. In a lab, nobody tries to break your tool. In production, people will hit it with prompt injections on day one, trying to trick it into ignoring its system prompt or leaking internal company data.
+Alex: So deployment choices are business choices.
+Jordan: Pure economics. You have limited resources, so you have to weigh revenue, costs, and return on investment. Does this AI create enough tangible value to justify the GPU bill, the engineering hours, and the maintenance?
+Alex: What levers can an engineer pull to manage those costs?
+Jordan: You have several. You do not have to send every query to your biggest model. You can route simple questions to a lightweight model and save the heavyweight model for tough cases. You can also cache answers.
+Alex: Caching meaning you save the output of common questions so you do not rerun the model every time someone asks the exact same thing.
+Jordan: Right. If ten thousand people ask about your holiday return window, the model generates the answer once, you store it, and everyone else gets served instantly for near-zero compute. You can also connect retrieval to pull accurate policy docs instead of retraining the model.
+Alex: Let's walk through that small business help desk example from the lesson. Say an e-commerce shop wants an AI assistant for shipping times, return policies, and account access. How does that whole pipeline flow?
+Jordan: A customer submits a question. Step one: the system checks the cache. If someone asked that exact question five minutes ago, return the cached answer immediately. If not, step two: retrieval pulls the most up-to-date policy documents from the company knowledge base. Step three: the model takes that retrieved context and drafts an answer.
+Alex: And what about safety and review?
+Jordan: Step four: the system logs the entire interaction so engineers can monitor quality and catch drift. Step five: if the customer is furious, the issue is sensitive, or the model has low confidence, the system routes the ticket straight to a human agent.
+Alex: That makes it obvious why deployment is about the system, not just the model. You have to maintain that knowledge base, pay for the database lookups, and staff human backups. Like we saw on day 82, retrieval only works if your underlying data is clean.
+Jordan: Ready to see how well you internalized all this? Quiz time.
+Alex: Let's do it.
+Jordan: First: what is the core difference between a model and a deployed system?
+Alex: The model is just the predictive math engine inside. The deployed system is everything wrapped around it: the interface, data storage, retrieval tools, monitoring pipelines, and safety guardrails that let real users interact with it safely.
+Jordan: Second: what does monitoring help you catch once the system goes live?
+Alex: It catches drift, which is when real-world data and user behavior change so much that the model becomes outdated. It also catches runtime bugs, performance drops, latency spikes, and malicious behavior like prompt injection attacks.
+Jordan: Third: why would you add retrieval to a deployed system, and what is the trade-off?
+Alex: Retrieval feeds the model fresh, accurate facts from a knowledge base so you do not have to retrain it every time a policy changes. The trade-off is extra system complexity. You introduce added latency, higher operational cost, and the risk that your system retrieves the wrong document and feeds bad data to the model.
+Jordan: Clean sweep. Here is your homework: take a piece of paper and pick one simple AI task, like summarizing meeting notes or answering FAQ questions. List the inputs, outputs, and failure modes. Then write down three deployment decisions: one that improves quality, one that cuts cost, and one that improves safety. Note the trade-off for each choice, like getting higher quality at the expense of slower response times. Finally, write three to five sentences deciding whether that system is actually worth deploying for real users.
+Alex: Tomorrow on day 88, we crack open model architecture to see how different model designs are structured without getting lost in technical jargon. See you then.

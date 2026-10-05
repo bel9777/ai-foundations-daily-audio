@@ -1,0 +1,39 @@
+Alex: A model can sound like a genius in a two-minute demo and completely fall apart the second a real customer touches it. This is AI Foundations, day 100.
+Jordan: A big milestone, and a crucial reality check. Today we are digging into evaluation and reliability. In other words, how you prove an AI system actually works before you trust it in the real world.
+Alex: Because sounding fluent is definitely not the same thing as being right.
+Jordan: Not even close. You can have a model that outputs beautiful, articulate prose that happens to be total nonsense. Evaluation is about systematically measuring how well a system performs on the tasks you care about. Reliability is whether it behaves consistently and predictably when real, messy humans start poking at it.
+Alex: And you cannot just point to a benchmark score and call it a day.
+Jordan: Right. A benchmark is just a standardized, fixed test set. It is great for ranking models on a leaderboard, but it does not tell you if a system will survive contact with your specific users and their unpredictable inputs.
+Alex: So how do you turn good into something you can actually measure?
+Jordan: You pick the right metrics. If you have a classifier—a model that categorizes inputs, like sorting emails into spam or not spam—most people instinctively reach for accuracy. That is just the percentage of correct predictions. But accuracy can be dangerously misleading.
+Alex: Because of imbalanced data, right? If ninety-nine out of a hundred emails are not spam, a model that marks every single email as safe gets ninety-nine percent accuracy.
+Jordan: And it caught zero spam. It is completely useless. That is why we look at precision and recall. Precision asks: out of everything the model flagged as spam, how many were actually spam? Recall asks: out of all the actual spam that came in, how many did the system catch?
+Alex: And you also have to factor in operational stuff like latency and cost.
+Jordan: Absolutely. A model that is ninety-nine percent accurate is dead on arrival if it takes twelve seconds to respond or costs two dollars every time somebody asks for the weather.
+Alex: Makes sense. Now, how does reliability differ from raw accuracy?
+Jordan: Reliability is consistency under change. Two big concepts here are robustness and calibration. Robustness means the system does not fall apart when inputs get sloppy. If a user has typos, swaps word order, or uses casual slang, a robust system handles it gracefully.
+Alex: And calibration?
+Jordan: Calibration is about whether the model's confidence matches reality. If an AI claims it is ninety percent confident in an answer, it should be right about nine times out of ten. If it acts completely certain and gets the answer wrong half the time, it is poorly calibrated.
+Alex: That is the classic overconfident hallucination problem.
+Jordan: Exactly. Think of evaluation like test-driving a car. Starting the engine in the driveway on a sunny morning is a demo. Reliability is finding out whether that car handles heavy rain, steep hills, stop-and-go traffic, and sub-zero starts. A shiny car that stalls whenever it drizzles is a bad car, no matter how good it looked in the showroom.
+Alex: When the car does stall, how do you diagnose it? You mentioned error analysis.
+Jordan: Error analysis means rolling up your sleeves and looking at the wrong answers to find patterns. You do not just stare at an eighty-two percent score and shrug. You ask what kinds of mistakes the system made, and under what conditions.
+Alex: Especially with compound systems, which we have been talking about a lot lately.
+Jordan: That is where it gets interesting. If your system combines a language model with retrieval, an external tool, and a multi-step planner, a failure could happen anywhere. Maybe the model's reasoning was fine, but the retrieval step pulled an outdated document. Or maybe the planner chose the wrong tool, or a weather API timed out. If you only look at the final answer, you will blame the model when the real culprit was a bad search query.
+Alex: Walk me through that with a concrete example. Say we build a travel-planning assistant.
+Jordan: Perfect example. Imagine a travel assistant that uses retrieval to check visa rules, a planner to organize itineraries, and an external API for flight weather. In a staged demo, you ask it to plan a trip from New York to London, and it looks magic.
+Alex: But real-world evaluation tells a different story.
+Jordan: Exactly. In evaluation, you might discover it handles major hubs like Heathrow flawlessly, but its accuracy tanks when users ask about regional airports. You might find it answers direct, crisp prompts well, but completely derails when a prompt is vague, like "find me somewhere warm next month."
+Alex: And what about the tools and data?
+Jordan: Maybe its retrieval system pulls visa guidelines from 2021, so it gives confidently wrong immigration advice. Or maybe its average response time looks great, but whenever the weather API lags, the whole assistant freezes for twenty seconds. That is why evaluation cannot be a single number.
+Alex: So the workflow has to be continuous. You define the task, pick metrics like precision and latency, build a test set, inspect the errors, patch the leaks, and keep monitoring.
+Jordan: Exactly. Because data drifts. The world changes, user habits shift, policies get updated. A system that passed your test set six months ago might be failing today.
+Alex: Time to see if I absorbed all that. Quiz me.
+Jordan: Let us do it. Question one: why is accuracy alone often not enough to judge an AI system?
+Alex: Accuracy hides critical failures when data is imbalanced, like our spam example where a model just guesses the majority class every time. Plus, accuracy says nothing about whether the system is too slow, too expensive, or wildly inconsistent.
+Jordan: Spot on. Question two: what is the difference between robustness and calibration?
+Alex: Robustness is about handling messy, noisy inputs without breaking—like typos or weird phrasing. Calibration is about self-awareness: whether the model's confidence actually aligns with its true historical accuracy.
+Jordan: Exactly right. And question three: why do you need edge cases in your test set instead of just common examples?
+Alex: Because common examples only show you the happy path. Edge cases reveal the cracks—unusual inputs, missing data, and tricky phrasing that break the system when real users start experimenting.
+Jordan: Nailed it. Now for your homework. Open a blank document or spreadsheet and build a tiny evaluation test set with ten prompts for any free AI assistant. Include three normal cases, three edge cases, two vague prompts, and two prompts where the model ought to say "I don't know" or ask for clarification. Grade each answer from one to five on correctness, clarity, and reliability under uncertainty, then write down which prompts broke the system and what single change would improve it most.
+Alex: Good way to see those failure modes firsthand. Tomorrow on day 101, we move into Safety and Security—how to protect systems when users actively try to break or exploit them. See you then.

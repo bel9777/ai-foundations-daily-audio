@@ -1,0 +1,37 @@
+Alex: A flashy demo can easily trick you into trusting an AI, but sounding smart is not the same thing as being dependable. This is AI Foundations, day 84.
+Jordan: That is the core trap. People confuse raw capability with reliability. A model can write an astonishing essay on demand, and then quietly hallucinate a fake phone number two minutes later.
+Alex: Which means before we let an AI touch anything important, we need to actually evaluate it. But what does a real evaluation look like beyond just playing with it and nodding along?
+Jordan: It comes down to three specific pieces: a task, a metric, and a test set. The task is the specific job you want it to do, like summarizing meeting transcripts or routing billing emails.
+Alex: That makes sense. What about the metric?
+Jordan: The metric is the scoring rule. It translates performance into a real number, like accuracy, completion rate, or how many critical errors it made. And the test set is the exam itself. It has to be a collection of realistic examples the model has never seen before, so you can see how it handles fresh inputs.
+Alex: Like testing a student with new problems rather than the exact homework questions they already memorized.
+Jordan: Exactly. And once you test it, you are looking for reliability. That means the system behaves consistently enough that people can actually trust it day to day. It does not need to be perfect, but it does need to fail in predictable, limited ways.
+Alex: How do we break down reliability into something measurable?
+Jordan: There are three main levers: consistency, robustness, and calibration. Consistency means similar inputs produce similar outputs. You do not want wild swings just because you rephrased a sentence.
+Alex: And robustness is about handling messy real life.
+Jordan: Right. Typos, missing fields, weird formatting. Does it fall apart, or does it keep chugging? Then calibration is whether the model knows what it actually knows. If an AI claims it is ninety-five percent certain of an answer, it better be right ninety-five percent of the time. If it says it is ninety-five percent sure but is wrong half the time, that confidence is useless.
+Alex: It is like an overconfident person who sounds authoritative while giving you the wrong driving directions.
+Jordan: That is why I love the weather forecast analogy here. We never judge meteorologists on one sunny afternoon. We judge them over hundreds of days. If the forecast says there is an eighty percent chance of rain ten days in a row, it ought to rain on eight of those days. We need that same statistical mindset for AI.
+Alex: So when things inevitably break, how do we fix them? Just give it a higher score or switch to a bigger model?
+Jordan: Neither, at least not at first. You run an error analysis. That means rolling up your sleeves and studying the actual failures to spot patterns. If a support bot nails short questions but fails completely on multi-part inquiries, switching to a bigger model might be a waste of money. The real issue is handling long context.
+Alex: Which ties back to what we covered on Day 82 with retrieval and memory. Maybe the fix is just fetching better context instead of paying for a massive new model.
+Jordan: And look at Day 83 with agents and tools. An agent might fail not because it lacks reasoning, but because it called a database tool with outdated parameters, or scrambled the order of its steps. Error analysis pinpoints where the chain snapped.
+Alex: And that is where guardrails come in.
+Jordan: Exactly. Guardrails are safety and quality boundaries that keep the system on the road. Think of them like painted lane lines. They do not steer the car, but they stop you from drifting into oncoming traffic.
+Alex: Give me some real examples of those lane lines in software.
+Jordan: Rejecting inputs that fall outside the system's job, asking the user to clarify when a prompt is vague, verifying an answer against trusted source documents before displaying it, or instantly routing a confusing issue to a human.
+Alex: Let us ground this in a real example. Say a medical clinic builds an AI assistant to handle patient scheduling over text messages.
+Jordan: That is a high-stakes case. If that assistant writes beautifully but books an appointment with a dermatologist when the patient needed urgent cardiology, that is a catastrophic reliability failure.
+Alex: So to evaluate it properly, we build a test set of real patient messages. Messy ones, short ones, panic-stricken urgent ones, vague ones with typos.
+Jordan: And you measure the right metrics: Did it identify the right specialty? Did it recognize an emergency? Did it ask for clarification instead of guessing?
+Alex: And if it fails, error analysis reveals whether the system prompt was unclear, or if its tool call to the clinic calendar failed. Plus, like we discussed on Day 79 with deployment, you need fallbacks in the interface so patients can always tap a button to reach a human nurse.
+Jordan: That hits the three golden questions you should ask about every AI deployment: What exactly is the task? How are we measuring success? And what happens when the system is uncertain or wrong?
+Alex: If you can answer those three, you are building something real.
+Jordan: Time to see if you were paying attention. Question one: What is the difference between evaluation and reliability?
+Alex: Evaluation is the exam—it is the structured measurement of how well the system performs a specific task. Reliability is the track record—whether it stays dependable, consistent, and safe over repeated use in the real world.
+Jordan: Exactly. Reliability is trust built over time. Question two: Why is calibration useful?
+Alex: Because a model that is honest about its uncertainty is actually useful. If its confidence score matches reality, we know when we can trust it on autopilot and when a human needs to double-check its work.
+Jordan: Right. It lets us calibrate our own trust. Question three: In that clinic scheduling assistant example, what would error analysis help you discover?
+Alex: It tells you why appointments are going wrong. You would see if it fails specifically on urgent messages, or chokes on long rambling texts, or if it is trying to book slots without checking the doctor's calendar tool first.
+Jordan: It surfaces the exact failure mode. Now for your homework. Open any free text editor and an AI chat tool. Write ten realistic prompts for a task you care about, like drafting client updates or summarizing notes. Define one plain-language metric for each, like whether it answered all parts of the prompt. Score each result from one to three: one is poor, two is usable, three is strong. Look for patterns in the low scores to see if the issue is a vague prompt, missing context, or an unrealistic task. Tweak your prompt or add a simple guardrail, and test them again.
+Alex: Tomorrow, on Day 85, we build on this with safety and security to protect systems from misuse and think clearly about risk.

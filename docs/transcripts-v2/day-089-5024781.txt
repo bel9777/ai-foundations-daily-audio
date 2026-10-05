@@ -1,0 +1,49 @@
+Alex: An AI that just blurts out an answer might sound confident, but if it cannot think things through or map out the steps, it is going to fall apart on real-world tasks. This is AI Foundations, day 89.
+Jordan: Today is about reasoning and planning, turning a goal into something reliable and realistic instead of just hoping for the best.
+Alex: We hear the word reasoning constantly with these newer models. What does it actually mean under the hood?
+Jordan: At its core, reasoning means using the facts you have to reach a conclusion. Instead of jumping straight to a final guess, the system generates intermediate steps that bridge the gap.
+Alex: Like showing your work in math class.
+Jordan: Exactly. Take a basic scheduling problem. You tell an AI you have three 45-minute meetings and two hours free, and ask if they all fit. The model cannot just match text patterns. It has to pull out the numbers, multiply three by 45 to get 135 minutes, convert two hours into 120 minutes, and compare them.
+Alex: It has to deduce something new from the premises. But here is the catch: just because a model lays out a whole chain of thought does not guarantee the answer is right.
+Jordan: A model can produce a completely convincing chain of thought and still make an arithmetic blunder or hallucinate a fact. Reasoning is the process, not a guarantee of correctness. That is why evaluation still matters.
+Alex: So that is reasoning. Where does planning come in?
+Jordan: Planning takes reasoning and points it toward action. It is about organizing a sequence of steps to reach a goal. What happens first, second, and third?
+Alex: How do we break down a plan into working parts?
+Jordan: A solid planning process usually has four pieces: the goal, subgoals, actions, and constraints.
+Alex: Walk me through those.
+Jordan: The goal is the final outcome, like booking a trip or writing a report. Subgoals are the smaller targets along the way, like collecting travel dates or researching sources. Actions are the concrete moves you make, like searching flight databases. And constraints are the boundaries.
+Alex: Rules that narrow down what is allowed, like a strict budget, a deadline, or safety limits.
+Jordan: Right. Constraints are critical because real-world tasks are never about finding just any answer. You need an answer that fits the specific situation.
+Alex: What if the model hits a fork in the road? Does it just grab the first option it sees?
+Jordan: Not if it uses search. Search means exploring multiple candidate options before picking one. Think of a maze. Reasoning helps you understand the maze walls, while search lets you test different paths to see which one reaches the exit.
+Alex: Like generating two different outlines for an essay before committing to one.
+Jordan: Exactly. The first idea is not always the best one. But searching costs time and compute, so an AI has to balance exploring alternatives with actually responding quickly.
+Alex: And before it carries out the plan, it has to verify it.
+Jordan: That is verification. It asks, does this actually work? You test the plan against the constraints. Does the arithmetic add up? Does any step depend on missing information? Does it violate safety rules or privacy limits?
+Alex: Like we talked about back on day 85. If a plan requires leaking private user data or triggering an unsafe command, the system needs to catch that and refuse or redirect.
+Jordan: Exactly. A good planner does not chase the goal blindly.
+Alex: You have an analogy for all of this that clicked for me: packing for a trip.
+Jordan: Think about getting ready to travel. Reasoning is inferring what you need based on the weather forecast, the destination, and how many days you will be away.
+Alex: Planning is figuring out the sequence: pull the clothes out, check your documents, pack the chargers, zip the suitcase.
+Jordan: Search is trying different arrangements inside the bag to see what fits best. And verification is checking your list before heading out the door so you do not realize at the airport that you left your passport behind.
+Alex: If a traveler rushes, they forget the passport. If an AI rushes, it drops a critical constraint.
+Jordan: That is why slowing down to plan pays off. Look at a student studying for an exam. They tell an AI they have five days to study for biology, they know cell biology well, but their genetics knowledge is weak.
+Alex: The goal is exam readiness, and the constraint is five days.
+Jordan: Exactly. The AI splits that into subgoals: review genetics, practice active recall, and take a mock quiz. Then it orders them: day one is basic review, days two and three are dedicated genetics practice, day four is mixed review, and day five is a self-test.
+Alex: And verification checks if genetics actually got prioritized and whether the schedule is realistic for five days.
+Jordan: Right. It delivers an actionable roadmap instead of generic study tips.
+Alex: This ties together so many threads we have covered. On day 83, we looked at agents using tools. An agent needs a plan before it knows which tool to call first.
+Jordan: Day 84 was evaluation and reliability, reminding us that plans must be checked, not trusted blindly. Day 85 gave us safety boundaries. And day 87 was deployment economics.
+Alex: Running deep search trees and lengthy reasoning chains can produce amazing plans, but it costs real money and takes time.
+Jordan: If a simple user request takes two minutes and costs fifty cents to plan, users will leave. Practical systems balance depth with speed and cost.
+Alex: Time for the quiz. Hit me.
+Jordan: Question one: What is the difference between reasoning and planning?
+Alex: Reasoning is using information and facts to figure out intermediate conclusions. Planning is organizing concrete actions into an ordered sequence to hit a specific goal.
+Jordan: Exactly. Reasoning figures out what follows; planning organizes what to do. Question two: Why is verification important before acting on a plan?
+Alex: Because a plan can sound totally convincing while harboring hidden bugs. Verification checks the math, catches missing information, and ensures you do not break safety limits or real-world constraints before taking action.
+Jordan: Spot on. It prevents avoidable failure. Last one: Name one constraint that could change how an AI should plan.
+Alex: Budget. Planning a vacation with five hundred dollars looks entirely different from planning one with five thousand dollars. The allowed actions completely change.
+Jordan: Perfect. Time, safety limits, and available tools work the same way.
+Alex: What is the homework for tonight?
+Jordan: Grab a notebook or text file. Pick one small goal for this week, write it in one sentence, list three constraints, and break it into three to five subgoals. Put those subgoals in an ordered plan, identify one failure point where the plan could fall apart, and rewrite the plan to fix it. Notice how hunting for that failure point forces you to adjust your steps before you waste any effort.
+Alex: Tomorrow on day 90, we dive into retrieval and memory, exploring how systems pull in outside knowledge to keep their plans grounded over time. See you then.

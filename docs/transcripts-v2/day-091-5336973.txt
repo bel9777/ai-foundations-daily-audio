@@ -1,0 +1,41 @@
+Alex: We are finally crossing the line from models that just spit out text to systems that can actually get things done in the real world. This is AI Foundations, day 91.
+Jordan: It is a massive shift. Up until now, we have mostly talked about models as answering machines. You prompt them, they write back. Today we move into agents, where the model becomes an active participant in a workflow.
+Alex: So what officially turns a standard language model into an agent?
+Jordan: In simple terms, an agent is an AI system that can choose actions to achieve a goal. Instead of generating one response and stopping, it runs through a cycle: observe, decide, and act.
+Alex: Break that cycle down for me.
+Jordan: Observe means looking at where things stand. That might be reading your prompt, looking at a file, or inspecting the output from a program it just ran. Decide means picking the next logical move. And act means actually executing that move, like running a search, querying a database, calculating a number, or drafting a reply. Then it looks at the new result and repeats the loop.
+Alex: And that is where tools come in, right? Because a language model by itself can only predict words.
+Jordan: Exactly. Tool use means letting the model call an external program to handle tasks it cannot reliably do on its own.
+Alex: Like math.
+Jordan: Exactly. A language model might be great at explaining calculus, but if you need exact multiplication with twelve-digit numbers, you give it a calculator. If you need current inventory figures, you give it a database connection. If you need it to pull facts from a massive manual, you hand it a document reader. We are not giving the AI magical superpowers. It is just handing a worker the right equipment for the job.
+Alex: On Day 89, we talked about planning. How does planning fit into this acting and tool loop?
+Jordan: They feed each other. An agent does not just jump around randomly. It sets a rough plan, takes the first step, checks the output, and updates the plan. In engineering terms, we often break that into three roles: the planner, the executor, and the controller.
+Alex: What does each one do?
+Jordan: The planner maps out the steps toward the goal. The executor carries out those steps, usually by calling tools. And the controller monitors progress, watches for errors, and decides when the job is actually finished so the loop can stop.
+Alex: Can a single model do all three?
+Jordan: In smaller setups, yes, one model can wear all three hats. But in bigger, more complex systems, engineers often separate them into dedicated models or rule-based code to keep things reliable.
+Alex: That connects back to what we covered yesterday with retrieval and memory. Those seem essential for the controller and planner.
+Jordan: They are. Retrieval and memory keep the agent grounded. If an agent is handling customer support, retrieval lets it pull the active company refund policy before taking action. And memory lets it keep track of what you asked for five minutes ago. But remember our rule from Day 86: data quality is everything. If the retrieved document is outdated or inaccurate, the agent is going to make bad decisions based on bad facts.
+Alex: It sounds a lot like managing an actual person in an office.
+Jordan: That is the best analogy for it. Think of an executive assistant sitting at a desk with a toolbox. They do not have every fact memorized. What makes them effective is knowing when to check the calendar, when to open a spreadsheet, when to run a calculation, and when to pause and ask you for clarification.
+Alex: Walk me through a concrete example of this in action.
+Jordan: Say you tell an agent: help me prepare for tomorrow's meeting by summarizing our last three project updates and pulling out the open action items.
+Alex: A standard chatbot might try to make up generic action items from its training data.
+Jordan: Right. But an agent coordinates a process. First, it calls a retrieval tool to fetch the last three project update files from your company drive. Second, it reads each update and extracts the action items. Third, it checks the lists against each other to remove duplicates and catch conflicting deadlines. Fourth, it drafts a concise summary. And fifth, if two updates disagree on a launch date, it stops and asks you to clarify before finalizing the brief.
+Alex: It coordinated a whole series of steps, used tools to get real data, and stopped before guessing.
+Jordan: Exactly. But giving models the ability to act also introduces new failure modes that chat interfaces do not have.
+Alex: What tends to break?
+Jordan: Four common traps. First is tool misuse, which means picking the wrong tool or feeding it bad inputs. Second is runaway loops, where the agent gets confused and repeats the same action over and over without making progress. Third is false confidence, where it makes an incorrect assumption, does not verify it, and runs with it anyway. And fourth is security risk.
+Alex: Right, connecting back to Day 85 on safety.
+Jordan: Exactly. If an agent can run code, edit files, or send emails, a mistake is not just an annoying typo on your screen. It can delete a production database or email the wrong client.
+Alex: Which means we need guardrails. What does good agent design look like?
+Jordan: Three practical principles. One: keep the goal narrow. Specific, well-defined tasks are much easier to keep on track. Two: expose only the tools the agent strictly needs. If it only needs to read files, do not give it permission to edit or delete them. Three: check outputs before irreversible actions. Always put a human approval step in front of anything permanent, like sending an email or executing a transaction.
+Alex: Keep it limited and keep humans in the loop. All right, quiz me.
+Jordan: Question one: What is the core difference between an agent and a standard text model response?
+Alex: A standard text response generates words once in reply to a prompt and stops. An agent works toward an end goal by cycling through observing, deciding, and acting over multiple steps.
+Jordan: Nailed it. Question two: Why does tool use improve reliability on certain tasks?
+Alex: Because language models are probabilistic and struggle with exact tasks like arithmetic, live searches, or querying structured records. Tools let the system delegate those jobs to specialized software like calculators and databases instead of guessing tokens.
+Jordan: Exactly. It uses the best tool for the specific job. Third question: What is one safety rule you should apply to an agent that takes actions?
+Alex: Limit its permissions to only what it strictly needs, and require a human to confirm any irreversible action before it runs.
+Jordan: Spot on. For today's exercise, you are going to design a tiny agent workflow on paper. Pick one simple daily task, like building a grocery list or preparing a travel checklist. Write the goal in one sentence, list three tools the agent would need, write out one cycle of observe, decide, act, and check, and clearly mark one spot where a human must review the output before anything happens. Notice where the agent could get stuck if a tool returns messy data.
+Alex: Tomorrow, we look at how to tell if an AI system is actually doing well or just sounding confident, with Day 92: Evaluation and Reliability. See you then.

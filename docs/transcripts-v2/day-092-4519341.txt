@@ -1,0 +1,39 @@
+Alex: A demo that blows you away in five minutes can completely fall apart the second a real user touches it. This is AI Foundations, day 92.
+Jordan: That gap between looking smart in a demo and actually working day in, day out is huge. Today is all about bridging it with two concepts: evaluation and reliability.
+Alex: People mix those two up constantly. How do you separate them?
+Jordan: Think of evaluation as the measurement, and reliability as the consistency. Evaluation is the process of testing a system against a set of tasks to see if it produces the right result, in the right format, with the right confidence.
+Alex: Right, not just asking whether it sounded impressive. Because models can sound totally confident while making things up from scratch.
+Jordan: Exactly. To evaluate properly, you build a test set, which is a batch of representative examples you hold back just for scoring. Back on day 86, we talked about how data shapes learning. Well, data shapes evaluation too. If your test set is weak or off-target, a bad system can look brilliant.
+Alex: Like testing a customer support bot with random trivia questions. It might ace the trivia, but it will completely fall apart when a real customer wants a refund.
+Jordan: Exactly. That brings us to reliability. Reliability is whether the system keeps working well when conditions change a little. A reliable model does not have to be flawless, but it has to be stable enough that people can trust it in daily use.
+Alex: And there are a few classic ways that stability shatters, right?
+Jordan: Three big ones. First, edge cases. Those are rare or unusual inputs the system simply handles badly.
+Alex: Like a user entering a negative number for their age, or asking for something just outside normal phrasing.
+Jordan: Right. Second is distribution shift. That happens when real-world data drifts away from the data used to build and test the model. User habits change, topics shift, and suddenly the model is lost.
+Alex: And the third one is prompt sensitivity, which we saw back on day 89 with planning and reasoning. You change a single word in the instructions, or swap two lines, and the output completely changes.
+Jordan: Exactly. If a system only succeeds when you phrase things in one exact, fragile way, it is not reliable.
+Alex: So how do we actually put a number on this?
+Jordan: We use metrics. The three classic ones are accuracy, precision, and recall. You do not need formulas right now, just the intuition. Accuracy is basic overall correctness. Out of all the answers, how many were right?
+Alex: And precision versus recall? That always trips people up.
+Jordan: Think of precision as punishing false alarms. Out of all the answers the system gave, how many were actually right? Recall punishes missed items. Out of all the truly correct things out there, how many did the system catch?
+Alex: You had an analogy for this with smoke alarms.
+Jordan: You do not just want a smoke alarm to be loud. You want it to go off when there is danger, and stay quiet when there is not. If it screams every time you toast bread, that is bad precision. If it stays silent during an actual kitchen fire, that is bad recall.
+Alex: And if it only sounds good in a demo, it might just be a loud buzzer with no sensor. But numbers do not catch every problem. When do humans have to get involved?
+Jordan: For anything nuanced. That is where human review comes in. A person inspects the outputs to see if they are genuinely useful, safe, and context-aware. But the real payoff comes from failure analysis. When a system fails, you do not just shrug. You look across the mistakes to find the pattern.
+Alex: To figure out which part of the pipeline broke.
+Jordan: Exactly. Thinking back to days 90 and 91, did the retrieval step fetch the wrong passage? Did an agent call the wrong tool? Or was the model just tripped up by confusing instructions? If you know what part failed, you can fix the real cause instead of guessing.
+Alex: Give me a concrete example of this in the wild.
+Jordan: Imagine you build a travel assistant that suggests weekend trips. In a demo, it looks amazing. Poetic descriptions, great packing tips. But when you evaluate it systematically across the calendar, you notice a pattern: it keeps sending people to outdoor water parks and seaside cafes in the dead of winter.
+Alex: It ignored seasonality completely.
+Jordan: Right. The text was fluent, but the system was not dependable. To fix that evaluation, you need examples covering all seasons, budgets, and regions. And if the system uses retrieval, you have to test whether it actually checks live opening hours instead of relying on memory. A system is only as reliable as the cases you test.
+Alex: If you never test for winter travel, you never catch the bug.
+Jordan: Never. Ready for a quick quiz?
+Alex: Let's do it.
+Jordan: First: what is the difference between evaluation and reliability?
+Alex: Evaluation is the process of measuring how well your system performs on specific tasks. Reliability is whether it stays consistent and keeps performing well across different inputs, edge cases, and changing situations.
+Jordan: Right. Second: why can a test set give a misleading picture of performance?
+Alex: Because if the test set is too narrow, too easy, or does not reflect the real work you care about, a weak model can look strong. It only proves it can pass that specific pile of questions.
+Jordan: Exactly. And third: how does failure analysis help improve a system?
+Alex: It reveals the actual pattern behind the mistakes. You can see if the failure came from bad retrieval, tool misuse, missing context, or prompt sensitivity, so you fix the real bottleneck instead of guessing.
+Jordan: Exactly. That brings us to today's homework. Grab a blank note or a sheet of paper. Pick a simple task you care about, like drafting an email or summarizing meeting notes. Write out a test set of five realistic inputs, and for each one, write down what a good answer must contain. Run all five through an AI tool you use, and score each output from zero to two: two for clearly good, one for partially correct, and zero for wrong or unhelpful. Then notice which example was the hardest and what pattern the failures share.
+Alex: Testing your own tools changes how you see them fast. Tomorrow, we move from whether an AI works to how it can be misused, with safety and security. See you then.

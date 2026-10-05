@@ -1,0 +1,39 @@
+Alex: If an AI can't look things up or remember what you said two minutes ago, it's basically just guessing from memory. This is AI Foundations, day 82.
+Jordan: Relying purely on that built-in memory is where models get into trouble. Large language models generate fluent answers, but they don't automatically know your private documents, the latest news, or the history of a long project.
+Alex: People get surprised when an AI sounds completely confident while citing an outdated company policy.
+Jordan: That's why we need retrieval and memory. Think of a model like a talented student. The built-in knowledge from training is what the student learned in class. Retrieval is handing that student a notebook to consult before answering.
+Alex: So instead of guessing off the top of their head, they can flip right to the relevant page.
+Jordan: Exactly. Retrieval finds relevant information from an external source and pulls it into the context. Memory means storing useful information so the model can use it later.
+Alex: Context is one of those words we use constantly. Let's make sure we define it cleanly.
+Jordan: Context is simply the text the model can see at the exact moment it generates an answer. If the right facts are in context, the model can use them directly.
+Alex: But finding those facts across thousands of documents isn't as simple as matching keywords.
+Jordan: Keyword search breaks down quickly. That's why we use embeddings and vector search. An embedding turns text into a list of numbers—coordinates that capture meaning in a compact form.
+Alex: So ideas with similar meanings end up near each other in coordinate space.
+Jordan: A vector is just that list of numbers, and vector search finds the documents whose embeddings are closest to your question. If you search for "how to reset my account password," vector search can pull up a guide called "password recovery steps," even without identical words.
+Alex: Because the underlying concept matches.
+Jordan: Right. That mechanism powers the standard retrieval pipeline, usually called RAG, or retrieval-augmented generation. The basic philosophy is search first, then write.
+Alex: What are the steps in that pipeline?
+Jordan: Four core steps. First is indexing, which prepares documents into an organized structure so lookup is fast. Second is querying, where the user's question becomes a search request.
+Alex: Then comes ranking?
+Jordan: Yes. Ranking sorts the candidate documents so the best matches sit at the top. The final step is grounding, where the model writes its answer using that retrieved material instead of guessing.
+Alex: Grounding is basically forcing the model to show its work using actual evidence.
+Jordan: Precisely. Now, memory is the other side of this. In AI systems, it comes in two flavors: short-term and long-term.
+Alex: Short-term being what happened inside the current session?
+Jordan: Yes, like the last few turns of a chat. Long-term memory persists across sessions, remembering user preferences or past tasks. But memory needs strict rules. You can't just store everything by default.
+Alex: Because of privacy, for starters.
+Jordan: Storing sensitive data carelessly creates massive security risks. Plus, from a reliability standpoint, you need systems that forget outdated facts and never mix up different users or tasks. Good retrieval is about finding the right data, not just hoarding more data.
+Alex: How does this play out in a real application, like customer support?
+Jordan: Picture a support assistant for a software product. A user asks, "How do I export my invoices?" The system doesn't rely on training data from two years ago. It retrieves the latest help article on invoice export, drops it into context, and generates step-by-step instructions.
+Alex: And memory can personalize it without retraining the model.
+Jordan: Right. Long-term memory might note that this user prefers brief answers or uses a European billing format. Think of retrieval as the librarian finding the right book, while memory is the library's card catalog keeping track of past lookups and preferences.
+Alex: That connects back to what we covered on reasoning and planning. Gathering evidence is step one, then reasoning over it is step two.
+Jordan: And economically, fetching external data is vastly cheaper than constantly retraining model weights. But retrieval isn't free. Searching adds latency, and retrieving the wrong documents can confuse the model with irrelevant noise.
+Alex: The retrieval has to actually help, not just look busy.
+Jordan: Exactly. Let's do our knowledge check. Question one: What is the difference between retrieval and memory?
+Alex: Retrieval finds relevant information from an external source right when you need it. Memory stores information over time, either across conversation turns or across separate sessions, so it can be reused later.
+Jordan: Right on. Question two: Why can retrieval make an AI answer more reliable?
+Alex: Because the model gets to use specific, up-to-date evidence instead of leaning entirely on its built-in training knowledge, which might be incomplete or flat-out wrong.
+Jordan: Spot on. Question three: What does grounding mean in an AI system?
+Alex: Grounding means tying the model's answer directly to retrieved evidence, so the output is anchored in verified facts rather than guesswork.
+Jordan: Perfect. Here is your hands-on exercise. Open a text editor and pick a question you know the answer to, like "What should I pack for a two-day winter trip?" Write a mini knowledge base of six to ten one-sentence notes, mixing relevant items like heavy coats with irrelevant ones like beach towels. Draft an answer using only the relevant notes. Then add one misleading note, like packing flip-flops for snow, and notice how quickly poor retrieval corrupts your final output.
+Alex: Tomorrow on day 83, we look at agents and tool use, exploring how systems decide when to take action and coordinate multi-step work.

@@ -1,0 +1,47 @@
+Alex: Giving an AI the ability to actually take actions in the real world instead of just talking about them changes everything about how we build software. This is AI Foundations, day 99.
+Jordan: Today is all about agents and tools. Until now, we have mostly talked about models as text generators. You ask something, it answers.
+Alex: Right, like standard ChatGPT. It sits in a chat box, writes back, and waits for your next prompt.
+Jordan: Exactly. That is a basic chatbot. An agent takes that core language model and gives it agency. An agent is a system that observes a situation, decides what to do next, and acts toward a specific goal.
+Alex: So instead of just replying, it actually does things.
+Jordan: It operates in a loop. Think of four parts: input, policy, action, and feedback.
+Alex: Break those down for me.
+Jordan: Input is what the agent sees, like your prompt or new data. Policy is the decision-making engine, usually the language model, picking the next move based on a set of rules. Action is what the system executes, like running a calculation or pinging an API. And feedback is the result of that action, which feeds right back into the input so the agent can evaluate what happened and decide the next step.
+Alex: So it is not a straight one-shot response. It acts, sees what happened, adjusts, and acts again.
+Jordan: Exactly. It loops until the job is done. But to do anything useful outside pure text, the agent needs hands. That brings us to tool use.
+Alex: What counts as a tool here?
+Jordan: Any external function or service the model can call. That could be a simple calculator, a web search engine, a database query, a calendar API, or a code execution sandbox.
+Alex: Why not just let the model do everything itself? Models know a ton of math and facts already.
+Jordan: They do, but models are pattern matchers, not calculation engines or live sensors. We use tools for three main reasons: accuracy, freshness, and action.
+Alex: Accuracy makes sense right away. If I need large numbers multiplied, do not guess token probabilities; hand it to a calculator.
+Jordan: Exactly. For freshness, the model’s training data cuts off at a certain date. A search tool or database lookup lets it fetch live, current information. And for action, a model cannot change a meeting time or send an email on its own. It needs a tool to interact with the world outside its prompt.
+Alex: I like the office manager analogy here. The model is like a smart office manager. It coordinates, plans, and decides, but it delegates the actual filing to the filing cabinet, the math to a spreadsheet, and the phone calls to the front desk.
+Jordan: Spot on. The manager does not do every mechanical task personally. Now, how does that manager actually operate? That is the agent loop.
+Alex: How many steps are we talking about?
+Jordan: A standard loop has six stages. First, read the goal to understand what the user wants. Second, plan. That connects back to our reasoning lesson, breaking the goal into ordered steps. Third, choose a tool or an action. Fourth, observe the result from that tool. Fifth, update memory, which connects to retrieval and storing facts for later. And sixth, decide whether to repeat the loop with a new step or finish up.
+Alex: And the critical part is that tool use is not magic. The model has to actively interpret the tool output. If the tool throws an error or gives unexpected data, the model has to catch that and adapt.
+Jordan: Exactly. Now, once a system has the power to run code, modify databases, or send messages, the stakes get much higher. That is where guardrails come in.
+Alex: Because a runaway loop could delete data or spam people.
+Jordan: Or run up a massive bill. Every tool call eats compute, network bandwidth, and often API fees. That ties directly into our deployment and economics lesson. Good design is not about piling on as many tools as possible. It is about using the right tools carefully.
+Alex: So what does a safe guardrail look like?
+Jordan: Four common ones: permission limits, confirmation steps, logging, and rate limits. Permission limits restrict the agent to only approved tools, so you are not giving it unrestricted access to your files. Confirmation steps require a human in the loop before irreversible actions happen, like sending an email or spending money. Logging tracks every single tool call so you can audit what happened. And rate limits stop it from making hundreds of calls a second if it gets stuck in an infinite loop.
+Alex: Let us walk through how this works in practice. What is a clean, real-world example?
+Jordan: Imagine an office assistant agent. The user says: Find the latest project notes, summarize the key risks, and schedule a thirty-minute review tomorrow afternoon.
+Alex: Okay, walk me through the loop.
+Jordan: First, the agent plans out the subtasks. Step one, it calls a retrieval tool to grab the latest project notes from a shared folder. Step two, it reads those notes and generates a risk summary. Step three, it calls the calendar tool to find an open thirty-minute slot tomorrow afternoon. Step four, it drafts the calendar invite.
+Alex: But it should not send it immediately, right?
+Jordan: Exactly. Step five triggers a guardrail: the confirmation step. It presents the summary and the proposed time to the user and says, I found an open slot at two PM. Should I send this invite to the team?
+Alex: Because scheduling touches other people's calendars and work days. You do not want an AI sending out five invites because it hallucinated a conflict.
+Jordan: Precisely. Let us see how well this clicked. Quiz time.
+Alex: Lay it on me.
+Jordan: Question one: What is the core difference between a plain chatbot and an AI agent?
+Alex: A plain chatbot just takes an input and writes a text reply. An agent can observe its environment, make decisions, and take actions using tools in a loop until it reaches a goal.
+Jordan: Right on. Question two: Why is tool use helpful for freshness and accuracy?
+Alex: For freshness, tools like search or database lookups let the AI pull current, live information rather than relying on older training data. For accuracy, tools like calculators or database queries handle exact computations that language models are prone to messing up.
+Jordan: Exactly right. Last one: Name two guardrails you should put on an agent that can take actions.
+Alex: You could use permission limits to restrict which tools it can access, and confirmation steps so a human has to approve high-stakes actions like sending messages or moving money.
+Jordan: Perfect. You could also include rate limits to keep costs in check and logging so you have an audit trail. Now, for today's homework.
+Alex: What are we building?
+Jordan: Take a piece of paper or open a blank text document. Pick a simple goal, like planning a grocery list or studying for an exam. List three specific tools your agent could use. Then, write out the agent loop in five steps: input, plan, tool call, observe, and finish. Add two guardrails to protect against mistakes. Finally, simulate one run by hand: write the user prompt, pick a tool, write a mock tool output, and decide what the agent does next. As you do it, pay close attention to whether the agent actually needed the tool or if it could have answered directly from its own knowledge.
+Alex: That is a great gut check for whether an agent architecture is actually worth the overhead.
+Jordan: Exactly.
+Alex: Tomorrow, we hit day 100 with Evaluation and Reliability, looking at how to test whether these systems actually work when the pressure is on. Catch you then.

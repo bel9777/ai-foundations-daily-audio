@@ -1,0 +1,43 @@
+Alex: An AI can sound like an absolute genius when it explains an idea, but completely fall apart the second you ask it to execute a project step by step. This is AI Foundations, day 81.
+Jordan: That gap is everywhere in practical AI right now. People often mix up reasoning and planning, but they are two distinct gears in the machine.
+Alex: Break them down for us. What is the fundamental line between the two?
+Jordan: Reasoning is about drawing conclusions from information, rules, or patterns. It answers the question, what is true or likely here? Planning is about choosing an ordered sequence of actions to reach a goal. It answers the question, what should I do first, next, and last?
+Alex: So a model could be great at analyzing a situation, but terrible at mapping out how to solve it.
+Jordan: Exactly. Or the reverse: it can give you a tidy, professional-looking list of ten steps, but step four rests on completely broken logic.
+Alex: Let's stick with reasoning for a second. When an AI reasons, how does it actually connect the dots?
+Jordan: There are three classic forms you will run into. The first is deduction. If all invoices over a thousand dollars need manager approval, and this invoice is twelve hundred, deduction says it must be approved. If the premises are true, the conclusion is guaranteed.
+Alex: Clear enough. What is the second?
+Jordan: Induction. That is spotting patterns across examples and inferring a general rule. Say a company notices that eighty percent of refund requests happen right after shipping delays. Induction suggests shipping delays drive refunds. It is likely, but not strictly guaranteed like deduction.
+Alex: And the third?
+Jordan: Abduction. That is guessing the most plausible explanation for what you are seeing. If your cloud application suddenly grinds to a halt and database error alerts start spiking, abduction leads you to guess the database service crashed.
+Alex: It sounds like being a detective.
+Jordan: That is the best way to picture it. The evidence is sitting on the desk, but the conclusion is not written out for you. You have to trace the clues, test if they actually support your hypothesis, and discard the red herrings.
+Alex: Okay, so that is figuring out what is happening. How does that turn into planning?
+Jordan: Planning takes a goal state—the world you want to create—and works backward to where you are right now. The bridge between the two is a set of intermediate steps, built under specific constraints like time, budget, or tool limits.
+Alex: And we usually break the big goal into chunks so it does not overwhelm the system, right?
+Jordan: Yes, that is called decomposition. If your goal is launching an internal support bot, you do not just tell the system to go launch it. You decompose it: define safe answer boundaries, build test questions, hook up the knowledge base, run evaluations, and then roll out.
+Alex: How do reasoning and planning feed into each other in a live workflow?
+Jordan: Take a scheduling assistant. If it has to book a call between someone in New York and someone in Tokyo, reasoning tells the model that nine in the morning for one person is eleven at night for the other. Planning takes that conclusion and actually proposes three specific slots that fall during mutual waking hours. If the assistant only reasons, it says, these time zones are tricky! But it never books the meeting.
+Alex: And if it only plans without reasoning, it just slaps a nine a.m. calendar invite on the Tokyo person's calendar without noticing they are asleep.
+Jordan: That happens all the time. Fluent models can make a plan look slick while completely ignoring physical reality or safety rules. That is why our earlier days on evaluation and safety matter here. A plan is only good if it works in practice, not if it merely reads well.
+Alex: You also hear the word search in planning. Where does that fit?
+Jordan: Search is exploring different possible branches of actions before picking one. You cannot always walk straight from step A to step B. Sometimes you test three different paths in simulation, prune the ones that run into dead ends or violate constraints, and pick the path with the highest probability of success.
+Alex: Walk us through a real-world scenario where both sides have to fire on all cylinders.
+Jordan: Think about a neighborhood bakery gearing up for a Saturday morning rush. The goal is simple: maximize fresh croissant sales without having fifty leftover stale ones at closing.
+Alex: Where does the AI start?
+Jordan: It reasons first. It pulls past sales history, checks the rainy weather forecast, and notes that it is a holiday weekend. Deduction and induction tell it that foot traffic will probably peak later in the morning than usual, but overall demand will stay high.
+Alex: Then it switches to planning.
+Jordan: Right. It plans the production timeline: bake forty croissants at five in the morning, prep the second batch for nine-thirty, and hold back raw dough in the chiller as a buffer. Then, after Saturday ends, it evaluates the plan against the actual register receipts so it can adjust next week. If it only reasoned about demand, the bakers would have no schedule. If it planned without reasoning, it would just repeat last week's schedule and overbake in the rain.
+Alex: That makes the division super clear. You also have a five-step checklist we can use when designing these prompts and workflows, right?
+Jordan: Yes. One: state the exact goal. Two: list all constraints—budget, tools, time, safety rules. Three: break the task down through decomposition. Four: check your assumptions. What must hold true for this to work? Five: evaluate the result against the original goal.
+Alex: Time to see if I was paying attention. Hit me with the knowledge check.
+Jordan: Question one: What is the core difference between reasoning and planning?
+Alex: Reasoning is working out what is true or probable from facts and rules. Planning is mapping out an ordered sequence of moves to hit a specific goal.
+Jordan: Spot on. Question two: What does decomposition mean in AI problem solving?
+Alex: It means taking a massive, complicated task and splitting it up into smaller, manageable subproblems or intermediate steps.
+Jordan: Perfect. Third question: Why is evaluation so critical for planning systems?
+Alex: Because a language model can write a plan that sounds completely convincing and polished on the page, but falls apart instantly in the real world. Evaluation proves whether the plan actually works and catches the steps where the logic broke down.
+Jordan: Exactly right. Ready for today's homework?
+Alex: Lay it out.
+Jordan: Plan a one-day weekend trip for yourself or a fictional traveler using a fifty-dollar budget, between eight a.m. and six p.m., using only walking or public transit. Write down your one-sentence goal, at least three constraints, three candidate activities, a timed itinerary, and one rainy-day backup plan. While you do it, pay attention to which moments forced you to reason about facts versus when you were planning steps, and spot one assumption that could break the whole day.
+Alex: No expensive software, just plain thinking on paper. Tomorrow, we tackle Day 82: Advanced Synthesis 11, exploring how retrieval and memory give AI systems the long-term context they need to stay accurate over time.
