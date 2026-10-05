@@ -46,6 +46,10 @@ def main():
             print(f"day {day}: regen FAILED ({e!r}) - existing file untouched")
             continue
         new = scratch[day]
+        # a NEW guid, or podcast apps keep playing the copy they already
+        # downloaded under the old one (the likely reason fixed episodes
+        # still sounded broken after the 2026-08-08 normalization)
+        new["guid"] = f"two-host-day-{day:03d}-r{new['audioBytes']}"
         # only now retire the old file
         if old_mp3 and old_mp3.exists() and old_mp3.name != Path(
                 new["audioPath"]).name:
@@ -66,7 +70,7 @@ def main():
         sys.exit("refusing to publish - advertised enclosures missing")
     print("pushed:", podcast.publish(
         f"Regenerate episode(s) {', '.join(map(str, days))} (failed "
-        f"plausibility gate: silence/words-per-second)"))
+        f"quality gate: silence/pace/loudness)"))
 
 
 if __name__ == "__main__":

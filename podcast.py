@@ -50,7 +50,9 @@ except ImportError as e:  # hard dependency - never fail soft (f4 lesson)
 
 KEY = (HOME / ".ai-keys" / "gemini-api-key.txt").read_text().strip()
 GBASE = "https://generativelanguage.googleapis.com/v1beta"
-TEXT_MODEL = "gemini-flash-latest"
+# 2026-10-05: one text model meant a 503 streak on it (days 53-69, Aug-Sep)
+# blocked every episode; fall through on 429/5xx like TTS_MODELS does
+TEXT_MODELS = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-3.5-flash"]
 # Quota is PER MODEL. When the primary hits 429 the fallback still has a
 # full bucket, which roughly doubles free-tier throughput instead of
 # stalling the backfill until tomorrow. Same voices, same script; the
@@ -63,6 +65,7 @@ TTS_MODELS = ["gemini-2.5-flash-preview-tts", "gemini-3.1-flash-tts-preview"]
 # every render is normalized to podcast loudness at encode time
 AUDIO_FILTERS = "dynaudnorm=f=300:g=31:p=0.95,loudnorm=I=-16:TP=-1.5:LRA=7"
 MAX_LRA, MIN_I, MAX_I = 8.5, -19.5, -13.5
+DIP_LU, MAX_DIP_SECONDS = 6, 3.0
 CHUNK_PARTS = 4  # last-resort chunked render when a whole script 429s
 FFMPEG = (HOME / r"AppData\Local\Microsoft\WinGet\Packages"
                r"\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe"
@@ -154,9 +157,18 @@ Today's lesson (Day {day}: {title}):
 
 
 def gen_script(day, title, lesson):
-    resp = gapi(f"models/{TEXT_MODEL}:generateContent", {
-        "contents": [{"parts": [{"text": dialogue_prompt(day, title, lesson)}]}],
-        "generationConfig": {"temperature": 0.8}}, timeout=TEXT_TIMEOUT)
+    for i, model in enumerate(TEXT_MODELS):
+        try:
+            resp = gapi(f"models/{model}:generateContent", {
+                "contents": [{"parts": [{"text":
+                    dialogue_prompt(day, title, lesson)}]}],
+                "generationConfig": {"temperature": 0.8}},
+                timeout=TEXT_TIMEOUT)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (404, 429, 500, 502, 503, 504)                     or i == len(TEXT_MODELS) - 1:
+                raise
+            print(f"    {model}: HTTP {e.code}, trying next text model")
     script = resp["candidates"][0]["content"]["parts"][0]["text"].strip()
     script = re.sub(r"^```.*$", "", script, flags=re.M).strip()
     lines = [ln for ln in script.splitlines() if ln.strip()]
@@ -251,12 +263,25 @@ def encode_mp3(pcm, rate, out_path):
 
 
 def loudness(path):
-    """EBU R128: (integrated LUFS, loudness range LU)."""
-    r = subprocess.run([str(FFMPEG), "-i", str(path), "-af", "ebur128",
-                        "-f", "null", "-"], capture_output=True, text=True)
-    tail = r.stderr[-2000:]
+    """EBU R128: (integrated LUFS, loudness range LU, dip seconds).
+
+    dip seconds = time the 3s short-term loudness sits more than DIP_LU
+    below the episode's speech median. 2026-10-05: LRA alone passed
+    episodes Brian still heard "fade in and out" - Days 5/6/9/16 carried
+    18-39s of 6+ LU dips with LRA 7-8. Every clean render measures 0-3s.
+    """
+    r = subprocess.run([str(FFMPEG), "-hide_banner", "-v", "verbose",
+                        "-i", str(path), "-af", "ebur128=framelog=verbose",
+                        "-f", "null", "-"], capture_output=True, text=True,
+                       errors="replace")
+    tail = r.stderr[r.stderr.rfind("Summary:"):]
+    shortterm = [float(v) for v in
+                 re.findall(r"\sS:\s*(-?[\d.]+)", r.stderr)][30:]
+    speech = sorted(v for v in shortterm if v > -40)
+    median = speech[len(speech) // 2] if speech else 0
+    dips = sum(1 for v in speech if v < median - DIP_LU) / 10  # 100ms frames
     return (float(re.search(r"I:\s*(-?[\d.]+) LUFS", tail).group(1)),
-            float(re.search(r"LRA:\s*([\d.]+) LU", tail).group(1)))
+            float(re.search(r"LRA:\s*([\d.]+) LU", tail).group(1)), dips)
 
 
 def silence_ratio(path):
@@ -332,11 +357,11 @@ def build_episode(day, info, eps):
     # old gates and reached Brian's headphones. Post-normalization these
     # bounds hold for every good render; a violation means the render (or
     # the filter chain) is genuinely defective.
-    li, lra = loudness(tmp_mp3)
-    if lra > MAX_LRA or not MIN_I <= li <= MAX_I:
+    li, lra, dips = loudness(tmp_mp3)
+    if lra > MAX_LRA or not MIN_I <= li <= MAX_I or dips > MAX_DIP_SECONDS:
         tmp_mp3.unlink()
         raise ValueError(f"audio failed loudness gate: I={li:+.1f} LUFS, "
-                         f"LRA={lra:.1f} LU - unstable render")
+                         f"LRA={lra:.1f} LU, dips={dips:.1f}s - unstable render")
     size = tmp_mp3.stat().st_size
     final = AUDIO_DIR / f"day-{day:03d}-{slug}-{size}.mp3"
     tmp_mp3.rename(final)
@@ -615,8 +640,14 @@ def main():
 
     complete_now = not [d for d in days if d not in eps]
     # feed flips to two-host only once ALL days exist (cutover); after
-    # that, every run keeps it regenerated (also self-heals clobbers)
-    if complete_now:
+    # that, every run keeps it regenerated (also self-heals clobbers).
+    # 2026-10-05: this used to re-check completeness EVERY run, so one
+    # failed day (52, on 08-15) froze the main feed at Day 51 for seven
+    # weeks while new episodes went only to the preview feed. Once the
+    # cutover marker exists, the main feed always carries every episode
+    # on disk and missing days simply backfill into it.
+    cut_over = (REPO / "data" / "cutover.json").exists()
+    if complete_now or cut_over:
         build_feed(eps)
         build_index(eps)
         # durable marker: fleet-watchdog only asserts the two-host format
@@ -629,7 +660,8 @@ def main():
             marker.write_text(json.dumps({
                 "cutoverAt": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
                 "days": len(eps)}, indent=1), encoding="utf-8")
-        if not complete_before:
+        build_preview_feed(eps)  # anyone still on the preview URL keeps up
+        if complete_now and not complete_before and not cut_over:
             try:
                 send_cutover_email()
                 print("cutover email sent")
@@ -641,7 +673,7 @@ def main():
     try:
         pushed = "PUSHED" if publish(
             ("CUTOVER: two-host feed live - " if complete_now and not complete_before
-             else "Two-host episodes: ") + label) else "no-push"
+             and not cut_over else "Two-host episodes: ") + label) else "no-push"
     except Exception as e:  # push can fail right after laptop wake (no
         pushed = f"PUSH-FAILED:{type(e).__name__}"  # network) - commit is
         print(f"publish failed: {e!r}")             # local, next run retries
@@ -658,7 +690,7 @@ def main():
     line = (f"{datetime.now():%Y-%m-%d %H:%M} {status} made:{len(made)} "
             f"ondisk:{ondisk} ledger:{len(eps)} "
             f"missing:{len([d for d in days if d not in eps])} "
-            f"feed:{'two-host' if complete_now else 'legacy'} {pushed}"
+            f"feed:{'two-host' if complete_now or cut_over else 'legacy'} {pushed}"
             + (f" failed:{','.join(fails)}" if fails else "")
             + (f" stopped:{stopped}" if stopped else ""))
     with open(RUN_LOG, "a", encoding="utf-8") as f:
