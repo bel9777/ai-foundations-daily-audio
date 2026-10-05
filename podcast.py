@@ -53,7 +53,8 @@ KEY = (HOME / ".ai-keys" / "gemini-api-key.txt").read_text().strip()
 GBASE = "https://generativelanguage.googleapis.com/v1beta"
 # 2026-10-05: one text model meant a 503 streak on it (days 53-69, Aug-Sep)
 # blocked every episode; fall through on 429/5xx like TTS_MODELS does
-TEXT_MODELS = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-3.5-flash"]
+TEXT_MODELS = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.7-flash",
+               "gemini-3.5-flash", "gemini-3.1-flash-lite"]
 # Quota is PER MODEL. When the primary hits 429 the fallback still has a
 # full bucket, which roughly doubles free-tier throughput instead of
 # stalling the backfill until tomorrow. Same voices, same script; the

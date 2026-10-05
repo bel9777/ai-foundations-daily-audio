@@ -1,5 +1,17 @@
 [
  {
+  "day": 102,
+  "title": "Advanced Synthesis 31: Data And Learning Systems",
+  "format": "two-host",
+  "guid": "two-host-day-102",
+  "publishedAt": "2026-10-05T07:35:42",
+  "audioPath": "/audio-v2/day-102-advanced-synthesis-31-data-and-learning-systems-3941037.mp3",
+  "transcriptPath": "/transcripts-v2/day-102-3941037.txt",
+  "audioBytes": 3941037,
+  "durationSeconds": 328,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 93,
   "title": "Advanced Synthesis 22: Safety And Security",
   "format": "two-host",

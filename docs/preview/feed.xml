@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 102: Advanced Synthesis 31: Data And Learning Systems</title>
+      <description>Two-host rebuild of AI Foundations day 102.</description>
+      <guid isPermaLink="false">two-host-day-102</guid>
+      <pubDate>Mon, 05 Oct 2026 07:35:42 +0000</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio-v2/day-102-advanced-synthesis-31-data-and-learning-systems-3941037.mp3" length="3941037" type="audio/mpeg"/>
+      <itunes:duration>5:28</itunes:duration>
+    </item>
+    <item>
       <title>Day 93: Advanced Synthesis 22: Safety And Security</title>
       <description>Two-host rebuild of AI Foundations day 93.</description>
       <guid isPermaLink="false">two-host-day-093</guid>
