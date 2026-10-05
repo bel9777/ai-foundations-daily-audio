@@ -1,0 +1,35 @@
+Alex: Stacking a bunch of simple calculations together sounds easy, but without one specific mathematical twist, the deepest neural network in the world is no smarter than a basic straight line. This is AI Foundations, day 20.
+Jordan: Yesterday we zoomed in on a single neuron. Today we are stepping back to look at what happens when they organize into layers. 
+Alex: Walk me through what a layer actually is. People throw around input, hidden, and output layers like everyone knows what is happening under the hood.
+Jordan: Picture a factory assembly line. A layer is just a group of neurons standing at the same station. They all receive the exact same raw materials, do their job in parallel, and pass their results to the next station. 
+Alex: And the raw material at the very start is the input layer.
+Jordan: Right. That is your raw data. Pixel values, age, income, word counts. Then comes the hidden layer, or several of them. They are called hidden simply because they sit between the raw input and the final prediction. You do not feed them direct labels, and their values are not your final answer. Finally, the output layer delivers the prediction, whether that is a category, a numeric score, or a probability.
+Alex: Inside each neuron in those layers, it is still the two-step dance we saw yesterday, right?
+Jordan: Exactly. Step one: compute a weighted sum of all incoming signals plus a bias. That is purely linear. Step two: feed that number into an activation function.
+Alex: Let us stop at the activation function. Why do we need it? Why not just pass the weighted sum straight to the next layer?
+Jordan: Because of basic algebra. If you chain linear equations together, the combination is still just a linear equation. If you stack ten layers of pure weighted sums, the math collapses. You have not built a deep network; you have built one giant linear model with extra steps. 
+Alex: Which brings us back to what we saw on Day 16. A purely linear model can only draw straight boundaries in your data.
+Jordan: Exactly. The activation function adds nonlinearity. It bends, curves, and twists the space. That bend is what lets the network wrap around complicated patterns instead of being trapped by a straight edge.
+Alex: What do these functions actually look like?
+Jordan: The most popular one right now is ReLU, the Rectified Linear Unit. It has a fancy name, but the rule is dead simple: if the number is negative, output zero. If it is positive, pass it through unchanged. 
+Alex: That is it? Just chop off the negatives?
+Jordan: That is it. That tiny hinge introduces enough nonlinearity for the network to learn remarkably complex things. Then there is Sigmoid, which squashes any input into a smooth curve between zero and one. That makes it handy when you want something resembling a probability score. And Tanh squashes numbers between negative one and positive one.
+Alex: When Sigmoid squashes numbers between zero and one, it reminds me of what we covered on Day 18 with calibration. Just because a neuron outputs point nine does not mean it is actually ninety percent likely to be true in the real world.
+Jordan: Spot on. The output layer might give you a number formatted like a probability, but formatting is not calibration. You still have to test whether that score reflects reality.
+Alex: Which leads to representations. We say neural networks are representation learners. What does that mean?
+Jordan: A representation is an intermediate translation of the data. It is a new way to describe the same input so the next layer can handle it more easily. Think about listening to a noisy recording of a song. The input is raw sound waves. A first layer might isolate beats and pitches. The next layer takes those beats and organizes them into chords and melody lines. A later layer hears those melodies and recognizes the chorus. 
+Alex: So the early layers deal with low-level details, and the later layers turn those into concepts.
+Jordan: Yes. In an image, early layers catch raw edges. Middle layers assemble those edges into shapes or textures. Late layers assemble those textures into a dog ear or a car wheel. The network creates its own internal language to solve the puzzle.
+Alex: Let us ground that in the spam detection example from the lesson. 
+Jordan: Say you feed an email into a network. The inputs are words, metadata, header details. The first hidden layer might activate on specific cues: urgent phrases, weird link formats, unusual punctuation. The second hidden layer combines those raw signals into broader concepts, like high-pressure sales tone or disguised URLs. Then the output layer looks at those high-level representations and produces a single spam score.
+Alex: It is not just matching a single keyword list. It is building an argument stage by stage.
+Jordan: Exactly. But remember Day 15: always compare against a simple baseline. Just because you can stack hidden layers does not mean you should. If a basic keyword count or a shallow model solves your problem, adding layers just adds cost and fragility.
+Alex: Fair warning. Ready to see if I retained all of this?
+Jordan: Let us find out. Question one: what is the role of an activation function inside a neuron?
+Alex: It takes the raw weighted sum from the linear step and applies a rule to decide how much that neuron fires. Crucially, it injects nonlinearity, which lets the network learn curved, complex patterns instead of just straight lines.
+Jordan: Nailed it. Question two: why does a network built only with linear operations act like a single linear model, no matter how deep you make it?
+Alex: Because stacking linear equations on top of linear equations just simplifies mathematically into another single linear equation. The layers collapse into one.
+Jordan: Perfect. Third question: what is a representation in the context of neural networks?
+Alex: It is an intermediate description of the data. It transforms raw inputs into higher-level features that make the job easier for the next layer and eventually the output.
+Jordan: Three for three. Now for your homework. Grab a piece of paper or open a spreadsheet. Take two input numbers: x-one equals two, and x-two equals negative one. Set up a neuron with the weighted sum: z equals one-point-five times x-one, minus two times x-two, plus zero-point-five. Calculate z. Then apply ReLU to that value, and estimate what Sigmoid would do with it based on whether z is positive, negative, or near zero. Take that output, run it into a second weighted sum as a new layer, and notice how the meaning of the number transforms from raw input to an intermediate signal.
+Alex: Tomorrow, we tackle Day 21: Backpropagation, and learn how the network actually figures out which weights to blame when it gets an answer wrong.

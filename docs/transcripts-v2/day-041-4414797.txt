@@ -1,0 +1,38 @@
+Alex: An AI can sound completely confident while making things up out of thin air, and grounding is how you force it to show its receipts. This is AI Foundations, day 41.
+Jordan: A model produces fluent language by default. Grounding ties that language directly to source material so you can actually verify what it says.
+Alex: So it is not about making the model infallible. It is about making it auditable.
+Jordan: Exactly. Think of it like a museum audio guide. The narrator might tell a fascinating story, but you need the exhibit label on the wall to confirm you are looking at the right painting. Without the label, you just have a convincing story.
+Alex: And that label represents the evidence.
+Jordan: Yes. Evidence can be anything concrete: a paragraph in a PDF, a spreadsheet row, or a line in a customer support log. A grounded answer gives you the conclusion, but it also gives you a clear paper trail back to that evidence.
+Alex: Why is that trail so critical? Doesn't the model already know the answer if it found the document?
+Jordan: Not necessarily. Even when a model summarizes well, it might miss subtle details, stitch together unrelated facts from different places, or infer something that was never stated. Grounding keeps it honest.
+Alex: Okay, so how do we build that trail? Are we talking footnotes?
+Jordan: Footnotes, section numbers, document names. In AI workflows, that is a citation. It simply points to where the information lives, like citing document A, paragraph three. But a citation alone is not always enough.
+Alex: Because the model could point to section four, but completely misread section four.
+Jordan: Exactly. That is why quotations matter. A quotation repeats the exact phrasing from the source text. A citation tells you where to look, but a direct quote proves the source actually said what the AI claims it said.
+Alex: Asking for both feels like the sweet spot. You get a short summary, a pointer, and the exact words side by side.
+Jordan: And that brings us to a huge distinction: attributable statements versus inferred statements.
+Alex: Break those down.
+Jordan: An attributable statement is something the source explicitly says. For example, the policy says refunds are allowed within thirty days. An inferred statement is the model drawing a conclusion from that fact, like, this means a request on day thirty-one is likely out of scope.
+Alex: Which might be a completely logical conclusion, but the document itself never actually mentioned day thirty-one.
+Jordan: Right. If you blur those together, the user cannot tell where the source ends and the model’s own interpretation begins. The rule is simple: report source facts first, then clearly label any inference as an inference.
+Alex: That ties directly into faithful summaries.
+Jordan: It does. Faithful does not mean repeating everything word for word. It means summarizing without slipping in unverified extras, assumptions, or hallucinations.
+Alex: And this leans heavily on search and reranking, which we talked about in recent episodes.
+Jordan: Completely. In day thirty-nine, we covered retrieval-augmented generation. Retrieval brings the evidence into view for the model. Grounding is the step where the model makes that evidence visible to you. But if search and reranking serve up the wrong chunk to begin with, the model will faithfully ground its answer in the wrong facts.
+Alex: Garbage in, grounded garbage out. So how do you prompt an AI to actually behave this way?
+Jordan: You set hard boundaries in your prompt. Tell it: answer only using the provided sources. Include a citation and a short quote for each claim. If the sources do not support a claim, say not supported by the sources. And separate facts from inferences.
+Alex: That is really interface design disguised as a prompt. You are dictating how the response will be audited.
+Jordan: Exactly. Let us look at a real-world example. Say you have a refund policy with two lines: Customers may request a refund within thirty days of purchase. Refunds are not available for digital products after download.
+Alex: How should a properly grounded response format that?
+Jordan: First, the answer in plain English: refunds are available within thirty days, but digital products are not refundable after download. Next, the evidence: cite refund policy, section two, and quote the thirty-day line. Then cite section two again, and quote the digital download line.
+Alex: And the inference?
+Jordan: It goes on its own line, labeled clearly. Inference: if a customer downloaded a digital product, the policy does not support a refund request for that item. Brief, transparent, and impossible to misunderstand.
+Jordan: Time to see if this stuck. First question for you: what is the difference between a citation and a quotation?
+Alex: A citation points to where the information came from, like a document title or paragraph number. A quotation reproduces the exact words from the source.
+Jordan: Spot on. Next: why should source facts and model inferences be separated in a grounded answer?
+Alex: Because readers need to know what the document literally says versus what the AI concluded on its own. If you mix them, people mistake the model's opinions or guesses for hard facts.
+Jordan: Exactly right. Last one: what role do retrieval and reranking play in a grounded workflow before any answer is written?
+Alex: Retrieval searches the database to find candidate source material, and reranking picks out the most relevant chunks so the answer can actually be grounded in the best available evidence.
+Jordan: Nailed it. Here is your homework for today. In any notes app, write down four to six short rules you know well, like a gym cancellation policy or family chore rules, with each rule on its own line. Ask an AI model to answer three questions using only those lines, requiring a citation, a short quote, and the word Inference in front of any conclusion. Notice whether you can verify every single claim from the source lines alone without having to trust the model.
+Alex: Put that into practice, because tomorrow on day 42, we are introducing tools and function calling so models can do more than talk and actually request outside actions.

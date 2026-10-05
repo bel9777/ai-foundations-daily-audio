@@ -1,0 +1,41 @@
+Alex: If you shuffle the words in a sentence, you completely destroy its meaning, which is why AI had to learn how to respect order. This is AI Foundations, day 24.
+Jordan: Up until now, we have mostly talked about networks that take one fixed block of input and spit out one output. Think of an image classifier or a house price estimator.
+Alex: Right, like a bag of features where the order of things did not matter at all.
+Jordan: Exactly. But language, musical notes, server logs—they are sequences. In a sequence, order is everything. "Dog bites man" is boring news. "Man bites dog" makes the front page.
+Alex: Same exact words, completely different reality. So how did models handle that before modern transformers took over?
+Jordan: They used Recurrent Neural Networks, or RNNs. Instead of swallowing an entire sentence at once, an RNN reads it step by step, one item at a time step.
+Alex: And by item, we mean the vector embeddings we covered yesterday, right?
+Jordan: Right. At step one, it takes the first word vector. At step two, it takes the second word vector, but it also takes something called a hidden state.
+Alex: Break down what a hidden state actually is.
+Jordan: It is a running summary of everything the network has seen so far. Imagine you are reading a long novel, and you keep a single index card on your desk. After every sentence, you erase parts of the card and write down a few updated notes. You cannot fit the whole book on that card, but it carries forward the clues you think will matter. That card is the hidden state.
+Alex: But if you keep rewriting the same card over fifty sentences, the early clues get smudged or completely overwritten.
+Jordan: That is the exact flaw with a plain RNN. It has a short memory. When we train them, we use a process called backpropagation through time. Just like regular backprop from day 21, it assigns credit or blame for errors, but here it has to roll backward through every single time step.
+Alex: And doing math over dozens of sequential steps gets messy fast.
+Jordan: Very messy. If you multiply numbers slightly smaller than one over and over across thirty steps, they shrink to basically zero. That is the vanishing gradient problem. The network stops learning from the beginning of the sequence because the learning signal disappears.
+Alex: And if those numbers are slightly larger than one, they blow up into massive numbers.
+Jordan: Exploding gradients. The training goes completely unstable. We can tackle exploding gradients with gradient clipping, which we mentioned back on day 22—capping the values so they cannot spike. But vanishing gradients are much harder for a plain RNN to survive.
+Alex: So researchers had to give that index card better structure so it would stop forgetting.
+Jordan: Enter gated networks: LSTMs, short for Long Short-Term Memory, and GRUs, or Gated Recurrent Units. They introduce gates, which are just learned switches made of math.
+Alex: What does a gate actually switch on or off?
+Jordan: Information flow. Think of cooking a complex recipe. A plain RNN is like trying to keep every past instruction in your head at once. An LSTM is like having three sticky notes: one tells you what old ingredients you can safely forget, one decides what new information from the current step is worth writing down, and one decides what action to execute right now.
+Alex: So if a sentence says "The keys to the cabinet were missing," an LSTM can hold onto the word "keys" being plural all the way across "to the cabinet" until it hits "were."
+Jordan: Spot on. The gates give the network explicit control over when to preserve, update, or discard information.
+Alex: And we can wire these models up in different shapes depending on what we are building, right?
+Jordan: Yes. You have sequence-to-one, where you feed in a stream of words and output a single label, like classifying a customer review as positive or negative.
+Alex: Then sequence-to-sequence, where you feed in words and get out a sequence of words, like translating English into Spanish.
+Jordan: And one-to-sequence, where you take a single input—say, an image—and the model generates a sequence of words as a caption, or takes a starting note and outputs a melody.
+Alex: Let us walk through the predictive text on my phone. When I type "I am going to the...", how does a sequence model work through that?
+Jordan: At time step one, it reads "I", maps it to an embedding, and creates a hidden state. Time step two, it reads "am", combines it with the previous hidden state, and updates. Step three, "going". Step four, "to". Step five, "the".
+Alex: And by step five, that hidden state is not just seeing the isolated word "the".
+Jordan: It knows the movement phrase "going to the" came right before it. Because it tracks order, it predicts words like "store", "office", or "park", instead of words like "ate" or "blue". And because it uses embeddings, if it knows "store" and "market" are close in vector space, it can generalize smoothly.
+Alex: If LSTMs were such a breakthrough, why did we move away from them?
+Jordan: Sequential bottleneck. Step four cannot happen until step three finishes. You cannot easily run them in parallel across thousands of GPU cores, and really long sequences still push their memory limits.
+Alex: Makes sense. Ready when you are. Quiz me.
+Jordan: Let us see how it landed. Question one: What is a hidden state in an RNN?
+Alex: It is the model's running memory—a compact summary of what the network has seen so far across earlier time steps, updated at each step.
+Jordan: Exactly. Question two: Why do plain RNNs struggle with very long sequences?
+Alex: Because backpropagation through time has to push the learning signal backward through every step. Over long distances, gradients either explode and destabilize the network, or vanish to zero, meaning the model cannot learn connections from earlier steps.
+Jordan: Right again. Question three: What is a gate in an LSTM or GRU?
+Alex: It is a learned switch that controls memory—specifically deciding what old information to throw out, what new information to store, and what to output.
+Jordan: Three for three. Here is your homework: take a notebook or text editor and write five short sentences using the exact same words in different orders, like "cats chase mice" and "mice chase cats." Step through each sentence one word at a time, and write a one-line summary after each word showing what a hidden state needs to remember. Notice how the meaning shifts with position. Then pick one task—next-word prediction, sentiment analysis, or translation—and write one paragraph explaining why a sequence model is necessary for it.
+Alex: That will make the order problem painfully clear. Tomorrow, on Day 25, we see how models learned to ditch the single running memory and look everywhere at once with Attention: Choosing What Matters.

@@ -1,0 +1,39 @@
+Alex: A machine learning model never touches the real world directly; it only experiences the narrow slice of reality we feed it. This is AI Foundations, day 5.
+Jordan: We spend so much time obsessing over algorithms, but data is the model's entire lived experience. If a situation never showed up in the data, it simply does not exist in the model's universe.
+Alex: That sets up our core vocabulary for today: dataset, example, feature, and target.
+Jordan: A dataset is an organized collection of records. An example is one individual case, like a single farm delivery run. Features are the inputs you hand the model at prediction time: distance, weather forecast, departure time, vehicle type.
+Alex: And the target is the answer we want it to predict, like whether that delivery arrived late. In supervised learning, the model compares its predictions to that target to reduce error.
+Jordan: Exactly. But notice the crucial test for any feature: is that information genuinely available at prediction time? If it only exists after the truck arrives, you cannot use it.
+Alex: That brings us to representation. A model doesn't experience a rainy morning the way a driver does.
+Jordan: Right. That morning becomes numbers: precipitation at zero point four inches, temperature forty-eight degrees, road condition wet. Text models receive tokens. Image models receive pixel grids. Tabular models receive columns. Representation determines which distinctions are visible to the model.
+Alex: Your photo album analogy captures this so well.
+Jordan: Think about it. If your photo album only has sunny harvest days, a learner assumes farming only happens in great weather. If every high-yield photo features a red tractor, they conclude red tractors cause good harvests.
+Alex: And if captions reveal answers that would not be available in the field, they look smart without learning real skills. That album is the dataset. Features are what you see in the pictures; targets are the captions.
+Jordan: Which leads straight into data quality versus representativeness. People mix those up constantly.
+Alex: Quality is whether the data is clean and accurate, right? No missing values, consistent units, reliable timestamps, correct labels.
+Jordan: Exactly. But representativeness asks if that dataset reflects real deployment conditions. A pristine, error-free dataset of summer deliveries will fail in western New York in January because it never saw snow or freezing roads.
+Alex: That mismatch between training conditions and deployment conditions is distribution shift.
+Jordan: Right. And average performance across the whole dataset can easily hide complete failure in that winter slice.
+Alex: Now let's talk about data bias, because people often assume bias implies bad intentions.
+Jordan: It usually comes from ordinary routines. If Team A logs every minor equipment glitch while Team B quietly works around broken tools, Team A looks unreliable in the data even though they are just more diligent.
+Alex: Selection bias and measurement bias in action. Plus label bias from inconsistent human judgment, and historical bias baked into past records.
+Jordan: Right. You rarely eliminate all bias. The goal is spotting distortions, measuring their impact, and documenting the boundaries.
+Alex: That brings us to data leakage, which sounds subtle but wrecks models all the time.
+Jordan: Leakage happens when information unavailable at decision time sneaks into training. Say you want to predict whether an invoice will be paid late. If your features include the payment date or collection calls made after it was overdue, the model scores nearly one hundred percent.
+Alex: Because collection calls only happen after the invoice is already late. The feature literally gives away the ending.
+Jordan: Precisely. It also happens when splitting data. If records from the same customer appear in both training and test sets, the model can memorize customer identity. You need a grouped split to test real generalization.
+Alex: Let's tie this together with our worked example: predicting whether a produce delivery will be over twenty minutes late, evaluated right at departure.
+Jordan: One example is a single historical delivery. The target is whether it was more than twenty minutes late. What goes into the feature set?
+Alex: Planned distance, scheduled departure, actual departure delay, weather forecast, number of stops, vehicle type, and recent route duration. No actual arrival timestamps, en-route traffic reports from an hour later, or post-delivery notes.
+Jordan: That keeps the information boundary clean. Then you run the audit. Quality checks timestamps and time zones. Representation verifies weather is mapped correctly. Representativeness checks for winter, holidays, and new routes. Bias checks if canceled deliveries were dropped. And evaluation splits group drivers or routes so memorization cannot inflate scores.
+Alex: If you skip that audit, ten million records just give you ten million ways to be confidently wrong.
+Jordan: Let's see if this stuck. Knowledge check time.
+Alex: Ready.
+Jordan: First: What is the difference between a feature and a target?
+Alex: A feature is an input the model gets to look at to make its prediction. The target is the real-world outcome the model is trained to predict.
+Jordan: Spot on. Second: How can a dataset have high quality but still be unrepresentative?
+Alex: The records can be completely accurate, cleanly labeled, and error-free, but only cover a narrow slice of reality, like summer weather or one specific warehouse. If the model has to operate across winter storms or new locations, the data is high quality, but its experience is incomplete.
+Jordan: Perfect. Third: Why does data leakage make a weak model look strong during evaluation?
+Alex: Because leakage feeds the model clues from the future that will not exist during live deployment. The model finds a shortcut to the answer, aces the test, and fails in production because the clue is gone.
+Jordan: Nailed it. Here is your homework for today. Pick one prediction from work or daily life, like equipment failure or delivery delays, and write a six-line mini data card. List the decision it supports, what one example represents, the target, three features genuinely available at prediction time, one coverage risk where data is sparse, and one tempting leakage risk. Then add one sentence: I would not trust this model until I tested, blank. Notice what happens when you enforce that decision-time boundary.
+Alex: Tomorrow, we go under the hood to see how models turn that experience into predictions using parameters, loss functions, and gradient descent. See you then.

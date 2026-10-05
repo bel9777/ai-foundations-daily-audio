@@ -64,6 +64,9 @@ def main():
     eps = podcast.load_state()
     podcast.build_feed(eps)   # post-cutover: the MAIN feed is ours
     podcast.build_index(eps)
+    # the preview feed is still rebuilt by podcast.py; leaving it stale here
+    # tripped the enclosure gate on the retired mp3s (2026-10-05)
+    podcast.build_preview_feed(eps)
     missing = podcast.feed_enclosures_on_disk()
     print(f"feed rebuilt: {len(eps)} episodes | gate: {missing or 'NONE MISSING'}")
     if missing:

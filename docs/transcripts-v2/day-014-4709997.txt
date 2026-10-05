@@ -1,0 +1,45 @@
+Alex: A high test score does not mean much if you just got lucky with an easy exam. This is AI Foundations, day 14.
+Jordan: Exactly. Yesterday we looked at metrics and confusion matrices to evaluate classifiers. Today is about making sure those scores are actually trustworthy.
+Alex: Because right now, we just split data once into training and testing. Fit the model on train, test it on test. What is wrong with that?
+Jordan: In principle, nothing. But in practice, a single split can be unusually easy or unusually hard just by pure chance.
+Alex: Give me an example.
+Jordan: Think about a spam filter. If your test slice happens to catch mostly obvious spam, the model looks brilliant. If that split gets loaded up with tricky messages, the model looks terrible. The model did not change at all. Only the sample of data did.
+Alex: Right. So that confusion matrix we built yesterday might look messy not because the model broke, but because the test set was weirdly skewed.
+Jordan: Exactly. Your loss function guides training, and your evaluation metrics measure the outcome, but if your test slice is an outlier, you are evaluating on noise.
+Alex: So how do we stop depending on luck?
+Jordan: We use cross-validation. The basic idea is simple: instead of testing once, you test the model on several different slices of the data and average the results.
+Alex: Break down the mechanics for me.
+Jordan: The standard approach is k-fold cross-validation. You split your dataset into k pieces of roughly equal size, called folds. If k is five, you have five folds.
+Alex: And then what?
+Jordan: You train the model on four of those folds and test it on the remaining fifth fold. Then you repeat the process, holding out a different fold for testing each time. You do that k times until every single fold has served as the test set once.
+Alex: So with five folds, you train and test five separate times.
+Jordan: Exactly. Then you average the results across all five runs. That average is your five-fold cross-validation score. If you use ten folds, it is ten-fold cross-validation. It does not eliminate all uncertainty, but it gives you a much steadier read.
+Alex: It sounds like having multiple judges grade a dish instead of just one.
+Jordan: That is the best way to picture it. If one judge tastes your cooking on a bad day, their score might just reflect their mood. If a panel of judges tastes it on different days, you get a real sense of whether the recipe is good. The recipe is your model, the judges are the test folds, and the average score is your reliable estimate.
+Alex: What if I am comparing two completely different models to see which one cooks better?
+Jordan: Then the playing field has to be identical. You must evaluate both models on the exact same folds, use the exact same metric, and run the exact same preprocessing steps.
+Alex: Preprocessing being the cleanup work, right? Scaling numbers, filling in missing values, turning text into numbers.
+Jordan: Yes. If one model gets clean, scaled data and the other gets raw messy data, you are not testing the algorithms. You are testing the cleanup. You are always comparing the model plus its whole training setup.
+Alex: Including hyperparameters.
+Jordan: Right. Settings chosen by you rather than learned from data, like the number of folds k, the learning rate we talked about on day 11, or the depth of a tree model. They all alter the outcome, so you have to keep the comparison fair.
+Alex: Walk me through a real scenario where a single split really hurts you.
+Jordan: Suppose you are building a model to predict whether clinic patients need a follow-up visit after a checkup. You have two hundred past patient files.
+Alex: That is a pretty small dataset.
+Jordan: Very small. An eighty-twenty split leaves you with only forty patients in your test set. What if those forty happen to be mostly young and healthy, or mostly older patients with chronic conditions?
+Alex: Then the test score will not represent how the clinic actually runs.
+Jordan: Exactly. But with five-fold cross-validation, every single one of those two hundred patients gets tested once and used in training four times. You get five performance measurements instead of one fragile guess. In healthcare, where precision and recall have real consequences, that stability matters.
+Alex: But there is a trap here, right? People love to tweak models until the score looks amazing.
+Jordan: A massive trap: tuning on the test set. If you check the test set, change your model settings, check it again, and repeat until the score rises, your test set is no longer a test.
+Alex: It became part of training. You basically memorized the exam questions.
+Jordan: Precisely. The right workflow is to use cross-validation for model selection, meaning choosing between different model candidates or settings based on stable evidence. Then you test your winner once on an untouched test set you locked away at the start.
+Alex: That makes complete sense. Ready to grill me?
+Jordan: Let us do the knowledge check. Question one: what is the main purpose of cross-validation?
+Alex: To estimate model performance more reliably by testing it across several different parts of the data and averaging the scores, instead of relying on one lucky or unlucky split.
+Jordan: Spot on. Question two: why is it important to use the same folds and the same metric when comparing two models?
+Alex: Because fair comparisons require the exact same conditions. If you change the folds or the metric, one model might look better just because it got an easier test slice or a more forgiving scoring rule.
+Jordan: Exactly. Same rules for everyone. Last one: what is a common mistake that makes a test set unreliable?
+Alex: Peeking and tuning. Repeatedly checking the test set and adjusting your model until the score looks good. It turns the final exam into part of training.
+Jordan: Exactly right. That completely destroys the test set.
+Alex: What is the assignment for today?
+Jordan: Take a piece of paper or a spreadsheet and write down twelve imaginary examples with labels, like spam or not spam. Split them into three folds of four examples each. Pick a simple rule, like "predict spam if the message has the word free." Test that rule across all three folds by hand, record your accuracy, and average the three scores. Then flip just one label in the dataset and repeat the process. Notice how one small change can shake up a single split, but barely moves the three-fold average.
+Alex: Tomorrow, we find out why every smart project starts with a baseline, the simplest useful benchmark to beat.
