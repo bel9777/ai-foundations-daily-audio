@@ -73,14 +73,12 @@ retired at cutover — do not run or extend it.
    real files on 2026-08-06). Always resolve through `load_state()`, which
    filters by file existence on disk. `ondisk:N/ledger:M` in the heartbeat
    surfaces any divergence.
-8. **The main feed's audio is served by jsDelivr, not Pages.** Every
-   legacy enclosure is `cdn.jsdelivr.net/gh/bel9777/ai-foundations-daily-audio@main/docs/audio/...`,
-   which is why the 2026-08-06 Pages outage never touched Brian's
-   listening. `build_feed()` currently emits `SITE` (GitHub Pages) for
-   two-host enclosures, so **cutover silently migrates all audio delivery
-   off the CDN that works onto the service that failed** — plus Pages'
-   100 GB/month bandwidth cap. This is Brian's decision and is flagged in
-   docs-state.md; do not let cutover happen without it being made.
+8. **Audio is served from GitHub Pages since 2026-10-05** (`AUDIO_BASE`
+   in podcast.py). jsDelivr had served it since August but failed 42/102
+   enclosures (404/503/timeouts, old files too) once the repo's audio hit
+   ~650 MB; Pages served 102/102. Pages' 1 GB site limit: docs/ ~650 MB,
+   +~4.5 MB/day, so prune (e.g. the retired legacy docs/audio, 233 MB)
+   before ~Jan 2027. Re-check every enclosure before ever flipping back.
 
 ## Ops
 
