@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 103: Lesson 1: What AI Is (and Isn&#x27;t)</title>
+      <description>Lesson 1: What AI Is (and Isn&#x27;t) - AI Foundations day 103, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-103</guid>
+      <pubDate>Tue, 06 Oct 2026 07:31:26 +0000</pubDate>
+      <itunes:episode>103</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-103-lesson-1-what-ai-is-and-isn-t-6277293.mp3" length="6277293" type="audio/mpeg"/>
+      <itunes:duration>8:43</itunes:duration>
+    </item>
+    <item>
       <title>Day 102: Advanced Synthesis 31: Data And Learning Systems</title>
       <description>Advanced Synthesis 31: Data And Learning Systems - AI Foundations day 102, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-102</guid>

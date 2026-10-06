@@ -1,5 +1,17 @@
 [
  {
+  "day": 103,
+  "title": "Lesson 1: What AI Is (and Isn't)",
+  "format": "two-host",
+  "guid": "two-host-day-103",
+  "publishedAt": "2026-10-06T07:31:26",
+  "audioPath": "/audio-v2/day-103-lesson-1-what-ai-is-and-isn-t-6277293.mp3",
+  "transcriptPath": "/transcripts-v2/day-103-6277293.txt",
+  "audioBytes": 6277293,
+  "durationSeconds": 523,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 102,
   "title": "Advanced Synthesis 31: Data And Learning Systems",
   "format": "two-host",
