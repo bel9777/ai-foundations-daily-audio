@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 104: Lesson 2: Patterns, Predictions, and Rules</title>
+      <description>Two-host rebuild of AI Foundations day 104.</description>
+      <guid isPermaLink="false">two-host-day-104</guid>
+      <pubDate>Wed, 07 Oct 2026 07:31:47 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-104-lesson-2-patterns-predictions-and-rules-5203917.mp3" length="5203917" type="audio/mpeg"/>
+      <itunes:duration>7:13</itunes:duration>
+    </item>
+    <item>
       <title>Day 103: Lesson 1: What AI Is (and Isn&#x27;t)</title>
       <description>Two-host rebuild of AI Foundations day 103.</description>
       <guid isPermaLink="false">two-host-day-103</guid>

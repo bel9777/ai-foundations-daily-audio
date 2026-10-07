@@ -1,5 +1,17 @@
 [
  {
+  "day": 104,
+  "title": "Lesson 2: Patterns, Predictions, and Rules",
+  "format": "two-host",
+  "guid": "two-host-day-104",
+  "publishedAt": "2026-10-07T07:31:47",
+  "audioPath": "/audio-v2/day-104-lesson-2-patterns-predictions-and-rules-5203917.mp3",
+  "transcriptPath": "/transcripts-v2/day-104-5203917.txt",
+  "audioBytes": 5203917,
+  "durationSeconds": 433,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 103,
   "title": "Lesson 1: What AI Is (and Isn't)",
   "format": "two-host",
