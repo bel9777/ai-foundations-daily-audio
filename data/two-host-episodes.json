@@ -1,5 +1,17 @@
 [
  {
+  "day": 105,
+  "title": "Lesson 3: The Machine Learning Workflow",
+  "format": "two-host",
+  "guid": "two-host-day-105",
+  "publishedAt": "2026-10-08T07:31:16",
+  "audioPath": "/audio-v2/day-105-lesson-3-the-machine-learning-workflow-5669901.mp3",
+  "transcriptPath": "/transcripts-v2/day-105-5669901.txt",
+  "audioBytes": 5669901,
+  "durationSeconds": 472,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 104,
   "title": "Lesson 2: Patterns, Predictions, and Rules",
   "format": "two-host",

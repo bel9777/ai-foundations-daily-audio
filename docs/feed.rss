@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 105: Lesson 3: The Machine Learning Workflow</title>
+      <description>Lesson 3: The Machine Learning Workflow - AI Foundations day 105, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-105</guid>
+      <pubDate>Thu, 08 Oct 2026 07:31:16 +0000</pubDate>
+      <itunes:episode>105</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-105-lesson-3-the-machine-learning-workflow-5669901.mp3" length="5669901" type="audio/mpeg"/>
+      <itunes:duration>7:52</itunes:duration>
+    </item>
+    <item>
       <title>Day 104: Lesson 2: Patterns, Predictions, and Rules</title>
       <description>Lesson 2: Patterns, Predictions, and Rules - AI Foundations day 104, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-104</guid>

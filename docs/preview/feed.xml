@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 105: Lesson 3: The Machine Learning Workflow</title>
+      <description>Two-host rebuild of AI Foundations day 105.</description>
+      <guid isPermaLink="false">two-host-day-105</guid>
+      <pubDate>Thu, 08 Oct 2026 07:31:16 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-105-lesson-3-the-machine-learning-workflow-5669901.mp3" length="5669901" type="audio/mpeg"/>
+      <itunes:duration>7:52</itunes:duration>
+    </item>
+    <item>
       <title>Day 104: Lesson 2: Patterns, Predictions, and Rules</title>
       <description>Two-host rebuild of AI Foundations day 104.</description>
       <guid isPermaLink="false">two-host-day-104</guid>
