@@ -10,6 +10,42 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 16 (Oct 5–11): Days 102–108</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 102: Advanced Synthesis 31: Data And Learning Systems&lt;br/&gt;5:30 Day 103: Lesson 1: What AI Is (and Isn&#x27;t)&lt;br/&gt;14:14 Day 104: Lesson 2: Patterns, Predictions, and Rules&lt;br/&gt;21:30 Day 105: Lesson 3: The Machine Learning Workflow&lt;br/&gt;29:23 Day 106: Lab: Train and Evaluate a Tiny Classifier in Python&lt;br/&gt;35:30 Day 107: This Week in AI (Oct 10, 2026)&lt;br/&gt;43:43 Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-05-00b5e630</guid>
+      <pubDate>Sun, 11 Oct 2026 07:32:20 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-16-2026-10-05-00b5e630.mp3" length="24595135" type="audio/mpeg"/>
+      <itunes:duration>0:51:14</itunes:duration>
+    </item>
+    <item>
+      <title>Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)</title>
+      <description>Weekly Review: Foundations 1: How Machines Learn (Oct 11) - AI Foundations day 108, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-108</guid>
+      <pubDate>Sun, 11 Oct 2026 07:31:20 +0000</pubDate>
+      <itunes:episode>108</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-108-weekly-review-foundations-1-how-machines-learn-oct-11-5411853.mp3" length="5411853" type="audio/mpeg"/>
+      <itunes:duration>7:30</itunes:duration>
+    </item>
+    <item>
+      <title>Day 107: This Week in AI (Oct 10, 2026)</title>
+      <description>This Week in AI (Oct 10, 2026) - AI Foundations day 107, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-107</guid>
+      <pubDate>Sat, 10 Oct 2026 07:31:21 +0000</pubDate>
+      <itunes:episode>107</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-107-this-week-in-ai-oct-10-2026-5906061.mp3" length="5906061" type="audio/mpeg"/>
+      <itunes:duration>8:12</itunes:duration>
+    </item>
+    <item>
+      <title>Day 106: Lab: Train and Evaluate a Tiny Classifier in Python</title>
+      <description>Lab: Train and Evaluate a Tiny Classifier in Python - AI Foundations day 106, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-106</guid>
+      <pubDate>Fri, 09 Oct 2026 07:31:23 +0000</pubDate>
+      <itunes:episode>106</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-106-lab-train-and-evaluate-a-tiny-classifier-in-python-4377357.mp3" length="4377357" type="audio/mpeg"/>
+      <itunes:duration>6:04</itunes:duration>
+    </item>
+    <item>
       <title>Day 105: Lesson 3: The Machine Learning Workflow</title>
       <description>Lesson 3: The Machine Learning Workflow - AI Foundations day 105, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-105</guid>

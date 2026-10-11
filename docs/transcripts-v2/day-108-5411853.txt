@@ -1,0 +1,37 @@
+Alex: It is review day. Clear your desk, close your tabs, and grab your coffee. This is AI Foundations.
+Jordan: Ten questions today covering the core principles of how machines learn, how automations break, and how to evaluate real systems. I ask the questions, you answer first, then we hit the operational reality. Ready?
+Alex: Always ready. Let's do it.
+Jordan: Question one, recall: In one or two sentences, what is the practical difference between an AI system and a normal rules-based automation?
+Alex: A rules-based system executes explicit, human-coded logic like if-this-then-that statements. An AI system looks at data, finds statistical patterns, and makes a probabilistic estimate on new inputs.
+Jordan: Exactly. Rules follow hard instructions, while machine learning estimates likely outcomes from historical patterns. That matters because rules fail loudly when an unhandled edge case appears, but AI fails quietly when patterns shift.
+Jordan: Question two, application: You run a Python loop classifying incoming Gmail messages into folders and writing rows to Excel. Right after a semester change, it starts making weird classification errors. What do you check first?
+Alex: The incoming email stream, not the model. The semester changed, so students might use new phrasing, staff are sending different templates, or the Gmail search query is pulling in drafts it never caught before.
+Jordan: Exactly right. Investigate data drift and query drift before assuming the model broke. That matters because in unattended automations, the outside world changes long before your code does.
+Jordan: Question three, recall: Walk through the primary stages of a standard machine learning workflow.
+Alex: You define the specific problem, collect the raw data, clean and label that data, and split it into training and test sets. Then you train the model, evaluate how well it performs, deploy it into production, and monitor it continuously.
+Jordan: That is the loop: problem, data, training, evaluation, deployment, and monitoring. That matters because teams that treat deployment as the finish line almost always get blindsided when performance silently degrades in the wild.
+Jordan: Question four, compare and contrast: Take a rule like if subject contains invoice label finance, versus a trained classifier. What does each do well, and where do they fail?
+Alex: The rule is fast, transparent, and easy to audit, but brittle. It misses phrases like payment request or closing costs. The classifier handles varied phrasing, but it is probabilistic, harder to debug, and prone to odd mistakes.
+Jordan: Rules offer predictability at the cost of coverage; classifiers offer coverage at the cost of certainty. That matters because you should never deploy a probabilistic model where a dead-simple rule gets the job done cleanly.
+Jordan: Question five, application: In our tiny classifier lab, your model achieves ninety-nine percent accuracy on the training data, but it falls apart completely on the held-out test data. What is the diagnosis, and what is your next move?
+Alex: That is classic overfitting. The model memorized the specific noise and quirks of the training samples instead of learning a pattern that generalizes. Next move is to inspect errors, simplify the features or the model architecture, and feed it cleaner, more representative data.
+Jordan: Overfitting is the exact diagnosis. That matters because a model that only memorizes its training examples is basically a student who memorized practice test answers and fails the real exam.
+Jordan: Question six, current systems: Why is it critical to separate shipped, announced, and rumored AI capabilities when designing tools for production?
+Alex: Because production code requires documented APIs, measurable latencies, and predictable costs that you can test today. Keynote announcements, demo videos, and social media rumors are marketing claims, not dependable engineering components.
+Jordan: Shipped features can be stress-tested in your actual environment, while announced or rumored capabilities carry zero operational guarantees. That matters because betting production roadmaps on unreleased features is the fastest way to build fragile, broken systems.
+Jordan: Question seven, recall: What does it actually mean when we say that an AI model makes probabilistic predictions rather than guaranteed conclusions?
+Alex: It means the system is calculating likelihoods based on token distributions or numerical weights, not arriving at factual truth. It is telling you what answer looks most plausible based on prior data, even when it presents that answer with total confidence.
+Jordan: Exactly. The system outputs a statistical best guess, not a verified fact. That matters because high linguistic fluency or high mathematical probability never guarantees factual correctness in a high-stakes workflow.
+Jordan: Question eight, application: A farm automation analyzes field notes and predicts repair needed, monitor, or no action. The model flags a note as repair needed with only moderate confidence, but the text mentions a hydraulic leak near an engine. What should the workflow do?
+Alex: Escalate immediately to a human. You do not wait for high statistical confidence when a failure involves safety hazards or expensive equipment breakdown.
+Jordan: Route straight to human intervention or a high-priority alert. That matters because when the real-world cost of a false negative is catastrophic, safety rules must override model confidence scores.
+Jordan: Question nine, recall: Why is the phrase "the AI said so" never an acceptable justification for an institutional, business, or academic decision?
+Alex: Because algorithms cannot take professional, legal, or moral responsibility. A real decision requires evidence, visible criteria, and human accountability. If you cannot explain the rationale and data behind an outcome, you did not make a decision; you just abdicated your job.
+Jordan: Decisions demand clear evidence, traceability, and an accountable human owner. That matters because when an automated recommendation causes financial harm or administrative chaos, you cannot subpoena a neural network.
+Jordan: Question ten, application: A colleague says, "Let's dump all our Excel financial reports into an LLM and let it decide which investments are risky." What foundational questions do you ask first?
+Alex: How do we define risky in measurable terms? What specific data does the model see? How do we measure false negatives? What does an error cost, and who reviews the output before money moves?
+Jordan: Define risk, bound the inputs, measure the errors, calculate downside costs, and enforce human review. That matters because handing unconstrained financial judgment to a model is not automation; it is reckless delegation.
+Alex: That covers all ten. It is striking how consistent the pattern is across email filters, farm equipment, and financial spreadsheets.
+Jordan: The tools change, but the operational laws stay identical. To wrap up review day, what is our single most important takeaway from this whole week?
+Alex: Never judge an AI system by how intelligent or articulate it sounds. Judge it by the pattern it is supposed to learn, the data it receives, the tests it actually passes, and the real-world cost when it gets the answer completely wrong.
+Jordan: That is the foundation underneath every pipeline worth running. Tomorrow, we move into lesson four: how models generalize. Keep your systems grounded.

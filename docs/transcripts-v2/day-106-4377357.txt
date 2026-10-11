@@ -1,0 +1,33 @@
+Alex: Today we are building the smallest useful machine learning system you can inspect end-to-end: a tiny text classifier in plain Python. It separates messages that need human review from routine tasks, and it runs with zero third-party packages, zero cloud accounts, and no GPU. This is AI Foundations.
+Jordan: Exactly. No scikit-learn, no vector databases, no remote API calls. Just the standard library. You're going to see the whole supervised learning loop with your own eyes: labeled examples, features, a model, a test set, real evaluation metrics, and saving out a reusable artifact.
+Alex: Walk us through setup first. Where do we begin?
+Jordan: Step one, open your terminal and make a fresh directory. Call it tiny-classifier-lab and jump in. Check your Python version with python --version. Any modern Python works here, from 3.10 up through 3.14.
+Alex: And if Windows gives you the classic command not found error?
+Jordan: Just type py --version instead. Then step two: create a file named tiny_classifier.py. You are going to paste in a self-contained script with twenty-four synthetic rows of data. Things like "tenant requests rent abatement after roof leak," labeled review, or "daily market price email received," labeled routine.
+Alex: So the two classes are review and routine. Review means a human should check this before automation touches it. Routine means safe for background processing.
+Jordan: Right. Then we write a few core functions. Tokenize splits the text into lowercase words. Split data shuffles the rows with a fixed seed and sets aside twenty-five percent as a holdout test set. That leaves eighteen rows for training and six for testing.
+Alex: And the actual algorithm is Naive Bayes. How does it learn?
+Jordan: It counts. That is literally it. The train function counts how many times each word appears under review versus routine. Words like denied, exception, unauthorized, or dispute appear heavily in review rows. Words like completed, archived, or refreshed cluster under routine.
+Alex: So when it predicts on a new sentence, it adds up the log probabilities based on those word counts.
+Jordan: Exactly. It uses Laplace smoothing—that is the plus one in the probability formula—so an unseen word doesn't zero out the entire score. Then it picks the label with the highest score, saves the model dictionary to a file called tiny_model.json, loads it back in, and evaluates it on those six held-out test rows.
+Alex: Step three is running it: python tiny_classifier.py. What should show up in the console?
+Jordan: You will see: training rows eighteen, test rows six, model file tiny_model.json. Then your evaluation metrics: accuracy, precision, and recall, each formatted as decimals. Below that, a four-line confusion matrix showing actual versus predicted counts. And finally, predictions on four brand new sentences.
+Alex: Step four is opening that tiny_model.json file. Why make people inspect the file?
+Jordan: Because it demystifies machine learning. When you open it, there are no weights or neural matrices. It is just readable JSON with your vocabulary list, label counts, and word frequency tables. You can literally read why the model makes decisions.
+Alex: Step five is connecting this logic to real workflows. Where would someone drop this in?
+Jordan: Think about an automated pipeline. You run a scheduled script to refresh an Excel sheet, download bank feeds, or process podcast audio. Instead of writing fifty brittle if-else statements, this classifier can read the log message or email subject. If it says routine, archive it. If it says review, trigger an alert.
+Alex: Before we hit the quiz, what are the three most common ways this lab breaks?
+Jordan: First, the Python command itself. On Windows use py, on Mac or Linux use python3 if plain python fails. Second, copy-paste syntax errors. If an email client turned straight quotes into curly smart quotes, Python will crash on syntax. Keep them straight ASCII double quotes. Third, misinterpreting the metrics. You might see a perfect 1.0 accuracy on those six test rows and think you're ready for production.
+Alex: But six rows isn't production validation.
+Jordan: Not even close. It proves the plumbing works. Real-world text has typos, slang, and edge cases. Plus, validation sets wear out if you keep tuning against them.
+Alex: Fair enough. Time for the check questions. Hit me.
+Jordan: Question one: why do we split the data into training rows and test rows in the first place?
+Alex: Because if you test the model on the exact same sentences it studied, you're only checking if it can memorize. Splitting the data gives us an honest check on whether it learned general patterns that apply to unseen examples.
+Jordan: Spot on. Question two: in this lab, what does precision for review mean in plain English?
+Alex: It means: when the model flags a message and says review, how often is it actually something that needs Brian's attention? High precision means very few false alarms, which matters when you don't want your inbox flooded with noise.
+Jordan: Exactly. If precision is low, Brian stops trusting the alert. Question three: why did we save the model out as a JSON file instead of using Python's built-in pickle module?
+Alex: Security. Python's own documentation warns that unpickling untrusted data can execute arbitrary code on your machine. JSON is just raw text and structured data—it can't execute code, so it's a much safer default for simple homegrown automation artifacts.
+Jordan: Three for three. That's the entire core.
+Alex: How does someone listening know their lab run actually worked?
+Jordan: If you run tiny_classifier.py and see eighteen training rows, six test rows, a clean confusion matrix, and tiny_model.json sitting in your folder, your lab worked.
+Alex: Tomorrow we zoom out for our weekly roundup: This Week in AI for October 10th, 2026. Join us then.

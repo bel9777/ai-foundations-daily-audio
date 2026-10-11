@@ -8,6 +8,30 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)</title>
+      <description>Two-host rebuild of AI Foundations day 108.</description>
+      <guid isPermaLink="false">two-host-day-108</guid>
+      <pubDate>Sun, 11 Oct 2026 07:31:20 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-108-weekly-review-foundations-1-how-machines-learn-oct-11-5411853.mp3" length="5411853" type="audio/mpeg"/>
+      <itunes:duration>7:30</itunes:duration>
+    </item>
+    <item>
+      <title>Day 107: This Week in AI (Oct 10, 2026)</title>
+      <description>Two-host rebuild of AI Foundations day 107.</description>
+      <guid isPermaLink="false">two-host-day-107</guid>
+      <pubDate>Sat, 10 Oct 2026 07:31:21 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-107-this-week-in-ai-oct-10-2026-5906061.mp3" length="5906061" type="audio/mpeg"/>
+      <itunes:duration>8:12</itunes:duration>
+    </item>
+    <item>
+      <title>Day 106: Lab: Train and Evaluate a Tiny Classifier in Python</title>
+      <description>Two-host rebuild of AI Foundations day 106.</description>
+      <guid isPermaLink="false">two-host-day-106</guid>
+      <pubDate>Fri, 09 Oct 2026 07:31:23 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-106-lab-train-and-evaluate-a-tiny-classifier-in-python-4377357.mp3" length="4377357" type="audio/mpeg"/>
+      <itunes:duration>6:04</itunes:duration>
+    </item>
+    <item>
       <title>Day 105: Lesson 3: The Machine Learning Workflow</title>
       <description>Two-host rebuild of AI Foundations day 105.</description>
       <guid isPermaLink="false">two-host-day-105</guid>

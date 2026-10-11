@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-10-05",
+  "week": 16,
+  "key": "00b5e630",
+  "title": "Week 16 (Oct 5–11): Days 102–108",
+  "days": [
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 102: Advanced Synthesis 31: Data And Learning Systems"
+   },
+   {
+    "start": 330,
+    "title": "Day 103: Lesson 1: What AI Is (and Isn't)"
+   },
+   {
+    "start": 854,
+    "title": "Day 104: Lesson 2: Patterns, Predictions, and Rules"
+   },
+   {
+    "start": 1290,
+    "title": "Day 105: Lesson 3: The Machine Learning Workflow"
+   },
+   {
+    "start": 1763,
+    "title": "Day 106: Lab: Train and Evaluate a Tiny Classifier in Python"
+   },
+   {
+    "start": 2130,
+    "title": "Day 107: This Week in AI (Oct 10, 2026)"
+   },
+   {
+    "start": 2623,
+    "title": "Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)"
+   }
+  ],
+  "durationSeconds": 3074,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-16-2026-10-05-00b5e630.mp3",
+  "bytes": 24595135,
+  "publishedAt": "2026-10-11T07:31:20"
+ },
+ {
   "weekStart": "2026-09-28",
   "week": 15,
   "key": "4c1cdf5a",
