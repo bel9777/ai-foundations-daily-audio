@@ -1,5 +1,17 @@
 [
  {
+  "day": 109,
+  "title": "Lesson 4: How Models Generalize",
+  "format": "two-host",
+  "guid": "two-host-day-109",
+  "publishedAt": "2026-10-12T07:31:16",
+  "audioPath": "/audio-v2/day-109-lesson-4-how-models-generalize-5428557.mp3",
+  "transcriptPath": "/transcripts-v2/day-109-5428557.txt",
+  "audioBytes": 5428557,
+  "durationSeconds": 452,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 108,
   "title": "Weekly Review: Foundations 1: How Machines Learn (Oct 11)",
   "format": "two-host",

@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 109: Lesson 4: How Models Generalize</title>
+      <description>Lesson 4: How Models Generalize - AI Foundations day 109, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-109</guid>
+      <pubDate>Mon, 12 Oct 2026 07:31:16 +0000</pubDate>
+      <itunes:episode>109</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-109-lesson-4-how-models-generalize-5428557.mp3" length="5428557" type="audio/mpeg"/>
+      <itunes:duration>7:32</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 16 (Oct 5–11): Days 102–108</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 102: Advanced Synthesis 31: Data And Learning Systems&lt;br/&gt;5:30 Day 103: Lesson 1: What AI Is (and Isn&#x27;t)&lt;br/&gt;14:14 Day 104: Lesson 2: Patterns, Predictions, and Rules&lt;br/&gt;21:30 Day 105: Lesson 3: The Machine Learning Workflow&lt;br/&gt;29:23 Day 106: Lab: Train and Evaluate a Tiny Classifier in Python&lt;br/&gt;35:30 Day 107: This Week in AI (Oct 10, 2026)&lt;br/&gt;43:43 Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-05-00b5e630</guid>
