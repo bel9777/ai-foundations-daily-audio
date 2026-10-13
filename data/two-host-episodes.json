@@ -1,5 +1,17 @@
 [
  {
+  "day": 110,
+  "title": "Lesson 5: Data Is the Model's Experience",
+  "format": "two-host",
+  "guid": "two-host-day-110",
+  "publishedAt": "2026-10-13T07:31:27",
+  "audioPath": "/audio-v2/day-110-lesson-5-data-is-the-model-s-experience-5773581.mp3",
+  "transcriptPath": "/transcripts-v2/day-110-5773581.txt",
+  "audioBytes": 5773581,
+  "durationSeconds": 481,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 109,
   "title": "Lesson 4: How Models Generalize",
   "format": "two-host",
