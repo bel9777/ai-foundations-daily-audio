@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 111: Lesson 6: Learning from Labeled Examples</title>
+      <description>Two-host rebuild of AI Foundations day 111.</description>
+      <guid isPermaLink="false">two-host-day-111</guid>
+      <pubDate>Wed, 14 Oct 2026 07:31:29 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-111-lesson-6-learning-from-labeled-examples-4912461.mp3" length="4912461" type="audio/mpeg"/>
+      <itunes:duration>6:49</itunes:duration>
+    </item>
+    <item>
       <title>Day 110: Lesson 5: Data Is the Model&#x27;s Experience</title>
       <description>Two-host rebuild of AI Foundations day 110.</description>
       <guid isPermaLink="false">two-host-day-110</guid>

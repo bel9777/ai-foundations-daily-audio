@@ -1,5 +1,17 @@
 [
  {
+  "day": 111,
+  "title": "Lesson 6: Learning from Labeled Examples",
+  "format": "two-host",
+  "guid": "two-host-day-111",
+  "publishedAt": "2026-10-14T07:31:29",
+  "audioPath": "/audio-v2/day-111-lesson-6-learning-from-labeled-examples-4912461.mp3",
+  "transcriptPath": "/transcripts-v2/day-111-4912461.txt",
+  "audioBytes": 4912461,
+  "durationSeconds": 409,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 110,
   "title": "Lesson 5: Data Is the Model's Experience",
   "format": "two-host",
