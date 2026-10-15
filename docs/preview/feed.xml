@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 112: Lesson 7: Classification, Regression, and Decision Boundaries</title>
+      <description>Two-host rebuild of AI Foundations day 112.</description>
+      <guid isPermaLink="false">two-host-day-112</guid>
+      <pubDate>Thu, 15 Oct 2026 07:31:20 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-112-lesson-7-classification-regression-and-decision-boundaries-4759821.mp3" length="4759821" type="audio/mpeg"/>
+      <itunes:duration>6:36</itunes:duration>
+    </item>
+    <item>
       <title>Day 111: Lesson 6: Learning from Labeled Examples</title>
       <description>Two-host rebuild of AI Foundations day 111.</description>
       <guid isPermaLink="false">two-host-day-111</guid>

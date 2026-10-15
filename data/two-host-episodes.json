@@ -1,5 +1,17 @@
 [
  {
+  "day": 112,
+  "title": "Lesson 7: Classification, Regression, and Decision Boundaries",
+  "format": "two-host",
+  "guid": "two-host-day-112",
+  "publishedAt": "2026-10-15T07:31:20",
+  "audioPath": "/audio-v2/day-112-lesson-7-classification-regression-and-decision-boundaries-4759821.mp3",
+  "transcriptPath": "/transcripts-v2/day-112-4759821.txt",
+  "audioBytes": 4759821,
+  "durationSeconds": 396,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 111,
   "title": "Lesson 6: Learning from Labeled Examples",
   "format": "two-host",
