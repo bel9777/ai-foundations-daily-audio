@@ -1,5 +1,17 @@
 [
  {
+  "day": 113,
+  "title": "Lab: Find the Leakage: Audit a Dataset Before You Trust It",
+  "format": "two-host",
+  "guid": "two-host-day-113",
+  "publishedAt": "2026-10-16T07:31:32",
+  "audioPath": "/audio-v2/day-113-lab-find-the-leakage-audit-a-dataset-before-you-trust-it-4705101.mp3",
+  "transcriptPath": "/transcripts-v2/day-113-4705101.txt",
+  "audioBytes": 4705101,
+  "durationSeconds": 392,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 112,
   "title": "Lesson 7: Classification, Regression, and Decision Boundaries",
   "format": "two-host",

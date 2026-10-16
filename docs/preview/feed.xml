@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 113: Lab: Find the Leakage: Audit a Dataset Before You Trust It</title>
+      <description>Two-host rebuild of AI Foundations day 113.</description>
+      <guid isPermaLink="false">two-host-day-113</guid>
+      <pubDate>Fri, 16 Oct 2026 07:31:32 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-113-lab-find-the-leakage-audit-a-dataset-before-you-trust-it-4705101.mp3" length="4705101" type="audio/mpeg"/>
+      <itunes:duration>6:32</itunes:duration>
+    </item>
+    <item>
       <title>Day 112: Lesson 7: Classification, Regression, and Decision Boundaries</title>
       <description>Two-host rebuild of AI Foundations day 112.</description>
       <guid isPermaLink="false">two-host-day-112</guid>

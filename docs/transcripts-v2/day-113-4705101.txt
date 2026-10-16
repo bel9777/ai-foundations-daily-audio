@@ -1,0 +1,40 @@
+Alex: Today we are building a dataset leakage auditor in pure Python, so you can catch sneaky, time-traveling data columns before they make your machine learning models look artificially brilliant. This is AI Foundations.
+Jordan: Data leakage is the quietest failure mode in the business. Your model gets a ninety-nine percent accuracy score in testing, you celebrate, ship it to production, and it immediately falls flat on its face.
+Alex: Because it had the cheat sheet during training.
+Jordan: Exactly. Leakage happens when your training process uses information that wouldn't actually be available at the exact moment you need to make the prediction in the real world. Think about predicting whether a borrower's loan will close, but your training script accidentally feeds in the date the loan was funded.
+Alex: Well, of course it closed if it has a funded date!
+Jordan: Right. Or you're predicting podcast episode downloads before release, and you include downloads from day three.
+Alex: That's not AI magic, that's just peeking into tomorrow's newspaper. So today, we're building a script to audit these datasets using only the standard Python library. Walk us through step one.
+Jordan: Step one is easy. Make a new folder called day113_leakage_audit, hop into it, and touch a file called leakage_audit.py. No third-party packages, no pip install needed. We're sticking to built-in modules like csv, statistics, and datetime.
+Alex: Clean and simple. What goes into leakage_audit.py for step two?
+Jordan: The script does two things. First, it generates a synthetic real estate loan pipeline CSV with deliberate leaks baked in. Then, it runs an audit over that CSV looking for six specific red flags. 
+Alex: What are the synthetic columns?
+Jordan: We generate things like borrower credit score, loan-to-value ratio, and property ID. But we also sneak in columns like status, funded amount, approved at timestamp, and an email subject line that literally says "Final approval issued".
+Alex: Those sound wildly obvious when you list them out loud, but in a giant company data warehouse, they're just another column in a table join.
+Jordan: Absolutely. You run the script in step three with python leakage_audit.py, and it immediately starts shouting warnings at you across six audit checks.
+Alex: What does that output look like?
+Jordan: First, it flags column-name smells. It scans your column headers for words like "status", "funded", "decision", or "approved". If you're trying to predict loan approval, and you have a feature called approved_at, that's an immediate warning.
+Alex: Makes sense. What's check two?
+Jordan: High-cardinality IDs. Columns like deal ID where nearly every row is unique. A raw ID isn't predictive; it just invites your model to memorize specific records or causes issues across joins.
+Alex: And check three and four look at the actual numbers and categories, right?
+Jordan: Yes. Check three calculates correlation with the target. If funded amount has a massive correlation with approval, red flag. Check four looks at categorical purity. Does the value in decision email subject predict the outcome ninety-nine percent of the time? If yes, it's flagged.
+Alex: Then check five looks at train and test split contamination. How does the script test that?
+Jordan: It does a random eighty-twenty split and checks property ID. If the same property appears in both training and test sets, the model might just memorize how that specific property behaves instead of learning generalizable real estate patterns. In real life, that could be a single vendor, a single borrower, or a repeat podcast guest.
+Alex: Finally, check six is the availability-time check.
+Jordan: The most important one. It compares the application date against the approved at date. If approved at comes after the application, you cannot use it to make an application-time decision. Period.
+Alex: Where do people usually trip up when running an audit like this? What are the biggest mistakes?
+Jordan: Three main ways this goes wrong. First, you panic and delete all strong predictors. Just because borrower score strongly predicts approval doesn't mean it's a leak! You knew the credit score when they applied. The test is availability in time, not statistical strength.
+Alex: Second mistake?
+Jordan: Doing random splits when your problem is temporal. If you're predicting the future, train on the past and test on the future. Don't randomly scatter rows across time.
+Alex: And the third?
+Jordan: Cleaning or scaling your entire dataset before splitting. If you calculate the average income across all rows to fill in missing values before you split into train and test, your test data just leaked into your training baseline. Always split first, fit on train, apply to test.
+Jordan: Speaking of which, quiz time. Let's see how sharp you are on these principles. Question one: What is the exact difference between target leakage and train-test contamination?
+Alex: Target leakage is when a feature gives away the answer because it contains info from after the prediction moment, like using funded amount to predict loan approval. Contamination is a workflow problem where information from your test set bleeds into training, like fitting a scaler on the whole dataset.
+Jordan: Spot on. Question two: You standardize a numeric column using the mean of all rows before doing your train-test split. What actually went wrong there?
+Alex: The test set influenced your transformation. Even if you never touched the target column, your model learned a baseline that was nudged by data it wasn't supposed to see yet. You have to split first, calculate the mean only on the training set, and apply that training mean to the test set.
+Jordan: Exactly right. Question three: You're running a podcast analytics pipeline and want to predict before release whether an episode will perform well. Can you include seven-day download numbers as a feature?
+Alex: No way! Seven-day downloads happen a week after the episode drops. If you need a pre-release prediction, you have to stick to things you know before hitting publish: guest topic, title length, release day, or historical averages.
+Jordan: Perfect. You aced the check.
+Alex: You'll know this lab worked when you run the script, generate the sample CSV, and see the terminal print clean warnings for the suspicious columns, ID overlaps, and date mismatches. 
+Jordan: Tomorrow, we take a breather from the terminal for our weekly wrap-up: This Week in AI for October 17th, 2026. 
+Alex: Catch you then!
