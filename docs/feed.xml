@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 114: This Week in AI (Oct 17, 2026)</title>
+      <description>This Week in AI (Oct 17, 2026) - AI Foundations day 114, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-114</guid>
+      <pubDate>Sat, 17 Oct 2026 07:32:23 +0000</pubDate>
+      <itunes:episode>114</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-114-this-week-in-ai-oct-17-2026-5813613.mp3" length="5813613" type="audio/mpeg"/>
+      <itunes:duration>8:04</itunes:duration>
+    </item>
+    <item>
       <title>Day 113: Lab: Find the Leakage: Audit a Dataset Before You Trust It</title>
       <description>Lab: Find the Leakage: Audit a Dataset Before You Trust It - AI Foundations day 113, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-113</guid>

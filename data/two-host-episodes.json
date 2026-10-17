@@ -1,5 +1,17 @@
 [
  {
+  "day": 114,
+  "title": "This Week in AI (Oct 17, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-114",
+  "publishedAt": "2026-10-17T07:32:23",
+  "audioPath": "/audio-v2/day-114-this-week-in-ai-oct-17-2026-5813613.mp3",
+  "transcriptPath": "/transcripts-v2/day-114-5813613.txt",
+  "audioBytes": 5813613,
+  "durationSeconds": 484,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 113,
   "title": "Lab: Find the Leakage: Audit a Dataset Before You Trust It",
   "format": "two-host",
