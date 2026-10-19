@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 17 (Oct 12–18): Days 109–114</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 109: Lesson 4: How Models Generalize&lt;br/&gt;7:34 Day 110: Lesson 5: Data Is the Model&#x27;s Experience&lt;br/&gt;15:36 Day 111: Lesson 6: Learning from Labeled Examples&lt;br/&gt;22:27 Day 112: Lesson 7: Classification, Regression, and Decision Boundaries&lt;br/&gt;29:05 Day 113: Lab: Find the Leakage: Audit a Dataset Before You Trust It&lt;br/&gt;35:39 Day 114: This Week in AI (Oct 17, 2026)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-12-cd7798b4</guid>
+      <pubDate>Sat, 17 Oct 2026 07:33:23 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-17-2026-10-12-cd7798b4.mp3" length="20987555" type="audio/mpeg"/>
+      <itunes:duration>0:43:43</itunes:duration>
+    </item>
+    <item>
       <title>Day 114: This Week in AI (Oct 17, 2026)</title>
       <description>This Week in AI (Oct 17, 2026) - AI Foundations day 114, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-114</guid>

@@ -10,6 +10,14 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Week 17 (Oct 12–18): Days 109–114</title>
+      <description>0:00 Day 109: Lesson 4: How Models Generalize&lt;br/&gt;7:34 Day 110: Lesson 5: Data Is the Model&#x27;s Experience&lt;br/&gt;15:36 Day 111: Lesson 6: Learning from Labeled Examples&lt;br/&gt;22:27 Day 112: Lesson 7: Classification, Regression, and Decision Boundaries&lt;br/&gt;29:05 Day 113: Lab: Find the Leakage: Audit a Dataset Before You Trust It&lt;br/&gt;35:39 Day 114: This Week in AI (Oct 17, 2026)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-12-cd7798b4</guid>
+      <pubDate>Sat, 17 Oct 2026 07:32:23 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-17-2026-10-12-cd7798b4.mp3" length="20987555" type="audio/mpeg"/>
+      <itunes:duration>43:43</itunes:duration>
+    </item>
+    <item>
       <title>Week 16 (Oct 5–11): Days 102–108</title>
       <description>0:00 Day 102: Advanced Synthesis 31: Data And Learning Systems&lt;br/&gt;5:30 Day 103: Lesson 1: What AI Is (and Isn&#x27;t)&lt;br/&gt;14:14 Day 104: Lesson 2: Patterns, Predictions, and Rules&lt;br/&gt;21:30 Day 105: Lesson 3: The Machine Learning Workflow&lt;br/&gt;29:23 Day 106: Lab: Train and Evaluate a Tiny Classifier in Python&lt;br/&gt;35:30 Day 107: This Week in AI (Oct 10, 2026)&lt;br/&gt;43:43 Day 108: Weekly Review: Foundations 1: How Machines Learn (Oct 11)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-05-00b5e630</guid>

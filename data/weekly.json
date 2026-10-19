@@ -1,5 +1,49 @@
 [
  {
+  "weekStart": "2026-10-12",
+  "week": 17,
+  "key": "cd7798b4",
+  "title": "Week 17 (Oct 12–18): Days 109–114",
+  "days": [
+   109,
+   110,
+   111,
+   112,
+   113,
+   114
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 109: Lesson 4: How Models Generalize"
+   },
+   {
+    "start": 454,
+    "title": "Day 110: Lesson 5: Data Is the Model's Experience"
+   },
+   {
+    "start": 936,
+    "title": "Day 111: Lesson 6: Learning from Labeled Examples"
+   },
+   {
+    "start": 1347,
+    "title": "Day 112: Lesson 7: Classification, Regression, and Decision Boundaries"
+   },
+   {
+    "start": 1745,
+    "title": "Day 113: Lab: Find the Leakage: Audit a Dataset Before You Trust It"
+   },
+   {
+    "start": 2139,
+    "title": "Day 114: This Week in AI (Oct 17, 2026)"
+   }
+  ],
+  "durationSeconds": 2623,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-17-2026-10-12-cd7798b4.mp3",
+  "bytes": 20987555,
+  "publishedAt": "2026-10-17T07:32:23"
+ },
+ {
   "weekStart": "2026-10-05",
   "week": 16,
   "key": "00b5e630",
