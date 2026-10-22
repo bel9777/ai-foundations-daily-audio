@@ -27,6 +27,7 @@ Usage:
 import base64
 import io
 import json
+import os
 import re
 import subprocess
 import sys
@@ -112,6 +113,12 @@ STATE = REPO / "data" / "two-host-episodes.json"
 AUDIO_DIR = REPO / "docs" / "audio-v2"
 TRANS_DIR = REPO / "docs" / "transcripts-v2"
 RUN_LOG = REPO / "_RUN-LOG.md"
+
+
+# 2026-10-22: a hidden git credential prompt hung a background run for good
+# (and Task Scheduler then skips the next day). Fail fast instead; the next
+# run pushes whatever is still ahead.
+os.environ["GIT_TERMINAL_PROMPT"] = "0"
 
 
 def gapi(path, payload, timeout=300, attempts=3):
@@ -680,7 +687,7 @@ def publish(msg):
         raise RuntimeError(
             f"refusing to push: {len(missing)} advertised enclosure(s) "
             f"missing after rebase, e.g. {missing[:3]}")
-    subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True)
+    subprocess.run(["git", "-C", str(REPO), "push", "--quiet"], check=True, timeout=300)
     return True
 
 
