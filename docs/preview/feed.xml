@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 115: Lesson 8: Learning Without Labels</title>
+      <description>Two-host rebuild of AI Foundations day 115.</description>
+      <guid isPermaLink="false">two-host-day-115</guid>
+      <pubDate>Thu, 22 Oct 2026 19:24:46 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-115-lesson-8-learning-without-labels-5170797.mp3" length="5170797" type="audio/mpeg"/>
+      <itunes:duration>7:10</itunes:duration>
+    </item>
+    <item>
       <title>Day 114: This Week in AI (Oct 17, 2026)</title>
       <description>Two-host rebuild of AI Foundations day 114.</description>
       <guid isPermaLink="false">two-host-day-114</guid>

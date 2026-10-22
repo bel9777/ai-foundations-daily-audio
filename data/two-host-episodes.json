@@ -1,5 +1,17 @@
 [
  {
+  "day": 115,
+  "title": "Lesson 8: Learning Without Labels",
+  "format": "two-host",
+  "guid": "two-host-day-115",
+  "publishedAt": "2026-10-22T19:24:46",
+  "audioPath": "/audio-v2/day-115-lesson-8-learning-without-labels-5170797.mp3",
+  "transcriptPath": "/transcripts-v2/day-115-5170797.txt",
+  "audioBytes": 5170797,
+  "durationSeconds": 430,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 114,
   "title": "This Week in AI (Oct 17, 2026)",
   "format": "two-host",
