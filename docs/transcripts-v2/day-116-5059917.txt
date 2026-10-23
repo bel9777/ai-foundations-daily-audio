@@ -1,0 +1,37 @@
+Alex: Today we are building a metrics evaluator for an invoice-exception detector. We will prove with actual code why a model can be ninety-seven percent accurate and completely worthless, and how to find the number that actually matters for the business. This is AI Foundations.
+Jordan: Accounts payable is a great playground for this. In any company, invoices roll in all day. Most are fine, but a few have nasty surprises like duplicate billing, pricing mismatches against purchase orders, or sudden changes to routing numbers.
+Alex: Which is where wire fraud happens.
+Jordan: Exactly. But only about three percent of invoices are bad. That imbalance breaks standard metrics. If you do nothing, you are already right ninety-seven percent of the time.
+Alex: Which sounds great to an executive until money vanishes. So what is the setup for today?
+Jordan: Zero dollars, no external packages. Just Python three point eight or newer and forty minutes. We write three small scripts using only the standard library: make data, score, and metrics.
+Alex: Let us walk through step one. What is in make data dot py?
+Jordan: We generate three thousand synthetic invoices. We set a seed so the numbers are predictable, and we bake in that three percent exception rate. That gives us ninety-three problem invoices. But we also make the normal invoices messy. Freight and sales tax push amounts slightly above the PO, recurring monthly rent looks like a duplicate, and vendors legitimately update addresses.
+Alex: Because real-world data is never clean. If we run python three make data dot py, what should we see?
+Jordan: It creates invoices dot csv and prints three thousand invoices, ninety-three exceptions. That is your first checkpoint.
+Alex: Got it. Step two is score dot py. What is that doing?
+Jordan: It acts as our detector. It reads invoices dot csv, calculates price percentage gaps, checks if duplicate or bank-change flags are tripped, adds some noise, and writes out scored dot csv with a score between zero and one. In production, that score could come from a machine learning model, a set of heuristic rules, or an LLM call. Checkpoint two: running it prints scored three thousand.
+Alex: Now for the meat of the lab: metrics dot py.
+Jordan: Right. This reads the scores and evaluates them across five distinct lenses. First is the lazy baseline. We set a threshold of nine, which no invoice can reach, meaning it flags nothing. Checkpoint three shows flag-nothing accuracy is ninety-six point nine percent, and recall is zero.
+Alex: Ninety-seven percent accuracy, and you caught zero fraud.
+Jordan: Zero. That is why you never judge an imbalanced classifier on raw accuracy alone.
+Alex: What does step four show when we sweep thresholds from zero point two up to zero point seven?
+Jordan: You see the classic trade-off. At zero point two, you flag over four hundred invoices. Recall is ninety-one percent, but precision is only twenty-one percent, meaning four out of five flags are false alarms. At zero point seven, accuracy hits ninety-seven percent again, but recall collapses to nine percent. You miss ninety-one percent of the problems.
+Alex: And F1 peaks around zero point three. But in the real world, false alarms and missed fraud do not cost the same.
+Jordan: Never. That brings us to step five: expected dollar cost. We assign placeholder values: say, fifteen hundred dollars lost for every missed exception, and ten dollars of staff time to review a flagged invoice. When you run the cost function across thresholds, the cheapest threshold lands at zero point one six. It flags five hundred and fifty-eight invoices, misses only five, and costs around thirteen thousand dollars overall.
+Alex: What happens in step six when we break recall down by exception type?
+Jordan: At that low threshold, it caught thirty-eight out of thirty-eight duplicates, thirty-three out of thirty-eight price mismatches, and seventeen out of seventeen bank changes. That sounds perfect for bank changes, but remember: seventeen is a tiny denominator. You cannot get cocky with small sample sizes.
+Alex: And step seven introduces the reality check: review capacity.
+Jordan: Right. Suppose your team only has time to review forty invoices a day. If you take the top forty highest-scoring invoices, precision at forty is forty-five percent, but recall at forty is only nineteen percent. The math says you need five hundred reviews to catch most errors, but your team only has forty slots.
+Alex: Where do people usually trip up when running this lab?
+Jordan: Three main traps. First, file ordering. If you run metrics before score, you get a file not found or a missing score key. Second, flipping the positive class. If your code accidentally treats normal invoices as positive, precision jumps to ninety-seven percent everywhere, matching the base rate. If your metric looks suspiciously like your base rate, your labels are probably backwards.
+Alex: And the third?
+Jordan: In-sample optimism. Tuning your threshold on the exact same ninety-three exceptions you report on will make your model look better than it is. In production, tune on last month, test on this month.
+Alex: Makes total sense. Time for the check questions. Hit me.
+Jordan: Question one. A vendor pitches you two detectors for your three percent exception workflow. Detector A is ninety-seven percent accurate. Detector B is ninety percent accurate. Why can't you pick yet, and what two numbers do you ask for?
+Alex: You cannot pick because Detector A might literally be doing nothing and letting all ninety-three exceptions through. You need to ask for precision and recall at the operating threshold you plan to run, or precision at k based on your team's review capacity. Detector B might actually catch the problems.
+Jordan: Nailed it. Question two. When you reduce the cost of a missed invoice from fifteen hundred dollars down to one hundred and fifty dollars, the cheapest threshold jumps from zero point one six up to zero point two six. Explain why in one sentence.
+Alex: When missing an exception gets ten times cheaper, spending ten dollars of reviewer time has to prevent a much smaller loss to justify itself, so you flag fewer items and accept more misses.
+Jordan: Spot on. Question three. Your daily dashboard can only show forty rows. Precision at forty is forty-five percent and recall at forty is nineteen percent. Give me two ways to fix this that do not involve retraining the model.
+Alex: First, route the high-risk stuff around the queue. Hardcode a business rule where any bank-detail change immediately escalates, so it doesn't take up one of those forty slots. Second, change how you review: batch invoices by vendor so one human check clears multiple flags, or tighten duplicate logic to ignore known recurring rent.
+Jordan: Clean sweep. You know the lab worked when your metrics dot py runs from top to bottom, matches those checkpoints, and gives you a clear threshold tailored to your team's actual capacity.
+Alex: Tomorrow on This Week in AI, we will look at recent benchmark claims and model announcements through this exact lens of metric skepticism. Join us then.

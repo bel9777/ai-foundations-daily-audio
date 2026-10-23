@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 116: Lab: Pick the Right Metric for an Invoice-Exception Detector</title>
+      <description>Two-host rebuild of AI Foundations day 116.</description>
+      <guid isPermaLink="false">two-host-day-116</guid>
+      <pubDate>Fri, 23 Oct 2026 07:32:10 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-116-lab-pick-the-right-metric-for-an-invoice-exception-detector-5059917.mp3" length="5059917" type="audio/mpeg"/>
+      <itunes:duration>7:01</itunes:duration>
+    </item>
+    <item>
       <title>Day 115: Lesson 8: Learning Without Labels</title>
       <description>Two-host rebuild of AI Foundations day 115.</description>
       <guid isPermaLink="false">two-host-day-115</guid>

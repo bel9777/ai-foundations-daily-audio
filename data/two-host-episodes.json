@@ -1,5 +1,17 @@
 [
  {
+  "day": 116,
+  "title": "Lab: Pick the Right Metric for an Invoice-Exception Detector",
+  "format": "two-host",
+  "guid": "two-host-day-116",
+  "publishedAt": "2026-10-23T07:32:10",
+  "audioPath": "/audio-v2/day-116-lab-pick-the-right-metric-for-an-invoice-exception-detector-5059917.mp3",
+  "transcriptPath": "/transcripts-v2/day-116-5059917.txt",
+  "audioBytes": 5059917,
+  "durationSeconds": 421,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 115,
   "title": "Lesson 8: Learning Without Labels",
   "format": "two-host",
