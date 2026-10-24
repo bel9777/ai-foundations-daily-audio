@@ -1,0 +1,39 @@
+Alex: OpenAI might be putting visual ads right inside your ChatGPT images, and analysts are projecting thirty trillion dollars in infrastructure spending. But before we get ahead of ourselves, there is a catch. This is AI Foundations.
+Jordan: That catch is sitting right in front of us today. Normally, we run a fresh web scan across primary industry feeds to build this weekly roundup. This morning, our search pipeline hit an API usage limit after just a single query.
+Alex: Which left us with exactly one article from two weeks back, dated October ninth.
+Jordan: That is it. I could have pulled five buzzy headlines from memory and sounded confident. But that breaks the core rules of this course. If you cannot trace an AI claim to a timestamped primary source, it is rumor. A briefing I cannot verify has the exact same problem as a training set you never audited.
+Alex: Lesson Five: Data Is the Model's Experience. If retrieval returns one older document, the model only knows what is in that document.
+Jordan: Exactly right. So instead of pretending, today is our verification-gap edition. We are looking at what we could verify, how to categorize AI news without getting fooled, and how you can build your own automated scanner so you never rely on third-party roundups.
+Alex: Let us start with that single verified item. According to an AI update published by MarketingProfs on October ninth, OpenAI is testing visual ads inside ChatGPT image generation.
+Jordan: That is what the MarketingProfs roundup reported. They said OpenAI is testing a visual ad format with Free and Go users in the United States later this month, while expanding conversion tracking and attribution with partners like Hightouch, LiveRamp, and Tealium.
+Alex: Ads right in the image generator. But is it actually live?
+Jordan: We have to label that as announced, not shipped. The report said later in October, but without an entry on OpenAI News or a changelog, we cannot confirm it shipped. Secondary coverage is not proof of delivery.
+Alex: And that same MarketingProfs roundup brought up those wild infrastructure figures.
+Jordan: Right. According to the roundup, PwC projected cumulative global data-center spending could pass thirty trillion dollars by 2050, and Bain estimated that infrastructure developers will need over four point two trillion dollars in additional funding.
+Alex: Thirty trillion dollars. That sounds massive, but 2050 is a quarter-century away.
+Jordan: Treat it like a twenty-five-year pro forma in commercial real estate. It is a long-range forecast built on layers of assumptions, and it reached us second-hand. It is not an empirical measurement.
+Alex: That leads straight into the sorting framework from the briefing: how to sort any AI headline in sixty seconds into four bins. Walk us through those categories.
+Jordan: Bin one is Shipped. That means it exists in production right now. You can run it, test it, or call the endpoint. The evidence is a release note, documentation update, or a tagged GitHub release.
+Alex: Bin two is Announced.
+Jordan: The company put out an official blog post saying a feature is coming, or rolling out over the coming weeks, but you cannot access it yet.
+Alex: Bin three is Research.
+Jordan: Preprints on arXiv or conference papers. Remember, arXiv is not peer-reviewed. Any benchmark claim in a preprint belongs to the authors until an independent team reproduces it.
+Alex: And bin four is Rumoured.
+Jordan: Leaked screenshots, anonymous sources, or people posting what they claim to have heard. Never build business logic or automations on rumors.
+Alex: And the briefing highlighted one cardinal rule: a roundup is never a primary source.
+Jordan: Never. A roundup is just someone else reading the news. If you cannot follow a claim back to a company announcement, a published paper, or a regulatory text, mark it unverified. As we learned in Lesson Six, a labeling scheme only works if the definitions are written down and you apply them consistently every week.
+Alex: For someone building actual automations, what primary sources should be on that list?
+Jordan: Start with the tools you run directly. If you have unattended loops running, monitor the Claude Code changelog and OpenAI Codex releases on GitHub. A changed default flag can break a scheduled job without throwing an obvious error. Next, watch the OpenAI and Gemini API changelogs for model retirement dates.
+Alex: Plus company blogs, research feeds, and policy trackers.
+Jordan: Exactly. OpenAI News, Anthropic News, the Google AI blog, and Meta AI blog for announcements. For research, watch arXiv machine learning feeds and Hugging Face Papers. And for policy, check the EU AI Act tracker directly for real implementation dates rather than skimming headlines.
+Alex: Today's lab has Brian building this scanner in Python using just the standard library to pull Atom and RSS feeds from the last seven days.
+Jordan: It pulls GitHub releases for Claude Code and Codex, tagging them as shipped, and arXiv feeds, tagging them as research. But the most important line in that script is where it catches errors and prints Feed Failed.
+Alex: Surface the gaps instead of hiding them.
+Jordan: Always fail loudly. This edition exists because a search tool failed quietly. If your scheduled scanner drops a feed with a 404 error and skips it silently, your report shows no news, and you assume nothing happened. In reality, you just lost your data pipeline.
+Alex: That connects back to our lab on picking the right metric. With an arXiv feed, you want high precision, filtering with keywords like agent or evaluation so you are not reading hundreds of papers.
+Jordan: But on your shipped feeds for tools you use, you tune for high recall. Missing a breaking release in Claude Code will cost you far more than skimming an extra paper you could have ignored.
+Alex: The lesson also suggested clustering those collected titles over time using TF-IDF and k-means or embeddings.
+Jordan: Just remember Lesson Eight on learning without labels. Clusters are simply hypotheses about structure. You still have to inspect five titles yourself before trusting whatever theme you think emerged.
+Alex: Looking ahead, what should we watch next week?
+Jordan: Watch OpenAI News to see if that ChatGPT visual ad test actually ships, run your new scanner on Friday to check your Claude Code and Codex versions, and tune in next week for our full two-week catchup.
+Alex: We will see you then.

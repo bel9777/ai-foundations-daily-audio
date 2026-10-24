@@ -1,5 +1,17 @@
 [
  {
+  "day": 117,
+  "title": "This Week in AI (Oct 24, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-117",
+  "publishedAt": "2026-10-24T07:31:39",
+  "audioPath": "/audio-v2/day-117-this-week-in-ai-oct-24-2026-4633101.mp3",
+  "transcriptPath": "/transcripts-v2/day-117-4633101.txt",
+  "audioBytes": 4633101,
+  "durationSeconds": 386,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 116,
   "title": "Lab: Pick the Right Metric for an Invoice-Exception Detector",
   "format": "two-host",
