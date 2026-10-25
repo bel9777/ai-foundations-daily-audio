@@ -1,5 +1,17 @@
 [
  {
+  "day": 118,
+  "title": "Weekly Review: Foundations 1: How Machines Learn (Oct 25)",
+  "format": "two-host",
+  "guid": "two-host-day-118",
+  "publishedAt": "2026-10-25T07:31:20",
+  "audioPath": "/audio-v2/day-118-weekly-review-foundations-1-how-machines-learn-oct-25-5042061.mp3",
+  "transcriptPath": "/transcripts-v2/day-118-5042061.txt",
+  "audioBytes": 5042061,
+  "durationSeconds": 420,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 117,
   "title": "This Week in AI (Oct 24, 2026)",
   "format": "two-host",

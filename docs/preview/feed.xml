@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 118: Weekly Review: Foundations 1: How Machines Learn (Oct 25)</title>
+      <description>Two-host rebuild of AI Foundations day 118.</description>
+      <guid isPermaLink="false">two-host-day-118</guid>
+      <pubDate>Sun, 25 Oct 2026 07:31:20 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-118-weekly-review-foundations-1-how-machines-learn-oct-25-5042061.mp3" length="5042061" type="audio/mpeg"/>
+      <itunes:duration>7:00</itunes:duration>
+    </item>
+    <item>
       <title>Day 117: This Week in AI (Oct 24, 2026)</title>
       <description>Two-host rebuild of AI Foundations day 117.</description>
       <guid isPermaLink="false">two-host-day-117</guid>

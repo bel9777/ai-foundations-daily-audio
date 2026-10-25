@@ -1,0 +1,36 @@
+Alex: Today is review day. Nothing new comes in. We pull this week's ideas back out of memory so they stick. This is AI Foundations.
+Jordan: Ten review questions today. I will fire off the prompt, you answer out loud first, and I will give the official answer plus why it matters in production. Ready?
+Alex: Ready. Hit me.
+Jordan: Question one. Classification or regression for these four: days until an overdue invoice is paid, duplicate vendor invoice, next month's feed cost per head, and which of four approval queues an expense report goes to.
+Alex: Days until payment is regression. Duplicate invoice is classification. Feed cost is regression. And four approval queues is classification.
+Jordan: Spot on. Continuous numbers are regression; distinct buckets are classification, even with four queues. This matters because picking the wrong type means optimizing for the wrong loss function from day one.
+Jordan: Question two. Your invoice-exception model outputs a probability. One invoice scores zero point six two. Your script flags anything over zero point five, and your accounts payable clerk is buried in false alarms. What knob do you turn without retraining, and what do you give up?
+Alex: Raise the decision threshold, maybe to zero point seven five. You cut down on the false alarms, but you lower recall, meaning you risk missing real exceptions.
+Jordan: Right. Raising the threshold boosts precision at the expense of recall without touching model weights. This matters because operational bottlenecks are often policy problems you can solve instantly, not retraining problems.
+Jordan: Question three. A late-payment predictor hits an AUC of zero point nine eight on a random split. The top feature is collections status. What do you check first, and what split should you have used?
+Alex: Check if collections status was set after the payment was already late, which is data leakage. And you should use a time-based split, training on the past and testing on the future.
+Jordan: Exactly. Collections status usually flips because the bill was delinquent, so the model peeked at the answer. This matters because a leaky model looks perfect in testing and collapses instantly in production.
+Jordan: Question four. Compare clustering forty thousand transactions versus labeling one thousand to train a classifier. Hit three points: upfront needs, output meaning, and how to know it worked.
+Alex: Clustering needs no labels up front; classification needs those thousand labeled examples. Clustering outputs unnamed groups you must interpret; classification gives direct answers like normal or unusual. And you evaluate clustering by stability and business sense, but classification by clear test-set error rates.
+Jordan: Clean sweep. Clustering explores unlabeled structure, while classification predicts specific targets you can verify. This matters because if you cannot measure correctness, you are just trusting software to invent your business logic.
+Jordan: Question five. Only one percent of invoices are bad. A missed exception costs five thousand dollars. A false alarm costs five minutes. Why is a ninety-nine percent accurate model meaningless here, and what metrics do you report?
+Alex: A model that flags nothing is ninety-nine percent accurate while letting every single five-thousand-dollar disaster through. Report precision, recall, and a precision-recall curve instead.
+Jordan: Nailed it. In imbalanced data, baseline accuracy just mirrors the majority class and hides catastrophic misses. This matters because when false negatives are expensive, you must optimize specifically for high recall.
+Jordan: Question six. A lab blog post says their new model is state of the art on coding benchmarks and coming soon to their API. Is this shipped, announced, or rumored? What two things do you check before switching your code?
+Alex: Announced, not shipped. Before switching, confirm the model ID is live in the API with pricing and rate limits, and test it on your actual workload, not their public benchmarks.
+Jordan: Spot on. Public benchmarks are vendor marketing, not your production reality. This matters because jumping on unverified claims breaks live pipelines and burns engineering hours.
+Jordan: Question seven. Name the three ingredients every supervised learning setup needs, and explain in one sentence what training does with them.
+Alex: Inputs, correct labels, and a loss function. Training repeatedly adjusts the model's parameters to minimize that loss across the examples.
+Jordan: Exactly. You supply inputs, targets, and a score for wrongness, and optimization minimizes that score. This matters because without an explicit loss function, a machine literally has no definition of learning.
+Jordan: Question eight. You and your manager label two hundred emails for an inbox triage tool. You disagree on forty. What does that tell you about the best accuracy any model can reach, and what do you fix first?
+Alex: You only agree eighty percent of the time, so no model can reliably beat eighty percent accuracy. Fix the labels first by writing clear guidelines for the edge cases.
+Jordan: Right. A model cannot be more consistent than the ground truth it learns from. This matters because tuning code on contradictory labels just automates human confusion.
+Jordan: Question nine. Two accounts-payable checks: flag any invoice more than two percent above its purchase order, and flag invoices that look like spoofed vendor emails. Rule or model for each, and why?
+Alex: The two percent check is a hard-coded rule because the math is simple, exact, and auditable. Spoofing needs a machine learning model because phishing signals are fuzzy and constantly changing.
+Jordan: Correct. Use rules when logic is clear and deterministic; use models when patterns are complex and evolving. This matters because building machine learning where simple logic works creates brittle technical debt.
+Jordan: Question ten. Your rent forecasting model was trained on twenty-twenty-two through twenty-twenty-five. In twenty-twenty-six, the university changes payment policies, and forecasts drift. What concept explains this, and what should your scheduled job monitor?
+Alex: Distribution shift. The world changed, so past patterns expired. The job should monitor live forecast errors against actual outcomes, plus shifts in the input data distributions.
+Jordan: Exactly. When real-world dynamics shift, models fail silently without throwing software errors. This matters because tracking live drift is the only way to catch degradation before it hurts revenue.
+Alex: Ten for ten. Let us wrap with the single most important takeaway from this week's review.
+Jordan: Before trusting any model, yours or a vendor's, ask three things: What exactly was it tested on? Would it have had that information in real life at that exact moment? And does the score match what a mistake actually costs you?
+Alex: If you cannot answer all three, you do not have a result yet. That is review day. See you tomorrow for feature engineering.

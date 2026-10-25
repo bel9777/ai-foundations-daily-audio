@@ -1,5 +1,39 @@
 [
  {
+  "weekStart": "2026-10-19",
+  "week": 18,
+  "key": "ed2f46ae",
+  "title": "Week 18 (Oct 19–25): Days 115–118",
+  "days": [
+   115,
+   116,
+   117,
+   118
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 115: Lesson 8: Learning Without Labels"
+   },
+   {
+    "start": 432,
+    "title": "Day 116: Lab: Pick the Right Metric for an Invoice-Exception Detector"
+   },
+   {
+    "start": 855,
+    "title": "Day 117: This Week in AI (Oct 24, 2026)"
+   },
+   {
+    "start": 1243,
+    "title": "Day 118: Weekly Review: Foundations 1: How Machines Learn (Oct 25)"
+   }
+  ],
+  "durationSeconds": 1663,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-18-2026-10-19-ed2f46ae.mp3",
+  "bytes": 13306021,
+  "publishedAt": "2026-10-25T07:31:20"
+ },
+ {
   "weekStart": "2026-10-12",
   "week": 17,
   "key": "cd7798b4",
