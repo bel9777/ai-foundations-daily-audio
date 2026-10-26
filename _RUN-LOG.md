@@ -63,3 +63,4 @@
 2026-10-22 19:38 FAIL made:1 ondisk:115 ledger:115 missing:0 feed:two-host PUSH-FAILED:CalledProcessError
 2026-10-23 09:37 OK made:1 ondisk:116 ledger:116 missing:0 feed:two-host PUSHED
 2026-10-24 07:49 OK made:1 ondisk:117 ledger:117 missing:0 feed:two-host PUSHED
+2026-10-25 07:51 OK made:1 ondisk:118 ledger:118 missing:0 feed:two-host PUSHED weekly:+1

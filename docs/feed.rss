@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 119: Lesson 9: Features: Turning Reality into Inputs</title>
+      <description>Lesson 9: Features: Turning Reality into Inputs - AI Foundations day 119, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-119</guid>
+      <pubDate>Mon, 26 Oct 2026 07:32:10 +0000</pubDate>
+      <itunes:episode>119</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-119-lesson-9-features-turning-reality-into-inputs-5658381.mp3" length="5658381" type="audio/mpeg"/>
+      <itunes:duration>7:51</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 18 (Oct 19–25): Days 115–118</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 115: Lesson 8: Learning Without Labels&lt;br/&gt;7:12 Day 116: Lab: Pick the Right Metric for an Invoice-Exception Detector&lt;br/&gt;14:15 Day 117: This Week in AI (Oct 24, 2026)&lt;br/&gt;20:43 Day 118: Weekly Review: Foundations 1: How Machines Learn (Oct 25)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-19-ed2f46ae</guid>

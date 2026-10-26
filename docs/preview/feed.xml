@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 119: Lesson 9: Features: Turning Reality into Inputs</title>
+      <description>Two-host rebuild of AI Foundations day 119.</description>
+      <guid isPermaLink="false">two-host-day-119</guid>
+      <pubDate>Mon, 26 Oct 2026 07:32:10 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-119-lesson-9-features-turning-reality-into-inputs-5658381.mp3" length="5658381" type="audio/mpeg"/>
+      <itunes:duration>7:51</itunes:duration>
+    </item>
+    <item>
       <title>Day 118: Weekly Review: Foundations 1: How Machines Learn (Oct 25)</title>
       <description>Two-host rebuild of AI Foundations day 118.</description>
       <guid isPermaLink="false">two-host-day-118</guid>

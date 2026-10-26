@@ -1,5 +1,17 @@
 [
  {
+  "day": 119,
+  "title": "Lesson 9: Features: Turning Reality into Inputs",
+  "format": "two-host",
+  "guid": "two-host-day-119",
+  "publishedAt": "2026-10-26T07:32:10",
+  "audioPath": "/audio-v2/day-119-lesson-9-features-turning-reality-into-inputs-5658381.mp3",
+  "transcriptPath": "/transcripts-v2/day-119-5658381.txt",
+  "audioBytes": 5658381,
+  "durationSeconds": 471,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 118,
   "title": "Weekly Review: Foundations 1: How Machines Learn (Oct 25)",
   "format": "two-host",
