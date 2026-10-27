@@ -1,5 +1,17 @@
 [
  {
+  "day": 120,
+  "title": "Lesson 10: Loss Functions: Defining What Wrong Means",
+  "format": "two-host",
+  "guid": "two-host-day-120",
+  "publishedAt": "2026-10-27T07:32:19",
+  "audioPath": "/audio-v2/day-120-lesson-10-loss-functions-defining-what-wrong-means-6304077.mp3",
+  "transcriptPath": "/transcripts-v2/day-120-6304077.txt",
+  "audioBytes": 6304077,
+  "durationSeconds": 525,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 119,
   "title": "Lesson 9: Features: Turning Reality into Inputs",
   "format": "two-host",
