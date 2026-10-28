@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 121: Lesson 11: Optimization and Gradient Descent</title>
+      <description>Lesson 11: Optimization and Gradient Descent - AI Foundations day 121, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-121</guid>
+      <pubDate>Wed, 28 Oct 2026 07:31:57 +0000</pubDate>
+      <itunes:episode>121</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-121-lesson-11-optimization-and-gradient-descent-5596461.mp3" length="5596461" type="audio/mpeg"/>
+      <itunes:duration>7:46</itunes:duration>
+    </item>
+    <item>
       <title>Day 120: Lesson 10: Loss Functions: Defining What Wrong Means</title>
       <description>Lesson 10: Loss Functions: Defining What Wrong Means - AI Foundations day 120, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-120</guid>

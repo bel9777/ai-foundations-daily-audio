@@ -1,5 +1,17 @@
 [
  {
+  "day": 121,
+  "title": "Lesson 11: Optimization and Gradient Descent",
+  "format": "two-host",
+  "guid": "two-host-day-121",
+  "publishedAt": "2026-10-28T07:31:57",
+  "audioPath": "/audio-v2/day-121-lesson-11-optimization-and-gradient-descent-5596461.mp3",
+  "transcriptPath": "/transcripts-v2/day-121-5596461.txt",
+  "audioBytes": 5596461,
+  "durationSeconds": 466,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 120,
   "title": "Lesson 10: Loss Functions: Defining What Wrong Means",
   "format": "two-host",
