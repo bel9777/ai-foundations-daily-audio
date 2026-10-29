@@ -1,5 +1,17 @@
 [
  {
+  "day": 122,
+  "title": "Lesson 12: Evaluation Metrics That Match the Goal",
+  "format": "two-host",
+  "guid": "two-host-day-122",
+  "publishedAt": "2026-10-29T07:31:56",
+  "audioPath": "/audio-v2/day-122-lesson-12-evaluation-metrics-that-match-the-goal-5721741.mp3",
+  "transcriptPath": "/transcripts-v2/day-122-5721741.txt",
+  "audioBytes": 5721741,
+  "durationSeconds": 476,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 121,
   "title": "Lesson 11: Optimization and Gradient Descent",
   "format": "two-host",

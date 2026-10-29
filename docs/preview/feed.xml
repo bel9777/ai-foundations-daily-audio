@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 122: Lesson 12: Evaluation Metrics That Match the Goal</title>
+      <description>Two-host rebuild of AI Foundations day 122.</description>
+      <guid isPermaLink="false">two-host-day-122</guid>
+      <pubDate>Thu, 29 Oct 2026 07:31:56 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-122-lesson-12-evaluation-metrics-that-match-the-goal-5721741.mp3" length="5721741" type="audio/mpeg"/>
+      <itunes:duration>7:56</itunes:duration>
+    </item>
+    <item>
       <title>Day 121: Lesson 11: Optimization and Gradient Descent</title>
       <description>Two-host rebuild of AI Foundations day 121.</description>
       <guid isPermaLink="false">two-host-day-121</guid>
