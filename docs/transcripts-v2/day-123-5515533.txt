@@ -1,0 +1,42 @@
+Alex: Today we are building a Python script to test our predictive models against dumb baselines, because an MAE of 5.2 means nothing in a vacuum. It only matters if it beats a dead-simple rule. This is AI Foundations.
+Jordan: It really is the most overlooked step in forecasting. People jump straight into training complex models. But in the famous M4 forecasting competition, pure machine learning entries actually performed quite poorly compared to basic statistical benchmarks.
+Alex: Like guessing whatever value showed up yesterday.
+Jordan: Exactly like that. Rob Hyndman outlines a few standard benchmarks in his textbook: the overall mean, the naive method which just repeats the last observed number, and seasonal naive, which repeats whatever happened seven days ago.
+Alex: Which makes total sense for anything tied to human routines, like server traffic, support tickets, or your morning inbox. Sundays look like Sundays, Mondays look like Mondays.
+Jordan: Precisely. If a fancy machine learning setup cannot beat looking at what happened last Tuesday, it has no business running in your production pipeline.
+Alex: So how are we setting up this lab?
+Jordan: You create a script called baseline lab dot py. No third-party packages, pure Python standard library. If you do not pass a file, it generates two hundred and ten days of synthetic email counts with weekend dips, a gentle upward trend, and some noise.
+Alex: And what are we testing against those baselines?
+Jordan: We build a candidate forecaster that takes the average of the last k same-weekdays. So if today is a Wednesday, it averages the last k Wednesdays.
+Alex: Walk me through the evaluation. How does the script test fairly?
+Jordan: Walk-forward validation. That means every single forecast for day t is only allowed to see the history up to day t minus one. It matches how your scheduled job actually experiences reality. Then we split time into two halves after a short warm-up. We use the first half strictly to tune k between one and four. Once k is locked in, we score that tuned model on the untouched second half alongside our three baselines.
+Alex: What do we see when we run python three baseline lab dot py on the demo data?
+Jordan: You will see it tune k to four. On the test window, the mean lands at an MAE around 16.2. Naive is right beside it at 16.0. Seasonal naive plummets down to 6.34. And our tuned four-week average candidate hits 5.17.
+Alex: If I only compared my model to the mean, I would be bragging about a massive sixty-eight percent improvement. But against seasonal naive, my real skill edge is only about eighteen and a half percent.
+Jordan: That is why people get fooled. The mean is a strawman here. The script also runs a paired bootstrap test across the test days. Candidate error minus seasonal naive error gives an average difference of minus one point one seven, with a ninety-five percent confidence interval from minus two point ten to minus zero point twenty-nine.
+Alex: The interval is entirely below zero, so zero is excluded. That triggers our script to print out: BEATS baseline.
+Jordan: Right. But notice another detail from the terminal: the candidate only wins fifty-three percent of individual days.
+Alex: That is barely better than a coin flip on a daily basis.
+Jordan: But its average error is substantially lower because it avoids huge blowouts. When a random Monday has an odd spike, seasonal naive carries that full spike into the next Monday. The four-week average dampens the outlier.
+Alex: Now, what about the second checkpoint in the lab? You have us destroy the pattern on purpose.
+Jordan: Yes, pass the shuffle flag. Scramble the dates. When you do that, temporal structure vanishes. Seasonal naive gets crushed, the candidate cannot find any pattern, and the confidence interval spans from minus zero point twenty-seven to positive two point eighty. The script outputs NO CLEAR DIFFERENCE.
+Alex: That is the whole learn why you cannot part. If there is no time-based signal, averaging past weeks just adds extra noise.
+Jordan: If you run your own data and see numbers like that shuffled run, stop trying fancier time series architectures. Your series simply cannot be predicted from its own history alone. You need external features, or you just stick with the baseline.
+Alex: Speaking of our own data, how do we plug that in?
+Jordan: You can take any scheduled event log, run it through the little log to daily helper script provided in the lab, and it tallies events per calendar day. It also fills zero-event days so your timeline has no gaps. You want at least ninety days of history.
+Alex: What are the biggest traps that can mess this up?
+Jordan: The first is that strawman baseline we mentioned. Quoting a huge win against the overall mean when seasonal naive actually crushed your model. Always compare against the best baseline.
+Alex: The second has to be data leakage or broken time indexing.
+Jordan: Exactly. If you have an off-by-one indexing error where the forecast peeks at the actual value on day t, your MAE drops near zero and you think you are a genius. And if your calendar has missing weekend rows, looking back seven rows does not check last week. It checks some random day nine or ten days ago.
+Alex: And the third trap is declaring victory on noise. Your candidate is three percent better, but the confidence interval crosses zero, or your test window is only twenty days long.
+Jordan: If the interval crosses zero, you have no statistical evidence your model is actually better. Do not push that to production.
+Alex: Time for the check questions. Hit me.
+Jordan: First up: why is seasonal naive, not the overall mean, the right bar for daily Gmail volume?
+Alex: Because email volume is dominated by the calendar. Weekdays are busy, weekends are quiet. The overall mean completely ignores that rhythm. Beating the mean just proves your model figured out that weekends exist. Seasonal naive gets that weekly pattern for free, without any tuning. If your candidate cannot beat seasonal naive, it has not learned anything useful.
+Jordan: Exactly right. Next: your candidate shows four percent lower MAE than the best baseline, with a ninety-five percent confidence interval on the difference of minus zero point eight to plus zero point five. What do you conclude, and what do you do next?
+Alex: I conclude there is no clear difference. The confidence interval crosses zero, meaning that four percent edge could easily be pure chance. In production, I stick with the baseline because it is simpler and requires zero maintenance. Next, I either gather a longer test window or go hunt for actual predictive features, like holidays or marketing schedules.
+Jordan: Nailed it. Last one: why does the script tune k on the first half and score on the second half, instead of tuning and scoring across all the data?
+Alex: Because you cannot grade your own exam. If you pick your settings on the same window you score against, your model tunes itself to the random quirks of that specific data. Scoring on an untouched second half mirrors real life: you choose your settings today, and your model has to survive on real days tomorrow.
+Jordan: You passed. You know this lab worked when you run it on your own data and write down three things: the best baseline, your candidate model's skill score against it, and a clear verdict backed by an honest confidence interval.
+Alex: Tomorrow is Friday, which means This Week in AI for October thirty-first, twenty twenty-six. We will break down what shipped, what was announced, and what is just noise, using today's exact rule: better than what baseline?
+Jordan: See you tomorrow.

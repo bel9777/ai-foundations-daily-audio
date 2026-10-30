@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 123: Lab: Beat the Baseline - or Learn Why You Cannot</title>
+      <description>Two-host rebuild of AI Foundations day 123.</description>
+      <guid isPermaLink="false">two-host-day-123</guid>
+      <pubDate>Fri, 30 Oct 2026 07:32:30 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-123-lab-beat-the-baseline-or-learn-why-you-cannot-5515533.mp3" length="5515533" type="audio/mpeg"/>
+      <itunes:duration>7:39</itunes:duration>
+    </item>
+    <item>
       <title>Day 122: Lesson 12: Evaluation Metrics That Match the Goal</title>
       <description>Two-host rebuild of AI Foundations day 122.</description>
       <guid isPermaLink="false">two-host-day-122</guid>

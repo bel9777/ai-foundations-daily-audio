@@ -1,5 +1,17 @@
 [
  {
+  "day": 123,
+  "title": "Lab: Beat the Baseline - or Learn Why You Cannot",
+  "format": "two-host",
+  "guid": "two-host-day-123",
+  "publishedAt": "2026-10-30T07:32:30",
+  "audioPath": "/audio-v2/day-123-lab-beat-the-baseline-or-learn-why-you-cannot-5515533.mp3",
+  "transcriptPath": "/transcripts-v2/day-123-5515533.txt",
+  "audioBytes": 5515533,
+  "durationSeconds": 459,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 122,
   "title": "Lesson 12: Evaluation Metrics That Match the Goal",
   "format": "two-host",
