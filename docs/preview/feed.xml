@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 124: This Week in AI (Oct 31, 2026)</title>
+      <description>Two-host rebuild of AI Foundations day 124.</description>
+      <guid isPermaLink="false">two-host-day-124</guid>
+      <pubDate>Sat, 31 Oct 2026 07:31:53 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-124-this-week-in-ai-oct-31-2026-5299821.mp3" length="5299821" type="audio/mpeg"/>
+      <itunes:duration>7:21</itunes:duration>
+    </item>
+    <item>
       <title>Day 123: Lab: Beat the Baseline - or Learn Why You Cannot</title>
       <description>Two-host rebuild of AI Foundations day 123.</description>
       <guid isPermaLink="false">two-host-day-123</guid>

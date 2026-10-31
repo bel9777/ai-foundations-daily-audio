@@ -1,5 +1,17 @@
 [
  {
+  "day": 124,
+  "title": "This Week in AI (Oct 31, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-124",
+  "publishedAt": "2026-10-31T07:31:53",
+  "audioPath": "/audio-v2/day-124-this-week-in-ai-oct-31-2026-5299821.mp3",
+  "transcriptPath": "/transcripts-v2/day-124-5299821.txt",
+  "audioBytes": 5299821,
+  "durationSeconds": 441,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 123,
   "title": "Lab: Beat the Baseline - or Learn Why You Cannot",
   "format": "two-host",
