@@ -10,6 +10,24 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 19 (Oct 26–Nov 1): Days 119–125</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 119: Lesson 9: Features: Turning Reality into Inputs&lt;br/&gt;7:53 Day 120: Lesson 10: Loss Functions: Defining What Wrong Means&lt;br/&gt;16:40 Day 121: Lesson 11: Optimization and Gradient Descent&lt;br/&gt;24:28 Day 122: Lesson 12: Evaluation Metrics That Match the Goal&lt;br/&gt;32:26 Day 123: Lab: Beat the Baseline - or Learn Why You Cannot&lt;br/&gt;40:07 Day 124: This Week in AI (Oct 31, 2026)&lt;br/&gt;47:30 Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-10-26-c39ab020</guid>
+      <pubDate>Sun, 01 Nov 2026 07:32:19 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-19-2026-10-26-c39ab020.mp3" length="26604270" type="audio/mpeg"/>
+      <itunes:duration>0:55:25</itunes:duration>
+    </item>
+    <item>
+      <title>Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)</title>
+      <description>Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1) - AI Foundations day 125, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-125</guid>
+      <pubDate>Sun, 01 Nov 2026 07:31:19 +0000</pubDate>
+      <itunes:episode>125</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-125-weekly-review-foundations-2-measuring-and-improving-models-nov-1-5704461.mp3" length="5704461" type="audio/mpeg"/>
+      <itunes:duration>7:55</itunes:duration>
+    </item>
+    <item>
       <title>Day 124: This Week in AI (Oct 31, 2026)</title>
       <description>This Week in AI (Oct 31, 2026) - AI Foundations day 124, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-124</guid>

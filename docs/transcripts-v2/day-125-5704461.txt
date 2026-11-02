@@ -1,0 +1,45 @@
+Alex: It is review day. This is AI Foundations.
+Jordan: We are running this as a quiz show today. Ten questions covering everything we built this week, plus a few older fundamentals. I ask the question, you take your best shot, then I give the answer and why it matters. Ready?
+Alex: Ready. Hit me with number one.
+Jordan: You are building a model to predict which farm customers will pay invoices late. One column in your export is days to payment, and including it pushes test accuracy to ninety-nine percent. What is wrong, and what do you check first?
+Alex: That is classic target leakage. You are giving the model the answer key. If you are predicting whether someone pays late, you cannot use a field that only exists after they pay. You need to check the timeline of every feature and ask if it actually exists at the moment you run the prediction.
+Jordan: It is target leakage because days to payment is only known after the bill is settled. This matters because a model that relies on the future looks like a genius in your notebook and falls flat on its face in production. Question two.
+Alex: Bring it.
+Jordan: You are predicting monthly rent collections across university properties. Most months are routine, but a few have huge one-off swings, like a lease buyout. You care about typical-month accuracy and do not want those rare months to dominate training. Do you choose mean squared error or mean absolute error, and why?
+Alex: Mean absolute error. Mean squared error squares every gap, so a giant buyout swing gets magnified and tugs the whole model toward the outlier. Absolute error just treats a miss linearly, so the typical months stay in charge.
+Jordan: Mean absolute error is right, because squaring errors lets extreme outliers hijack the gradient. This matters because your loss function defines what counts as an emergency during training, and you do not want routine operations warped by rare events. Question three.
+Alex: Let us hear it.
+Jordan: Your training script logs loss every epoch. Instead of falling, the loss bounces wildly and then jumps to not-a-number. Which hyperparameter do you check first, and what does this tell you about the steps gradient descent is taking?
+Alex: Check the learning rate immediately. The model is taking massive leaps across the loss valley, overshooting the bottom, climbing higher up the walls on every bounce, until the math explodes into infinity.
+Jordan: Check the learning rate first, because huge steps overshoot the minimum until the numbers overflow. This matters because if your step size is too aggressive, your optimizer literally launches itself out of the problem space. Question four.
+Alex: Keep them coming.
+Jordan: Explain the gradient in one sentence, and say why gradient descent moves in the negative gradient direction.
+Alex: The gradient is a vector of partial derivatives pointing toward the steepest increase in loss, so stepping in the negative direction is the fastest local way downhill.
+Jordan: The gradient points toward the fastest climb in loss, so moving in the negative gradient direction is the steepest local path to reduce error. This matters because that single vector gives your optimizer a mathematical compass to navigate millions of parameters at once. Question five.
+Alex: Next.
+Jordan: Your Gmail triage classifier flags urgent emails, which make up about three percent of your inbox. It reports ninety-seven percent accuracy. Why should that number not reassure you, and which metric should you check first if missing an urgent email is the costly mistake?
+Alex: Because a lazy script that marks every single email not urgent gets ninety-seven percent accuracy without doing any work. If missing an urgent email hurts, check recall first to see what percentage of real emergencies you caught.
+Jordan: A model that flags nothing at all gets ninety-seven percent accuracy on that data, so look at recall on the urgent class first. This matters because when classes are imbalanced, overall accuracy mostly just measures how well you predict the boring majority. Question six.
+Alex: What is the lab question?
+Jordan: You trained a gradient-boosted model to forecast next month hay sales. A naive baseline of next month equals the same month last year scores about the same on held-out data. Name two legitimate conclusions, and one thing you should not do.
+Alex: Two conclusions: either hay demand is almost entirely seasonal and the baseline already captures it, or your features do not carry real signal beyond the calendar, like local drought data or prices. What you should not do is sit there tweaking hyperparameters against the test set until your model barely edges out the baseline.
+Jordan: Either the true signal is purely seasonal or your features lack predictive power, and you must never tune against the test set just to beat the baseline. This matters because hacking a win on test data guarantees your model will disappoint you the moment live data arrives. Question seven, moving into older concepts.
+Alex: Fire away.
+Jordan: Compare loss functions and evaluation metrics. Name two ways they differ in purpose or mathematical requirements, and give one example where they are deliberately different in the same project.
+Alex: The loss function is for the training algorithm to optimize, while the metric is for humans to judge business success. Mathematically, loss functions usually need to be smooth and differentiable so gradients can flow, while metrics can be step functions or threshold cutoffs. A classic example is training on log loss but evaluating on precision or recall at a specific cutoff.
+Jordan: Loss guides the optimizer and must be smooth and differentiable, while metrics judge business value and can be non-differentiable thresholds. This matters because what calculus needs to update weights rarely matches what a human needs to make a business decision. Question eight.
+Alex: Two to go.
+Jordan: Cross-entropy loss punishes a classifier much more for saying ninety-nine percent not urgent about an urgent email than for saying sixty percent not urgent. Why is that steep penalty useful?
+Alex: Because being confidently wrong produces a giant gradient that forces the model to correct that mistake fast. It trains the model to produce meaningful probabilities instead of reckless overconfidence.
+Jordan: It creates a massive gradient specifically on overconfident mistakes, which quickly drags the model back toward reality. This matters because in production, an overconfident wrong decision is far more dangerous than an uncertain one. Question nine.
+Alex: What is nine?
+Jordan: In supervised learning, what is a label, and why must evaluation examples stay separate from training examples?
+Alex: A label is the ground-truth outcome paired with an input. Evaluation data must stay separate to see if the model learned the underlying pattern instead of just memorizing the training set.
+Jordan: A label is the known correct output paired with an input, and held-out data is the only honest way to test generalization over memorization. This matters because any model can look brilliant if you test it on questions it already memorized. Last one, question ten.
+Alex: Finish strong.
+Jordan: You plan to train a classifier using your own Gmail labels from the past three years. Before training anything, what one property of those labels should you check, and how would you check it quickly?
+Alex: Consistency. People change their habits over three years. To check it quickly, take a random sample of fifty older emails, label them blind today, and see how often your new labels match your old ones.
+Jordan: Check consistency over time by blindly re-labeling fifty past emails to see if you agree with your past self. This matters because if your ground truth is noisy and drifting, no algorithm can turn that into a reliable system.
+Alex: That is all ten. So what is the single takeaway from this whole week?
+Jordan: Before you trust any model or scoring script in your pipeline, write down four things on one line each: the features it sees, the loss it trains on, the metric you judge it by, and the baseline it has to beat. If you cannot fill in one of those four lines, that is where your next bug is hiding.
+Alex: Write those four lines before you write the code. We will see you next week.

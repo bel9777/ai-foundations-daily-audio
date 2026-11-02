@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)</title>
+      <description>Two-host rebuild of AI Foundations day 125.</description>
+      <guid isPermaLink="false">two-host-day-125</guid>
+      <pubDate>Sun, 01 Nov 2026 07:31:19 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-125-weekly-review-foundations-2-measuring-and-improving-models-nov-1-5704461.mp3" length="5704461" type="audio/mpeg"/>
+      <itunes:duration>7:55</itunes:duration>
+    </item>
+    <item>
       <title>Day 124: This Week in AI (Oct 31, 2026)</title>
       <description>Two-host rebuild of AI Foundations day 124.</description>
       <guid isPermaLink="false">two-host-day-124</guid>
