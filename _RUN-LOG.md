@@ -70,3 +70,4 @@
 2026-10-29 07:48 OK made:1 ondisk:122 ledger:122 missing:0 feed:two-host PUSHED
 2026-10-30 07:49 OK made:1 ondisk:123 ledger:123 missing:0 feed:two-host PUSHED
 2026-10-31 07:48 OK made:1 ondisk:124 ledger:124 missing:0 feed:two-host PUSHED
+2026-11-02 06:51 OK made:1 ondisk:125 ledger:125 missing:0 feed:two-host PUSHED weekly:+1

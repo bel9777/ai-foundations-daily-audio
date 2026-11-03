@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 126: Lesson 13: Confusion Matrices and Classification Tradeoffs</title>
+      <description>Lesson 13: Confusion Matrices and Classification Tradeoffs - AI Foundations day 126, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-126</guid>
+      <pubDate>Mon, 02 Nov 2026 07:31:56 +0000</pubDate>
+      <itunes:episode>126</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-126-lesson-13-confusion-matrices-and-classification-tradeoffs-6240717.mp3" length="6240717" type="audio/mpeg"/>
+      <itunes:duration>8:40</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 19 (Oct 26–Nov 1): Days 119–125</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 119: Lesson 9: Features: Turning Reality into Inputs&lt;br/&gt;7:53 Day 120: Lesson 10: Loss Functions: Defining What Wrong Means&lt;br/&gt;16:40 Day 121: Lesson 11: Optimization and Gradient Descent&lt;br/&gt;24:28 Day 122: Lesson 12: Evaluation Metrics That Match the Goal&lt;br/&gt;32:26 Day 123: Lab: Beat the Baseline - or Learn Why You Cannot&lt;br/&gt;40:07 Day 124: This Week in AI (Oct 31, 2026)&lt;br/&gt;47:30 Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-26-c39ab020</guid>

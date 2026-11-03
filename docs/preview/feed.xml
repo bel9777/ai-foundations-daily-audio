@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 126: Lesson 13: Confusion Matrices and Classification Tradeoffs</title>
+      <description>Two-host rebuild of AI Foundations day 126.</description>
+      <guid isPermaLink="false">two-host-day-126</guid>
+      <pubDate>Mon, 02 Nov 2026 07:31:56 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-126-lesson-13-confusion-matrices-and-classification-tradeoffs-6240717.mp3" length="6240717" type="audio/mpeg"/>
+      <itunes:duration>8:40</itunes:duration>
+    </item>
+    <item>
       <title>Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)</title>
       <description>Two-host rebuild of AI Foundations day 125.</description>
       <guid isPermaLink="false">two-host-day-125</guid>
