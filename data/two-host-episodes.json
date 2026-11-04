@@ -1,5 +1,17 @@
 [
  {
+  "day": 127,
+  "title": "Lesson 14: Cross-Validation and Reliable Comparisons",
+  "format": "two-host",
+  "guid": "two-host-day-127",
+  "publishedAt": "2026-11-03T07:31:57",
+  "audioPath": "/audio-v2/day-127-lesson-14-cross-validation-and-reliable-comparisons-4699053.mp3",
+  "transcriptPath": "/transcripts-v2/day-127-4699053.txt",
+  "audioBytes": 4699053,
+  "durationSeconds": 391,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 126,
   "title": "Lesson 13: Confusion Matrices and Classification Tradeoffs",
   "format": "two-host",
