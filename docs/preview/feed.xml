@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 128: Lesson 15: Baselines: The Simplest Useful Benchmark</title>
+      <description>Two-host rebuild of AI Foundations day 128.</description>
+      <guid isPermaLink="false">two-host-day-128</guid>
+      <pubDate>Wed, 04 Nov 2026 07:31:50 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-128-lesson-15-baselines-the-simplest-useful-benchmark-5415597.mp3" length="5415597" type="audio/mpeg"/>
+      <itunes:duration>7:31</itunes:duration>
+    </item>
+    <item>
       <title>Day 127: Lesson 14: Cross-Validation and Reliable Comparisons</title>
       <description>Two-host rebuild of AI Foundations day 127.</description>
       <guid isPermaLink="false">two-host-day-127</guid>

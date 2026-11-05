@@ -1,5 +1,17 @@
 [
  {
+  "day": 128,
+  "title": "Lesson 15: Baselines: The Simplest Useful Benchmark",
+  "format": "two-host",
+  "guid": "two-host-day-128",
+  "publishedAt": "2026-11-04T07:31:50",
+  "audioPath": "/audio-v2/day-128-lesson-15-baselines-the-simplest-useful-benchmark-5415597.mp3",
+  "transcriptPath": "/transcripts-v2/day-128-5415597.txt",
+  "audioBytes": 5415597,
+  "durationSeconds": 451,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 127,
   "title": "Lesson 14: Cross-Validation and Reliable Comparisons",
   "format": "two-host",
