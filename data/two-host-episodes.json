@@ -1,5 +1,17 @@
 [
  {
+  "day": 129,
+  "title": "Lesson 16: Linear Models and Their Limits",
+  "format": "two-host",
+  "guid": "two-host-day-129",
+  "publishedAt": "2026-11-05T07:32:14",
+  "audioPath": "/audio-v2/day-129-lesson-16-linear-models-and-their-limits-5540013.mp3",
+  "transcriptPath": "/transcripts-v2/day-129-5540013.txt",
+  "audioBytes": 5540013,
+  "durationSeconds": 461,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 128,
   "title": "Lesson 15: Baselines: The Simplest Useful Benchmark",
   "format": "two-host",

@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 129: Lesson 16: Linear Models and Their Limits</title>
+      <description>Lesson 16: Linear Models and Their Limits - AI Foundations day 129, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-129</guid>
+      <pubDate>Thu, 05 Nov 2026 07:32:14 +0000</pubDate>
+      <itunes:episode>129</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-129-lesson-16-linear-models-and-their-limits-5540013.mp3" length="5540013" type="audio/mpeg"/>
+      <itunes:duration>7:41</itunes:duration>
+    </item>
+    <item>
       <title>Day 128: Lesson 15: Baselines: The Simplest Useful Benchmark</title>
       <description>Lesson 15: Baselines: The Simplest Useful Benchmark - AI Foundations day 128, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-128</guid>
