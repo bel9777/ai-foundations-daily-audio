@@ -1,5 +1,17 @@
 [
  {
+  "day": 130,
+  "title": "Lab: Map Your Own Notes as Embeddings",
+  "format": "two-host",
+  "guid": "two-host-day-130",
+  "publishedAt": "2026-11-06T07:32:32",
+  "audioPath": "/audio-v2/day-130-lab-map-your-own-notes-as-embeddings-4996557.mp3",
+  "transcriptPath": "/transcripts-v2/day-130-4996557.txt",
+  "audioBytes": 4996557,
+  "durationSeconds": 416,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 129,
   "title": "Lesson 16: Linear Models and Their Limits",
   "format": "two-host",

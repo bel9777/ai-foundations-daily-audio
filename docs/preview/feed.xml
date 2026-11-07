@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 130: Lab: Map Your Own Notes as Embeddings</title>
+      <description>Two-host rebuild of AI Foundations day 130.</description>
+      <guid isPermaLink="false">two-host-day-130</guid>
+      <pubDate>Fri, 06 Nov 2026 07:32:32 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-130-lab-map-your-own-notes-as-embeddings-4996557.mp3" length="4996557" type="audio/mpeg"/>
+      <itunes:duration>6:56</itunes:duration>
+    </item>
+    <item>
       <title>Day 129: Lesson 16: Linear Models and Their Limits</title>
       <description>Two-host rebuild of AI Foundations day 129.</description>
       <guid isPermaLink="false">two-host-day-129</guid>
