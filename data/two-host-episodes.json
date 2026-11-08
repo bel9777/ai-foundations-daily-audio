@@ -1,5 +1,17 @@
 [
  {
+  "day": 131,
+  "title": "This Week in AI (Nov 7, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-131",
+  "publishedAt": "2026-11-07T07:31:58",
+  "audioPath": "/audio-v2/day-131-this-week-in-ai-nov-7-2026-5671917.mp3",
+  "transcriptPath": "/transcripts-v2/day-131-5671917.txt",
+  "audioBytes": 5671917,
+  "durationSeconds": 472,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 130,
   "title": "Lab: Map Your Own Notes as Embeddings",
   "format": "two-host",

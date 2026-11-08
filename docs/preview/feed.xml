@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 131: This Week in AI (Nov 7, 2026)</title>
+      <description>Two-host rebuild of AI Foundations day 131.</description>
+      <guid isPermaLink="false">two-host-day-131</guid>
+      <pubDate>Sat, 07 Nov 2026 07:31:58 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-131-this-week-in-ai-nov-7-2026-5671917.mp3" length="5671917" type="audio/mpeg"/>
+      <itunes:duration>7:52</itunes:duration>
+    </item>
+    <item>
       <title>Day 130: Lab: Map Your Own Notes as Embeddings</title>
       <description>Two-host rebuild of AI Foundations day 130.</description>
       <guid isPermaLink="false">two-host-day-130</guid>

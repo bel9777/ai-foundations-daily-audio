@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 131: This Week in AI (Nov 7, 2026)</title>
+      <description>This Week in AI (Nov 7, 2026) - AI Foundations day 131, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-131</guid>
+      <pubDate>Sat, 07 Nov 2026 07:31:58 +0000</pubDate>
+      <itunes:episode>131</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-131-this-week-in-ai-nov-7-2026-5671917.mp3" length="5671917" type="audio/mpeg"/>
+      <itunes:duration>7:52</itunes:duration>
+    </item>
+    <item>
       <title>Day 130: Lab: Map Your Own Notes as Embeddings</title>
       <description>Lab: Map Your Own Notes as Embeddings - AI Foundations day 130, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-130</guid>
