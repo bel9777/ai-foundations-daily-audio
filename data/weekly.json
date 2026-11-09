@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-11-02",
+  "week": 20,
+  "key": "20b5007e",
+  "title": "Week 20 (Nov 2–8): Days 126–132",
+  "days": [
+   126,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 126: Lesson 13: Confusion Matrices and Classification Tradeoffs"
+   },
+   {
+    "start": 522,
+    "title": "Day 127: Lesson 14: Cross-Validation and Reliable Comparisons"
+   },
+   {
+    "start": 915,
+    "title": "Day 128: Lesson 15: Baselines: The Simplest Useful Benchmark"
+   },
+   {
+    "start": 1367,
+    "title": "Day 129: Lesson 16: Linear Models and Their Limits"
+   },
+   {
+    "start": 1830,
+    "title": "Day 130: Lab: Map Your Own Notes as Embeddings"
+   },
+   {
+    "start": 2248,
+    "title": "Day 131: This Week in AI (Nov 7, 2026)"
+   },
+   {
+    "start": 2722,
+    "title": "Day 132: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)"
+   }
+  ],
+  "durationSeconds": 3167,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-20-2026-11-02-20b5007e.mp3",
+  "bytes": 25337634,
+  "publishedAt": "2026-11-08T07:31:34"
+ },
+ {
   "weekStart": "2026-10-26",
   "week": 19,
   "key": "c39ab020",

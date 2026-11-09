@@ -10,6 +10,24 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 20 (Nov 2–8): Days 126–132</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 126: Lesson 13: Confusion Matrices and Classification Tradeoffs&lt;br/&gt;8:42 Day 127: Lesson 14: Cross-Validation and Reliable Comparisons&lt;br/&gt;15:15 Day 128: Lesson 15: Baselines: The Simplest Useful Benchmark&lt;br/&gt;22:47 Day 129: Lesson 16: Linear Models and Their Limits&lt;br/&gt;30:30 Day 130: Lab: Map Your Own Notes as Embeddings&lt;br/&gt;37:28 Day 131: This Week in AI (Nov 7, 2026)&lt;br/&gt;45:22 Day 132: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-02-20b5007e</guid>
+      <pubDate>Sun, 08 Nov 2026 07:32:34 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-20-2026-11-02-20b5007e.mp3" length="25337634" type="audio/mpeg"/>
+      <itunes:duration>0:52:47</itunes:duration>
+    </item>
+    <item>
+      <title>Day 132: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)</title>
+      <description>Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8) - AI Foundations day 132, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-132</guid>
+      <pubDate>Sun, 08 Nov 2026 07:31:34 +0000</pubDate>
+      <itunes:episode>132</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-132-weekly-review-foundations-2-measuring-and-improving-models-nov-8-5337261.mp3" length="5337261" type="audio/mpeg"/>
+      <itunes:duration>7:24</itunes:duration>
+    </item>
+    <item>
       <title>Day 131: This Week in AI (Nov 7, 2026)</title>
       <description>This Week in AI (Nov 7, 2026) - AI Foundations day 131, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-131</guid>

@@ -1,0 +1,45 @@
+Alex: It is review day. This is AI Foundations.
+Jordan: Ten questions on the board, pulled straight from our measuring and modeling week plus a few older fundamentals. I ask, you answer, then I give the official verdict and why it matters. Ready?
+Alex: Hit me.
+Jordan: Question one. Your email triage model sorts two hundred messages. It predicts urgent eighteen times correctly, but flags twelve non-urgent emails by mistake. For non-urgent, it gets one hundred sixty-four right, but misses six urgent ones. Calculate precision, recall, and accuracy. Then tell me the accuracy of a baseline that just marks everything not urgent.
+Alex: Let me do the mental math. Precision is eighteen true urgents divided by thirty total predicted urgents, so sixty percent. Recall is eighteen caught out of twenty-four actual urgents, which is seventy-five percent. Total accuracy is one hundred eighty-two correct out of two hundred, or ninety-one percent. And the lazy baseline that marks everything not urgent gets one hundred seventy-six right out of two hundred, which is eighty-eight percent.
+Jordan: That is correct. A ninety-one percent accuracy sounds impressive until you see a dumb rule gets eighty-eight, which is why precision and recall show the actual operational trade-off.
+Alex: Question two, keep rolling.
+Jordan: You have an invoice scanner with ninety-seven percent accuracy. Around three percent of invoices are actual billing problems. What do you inspect first, and why?
+Alex: I check the confusion matrix immediately, specifically recall on the problem invoices, plus the majority-class baseline.
+Jordan: Correct. If you label every single invoice clean, you score ninety-seven percent accuracy automatically, so that single number tells you nothing about whether you caught any real errors.
+Alex: Question three.
+Jordan: You are testing two prompts for extracting data from lease contracts. On a test set of forty documents, Prompt A beats Prompt B by two points. Before you update production, what do you do?
+Alex: I run bootstrap resampling or k-fold validation across those forty leases to look at the spread of the differences, not just the raw average.
+Jordan: Nailed it. With forty documents, each one is worth two and a half percentage points, so a two-point win can be just one lucky document.
+Alex: Moving to question four.
+Jordan: You need to forecast monthly feed costs for a farm. Give me two baselines you set up before building anything complex, and what they tell you.
+Alex: First is naive persistence: predict whatever we spent last month. Second is seasonal naive: predict what we spent this exact month last year. The first proves your fancy model beats doing nothing, and the seasonal one proves it actually learned something beyond the regular annual weather and planting cycle.
+Jordan: Spot on. If a complex architecture cannot beat last year's calendar, you are wasting compute.
+Alex: Halfway through the weekly stuff. Give me question five.
+Jordan: You run a linear regression predicting apartment rent based on square footage, building age, and distance to campus. It fits poorly because being close to campus carries a massive price premium for small studio units, but barely moves the needle for giant family apartments. What limitation of linear models is this, how do you patch it inside the model, and where do we go next?
+Alex: It fails because linear models assume features act independently and add up, missing feature interactions. To fix it in the linear model, you add an explicit interaction term, like square footage multiplied by distance. And tomorrow we look at decision trees, which handle interactions automatically.
+Jordan: Exactly right. Linear equations treat variables as isolated sliders, so when features multiply each other's effects in the real world, you either hand-code the interaction or switch to trees.
+Alex: Question six.
+Jordan: You run your notes through an embedding model and find unrelated files, like a cattle feed invoice and a podcast script, scoring over zero point nine cosine similarity. What do you look at first?
+Alex: Check the raw text that actually entered the embedder. It is probably drowning in shared boilerplate, like standard email footers, markdown headers, or metadata. Or maybe you accidentally used two different embedding models.
+Jordan: That is it. Cosine similarity only measures whether vectors point the same way, and repetitive structural noise can easily overpower the actual meaning of the words.
+Alex: That covers the new week. Bring on the older review questions.
+Jordan: Question seven. Your email classifier hit a zero point nine four F-one score in cross-validation, but dropped to zero point seven one in its first month live. Name three data leakage or validation mistakes you check for in your code.
+Alex: First, fitting a preprocessor or scaler on the entire dataset before splitting the folds. Second, letting duplicate records or replies from the same email thread land in both train and test sets. Third, randomly shuffling time-series data instead of doing a strict temporal, forward-in-time split.
+Jordan: Clean sweep. If test data leaks into training, your validation score is just a fairy tale that falls apart the moment production sees unseen data.
+Alex: Question eight.
+Jordan: What is the difference between a loss function and an evaluation metric, and why train on log loss if you evaluate on recall at a set threshold?
+Alex: The loss function has to be smooth and differentiable so optimization math like gradient descent can minimize it during training. The evaluation metric is the harsh business reality, which is often step-like or non-differentiable. Log loss forces the model to output well-calibrated probabilities, and then you pick your operational threshold later based on error costs.
+Jordan: Correct. You train with what the math requires, but you evaluate based on what the real-world operation demands.
+Alex: Question nine.
+Jordan: You forecast cash needs for a business. Forecasting too low forces an emergency credit line, which costs twice as much as forecasting too high and leaving cash sitting idle. Squared error treats both mistakes identically. What loss function do you use, and where do you aim?
+Alex: You switch to asymmetric loss, like quantile or pinball loss, and aim for the sixty-seventh percentile. Two-to-one cost ratio means two divided by two plus one.
+Jordan: Perfect. When running out of cash hurts twice as much as holding surplus, your optimal operational forecast deliberately aims high rather than guessing down the middle.
+Alex: Last one. Question ten.
+Jordan: A scheduled classification job worked great in June, but steadily decayed by November. No code changed. Which machine learning stage was ignored, and how do you fix it?
+Alex: Monitoring was skipped. To fix it, log every prediction, pull a random sample to manually label every single week, and set up an alert when accuracy drifts.
+Jordan: That completes the board. Real data drifts over time, so without regular ground-truth checks, you are flying completely blind.
+Alex: That felt good to run through. What is the single big takeaway binding all ten of these together?
+Jordan: Before you trust any performance score from a model, a prompt, or a pipeline, ask three things: compared to what baseline, measured with what split, and what does it cost when it gets things wrong? If you do not have those three answers, you do not have a metric yet.
+Alex: This is AI Foundations. Back tomorrow with decision trees.

@@ -10,6 +10,14 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Week 20 (Nov 2–8): Days 126–132</title>
+      <description>0:00 Day 126: Lesson 13: Confusion Matrices and Classification Tradeoffs&lt;br/&gt;8:42 Day 127: Lesson 14: Cross-Validation and Reliable Comparisons&lt;br/&gt;15:15 Day 128: Lesson 15: Baselines: The Simplest Useful Benchmark&lt;br/&gt;22:47 Day 129: Lesson 16: Linear Models and Their Limits&lt;br/&gt;30:30 Day 130: Lab: Map Your Own Notes as Embeddings&lt;br/&gt;37:28 Day 131: This Week in AI (Nov 7, 2026)&lt;br/&gt;45:22 Day 132: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-02-20b5007e</guid>
+      <pubDate>Sun, 08 Nov 2026 07:31:34 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-20-2026-11-02-20b5007e.mp3" length="25337634" type="audio/mpeg"/>
+      <itunes:duration>52:47</itunes:duration>
+    </item>
+    <item>
       <title>Week 19 (Oct 26–Nov 1): Days 119–125</title>
       <description>0:00 Day 119: Lesson 9: Features: Turning Reality into Inputs&lt;br/&gt;7:53 Day 120: Lesson 10: Loss Functions: Defining What Wrong Means&lt;br/&gt;16:40 Day 121: Lesson 11: Optimization and Gradient Descent&lt;br/&gt;24:28 Day 122: Lesson 12: Evaluation Metrics That Match the Goal&lt;br/&gt;32:26 Day 123: Lab: Beat the Baseline - or Learn Why You Cannot&lt;br/&gt;40:07 Day 124: This Week in AI (Oct 31, 2026)&lt;br/&gt;47:30 Day 125: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 1)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-10-26-c39ab020</guid>

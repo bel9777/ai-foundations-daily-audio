@@ -1,5 +1,17 @@
 [
  {
+  "day": 132,
+  "title": "Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)",
+  "format": "two-host",
+  "guid": "two-host-day-132",
+  "publishedAt": "2026-11-08T07:31:34",
+  "audioPath": "/audio-v2/day-132-weekly-review-foundations-2-measuring-and-improving-models-nov-8-5337261.mp3",
+  "transcriptPath": "/transcripts-v2/day-132-5337261.txt",
+  "audioBytes": 5337261,
+  "durationSeconds": 444,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 131,
   "title": "This Week in AI (Nov 7, 2026)",
   "format": "two-host",
