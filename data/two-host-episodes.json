@@ -1,5 +1,29 @@
 [
  {
+  "day": 134,
+  "title": "Lesson 18: Probability, Calibration, and Confidence",
+  "format": "two-host",
+  "guid": "two-host-day-134",
+  "publishedAt": "2026-11-10T07:31:55",
+  "audioPath": "/audio-v2/day-134-lesson-18-probability-calibration-and-confidence-5299533.mp3",
+  "transcriptPath": "/transcripts-v2/day-134-5299533.txt",
+  "audioBytes": 5299533,
+  "durationSeconds": 441,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 133,
+  "title": "Lesson 17: Decision Trees and Ensembles",
+  "format": "two-host",
+  "guid": "two-host-day-133",
+  "publishedAt": "2026-11-09T07:31:59",
+  "audioPath": "/audio-v2/day-133-lesson-17-decision-trees-and-ensembles-6062733.mp3",
+  "transcriptPath": "/transcripts-v2/day-133-6062733.txt",
+  "audioBytes": 6062733,
+  "durationSeconds": 505,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 132,
   "title": "Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)",
   "format": "two-host",

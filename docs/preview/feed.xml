@@ -8,6 +8,22 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 134: Lesson 18: Probability, Calibration, and Confidence</title>
+      <description>Two-host rebuild of AI Foundations day 134.</description>
+      <guid isPermaLink="false">two-host-day-134</guid>
+      <pubDate>Tue, 10 Nov 2026 07:31:55 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-134-lesson-18-probability-calibration-and-confidence-5299533.mp3" length="5299533" type="audio/mpeg"/>
+      <itunes:duration>7:21</itunes:duration>
+    </item>
+    <item>
+      <title>Day 133: Lesson 17: Decision Trees and Ensembles</title>
+      <description>Two-host rebuild of AI Foundations day 133.</description>
+      <guid isPermaLink="false">two-host-day-133</guid>
+      <pubDate>Mon, 09 Nov 2026 07:31:59 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-133-lesson-17-decision-trees-and-ensembles-6062733.mp3" length="6062733" type="audio/mpeg"/>
+      <itunes:duration>8:25</itunes:duration>
+    </item>
+    <item>
       <title>Day 132: Weekly Review: Foundations 2: Measuring and Improving Models (Nov 8)</title>
       <description>Two-host rebuild of AI Foundations day 132.</description>
       <guid isPermaLink="false">two-host-day-132</guid>

@@ -77,3 +77,4 @@
 2026-11-06 06:49 OK made:1 ondisk:129 ledger:129 missing:0 feed:two-host PUSHED
 2026-11-07 06:48 OK made:1 ondisk:130 ledger:130 missing:0 feed:two-host PUSHED
 2026-11-08 06:48 OK made:1 ondisk:131 ledger:131 missing:0 feed:two-host PUSHED
+2026-11-09 06:50 OK made:1 ondisk:132 ledger:132 missing:0 feed:two-host PUSHED weekly:+1
