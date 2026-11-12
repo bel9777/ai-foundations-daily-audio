@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 135: Lesson 19: Neural Networks from First Principles</title>
+      <description>Lesson 19: Neural Networks from First Principles - AI Foundations day 135, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-135</guid>
+      <pubDate>Wed, 11 Nov 2026 07:32:45 +0000</pubDate>
+      <itunes:episode>135</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-135-lesson-19-neural-networks-from-first-principles-5566797.mp3" length="5566797" type="audio/mpeg"/>
+      <itunes:duration>7:43</itunes:duration>
+    </item>
+    <item>
       <title>Day 134: Lesson 18: Probability, Calibration, and Confidence</title>
       <description>Lesson 18: Probability, Calibration, and Confidence - AI Foundations day 134, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-134</guid>

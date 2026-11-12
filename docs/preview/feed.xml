@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 135: Lesson 19: Neural Networks from First Principles</title>
+      <description>Two-host rebuild of AI Foundations day 135.</description>
+      <guid isPermaLink="false">two-host-day-135</guid>
+      <pubDate>Wed, 11 Nov 2026 07:32:45 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-135-lesson-19-neural-networks-from-first-principles-5566797.mp3" length="5566797" type="audio/mpeg"/>
+      <itunes:duration>7:43</itunes:duration>
+    </item>
+    <item>
       <title>Day 134: Lesson 18: Probability, Calibration, and Confidence</title>
       <description>Two-host rebuild of AI Foundations day 134.</description>
       <guid isPermaLink="false">two-host-day-134</guid>
