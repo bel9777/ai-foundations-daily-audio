@@ -1,5 +1,29 @@
 [
  {
+  "day": 137,
+  "title": "Lab: Check Whether a Model's Confidence Can Be Trusted",
+  "format": "two-host",
+  "guid": "two-host-day-137",
+  "publishedAt": "2026-11-13T07:32:04",
+  "audioPath": "/audio-v2/day-137-lab-check-whether-a-model-s-confidence-can-be-trusted-5465421.mp3",
+  "transcriptPath": "/transcripts-v2/day-137-5465421.txt",
+  "audioBytes": 5465421,
+  "durationSeconds": 455,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
+  "day": 136,
+  "title": "Lesson 20: Layers, Activations, and Representations",
+  "format": "two-host",
+  "guid": "two-host-day-136",
+  "publishedAt": "2026-11-12T07:32:05",
+  "audioPath": "/audio-v2/day-136-lesson-20-layers-activations-and-representations-4995117.mp3",
+  "transcriptPath": "/transcripts-v2/day-136-4995117.txt",
+  "audioBytes": 4995117,
+  "durationSeconds": 416,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 135,
   "title": "Lesson 19: Neural Networks from First Principles",
   "format": "two-host",
