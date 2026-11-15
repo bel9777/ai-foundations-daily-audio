@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 138: This Week in AI (Nov 14, 2026)</title>
+      <description>Two-host rebuild of AI Foundations day 138.</description>
+      <guid isPermaLink="false">two-host-day-138</guid>
+      <pubDate>Sat, 14 Nov 2026 07:31:53 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-138-this-week-in-ai-nov-14-2026-5546061.mp3" length="5546061" type="audio/mpeg"/>
+      <itunes:duration>7:42</itunes:duration>
+    </item>
+    <item>
       <title>Day 137: Lab: Check Whether a Model&#x27;s Confidence Can Be Trusted</title>
       <description>Two-host rebuild of AI Foundations day 137.</description>
       <guid isPermaLink="false">two-host-day-137</guid>

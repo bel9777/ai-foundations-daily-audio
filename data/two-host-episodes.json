@@ -1,5 +1,17 @@
 [
  {
+  "day": 138,
+  "title": "This Week in AI (Nov 14, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-138",
+  "publishedAt": "2026-11-14T07:31:53",
+  "audioPath": "/audio-v2/day-138-this-week-in-ai-nov-14-2026-5546061.mp3",
+  "transcriptPath": "/transcripts-v2/day-138-5546061.txt",
+  "audioBytes": 5546061,
+  "durationSeconds": 462,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 137,
   "title": "Lab: Check Whether a Model's Confidence Can Be Trusted",
   "format": "two-host",
