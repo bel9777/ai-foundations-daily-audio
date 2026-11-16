@@ -10,6 +10,24 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Full Week 21 (Nov 9–15): Days 133–139</title>
+      <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 133: Lesson 17: Decision Trees and Ensembles&lt;br/&gt;8:27 Day 134: Lesson 18: Probability, Calibration, and Confidence&lt;br/&gt;15:50 Day 135: Lesson 19: Neural Networks from First Principles&lt;br/&gt;23:35 Day 136: Lesson 20: Layers, Activations, and Representations&lt;br/&gt;30:33 Day 137: Lab: Check Whether a Model&#x27;s Confidence Can Be Trusted&lt;br/&gt;38:10 Day 138: This Week in AI (Nov 14, 2026)&lt;br/&gt;45:53 Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-09-fd3b0896</guid>
+      <pubDate>Sun, 15 Nov 2026 07:32:24 +0000</pubDate>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-21-2026-11-09-fd3b0896.mp3" length="26237545" type="audio/mpeg"/>
+      <itunes:duration>0:54:39</itunes:duration>
+    </item>
+    <item>
+      <title>Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)</title>
+      <description>Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15) - AI Foundations day 139, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-139</guid>
+      <pubDate>Sun, 15 Nov 2026 07:31:24 +0000</pubDate>
+      <itunes:episode>139</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-139-weekly-review-foundations-3-from-trees-to-neural-networks-nov-15-6315021.mp3" length="6315021" type="audio/mpeg"/>
+      <itunes:duration>8:46</itunes:duration>
+    </item>
+    <item>
       <title>Day 138: This Week in AI (Nov 14, 2026)</title>
       <description>This Week in AI (Nov 14, 2026) - AI Foundations day 138, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-138</guid>

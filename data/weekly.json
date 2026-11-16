@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-11-09",
+  "week": 21,
+  "key": "fd3b0896",
+  "title": "Week 21 (Nov 9–15): Days 133–139",
+  "days": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 133: Lesson 17: Decision Trees and Ensembles"
+   },
+   {
+    "start": 507,
+    "title": "Day 134: Lesson 18: Probability, Calibration, and Confidence"
+   },
+   {
+    "start": 950,
+    "title": "Day 135: Lesson 19: Neural Networks from First Principles"
+   },
+   {
+    "start": 1415,
+    "title": "Day 136: Lesson 20: Layers, Activations, and Representations"
+   },
+   {
+    "start": 1833,
+    "title": "Day 137: Lab: Check Whether a Model's Confidence Can Be Trusted"
+   },
+   {
+    "start": 2290,
+    "title": "Day 138: This Week in AI (Nov 14, 2026)"
+   },
+   {
+    "start": 2753,
+    "title": "Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)"
+   }
+  ],
+  "durationSeconds": 3279,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-21-2026-11-09-fd3b0896.mp3",
+  "bytes": 26237545,
+  "publishedAt": "2026-11-15T07:31:24"
+ },
+ {
   "weekStart": "2026-11-02",
   "week": 20,
   "key": "20b5007e",

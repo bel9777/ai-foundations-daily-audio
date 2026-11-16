@@ -1,5 +1,17 @@
 [
  {
+  "day": 139,
+  "title": "Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)",
+  "format": "two-host",
+  "guid": "two-host-day-139",
+  "publishedAt": "2026-11-15T07:31:24",
+  "audioPath": "/audio-v2/day-139-weekly-review-foundations-3-from-trees-to-neural-networks-nov-15-6315021.mp3",
+  "transcriptPath": "/transcripts-v2/day-139-6315021.txt",
+  "audioBytes": 6315021,
+  "durationSeconds": 526,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 138,
   "title": "This Week in AI (Nov 14, 2026)",
   "format": "two-host",

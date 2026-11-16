@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)</title>
+      <description>Two-host rebuild of AI Foundations day 139.</description>
+      <guid isPermaLink="false">two-host-day-139</guid>
+      <pubDate>Sun, 15 Nov 2026 07:31:24 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-139-weekly-review-foundations-3-from-trees-to-neural-networks-nov-15-6315021.mp3" length="6315021" type="audio/mpeg"/>
+      <itunes:duration>8:46</itunes:duration>
+    </item>
+    <item>
       <title>Day 138: This Week in AI (Nov 14, 2026)</title>
       <description>Two-host rebuild of AI Foundations day 138.</description>
       <guid isPermaLink="false">two-host-day-138</guid>
