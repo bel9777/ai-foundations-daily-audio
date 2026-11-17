@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 140: Lesson 21: Backpropagation: Assigning Credit for Error</title>
+      <description>Two-host rebuild of AI Foundations day 140.</description>
+      <guid isPermaLink="false">two-host-day-140</guid>
+      <pubDate>Mon, 16 Nov 2026 07:31:56 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-140-lesson-21-backpropagation-assigning-credit-for-error-5094477.mp3" length="5094477" type="audio/mpeg"/>
+      <itunes:duration>7:04</itunes:duration>
+    </item>
+    <item>
       <title>Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)</title>
       <description>Two-host rebuild of AI Foundations day 139.</description>
       <guid isPermaLink="false">two-host-day-139</guid>

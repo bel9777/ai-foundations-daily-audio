@@ -1,5 +1,17 @@
 [
  {
+  "day": 140,
+  "title": "Lesson 21: Backpropagation: Assigning Credit for Error",
+  "format": "two-host",
+  "guid": "two-host-day-140",
+  "publishedAt": "2026-11-16T07:31:56",
+  "audioPath": "/audio-v2/day-140-lesson-21-backpropagation-assigning-credit-for-error-5094477.mp3",
+  "transcriptPath": "/transcripts-v2/day-140-5094477.txt",
+  "audioBytes": 5094477,
+  "durationSeconds": 424,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 139,
   "title": "Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)",
   "format": "two-host",

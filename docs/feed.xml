@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 140: Lesson 21: Backpropagation: Assigning Credit for Error</title>
+      <description>Lesson 21: Backpropagation: Assigning Credit for Error - AI Foundations day 140, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-140</guid>
+      <pubDate>Mon, 16 Nov 2026 07:31:56 +0000</pubDate>
+      <itunes:episode>140</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-140-lesson-21-backpropagation-assigning-credit-for-error-5094477.mp3" length="5094477" type="audio/mpeg"/>
+      <itunes:duration>7:04</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 21 (Nov 9–15): Days 133–139</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 133: Lesson 17: Decision Trees and Ensembles&lt;br/&gt;8:27 Day 134: Lesson 18: Probability, Calibration, and Confidence&lt;br/&gt;15:50 Day 135: Lesson 19: Neural Networks from First Principles&lt;br/&gt;23:35 Day 136: Lesson 20: Layers, Activations, and Representations&lt;br/&gt;30:33 Day 137: Lab: Check Whether a Model&#x27;s Confidence Can Be Trusted&lt;br/&gt;38:10 Day 138: This Week in AI (Nov 14, 2026)&lt;br/&gt;45:53 Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-09-fd3b0896</guid>
