@@ -1,5 +1,17 @@
 [
  {
+  "day": 141,
+  "title": "Lesson 22: Training Deep Networks Reliably",
+  "format": "two-host",
+  "guid": "two-host-day-141",
+  "publishedAt": "2026-11-17T07:32:17",
+  "audioPath": "/audio-v2/day-141-lesson-22-training-deep-networks-reliably-5360301.mp3",
+  "transcriptPath": "/transcripts-v2/day-141-5360301.txt",
+  "audioBytes": 5360301,
+  "durationSeconds": 446,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 140,
   "title": "Lesson 21: Backpropagation: Assigning Credit for Error",
   "format": "two-host",

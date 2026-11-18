@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 141: Lesson 22: Training Deep Networks Reliably</title>
+      <description>Two-host rebuild of AI Foundations day 141.</description>
+      <guid isPermaLink="false">two-host-day-141</guid>
+      <pubDate>Tue, 17 Nov 2026 07:32:17 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-141-lesson-22-training-deep-networks-reliably-5360301.mp3" length="5360301" type="audio/mpeg"/>
+      <itunes:duration>7:26</itunes:duration>
+    </item>
+    <item>
       <title>Day 140: Lesson 21: Backpropagation: Assigning Credit for Error</title>
       <description>Two-host rebuild of AI Foundations day 140.</description>
       <guid isPermaLink="false">two-host-day-140</guid>
