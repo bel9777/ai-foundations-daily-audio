@@ -1,5 +1,17 @@
 [
  {
+  "day": 142,
+  "title": "Lesson 23: Embeddings: Meaning as Geometry",
+  "format": "two-host",
+  "guid": "two-host-day-142",
+  "publishedAt": "2026-11-18T07:31:50",
+  "audioPath": "/audio-v2/day-142-lesson-23-embeddings-meaning-as-geometry-5825133.mp3",
+  "transcriptPath": "/transcripts-v2/day-142-5825133.txt",
+  "audioBytes": 5825133,
+  "durationSeconds": 485,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 141,
   "title": "Lesson 22: Training Deep Networks Reliably",
   "format": "two-host",

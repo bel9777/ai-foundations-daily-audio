@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 142: Lesson 23: Embeddings: Meaning as Geometry</title>
+      <description>Lesson 23: Embeddings: Meaning as Geometry - AI Foundations day 142, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-142</guid>
+      <pubDate>Wed, 18 Nov 2026 07:31:50 +0000</pubDate>
+      <itunes:episode>142</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-142-lesson-23-embeddings-meaning-as-geometry-5825133.mp3" length="5825133" type="audio/mpeg"/>
+      <itunes:duration>8:05</itunes:duration>
+    </item>
+    <item>
       <title>Day 141: Lesson 22: Training Deep Networks Reliably</title>
       <description>Lesson 22: Training Deep Networks Reliably - AI Foundations day 141, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-141</guid>

@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 142: Lesson 23: Embeddings: Meaning as Geometry</title>
+      <description>Two-host rebuild of AI Foundations day 142.</description>
+      <guid isPermaLink="false">two-host-day-142</guid>
+      <pubDate>Wed, 18 Nov 2026 07:31:50 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-142-lesson-23-embeddings-meaning-as-geometry-5825133.mp3" length="5825133" type="audio/mpeg"/>
+      <itunes:duration>8:05</itunes:duration>
+    </item>
+    <item>
       <title>Day 141: Lesson 22: Training Deep Networks Reliably</title>
       <description>Two-host rebuild of AI Foundations day 141.</description>
       <guid isPermaLink="false">two-host-day-141</guid>
