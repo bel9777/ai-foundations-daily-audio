@@ -1,5 +1,17 @@
 [
  {
+  "day": 143,
+  "title": "Lesson 24: Sequence Models Before Transformers",
+  "format": "two-host",
+  "guid": "two-host-day-143",
+  "publishedAt": "2026-11-19T07:32:29",
+  "audioPath": "/audio-v2/day-143-lesson-24-sequence-models-before-transformers-6209613.mp3",
+  "transcriptPath": "/transcripts-v2/day-143-6209613.txt",
+  "audioBytes": 6209613,
+  "durationSeconds": 517,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 142,
   "title": "Lesson 23: Embeddings: Meaning as Geometry",
   "format": "two-host",

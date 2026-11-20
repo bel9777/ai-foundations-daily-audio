@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 143: Lesson 24: Sequence Models Before Transformers</title>
+      <description>Two-host rebuild of AI Foundations day 143.</description>
+      <guid isPermaLink="false">two-host-day-143</guid>
+      <pubDate>Thu, 19 Nov 2026 07:32:29 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-143-lesson-24-sequence-models-before-transformers-6209613.mp3" length="6209613" type="audio/mpeg"/>
+      <itunes:duration>8:37</itunes:duration>
+    </item>
+    <item>
       <title>Day 142: Lesson 23: Embeddings: Meaning as Geometry</title>
       <description>Two-host rebuild of AI Foundations day 142.</description>
       <guid isPermaLink="false">two-host-day-142</guid>
