@@ -1,5 +1,17 @@
 [
  {
+  "day": 144,
+  "title": "Lab: Count the Tokens and Cost of Your Real Prompts",
+  "format": "two-host",
+  "guid": "two-host-day-144",
+  "publishedAt": "2026-11-20T07:31:42",
+  "audioPath": "/audio-v2/day-144-lab-count-the-tokens-and-cost-of-your-real-prompts-5238477.mp3",
+  "transcriptPath": "/transcripts-v2/day-144-5238477.txt",
+  "audioBytes": 5238477,
+  "durationSeconds": 436,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 143,
   "title": "Lesson 24: Sequence Models Before Transformers",
   "format": "two-host",

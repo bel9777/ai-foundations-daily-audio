@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 144: Lab: Count the Tokens and Cost of Your Real Prompts</title>
+      <description>Two-host rebuild of AI Foundations day 144.</description>
+      <guid isPermaLink="false">two-host-day-144</guid>
+      <pubDate>Fri, 20 Nov 2026 07:31:42 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-144-lab-count-the-tokens-and-cost-of-your-real-prompts-5238477.mp3" length="5238477" type="audio/mpeg"/>
+      <itunes:duration>7:16</itunes:duration>
+    </item>
+    <item>
       <title>Day 143: Lesson 24: Sequence Models Before Transformers</title>
       <description>Two-host rebuild of AI Foundations day 143.</description>
       <guid isPermaLink="false">two-host-day-143</guid>
