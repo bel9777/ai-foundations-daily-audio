@@ -1,5 +1,17 @@
 [
  {
+  "day": 145,
+  "title": "This Week in AI (Nov 21, 2026)",
+  "format": "two-host",
+  "guid": "two-host-day-145",
+  "publishedAt": "2026-11-21T07:31:44",
+  "audioPath": "/audio-v2/day-145-this-week-in-ai-nov-21-2026-5295501.mp3",
+  "transcriptPath": "/transcripts-v2/day-145-5295501.txt",
+  "audioBytes": 5295501,
+  "durationSeconds": 441,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 144,
   "title": "Lab: Count the Tokens and Cost of Your Real Prompts",
   "format": "two-host",
