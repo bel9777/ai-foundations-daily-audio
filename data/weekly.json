@@ -1,5 +1,54 @@
 [
  {
+  "weekStart": "2026-11-16",
+  "week": 22,
+  "key": "35596696",
+  "title": "Week 22 (Nov 16–22): Days 140–146",
+  "days": [
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146
+  ],
+  "chapters": [
+   {
+    "start": 0,
+    "title": "Day 140: Lesson 21: Backpropagation: Assigning Credit for Error"
+   },
+   {
+    "start": 426,
+    "title": "Day 141: Lesson 22: Training Deep Networks Reliably"
+   },
+   {
+    "start": 874,
+    "title": "Day 142: Lesson 23: Embeddings: Meaning as Geometry"
+   },
+   {
+    "start": 1361,
+    "title": "Day 143: Lesson 24: Sequence Models Before Transformers"
+   },
+   {
+    "start": 1880,
+    "title": "Day 144: Lab: Count the Tokens and Cost of Your Real Prompts"
+   },
+   {
+    "start": 2318,
+    "title": "Day 145: This Week in AI (Nov 21, 2026)"
+   },
+   {
+    "start": 2761,
+    "title": "Day 146: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 22)"
+   }
+  ],
+  "durationSeconds": 3259,
+  "url": "https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-22-2026-11-16-35596696.mp3",
+  "bytes": 26080675,
+  "publishedAt": "2026-11-22T07:31:48"
+ },
+ {
   "weekStart": "2026-11-09",
   "week": 21,
   "key": "fd3b0896",

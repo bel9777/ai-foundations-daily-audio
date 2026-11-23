@@ -10,6 +10,14 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/weekly.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Week 22 (Nov 16–22): Days 140–146</title>
+      <description>0:00 Day 140: Lesson 21: Backpropagation: Assigning Credit for Error&lt;br/&gt;7:06 Day 141: Lesson 22: Training Deep Networks Reliably&lt;br/&gt;14:34 Day 142: Lesson 23: Embeddings: Meaning as Geometry&lt;br/&gt;22:41 Day 143: Lesson 24: Sequence Models Before Transformers&lt;br/&gt;31:20 Day 144: Lab: Count the Tokens and Cost of Your Real Prompts&lt;br/&gt;38:38 Day 145: This Week in AI (Nov 21, 2026)&lt;br/&gt;46:01 Day 146: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 22)&lt;br/&gt;</description>
+      <guid isPermaLink="false">weekly-2026-11-16-35596696</guid>
+      <pubDate>Sun, 22 Nov 2026 07:31:48 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-weekly-audio/weekly/week-22-2026-11-16-35596696.mp3" length="26080675" type="audio/mpeg"/>
+      <itunes:duration>54:19</itunes:duration>
+    </item>
+    <item>
       <title>Week 21 (Nov 9–15): Days 133–139</title>
       <description>0:00 Day 133: Lesson 17: Decision Trees and Ensembles&lt;br/&gt;8:27 Day 134: Lesson 18: Probability, Calibration, and Confidence&lt;br/&gt;15:50 Day 135: Lesson 19: Neural Networks from First Principles&lt;br/&gt;23:35 Day 136: Lesson 20: Layers, Activations, and Representations&lt;br/&gt;30:33 Day 137: Lab: Check Whether a Model&#x27;s Confidence Can Be Trusted&lt;br/&gt;38:10 Day 138: This Week in AI (Nov 14, 2026)&lt;br/&gt;45:53 Day 139: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 15)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-09-fd3b0896</guid>
