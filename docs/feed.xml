@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 147: Lesson 25: Attention: Choosing What Matters</title>
+      <description>Lesson 25: Attention: Choosing What Matters - AI Foundations day 147, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-147</guid>
+      <pubDate>Mon, 23 Nov 2026 07:31:52 +0000</pubDate>
+      <itunes:episode>147</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-147-lesson-25-attention-choosing-what-matters-5161581.mp3" length="5161581" type="audio/mpeg"/>
+      <itunes:duration>7:10</itunes:duration>
+    </item>
+    <item>
       <title>Full Week 22 (Nov 16–22): Days 140–146</title>
       <description>The whole week as one listen, a chapter per day:&lt;br/&gt;0:00 Day 140: Lesson 21: Backpropagation: Assigning Credit for Error&lt;br/&gt;7:06 Day 141: Lesson 22: Training Deep Networks Reliably&lt;br/&gt;14:34 Day 142: Lesson 23: Embeddings: Meaning as Geometry&lt;br/&gt;22:41 Day 143: Lesson 24: Sequence Models Before Transformers&lt;br/&gt;31:20 Day 144: Lab: Count the Tokens and Cost of Your Real Prompts&lt;br/&gt;38:38 Day 145: This Week in AI (Nov 21, 2026)&lt;br/&gt;46:01 Day 146: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 22)&lt;br/&gt;</description>
       <guid isPermaLink="false">weekly-2026-11-16-35596696</guid>

@@ -8,6 +8,14 @@
     <itunes:author>AI Foundations</itunes:author>
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <item>
+      <title>Day 147: Lesson 25: Attention: Choosing What Matters</title>
+      <description>Two-host rebuild of AI Foundations day 147.</description>
+      <guid isPermaLink="false">two-host-day-147</guid>
+      <pubDate>Mon, 23 Nov 2026 07:31:52 +0000</pubDate>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-147-lesson-25-attention-choosing-what-matters-5161581.mp3" length="5161581" type="audio/mpeg"/>
+      <itunes:duration>7:10</itunes:duration>
+    </item>
+    <item>
       <title>Day 146: Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 22)</title>
       <description>Two-host rebuild of AI Foundations day 146.</description>
       <guid isPermaLink="false">two-host-day-146</guid>

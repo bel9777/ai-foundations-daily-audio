@@ -1,5 +1,17 @@
 [
  {
+  "day": 147,
+  "title": "Lesson 25: Attention: Choosing What Matters",
+  "format": "two-host",
+  "guid": "two-host-day-147",
+  "publishedAt": "2026-11-23T07:31:52",
+  "audioPath": "/audio-v2/day-147-lesson-25-attention-choosing-what-matters-5161581.mp3",
+  "transcriptPath": "/transcripts-v2/day-147-5161581.txt",
+  "audioBytes": 5161581,
+  "durationSeconds": 430,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 146,
   "title": "Weekly Review: Foundations 3: From Trees to Neural Networks (Nov 22)",
   "format": "two-host",
