@@ -1,5 +1,17 @@
 [
  {
+  "day": 148,
+  "title": "Lesson 26: Transformers: The Core Architecture",
+  "format": "two-host",
+  "guid": "two-host-day-148",
+  "publishedAt": "2026-11-24T07:31:41",
+  "audioPath": "/audio-v2/day-148-lesson-26-transformers-the-core-architecture-5635341.mp3",
+  "transcriptPath": "/transcripts-v2/day-148-5635341.txt",
+  "audioBytes": 5635341,
+  "durationSeconds": 469,
+  "ttsModel": "gemini-3.8-flash-tts"
+ },
+ {
   "day": 147,
   "title": "Lesson 25: Attention: Choosing What Matters",
   "format": "two-host",

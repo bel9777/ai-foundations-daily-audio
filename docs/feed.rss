@@ -10,6 +10,15 @@
     <itunes:image href="https://bel9777.github.io/ai-foundations-daily-audio/podcast-cover.png"/>
     <atom:link href="https://bel9777.github.io/ai-foundations-daily-audio/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Day 148: Lesson 26: Transformers: The Core Architecture</title>
+      <description>Lesson 26: Transformers: The Core Architecture - AI Foundations day 148, as a conversation between Alex and Jordan.</description>
+      <guid isPermaLink="false">two-host-day-148</guid>
+      <pubDate>Tue, 24 Nov 2026 07:31:41 +0000</pubDate>
+      <itunes:episode>148</itunes:episode>
+      <enclosure url="https://bel9777.github.io/ai-foundations-daily-audio/audio-v2/day-148-lesson-26-transformers-the-core-architecture-5635341.mp3" length="5635341" type="audio/mpeg"/>
+      <itunes:duration>7:49</itunes:duration>
+    </item>
+    <item>
       <title>Day 147: Lesson 25: Attention: Choosing What Matters</title>
       <description>Lesson 25: Attention: Choosing What Matters - AI Foundations day 147, as a conversation between Alex and Jordan.</description>
       <guid isPermaLink="false">two-host-day-147</guid>
